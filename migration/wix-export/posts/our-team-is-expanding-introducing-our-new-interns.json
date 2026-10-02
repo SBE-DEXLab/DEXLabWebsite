@@ -1,0 +1,315 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/our-team-is-expanding-introducing-our-new-interns",
+ "slug": "our-team-is-expanding-introducing-our-new-interns",
+ "title": "Our team is expanding: Introducing our new interns!",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "augmented-research"
+  },
+  "dateModified": "2024-05-23T13:15:05.944Z",
+  "datePublished": "2024-03-20T13:22:04.433Z",
+  "headline": "Our team is expanding: Introducing our new interns!",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/our-team-is-expanding-introducing-our-new-interns",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/our-team-is-expanding-introducing-our-new-interns"
+  },
+  "description": "We’re happy to welcome our new interns who will be supporting DEXLab. Our vibrant community is expanding. The interns will take on operational tasks, and host workshops, showcases, and many other events. Adam KnausHey there, I'm Adam, a master's student currently dedicated to my thesis internship at DEXLab, where I'm focusing on AI and the consumer acceptance of Brain-Computer Interfaces (BCIs). Here's a quote that resonates with me and perfectly encapsulates why I'm passionate about this resear",
+  "url": "https://www.sbe-dexlab.com/post/our-team-is-expanding-introducing-our-new-interns",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/9aa9b6_f9523543b5ab4183900c94388941ac5c~mv2.jpg/v1/fill/w_1000,h_670,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_f9523543b5ab4183900c94388941ac5c~mv2.jpg",
+   "width": "2215",
+   "height": "1485"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [
+  "https://www.sbe-dexlab.com/blog/categories/meet-the-team"
+ ],
+ "og": "https://static.wixstatic.com/media/9aa9b6_f9523543b5ab4183900c94388941ac5c~mv2.jpg/v1/fill/w_1000,h_670,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_f9523543b5ab4183900c94388941ac5c~mv2.jpg",
+ "body": [
+  {
+   "_type": "block",
+   "_key": "k0",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1",
+     "text": "We’re happy to welcome our new interns who will be supporting DEXLab. Our vibrant community is expanding. The interns will take on operational tasks, and host workshops, showcases, and many other events.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k2",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_91f31ebc94b44c10978472586f8e94db~mv2.png",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k3",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k4",
+     "text": "Adam Knaus",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k5",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k6",
+     "text": "Hey there, I'm Adam, a master's student currently dedicated to my thesis internship at DEXLab, where I'm focusing on AI and the consumer acceptance of Brain-Computer Interfaces (BCIs). Here's a quote that resonates with me and perfectly encapsulates why I'm passionate about this research:",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k7",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k8",
+     "text": "“Our future success is directly proportional to our ability to understand, adopt, and integrate new technology into our work.” - Sukant Ratnakar",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k9",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_0fa2d5d6d73d47fcbdcaa3b314448059~mv2.png",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "ka",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kb",
+     "text": "Angela Fasana Vacca",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kc",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kd",
+     "text": "Hello! I'm Angela, a Digital Business and Economics student. I am currently doing my thesis internship project at DEXLab, with a focus on Hybrid chatbots and customer experience. I wanted to share a quote that both amuses and inspires me:",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ke",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kf",
+     "text": "“All of the biggest technological inventions created by man - the airplane, the automobile, the computer - says little about his intelligence, but speaks volumes about his laziness.” - Mark Kennedy",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "kg",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_a322986d62ca4be4b984ee59c808f95f~mv2.png",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "kh",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ki",
+     "text": "Botond Kovács",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kj",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kk",
+     "text": "Hi everyone, I’m Botond and I am currently studying Business Intelligence and Smart Services at Maastricht University. I am writing my master’s thesis at DEXLab focusing on Artificial Intelligence in Virtual Reality applications. I wanted to share a quote that motivates me to work with technologies that are going to shape our future.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kl",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "km",
+     "text": "“The best way to predict the future is to invent it.” ~ Alan Kay",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "kn",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_3c67a926426349a29403853678d7f505~mv2.png",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "ko",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kp",
+     "text": "Michael Kallas",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kq",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kr",
+     "text": "\"Hey everyone, I'm Michael, a 3rd year business engineering student. I'm working on my bachelor's thesis at DEXlab, focusing on public speaking training using virtual reality. I wanted to share a quote that resonates with me and captures why I'm passionate about this research, and the lab as a whole:",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ks",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kt",
+     "text": "“Innovation is like looking for pieces in a jigsaw puzzle. You have to find a lot of pieces that don't match to find the one or two pieces that match.” ~ Edward Conrad",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "ku",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_b1eddc90351f41909fea89ceaef12a10~mv2.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "kv",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kw",
+     "text": "Malina Alizei",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kx",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ky",
+     "text": "Hey, my name is Malina, and I am doing my Master’s in International Business with a specialization in Strategic Marketing! I am currently writing my thesis at DEXLab about the presence of environmental elements in virtual reality. A saying that I like to apply in both life and research is “old ways won’t open new doors” emphasizing the need to constantly seek new opportunities and experiences!",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "kz",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_4451e7d3ff8649e5ad81138ef9982807~mv2.png",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k10",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k11",
+     "text": "Mariska Geerts",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k12",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k13",
+     "text": "Hi there, I’m Mariska and I am excited about my internship here at DEXLab! I am researching whether VR can be a useful tool to train small communication skills. A quote that I find perfectly aligns with our work here at DEXLab is “Innovation is the application of technology to solve problems. But you have to know which problem you are setting out to solve.” by Simon Sinek.",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "embeds": []
+}

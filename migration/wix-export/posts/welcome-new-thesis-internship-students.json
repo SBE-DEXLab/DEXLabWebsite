@@ -1,0 +1,238 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/welcome-new-thesis-internship-students",
+ "slug": "welcome-new-thesis-internship-students",
+ "title": "Welcome New Thesis Internship Students!",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "augmented-research"
+  },
+  "dateModified": "2025-02-03T12:46:27.189Z",
+  "datePublished": "2025-01-22T15:04:07.776Z",
+  "headline": "Welcome New Thesis Internship Students!",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/welcome-new-thesis-internship-students",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/welcome-new-thesis-internship-students"
+  },
+  "description": "We are happy to announce that four new Thesis Interns will be joining DEXLab in February and will stay with us until the end of the academic year, helping out with workshops, experiments, and other lab activities. However most importantly, they will be writing their Master Thesis with the DEXLab! Here's a quick introduction to each of them:&#009;Martina PaganoMy name is Martina, and I am currently pursuing a master's degree in Business Intelligence and Smart Services. To tell you a bit more about mys",
+  "url": "https://www.sbe-dexlab.com/post/welcome-new-thesis-internship-students",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/9aa9b6_452d84b53be54a10a3f7b05c0f5fe109~mv2.png/v1/fill/w_707,h_1000,al_c,q_90,usm_0.66_1.00_0.01/9aa9b6_452d84b53be54a10a3f7b05c0f5fe109~mv2.png",
+   "width": "2480",
+   "height": "3507"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [],
+ "og": "https://static.wixstatic.com/media/9aa9b6_452d84b53be54a10a3f7b05c0f5fe109~mv2.png/v1/fill/w_707,h_1000,al_c,q_90,usm_0.66_1.00_0.01/9aa9b6_452d84b53be54a10a3f7b05c0f5fe109~mv2.png",
+ "body": [
+  {
+   "_type": "image",
+   "_key": "k0",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_452d84b53be54a10a3f7b05c0f5fe109~mv2.png",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k1",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k2",
+     "text": "We are happy to announce that four new Thesis Interns will be joining DEXLab in February and will stay with us until the end of the academic year, helping out with workshops, experiments, and other lab activities. However most importantly, they will be writing their Master Thesis with the DEXLab! Here's a quick introduction to each of them:",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k3",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k4",
+     "text": "Martina Pagano",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k5",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_5ca45d540f364b6d8831013380b2bfec~mv2.jpeg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k6",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k7",
+     "text": "My name is Martina, and I am currently pursuing a master's degree in Business Intelligence and Smart Services. To tell you a bit more about myself, I was born and raised in the vibrant city of Napoli, in Italy, where I spent my years until high school. After that, I moved to the Netherlands and chose Maastricht University for its unique and innovative teaching approach. For the same reasons, I have continued my academic journey here, a place that has become my second home after Napoli. I have always been passionate about exploring the possibilities of technology to improve our lives and the society. With a major in Digital Society and a minor in entrepreneurship, I hope I can bring an interdisciplinary perspective to the community of DEXLab. I am particularly excited to start my thesis internship program at DEXLab, where I will explore the use of virtual reality in education, focusing specifically on skill transfer in training.",
+     "marks": [
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k8",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k9",
+     "text": "Ayat Azzimani",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "ka",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_766d917953c745bda3cecef7ea864bdf~mv2.jpeg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "kb",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kc",
+     "text": "Hello, I’m Ayat Azzimani, a 21-year-old currently pursuing a Master’s in Information Management and Business Intelligence at Maastricht University, where I also completed my Bachelor’s in International Business with a major in Management Information Systems. My academic and professional interests revolve around leveraging technology to enhance human  education experiences. In this internship, I’ll be focusing on exploring the role of robots in education, particularly their impact on behavior and engagement. As Erik Brynjolfsson said, “It is not about human versus machine. It is about humans with machines.” I’m excited to research how collaboration between humans and robots can transform education.",
+     "marks": [
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kf",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kg",
+     "text": "Lara Grunschel",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "kh",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_07baaa19d6e24689933a6d6f8be6c705~mv2.jpeg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "ki",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kj",
+     "text": "Hello! I'm Lara, a master's student in Business Intelligence and Smart Services at Maastricht University, excited to begin my TIP at DEXLab, following a bachelor's in Industrial Design from Eindhoven University of Technology. Already during my bachelor's, I was drawn to the possibilities emerging technologies offer to our society, working on projects involving VR and connected products like smart wearables. I have found this direction truly compelling and want to continue exploring it in my master's. That is why I opted for an internship at the DEXLab. I am really looking forward to learning about and experimenting with the possibilities of VR technologies.",
+     "marks": [
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kk",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kl",
+     "text": "Laura Grisi Chavarria",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "km",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_e49bc722bc864c689e979faa19c1be64~mv2.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "kn",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ko",
+     "text": "I’m Laura from Bolivia and I’m currently pursuing a MSC. in Information Management and Business Intelligence. I have a passion for traveling and exploring new cultures, which led me to spend two semesters abroad—one in Paris and another in Kuala Lumpur while doing my Bachelors degree in Germany. Fresh out of college, I took on the exciting challenge of being Head of Operations at a delivery startup in Bolivia, managing a team of 15 and driving expansion into three countries. Outside of work and studies, I love staying active with tennis, volleyball, and HIIT workouts. I also enjoy cooking and experimenting with new recipes in my free time!",
+     "marks": [
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kp",
+   "style": "normal",
+   "markDefs": [
+    {
+     "_type": "link",
+     "_key": "kr",
+     "href": "mailto:sbe-dexlab@maastrichtuniversity.nl"
+    }
+   ],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kq",
+     "text": "Interested in internship opportunities and other ways to connect. Feel free to check out the rest of our website or directly contact us at ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "ks",
+     "text": "sbe-dexlab@maastrichtuniversity.nl",
+     "marks": [
+      "kr",
+      "underline"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kt",
+     "text": "",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "embeds": []
+}

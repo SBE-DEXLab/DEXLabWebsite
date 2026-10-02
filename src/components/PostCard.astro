@@ -1,0 +1,68 @@
+---
+import Img from './Img.astro'
+import {formatDate} from '../lib/utils'
+import type {PostCard} from '../lib/types'
+
+interface Props {
+  post: PostCard
+  headingLevel?: 'h2' | 'h3'
+}
+const {post, headingLevel: H = 'h3'} = Astro.props
+---
+
+<article class="card lift post-card">
+  <a href={`/post/${post.slug}`} class="card-media" tabindex="-1" aria-hidden="true">
+    <Img image={post.coverImage} width={480} height={320} sizes="(min-width: 1000px) 380px, (min-width: 640px) 50vw, 100vw" alt="" />
+  </a>
+  <div class="card-body">
+    <div class="meta">
+      <time datetime={post.publishedAt}>{formatDate(post.publishedAt)}</time>
+      {post.categories?.[0] && <a class="chip" href={`/blog/categories/${post.categories[0].slug}`}>{post.categories[0].title}</a>}
+    </div>
+    <H class="title"><a href={`/post/${post.slug}`}>{post.title}</a></H>
+    {post.excerpt && <p>{post.excerpt}</p>}
+  </div>
+</article>
+
+<style>
+  .post-card {
+    position: relative;
+  }
+  .card-media {
+    aspect-ratio: 3 / 2;
+  }
+  .meta {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+  .title {
+    font-size: 1.2rem;
+    line-height: 1.3;
+  }
+  .title a {
+    color: var(--navy);
+    text-decoration: none;
+  }
+  .title a::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+  }
+  .title a:hover {
+    color: var(--blue-dark);
+  }
+  .chip {
+    position: relative;
+    z-index: 1;
+  }
+  p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+</style>

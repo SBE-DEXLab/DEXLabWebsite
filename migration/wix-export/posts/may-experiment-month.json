@@ -1,0 +1,352 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/may-experiment-month",
+ "slug": "may-experiment-month",
+ "title": "May Experiment Month",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "sbe-dexlab"
+  },
+  "dateModified": "2024-05-31T09:50:39.962Z",
+  "datePublished": "2024-05-31T09:50:39.962Z",
+  "headline": "May Experiment Month",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/may-experiment-month",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/may-experiment-month"
+  },
+  "description": "This May, the DEXLab was packed with activity as multiple researchers conducted various experiments to collect data to validate their research questions and hypotheses. Our researchers leveraged cutting-edge technology like Virtual Reality, Eye-tracking, and generative AI in the form of custom chatbots to explore digital experiences and their impact on human behavior and attitudes. In this blog, we explore these experiments and understand the &quot;why&quot; behind the &quot;what&quot;.Stepping into Another's Shoes",
+  "url": "https://www.sbe-dexlab.com/post/may-experiment-month",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/9aa9b6_dea35518d58b4157b48d87263e225e7d~mv2.jpg/v1/fill/w_1000,h_464,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_dea35518d58b4157b48d87263e225e7d~mv2.jpg",
+   "width": "1175",
+   "height": "545"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [
+  "https://www.sbe-dexlab.com/blog/categories/experiments",
+  "https://www.sbe-dexlab.com/blog/categories/thesis-projects"
+ ],
+ "og": "https://static.wixstatic.com/media/9aa9b6_dea35518d58b4157b48d87263e225e7d~mv2.jpg/v1/fill/w_1000,h_464,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_dea35518d58b4157b48d87263e225e7d~mv2.jpg",
+ "body": [
+  {
+   "_type": "block",
+   "_key": "k0",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1",
+     "text": "This May, the DEXLab was packed with activity as multiple researchers conducted various experiments to collect data to validate their research questions and hypotheses. Our researchers leveraged cutting-edge technology like Virtual Reality, Eye-tracking, and generative AI in the form of custom chatbots to explore digital experiences and their impact on human behavior and attitudes. In this blog, we explore these experiments and understand the \"why\" behind the \"what\".",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k2",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k3",
+     "text": "Stepping into Another's Shoes: Can VR Change Your View on Homelessness?",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k4",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k5",
+     "text": "For three weeks, PhD Stefan Bos and Johannes Lang conducted an experiment in the DEXLab using Virtual Reality to influence empathy and subsequent behavior. The experiment consisted of a virtual simulation that lets users experience homelessness in America firsthand.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k6",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_0d679cb75c6b4a93826c939d07b804a5~mv2.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k7",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k8",
+     "text": "Reflecting on his experiences at the DEXLab, Stefan said, “We aimed to discover whether directly experiencing homelessness through a VR simulation would change people's perspectives on homelessness and those experiencing homelessness. This experiment served as a preliminary study for my current PhD research, emphasizing key elements of VR simulations that evoke empathy, and contributed to Johannes Lang’s MSc thesis project that explored how people attribute the blame for being homeless; are the people themselves responsible or is it a societal issue?”",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k9",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ka",
+     "text": "Experience Google Earth through Virtual Reality",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kb",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kc",
+     "text": "Tim Hilken and Mariska Geerts conducted an experiment at the SBE DEXLab with 200 participants, exploring the impact of Virtual Reality (VR) on consumer behavior. The study aimed to answer several key questions: Does VR create vivid memories that reduce the desire to visit physical locations? Does experiencing a destination in VR enhance the actual visit through perceived familiarity? Can VR alter or create new memories of past events? By addressing these questions, the research seeks to deepen our understanding of how VR influences consumer experiences and decision-making.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kd",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ke",
+     "text": "Beyond One-on-One: Exploring VR for Group Communication",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "kf",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_177b9a32be9d4309921d0cd7084fbdbe~mv2.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "kg",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kh",
+     "text": "VR research has shown promising effects for training communication skills, such as public speaking and one-on-one conversations like conducting a job interview with a virtual avatar. However, there is a lack of research on using VR to train communication skills in group settings, such as challenging work meetings or sensitive discussions within teams. Given that these situations are commonplace in a professional's daily routine and are particularly challenging due to their unpredictable group dynamics, training becomes crucial!",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ki",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kj",
+     "text": "To explore VR’s potential for group conversation training, PhD researcher Anna Krispin and master’s student Mariska Geerts conducted an experimental study to investigate users’ experiences with group conversations in virtual reality. Participants were placed in a virtual meeting room where they could interact with each other as avatars. They sat around a table and discussed sustainability at Maastricht University. Anna and Mariska explain their experiment as follows:",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "kk",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_ff51932919e84ebc9a667cc1708b110c~mv2.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "kl",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "km",
+     "text": "“We compared different conditions in the virtual meeting room: a one-on-one conversation between two people versus a group conversation with three people. In the group conversation condition, we also tested two types of communicative scenarios: task and relational-oriented. In the task-oriented condition, participants discussed and created five specific recommendations to improve sustainability at Maastricht University. In the relational-oriented condition, they discussed how sustainable UM is, thus fostering an open exchange of ideas. For each condition, we measured variables related to user experience such as immersion, and user engagement as well as discussion quality, including communication performance and creativity.”",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kn",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ko",
+     "text": "With this research, Anna and Mariska aim to take the first step in exploring VR’s potential as a tool for group conversation training.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kp",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kq",
+     "text": "An Immersive Shopping Experience through VR",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "kr",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_35bbf98da4584a2ebbe8658e432e1fe4~mv2.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "ks",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kt",
+     "text": "As part of her master's thesis, Malina Alizei, a 21-year-old Strategic Marketing major, conducted her first-ever experiment at the DEXLab! Malina’s research focuses on consumer psychology theories and applies them through Virtual Reality (VR). Specifically, the study aims to observe how VR can be used to manipulate emotions in retail environments. Here are some insights Malina provided about working with DEXLab as a Thesis Internship Programme (TIP) student:",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ku",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kv",
+     "text": "“In an era of advancing technologies, VR has gained widespread popularity and is frequently used for various tasks ranging from entertainment to education. Recently, many brands/designers have started opening retail spaces in the metaverse where consumers can virtually access these stores from the comfort of their own homes. Typically, from a marketing perspective, stores are designed in a specific way and have well-thought-out decorations such as plants to illicit purchasing behaviors. My research aims to see if these decorative plants still have the same effect in VR shopping the same way it does in the physical world. As I am researching something that has never been done before, I worked with developers to create a new app for Meta Quest 2 and Quest 3. The DEXLab has greatly supported this process as they provided all the equipment required for the experiment (laptops, VR headsets, etc.) and supported the development of the new app. Without the DEXLab I wouldn’t have the means to run my experiment and help from my colleagues.”",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "kw",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_6c18c85502224fc68822307e02f0ea08~mv2.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "kx",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ky",
+     "text": "Seeing through Consumers' Eyes: E",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kz",
+     "text": "ye-tracking Study in the Biometrics Corner",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k10",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k11",
+     "text": "During the 23rd, 24th, and 27th of May, Martyna Bratek, a 22-year-old master’s student in Marketing and Finance, conducted an eye-tracking experiment at DEXLab. The thesis is being supervised by Sammy Wals. The study's objective is to investigate the impact of conflicting reviews on the visual attention dedicated to websites. Specifically, it focuses on how contradictory information, such as both positive and negative reviews of the same item, influences participants' visual engagement and decision-making processes. This study aims to provide meaningful insights into consumer behavior in the online context and shed light on how customers interact with conflicting reviews. Martyna shares the following insights about her research: \"Nowadays, consumers have a lot of trust in reviews, and they are considered very impactful on purchase behavior.\" To get a more comprehensive understanding of conflicting reviews and their influence, I decided to conduct an eye-tracking study for my master’s thesis. The new NoldusHub eye-tracking system at DEXLab enabled me to investigate how people evaluate web pages containing conflicting reviews. Furthermore, I was the first researcher to use this system at DEXLab, and I have to admit that it made my data collection much easier. Lastly, I received help and support in finding participants for my study from the staff at the DEXLab, which was greatly appreciated.”",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k12",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_466d6d184ca5499ca8acf285b1fb8633~mv2.gif",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k13",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k14",
+     "text": "Leveraging the power of artificial intelligence in the field of consumer psychology",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k15",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k16",
+     "text": "Viktor Vanhoecke, a 24-year-old master's student in Strategic Marketing, conducted his first physical experiment at the DEXLab. Viktor’s thesis builds upon previous empirical studies in the field of consumer psychology, with a specific focus on the concept of the future self. He shares the following about his experience as a master’s thesis student working with the DEXLab: “As we all know, people are living longer, and there is growing concern that a portion of the population is not accumulating sufficient pension investments to maintain their standard of living after retirement. Researchers have attempted various interventions, ranging from using neural measures of brain activity to creating 3-D rendered visualizations of one's older self to strengthen the connection between future and present selves. This is done because these methods have been proven to increase saving tendencies. For my study, I aim to further bridge this emotional connection gap by offering students the opportunity to interact with a future self-chatbot. Utilizing GPT APIs, I developed an AI chatbot designed to prompt individuals to reflect on their future. This would not have been possible without the support of the organization behind DEXLAB, as they provided me with a suitable location, setup, and suiting participants.”",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k17",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k18",
+     "text": "This article offered a glimpse into DEXLab activities this May. From the complexities of VR meetings to the power of AI and the insights gleaned through eye-tracking, these experiments research the impact of cutting-edge technologies on our society. Are you interested in conducting an experiment at the DEXLab? Do you want to know how these technologies could help your business?",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "embeds": []
+}

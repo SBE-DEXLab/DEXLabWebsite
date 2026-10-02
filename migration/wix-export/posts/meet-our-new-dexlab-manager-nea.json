@@ -1,0 +1,117 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/meet-our-new-dexlab-manager-nea",
+ "slug": "meet-our-new-dexlab-manager-nea",
+ "title": "Meet our new DEXLab manager Nea!",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "augmented-research"
+  },
+  "dateModified": "2026-09-09T08:07:45.464Z",
+  "datePublished": "2026-09-09T08:07:45.000Z",
+  "headline": "Meet our new DEXLab manager Nea!",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/meet-our-new-dexlab-manager-nea",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/meet-our-new-dexlab-manager-nea"
+  },
+  "description": "Hi! Nea here, the latest edition of the DEXLab Manager. I’m here for all things research, education, and general management of our technologies. It just so happens that all these keywords match my academic background too: for my Bachelor’s I studied Educational Science, Research, and Educational Management in Germany, and I completed my Master’s in Educational Science and Technology in Twente. There might have been some side quests in Geography and Urban Planning on the way too, but those will o",
+  "url": "https://www.sbe-dexlab.com/post/meet-our-new-dexlab-manager-nea",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/9aa9b6_d296bb4552c14e4f9cc7ace706447deb~mv2.jpg/v1/fill/w_750,h_1000,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_d296bb4552c14e4f9cc7ace706447deb~mv2.jpg",
+   "width": "2112",
+   "height": "2816"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [
+  "https://www.sbe-dexlab.com/blog/categories/meet-the-team"
+ ],
+ "og": "https://static.wixstatic.com/media/9aa9b6_d296bb4552c14e4f9cc7ace706447deb~mv2.jpg/v1/fill/w_750,h_1000,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_d296bb4552c14e4f9cc7ace706447deb~mv2.jpg",
+ "body": [
+  {
+   "_type": "image",
+   "_key": "k0",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_d296bb4552c14e4f9cc7ace706447deb~mv2.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k1",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k2",
+     "text": "Hi! Nea here, the latest edition of the DEXLab Manager. I’m here for all things research, education, and general management of our technologies. It just so happens that all these keywords match my academic background too: for my Bachelor’s I studied Educational Science, Research, and Educational Management in Germany, and I completed my Master’s in Educational Science and Technology in Twente. There might have been some side quests in Geography and Urban Planning on the way too, but those will only become evident if I encounter a cool map, some interesting forms of erosion, or perhaps some silly urban infrastructure.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k5",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k6",
+     "text": "My biggest research interests have always circled around the question of how learning can be facilitated and enhanced with technology. As a language nerd, I most enjoy bringing in the topic of foreign language learning into the equation too. I’m especially interested in finding new ways to develop speaking and communication skills in foreign languages with the help of technology and games, as oral skills are often the biggest hurdles for language learners, and because tech and games are great fun. With my current project of learning Dutch to full fluency (which went quite well until I moved to Limburg), I can attest to the challenge of speaking personally. But hey, the very young version of this educational technologist, who sat in front of her family’s Playstation on a snowy Finnish Christmas night and stared at the English words “system configuration” in the menu, wondering if she’d ever find out what something so complex and cool would mean, did in fact learn that, and now even does system configuration as her job! So I’m sure I’ll figure out the Limburgs too.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k7",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k8",
+     "text": "Next to educational innovation and system configuration, I’ve made a career in ice cream, which is one of my many flavourful passions. I now have my own ice cream machine that I can use to create all kinds of commercially unfeasible flavours. Culinary, scientific, and design-related explorations are my favourite ways of spending time, especially when done together with awesome people. Other things I like to spend time with are, among many, photography, board games, frolicking in bodies of water, and cycling. In fact, my first encounter with DEXLab was on a bikepacking trip in North Australia, where I prepared for my job interview on the “patio” of my tent, jotting down notes about my technological background in rather primitive circumstances with pen, paper, and a headlamp, with wallabies as my company.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kb",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kc",
+     "text": "Now, with the honour of having an office and not just a tent, and being the first full-time DEXLab Manager, I hope to make DEXLab an even greater hub for innovative technologies in education, as well as a lively, but exquisitely well organised, fountain of empirical research.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kd",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ke",
+     "text": "So come by to say hi and we can find a way to do that together!",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "embeds": []
+}

@@ -1,0 +1,204 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/meet-the-new-dexlab-manager",
+ "slug": "meet-the-new-dexlab-manager",
+ "title": "Meet the NEW DEXLab Manager!",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "Noah Moonen"
+  },
+  "dateModified": "2023-09-20T06:07:44.879Z",
+  "datePublished": "2022-09-02T13:21:21.590Z",
+  "headline": "Meet the NEW DEXLab Manager!",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/meet-the-new-dexlab-manager",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/meet-the-new-dexlab-manager"
+  },
+  "description": "Hello everyone, My name is Noah Moonen and I am very excited to be the new SBE DEXLab manager!A little bit about myself: I am a Maastricht locaI and I have obtained both my Bachelor’s degree (International Business) and my Master’s degree (Entrepreneurship and SME-management) at the University of Maastricht, School of Business and Economics. Ever since  finishing my Bachelor’s degree, I have been a student tutor at the university which has sparked my interest and enthusiasm for teaching. I enjoy",
+  "url": "https://www.sbe-dexlab.com/post/meet-the-new-dexlab-manager",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/9aa9b6_5b180593bf02408ea83aa1d283b2d8d6~mv2.jpg/v1/fill/w_479,h_462,al_c,lg_1,q_80/9aa9b6_5b180593bf02408ea83aa1d283b2d8d6~mv2.jpg",
+   "width": "342",
+   "height": "330"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [
+  "https://www.sbe-dexlab.com/blog/categories/meet-the-team"
+ ],
+ "og": "https://static.wixstatic.com/media/9aa9b6_5b180593bf02408ea83aa1d283b2d8d6~mv2.jpg/v1/fill/w_479,h_462,al_c,lg_1,q_80/9aa9b6_5b180593bf02408ea83aa1d283b2d8d6~mv2.jpg",
+ "body": [
+  {
+   "_type": "block",
+   "_key": "k0",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1",
+     "text": "Hello everyone,",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k2",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k3",
+     "text": "My name is Noah Moonen and I am very excited to be the new SBE DEXLab manager!",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k4",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_731ac10d60e244c0a1b627831cd20991~mv2.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k5",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k6",
+     "text": "A little bit about myself: I am a Maastricht locaI and I have obtained both my Bachelor’s degree (International Business) and my Master’s degree (Entrepreneurship and SME-management) at the University of Maastricht, School of Business and Economics. Ever since  finishing my Bachelor’s degree, I have been a student tutor at the university which has sparked my interest and enthusiasm for teaching. I enjoy working in a multicultural environment and being able to help others, so I was very pleased to become a lecturer at the MSCM department from last April onwards. I also have a great interest in developing organisations and new technologies that are enabling both companies and consumers to improve certain aspects of life, meaning that becoming the new manager of the DEXLab is straight up my alley!",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k7",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k8",
+     "text": "Enough about academia, I would like to share a little bit of my personal life as well. When I am not at the university I like to play sports or go to the gym. I have been playing football my whole life but recently also grew an interest in Padel. The highlight of my “sporting career” was playing for the U19 team of MVV Maastricht, where I even played a match against Dutch international Frenkie de Jong. In the evenings I enjoy preparing dinner, spending time with my friends or relaxing and watching a good Netflix show. When I have a lot of free time, travelling is definitely my favourite thing to do. If I could have any superpower it would without a doubt be the ability to fly. This would make my travelling a lot easier, cheaper and less polluting. I am also passionate about videography and look forward to sharing this skill at the DEXLab as well.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k9",
+   "style": "normal",
+   "markDefs": [
+    {
+     "_type": "link",
+     "_key": "kb",
+     "href": "mailto:sbe-dexlab@maastrichtuniversity.nl"
+    }
+   ],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ka",
+     "text": "I look forward to meeting and engaging with people passionate in new technologies and education during this new position. If you would like to connect or visit the DEXLab feel free to reach me at ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kc",
+     "text": "sbe-dexlab@maastrichtuniversity.nl",
+     "marks": [
+      "kb",
+      "underline"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kd",
+     "text": "",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ke",
+   "style": "normal",
+   "markDefs": [
+    {
+     "_type": "link",
+     "_key": "kf",
+     "href": "https://www.sbe-dexlab.com/blog/hashtags/newmanager"
+    },
+    {
+     "_type": "link",
+     "_key": "ki",
+     "href": "https://www.sbe-dexlab.com/blog/hashtags/technology"
+    },
+    {
+     "_type": "link",
+     "_key": "kl",
+     "href": "https://www.sbe-dexlab.com/blog/hashtags/DEXLab"
+    }
+   ],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kg",
+     "text": "#newmanager",
+     "marks": [
+      "kf"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kh",
+     "text": " ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kj",
+     "text": "#technology",
+     "marks": [
+      "ki"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kk",
+     "text": " ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "km",
+     "text": "#DEXLab",
+     "marks": [
+      "kl"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kn",
+     "text": "",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "embeds": []
+}

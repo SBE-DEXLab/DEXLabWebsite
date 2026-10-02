@@ -1,0 +1,431 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/immersive-well-being-with-alexandru-mariș-dexlab-researcher",
+ "slug": "immersive-well-being-with-alexandru-mari%C8%99-dexlab-researcher",
+ "title": "Immersive Well-Being with Alexandru Mariș, DEXLab Researcher",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "sbe-dexlab"
+  },
+  "dateModified": "2024-05-23T13:14:23.277Z",
+  "datePublished": "2024-04-29T09:06:37.323Z",
+  "headline": "Immersive Well-Being with Alexandru Mariș, DEXLab Researcher",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/immersive-well-being-with-alexandru-mariș-dexlab-researcher",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/immersive-well-being-with-alexandru-mariș-dexlab-researcher"
+  },
+  "description": "I'm Alexandru Mariș, a PhD Researcher at SBE specializing in immersive digital experiences. My research investigates how immersive technologies can be strategically adopted by marketers to design impactful experiences that are meaningful for consumers. To explore this, I integrate various methods including AR/VR glasses, biometric sensors, and behavioral data within experimental settings.What reasons were behind your recent academic decisions? It is the dream of a boy growing up with those early",
+  "url": "https://www.sbe-dexlab.com/post/immersive-well-being-with-alexandru-mariș-dexlab-researcher",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/9aa9b6_931fd8614215491faedebcbcdc3ce927~mv2.jpg/v1/fill/w_750,h_1000,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_931fd8614215491faedebcbcdc3ce927~mv2.jpg",
+   "width": "1536",
+   "height": "2048"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [
+  "https://www.sbe-dexlab.com/blog/categories/interviews",
+  "https://www.sbe-dexlab.com/blog/categories/research",
+  "https://www.sbe-dexlab.com/blog/categories/meet-the-team"
+ ],
+ "og": "https://static.wixstatic.com/media/9aa9b6_931fd8614215491faedebcbcdc3ce927~mv2.jpg/v1/fill/w_750,h_1000,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_931fd8614215491faedebcbcdc3ce927~mv2.jpg",
+ "body": [
+  {
+   "_type": "block",
+   "_key": "k0",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1",
+     "text": "I'm Alexandru Mariș, a PhD Researcher at SBE specializing in immersive digital experiences. My research investigates how immersive technologies can be strategically adopted by marketers to design impactful experiences that are meaningful for consumers. To explore this, I integrate various methods including AR/VR glasses, biometric sensors, and behavioral data within experimental settings.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k2",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_931fd8614215491faedebcbcdc3ce927~mv2.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k3",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k4",
+     "text": "What reasons were behind your recent academic decisions?",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k5",
+     "text": "",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k6",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k7",
+     "text": "It is the dream of a boy growing up with those early 2000s video games and videos to come ‘to life’ and myself to be one of them. Now I get to live that dream and more. 😅",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k8",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k9",
+     "text": "Jokes aside, my recent academic decisions stem from two key drivers. Firstly, pure ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "ka",
+     "text": "curiosity ",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kb",
+     "text": "is fuelled by questions about how digitalization impacts our society. After working in the immersive tech industry alongside global visionaries, I ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kc",
+     "text": "witnessed firsthand",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kd",
+     "text": " the natural evolution of technology towards a more spatial, immersive, and sensory experience, seamlessly integrated with our biological and physical environment.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ke",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kf",
+     "text": "The same experience also sparked thoughts of caution about the future. The dominant digital models are focused on ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kg",
+     "text": "leveraging",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kh",
+     "text": " our cognitive and perceptual architecture to the fullest, often leading to chaotic, trend-driven adoption with consequences like addiction, social polarization, or sedentarism. It feels like our technology is fundamentally computer-centric.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kk",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kl",
+     "text": "For example, many apps prioritize keeping users engaged at all costs, even if this leads to “clickbaity\" content to strive, designed to grab our attention and time yet offering little value to users.",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "km",
+     "text": "",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kp",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kq",
+     "text": "Therefore, my second driver is to contribute to a ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kr",
+     "text": "meaningful",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "ks",
+     "text": " future where digitalization equals happiness, health, and well-being. I research what stands behind the design of immersive experiences that empower human development and life quality 🌿.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kv",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kw",
+     "text": "So, I ask myself: ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kx",
+     "text": "Why are",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "ky",
+     "text": " various aspects of immersive experiences meaningful to us?",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k11",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k12",
+     "text": "What are some of the highlights/key learnings of your academic journey?",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k13",
+     "text": "",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k14",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k15",
+     "text": "Firstly, academic research has positively surprised me. I had the traditional image of research being dominated by rigor and structure; the reality is far more dynamic, exploratory, and fascinating. It's a constant process of exploration; I can brainstorm 100 ideas, refine 10, and pursue 1. This freedom keeps me creatively engaged.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k16",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k17",
+     "text": "Secondly, ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k18",
+     "text": "mentorship and environment are crucial",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k19",
+     "text": ". It’s the big corporations that are usually seen as setting the tone - the ‘desired employers’ for strong professional ambitions. Nonetheless, I’ve encountered incredible mentors and colleagues at the university, such as my supervisors, Gaby Odekerken and Tim Hilken. I see  passionate people every day, motivated to drive positive impact, with a more fundamental orientation. I've interacted with universities before, yet Maastricht University stands out with its youthful energy, forward-thinking mindset, and diverse international environment.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1c",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1d",
+     "text": "How does the DEXLab provide value to you?",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k1e",
+     "text": "",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1f",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1g",
+     "text": "If earlier I was talking about my desire to keep playing, then DEXLab is the playground, a home for curiosity 🏒. Beyond just the equipment, the lab fosters a supportive environment filled with collaboration and inspiration; everything I need to push the boundaries of my research.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1h",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1i",
+     "text": "DEXLab's impact extends beyond its walls, through industry partners. I see the lab as a vibrant hub where researchers, industry, and public organizations co-create toward a better society of digital experiences and robotics.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1l",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1m",
+     "text": "",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k1n",
+     "text": "What are your hobbies outside of work?",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k1o",
+     "text": "",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1p",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1q",
+     "text": "The boundary between work and hobbies is fluid for me. My passion for exploration and learning fuels most of the things I do.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1r",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1s",
+     "text": "I push the limits of my imagination by exploring nature and society in dynamic ways. Bike-packing on vulcanic islands, free riding my snowboard ⛰️, vibrating with the ocean on a surfboard 🏝️, or hopping in a train with the only plan of discovering ideas, culture, and joy 🚄. I find Art Nouveau beautiful 🎨, and micro-mobility the way to go 🚲. Likewise, I am curious about the shared meaning behind urbanism and behavioral design. Nevertheless, I enjoy playing with the art and science of mixology.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1t",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1u",
+     "text": "Such social and sensorial experiences shape my vision of the immersive digital future and its promise of value, where technology feels natural and human.",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "embeds": []
+}

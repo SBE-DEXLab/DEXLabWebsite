@@ -1,0 +1,742 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/will-the-metaverse-take-over-the-world",
+ "slug": "will-the-metaverse-take-over-the-world",
+ "title": "Will the Metaverse take over the world?",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "augmented-research"
+  },
+  "dateModified": "2022-09-23T08:24:58.947Z",
+  "datePublished": "2022-09-23T08:24:58.947Z",
+  "headline": "Will the Metaverse take over the world? ",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/will-the-metaverse-take-over-the-world",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/will-the-metaverse-take-over-the-world"
+  },
+  "description": "An opinion by Jonas HellerSince Facebook Meta revived the term ‘Metaverse’ in October 2021, it has lived through a renaissance that other standalone terms, if they were to have feelings, would be jealous of. Not even one year ago the term was re-introduced by the biggest social network company in the world, and it has been picked up by academics already, as evidenced by over 1500 academic publications with ‘Metaverse’ in the title that have been published since 2021, while the ‘Journal of Metave",
+  "url": "https://www.sbe-dexlab.com/post/will-the-metaverse-take-over-the-world",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/9aa9b6_9f244fce91eb432a8e2bb7477ff3841e~mv2.jpg/v1/fill/w_1000,h_563,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_9f244fce91eb432a8e2bb7477ff3841e~mv2.jpg",
+   "width": "3555",
+   "height": "2000"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [
+  "https://www.sbe-dexlab.com/blog/categories/food-for-thought"
+ ],
+ "og": "https://static.wixstatic.com/media/9aa9b6_9f244fce91eb432a8e2bb7477ff3841e~mv2.jpg/v1/fill/w_1000,h_563,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_9f244fce91eb432a8e2bb7477ff3841e~mv2.jpg",
+ "body": [
+  {
+   "_type": "block",
+   "_key": "k0",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1",
+     "text": "An opinion by Jonas Heller",
+     "marks": [
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k2",
+   "style": "normal",
+   "markDefs": [
+    {
+     "_type": "link",
+     "_key": "k4",
+     "href": "https://scholar.google.com/scholar?hl=de&as_sdt=0%2C5&q=metaverse&btnG="
+    }
+   ],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k3",
+     "text": "Since Facebook Meta revived the term ‘Metaverse’ in October 2021, it has lived through a renaissance that other standalone terms, if they were to have feelings, would be jealous of. Not even one year ago the term was re-introduced by the biggest social network company in the world, and it has been picked up by academics already, as evidenced by over ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k5",
+     "text": "1500 academic publications",
+     "marks": [
+      "k4",
+      "underline"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k6",
+     "text": " with ‘Metaverse’ in the title that have been published since 2021, while the ‘Journal of Metaverse’ launched its first issue in December 2021.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k7",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_9f244fce91eb432a8e2bb7477ff3841e~mv2.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k8",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k9",
+     "text": "But what is the metaverse? And why is there such hype? ",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "ka",
+     "text": "",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kb",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kc",
+     "text": "We must go back in time and indulge in 1991’s science-fiction novel ‘Snow Crash’ by Neal Stephenson, in which the Metaverse is described as a virtual reality which connects users globally via the Internet in a parallel, virtual ecosystem. The whole thing is somewhat reminiscent of today's massive multiplayer online role-playing games such as Fortnite and World of Warcraft. Only there is no game, no high score, no fixed goal. The Metaverse is rather structured as a virtual alternative to the physical world.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kd",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ke",
+     "text": "So, what does it actually mean?",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kf",
+     "text": "",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kg",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kh",
+     "text": "To shed light on this question, we borrow from risk-capitalist Matthew Ball who wrote an essay about the Metaverse in 2022 that Marc Zuckerberg praised highly, and, according to media reports, was even declared compulsory reading for employees at Meta.  \nFor example, the Metaverse is not…",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ki",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kj",
+     "text": "A “virtual world” – Virtual worlds and games with AI-driven characters have existed for decades, as have those populated with “real” humans in real time.",
+     "marks": []
+    }
+   ],
+   "listItem": "number",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "kk",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kl",
+     "text": "A “virtual space” – Digital content experiences like Second Life have often been seen as “proto-Metaverses” because they (A) lack game-like goals; (B) are virtual hangouts that persist; (C) offer nearly synchronous content updates, and (D) have real humans represented by digital avatars.",
+     "marks": []
+    }
+   ],
+   "listItem": "number",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "km",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kn",
+     "text": "“Virtual reality” – VR is a way to experience a virtual world or space. A sense of presence in a digital world doesn’t make a Metaverse. The same holds true for AR.",
+     "marks": []
+    }
+   ],
+   "listItem": "number",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ko",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kp",
+     "text": "A “digital and virtual economy” – These, too, already exist. Individual games such as World of Warcraft have long had functioning economies where real people trade virtual goods for real money or perform virtual tasks in exchange for real money.",
+     "marks": []
+    }
+   ],
+   "listItem": "number",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "kq",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kr",
+     "text": "A “game” – Fortnite has many elements of the Metaverse. For example, avatars, consistent identities, it spans multiple platforms, and compensates content creators financially. The Metaverse itself is not a game.",
+     "marks": []
+    }
+   ],
+   "listItem": "number",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ks",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kt",
+     "text": "A “virtual theme park or Disneyland” – Not only will the “attractions” be infinite, but they also will not be centrally “designed” or programmed like Disneyland.",
+     "marks": []
+    }
+   ],
+   "listItem": "number",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ku",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kv",
+     "text": "A “new app store” – No one needs another way to open apps or another operating system to choose from.",
+     "marks": []
+    }
+   ],
+   "listItem": "number",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "kw",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kx",
+     "text": "A “new UGC platform” – The Metaverse is not just another YouTube or Facebook-like platform in which users generate content.",
+     "marks": []
+    }
+   ],
+   "listItem": "number",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ky",
+   "style": "normal",
+   "markDefs": [
+    {
+     "_type": "link",
+     "_key": "k10",
+     "href": "https://www.matthewball.vc/all/themetaverse"
+    }
+   ],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kz",
+     "text": "For a full article of Mathew Ball click ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k11",
+     "text": "here",
+     "marks": [
+      "k10",
+      "underline"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k12",
+     "text": ".",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k13",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_9d2de499cbdb438db278208dedeb5d75~mv2.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k14",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k15",
+     "text": "So, we know what it is not, but is it here yet?",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k16",
+     "text": "",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k17",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k18",
+     "text": "Even Facebook acknowledges that the Metaverse is not here yet, as the company’s website states:",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k19",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1a",
+     "text": "‘The metaverse is the next step for social connections. Our company's vision is to bring the metaverse to life. That's why we have a new name that reflects our vision for the future’ ",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k1b",
+     "text": "",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1c",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1d",
+     "text": "and, in 2021, further states that:",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1e",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1f",
+     "text": "‘The metaverse isn’t a single product one company can build alone. Just like the internet, the metaverse exists whether Facebook is there or not. And it won’t be built overnight. Many of these products will only be fully realized in the next 10-15 years.’ ",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k1g",
+     "text": "",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1h",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1i",
+     "text": "While the Metaverse seems to be a concept of a distant future, it does not stop tech-enthusiasts, virtual aficionados, and academics to engage in the race to the perfect metaverse-definition to potentially claim the ‘I-said-it-first’-trophy that promises endless glory in the realms of the internet and academic circles.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1j",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1k",
+     "text": "The fact that the Silicon Valley elite agreed on the metaverse term is remarkable in that the future described in the, arguably dystopian, novel \"Snow Crash\" is not actually desirable. The fictional novel world is ruled by large corporations and organized crime, and the presence of digital currencies that prevent adequate taxation makes governing systems like a state largely irrelevant.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1l",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1m",
+     "text": "Given these negative connotations of the Metaverse, rather than focusing on definitions, research would provide more value to society by focusing on frameworks and processes that guide the development of an accessible, interoperable, and ethical Metaverse.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1n",
+   "style": "normal",
+   "markDefs": [
+    {
+     "_type": "link",
+     "_key": "k1p",
+     "href": "https://www.sciencedirect.com/science/article/pii/S0007681322000982"
+    }
+   ],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1o",
+     "text": "This also entails acknowledging the dark side of what will become the metaverse, and that businesses and policymakers, who likely together will shape the Metaverse, need to be aware of these dark sides. The success of scaling the metaverse as a vibrant new business ecosystem is largely dependent on the understanding that it is a unified and immersive reality where the ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k1q",
+     "text": "physical and synthetic experiences",
+     "marks": [
+      "k1p",
+      "underline"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k1r",
+     "text": " seamlessly converge.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1s",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1t",
+     "text": "So, will the Metaverse take over the world?",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k1u",
+     "text": "",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1v",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1w",
+     "text": "Let us take a step back and remember that in 1806 the Russian Academy of Science ruled:",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1z",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k20",
+     "text": "\"Petroleum is a useless secretion of the earth - a sticky liquid that smells and cannot be used in any way.”",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k21",
+     "text": "",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k22",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k23",
+     "text": "(quite ironic in times like 2022), or that in 1903 the President of the Michigan Savings back proposed:",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k24",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k25",
+     "text": "\"There will always be a horse. Cars are just a passing fad.\"",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k26",
+     "text": "",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k27",
+   "style": "normal",
+   "markDefs": [
+    {
+     "_type": "link",
+     "_key": "k29",
+     "href": "https://interestingengineering.com/culture/mark-zuckerberg-dragging-meta-to-failure"
+    },
+    {
+     "_type": "link",
+     "_key": "k2e",
+     "href": "https://www.bloomberg.com/news/newsletters/2022-02-11/the-metaverse-makes-no-sense-and-here-s-why"
+    }
+   ],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k28",
+     "text": "and now at the time of writing in 2022 there are voices of experts that propose a similar nature of development to the Metaverse. For example, ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k2a",
+     "text": "Bill George",
+     "marks": [
+      "k29",
+      "underline"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k2b",
+     "text": ", a senior fellow at Harvard Business School claims that Marc Zuckerberg ‘",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k2c",
+     "text": "has really lost his way’",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k2d",
+     "text": ", and ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k2f",
+     "text": "Bloomberg",
+     "marks": [
+      "k2e",
+      "underline"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k2g",
+     "text": " titled ‘",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k2h",
+     "text": "Companies Are Spending Billions on a Metaverse That Makes No Sense’",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k2i",
+     "text": ".",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k2j",
+   "style": "normal",
+   "markDefs": [
+    {
+     "_type": "link",
+     "_key": "k2l",
+     "href": "https://www.beyondgames.biz/16543/facebook-announces-50m-investment-to-build-the-metaverse-responsibly/"
+    }
+   ],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k2k",
+     "text": "When and whether the Metaverse will be successfully developed into the virtual ecosystem that it is hailed to be, and how many companies and governments might be involved in shaping what it could become, is difficult to predict. What we know for sure is that AR and VR will be somehow involved as a gateway to the Metaverse, as highlighted by the ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k2m",
+     "text": "increasing investments",
+     "marks": [
+      "k2l",
+      "underline"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k2n",
+     "text": " of Meta in such technologies.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k2o",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k2p",
+     "text": "We need to better understand how humans interact with these emerging technologies, and how these technologies can be used for the greater good to increase well-being, learning and development, as well as democratizing larger societies instead of driving them further apart.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k2q",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_ed2dd03b519c4d5ba731bde4613d48dd~mv2.jpg",
+   "alt": ""
+  }
+ ],
+ "embeds": []
+}

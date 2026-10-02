@@ -1,0 +1,193 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/meet-our-first-international-intern",
+ "slug": "meet-our-first-international-intern",
+ "title": "Meet our first international intern!",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "augmented-research"
+  },
+  "dateModified": "2023-04-12T11:02:42.047Z",
+  "datePublished": "2023-04-12T11:00:30.387Z",
+  "headline": "Meet our first international intern!",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/meet-our-first-international-intern",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/meet-our-first-international-intern"
+  },
+  "description": "Hello everyone,My name is Moritz Wigger and I am an exchange student from the Armed Forces University in Munich, Germany. Here in Maastricht, I got the opportunity for an internship at the DEXLab for five months to do research for my master thesis.As a Management &amp; Media (MM) student I focused in my masters on XR, because I am always surprised by what chances and opportunities this technology brings us. With my master thesis I want to explore the different forms of interaction with holographic c",
+  "url": "https://www.sbe-dexlab.com/post/meet-our-first-international-intern",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/9aa9b6_2a93fd3d22634d9d8bdfb72ba38b50a2~mv2.png/v1/fill/w_626,h_776,al_c,lg_1,q_90/9aa9b6_2a93fd3d22634d9d8bdfb72ba38b50a2~mv2.png",
+   "width": "522",
+   "height": "647"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [
+  "https://www.sbe-dexlab.com/blog/categories/meet-the-team"
+ ],
+ "og": "https://static.wixstatic.com/media/9aa9b6_2a93fd3d22634d9d8bdfb72ba38b50a2~mv2.png/v1/fill/w_626,h_776,al_c,lg_1,q_90/9aa9b6_2a93fd3d22634d9d8bdfb72ba38b50a2~mv2.png",
+ "body": [
+  {
+   "_type": "block",
+   "_key": "k0",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1",
+     "text": "Hello everyone,",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k2",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_2a93fd3d22634d9d8bdfb72ba38b50a2~mv2.png",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k3",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k4",
+     "text": "My name is Moritz Wigger and I am an exchange student from the Armed Forces University in Munich, Germany. Here in Maastricht, I got the opportunity for an internship at the DEXLab for five months to do research for my master thesis.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k5",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k6",
+     "text": "As a Management & Media (MM) student I focused in my masters on XR, because I am always surprised by what chances and opportunities this technology brings us. With my master thesis I want to explore the different forms of interaction with holographic content. Luckily, the DEXLab has a fantastic array of technology that allows me to experiment and conduct exciting research for my thesis.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k7",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k8",
+     "text": "I was born and raised in Leverkusen, Germany. After graduating high school, I decided to take a big step at the age of 17 and join the army as an officer cadet and enlisting for 13 years. After joining the light infantry, I did my basic training for six months in Hammelburg, a little town in Franconia. After that I attended the Army Officers’ School in Dresden, afterwards I served another 4 months in a light infantry battalion in Hessia.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k9",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ka",
+     "text": "All these hurdles successfully mastered, I could attend the Armed Forces University in Munich in 2019. Furthermore, in summer 2022 I got the chance to visit the University of Texas in Austin ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kb",
+     "text": "(Hook’em Horns!)",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kc",
+     "text": ". During my two months in the United States, I’ve learned a lot, not just in academic terms, but also about the people and the country itself!",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kd",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ke",
+     "text": "In my free time I am a passionate triathlete! Currently I am training for my first Ironman, taking place on 4th of June in Hamburg. From all three sports I love running the most, especially together with my girlfriend. I also played football for 15 years and I am a big fan of Bayer Leverkusen. I am also a big coffee lover and made my myself a mission to explore all the nice cafés here in Maastricht (recommendations welcomed).",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kf",
+   "style": "normal",
+   "markDefs": [
+    {
+     "_type": "link",
+     "_key": "kh",
+     "href": "mailto:dexlab@maastrichtuniversity.nl"
+    }
+   ],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kg",
+     "text": "So that’s me! Thank you DEXLab for giving me this opportunity to be part of this team until the end of august! If you have any questions feel free contact us via ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "ki",
+     "text": "dexlab@maastrichtuniversity.nl",
+     "marks": [
+      "kh"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kj",
+     "text": "",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kk",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kl",
+     "text": "Moritz",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "embeds": []
+}

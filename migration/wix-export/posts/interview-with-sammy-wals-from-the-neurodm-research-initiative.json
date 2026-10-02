@@ -1,0 +1,408 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/interview-with-sammy-wals-from-the-neurodm-research-initiative",
+ "slug": "interview-with-sammy-wals-from-the-neurodm-research-initiative",
+ "title": "Interview with Sammy Wals from the NeuroDM Research Initiative",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "augmented-research"
+  },
+  "dateModified": "2023-09-20T06:04:28.133Z",
+  "datePublished": "2023-09-01T07:14:39.761Z",
+  "headline": "Interview with Sammy Wals from the NeuroDM Research Initiative",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/interview-with-sammy-wals-from-the-neurodm-research-initiative",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/interview-with-sammy-wals-from-the-neurodm-research-initiative"
+  },
+  "description": "1. What is the main research focus of the Neuro-DM Initiative? The Neuro-DM initiative aims to understand consumer behavior, decision-making, and interactions with digital technologies through the use of neuroscientific- and biometric methods. We believe that these methods enable us to obtain deeper insights into consumer behavior that is occurring dynamically over time and driven by subconscious factors that are difficult to study using traditional self-report methods. 2. What makes the team of",
+  "url": "https://www.sbe-dexlab.com/post/interview-with-sammy-wals-from-the-neurodm-research-initiative",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/9aa9b6_ebcc6a62337442949a09f6d17de7562a~mv2.jpg/v1/fill/w_667,h_1000,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_ebcc6a62337442949a09f6d17de7562a~mv2.jpg",
+   "width": "3708",
+   "height": "5562"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [
+  "https://www.sbe-dexlab.com/blog/categories/interviews",
+  "https://www.sbe-dexlab.com/blog/categories/research"
+ ],
+ "og": "https://static.wixstatic.com/media/9aa9b6_ebcc6a62337442949a09f6d17de7562a~mv2.jpg/v1/fill/w_667,h_1000,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_ebcc6a62337442949a09f6d17de7562a~mv2.jpg",
+ "body": [
+  {
+   "_type": "image",
+   "_key": "k0",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_ebcc6a62337442949a09f6d17de7562a~mv2.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k1",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k2",
+     "text": "1. What is the main research focus of the Neuro-DM Initiative?",
+     "marks": [
+      "strong",
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k3",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k4",
+     "text": "The Neuro-DM initiative aims to understand consumer behavior, decision-making, and interactions with digital technologies through the use of neuroscientific- and biometric methods. We believe that these methods enable us to obtain deeper insights into consumer behavior that is occurring dynamically over time and driven by subconscious factors that are difficult to study using traditional self-report methods.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k5",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_301446e991154765be0765798b3f8068~mv2.png",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k6",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k7",
+     "text": "2. What makes the team of Neuro-DM so special? Why was a specific research group / center needed and established and who is part of it?",
+     "marks": [
+      "strong",
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k8",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k9",
+     "text": "The Neuro-DM group was founded by a dynamic group of PhD candidates, grassroots enthusiasts, and young individuals who recognized the potential of applying neuroscience to the field of marketing. Driven by their curiosity and passion for understanding consumer behavior at a deeper level, these young researchers came together with a shared vision of exploring the untapped opportunities that lay at the intersection of neuroscience and marketing. They believed that by harnessing the power of neuroscience, they could uncover valuable insights that traditional marketing approaches might overlook.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ka",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kb",
+     "text": "The group began with informal discussions and brainstorming sessions, fueled by their shared excitement and commitment to push the boundaries of marketing research. Through grassroots efforts, they garnered attention and support from both faculty members and industry professionals who saw the potential impact of neuromarketing. Recognizing the innovative nature of their work, the university administration provided them with a space to conduct their research and formalize their activities. Embracing new developments and cutting-edge technologies in neuroscience, the group obtained grants, secured access to lab space, eye-tracking devices, and other state-of-the-art equipment. This allowed them to conduct experiments and collect data that would facilitate a deeper understanding of how consumers' brains respond to marketing stimuli. The current group consists of Aline Dantas, Jaqcueline Kurz, Jenna Barrett, Marcia Diaz Claudio, Jeanette Hadaschik, Megan Verbeek, Stefan Bos and Sammy Wals.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "kc",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_8f1743e707724ad39e05755506c53fc5~mv2.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "kd",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ke",
+     "text": "3. Can you tell us more about the mission of your initiative / center? How will your research shape the world to be a better place?",
+     "marks": [
+      "strong",
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kf",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kg",
+     "text": "We aim to foster collaboration among experts from various disciplines, allowing for a more holistic understanding of consumer behavior. This interdisciplinary approach can lead to innovative insights and techniques that traditional marketing research may not uncover. Moreover, we are working to create a neuromarketing lab space in the DEXLab to provide research tools open to researchers from SBE.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kh",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ki",
+     "text": "4. What are the biggest accomplishments of your group so far?",
+     "marks": [
+      "strong",
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kj",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kk",
+     "text": "The group has been successful in obtaining a number of grants for neuromarketing research equipment. So far, we have contributed to the lab by providing facial expression analysis software with high-quality webcams, eye-tracking hardware, and recently a grant for galvanic skin response (GSR) measurements. In particular, we would like to extend special recognition to Jenna Barrett and Aline Dantas for their efforts in obtaining a grant for the eye-tracker, which has significantly enriched our research capabilities. Together with the other tools, these methods enable researchers to obtain deeper insights into consumer behavior and perform cutting-edge neuromarketing research. Moreover, our work has resulted in a number of scientific publications, please read more about this below.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "kl",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_afe8b1c2643d4410a76c7150610d79a3~mv2.png",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "km",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kn",
+     "text": "5. Can you tell us about the key learnings from your work?",
+     "marks": [
+      "strong",
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ko",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kp",
+     "text": "We recognize that a lot of consumer behavior occurs quickly and that it is driven by subconscious factors. The research has a fundamental focus aiming to understand how and why certain factors lead to certain behavior. Recent work from the group has shown how the body and brain give rise to consumer behavior, investigating the effects of the gut-brain axis, networks of brain activity, placebo effects, and many more factors impacting our behavior that are outside of our conscious awareness. Moreover, we have shown how neuromarketing methods can be used to track relevant consumer mental states, such as cognitive effort during website usage and viewer engagement during advertising exposure. These methods therefore also have utility in an applied setting to better understand and assess user experience and engagement with digital technologies. This has resulted in a number of scientific publications, including but not limited to:",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kq",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kr",
+     "text": "Dantas, A. M., Sack, A. T., Bruggen, E., Jiao, P., & Schuhmann, T. (2021). Reduced risk-        taking behavior during frontal oscillatory theta band neurostimulation. Brain      Research, 1759, 147365.",
+     "marks": [
+      "em"
+     ]
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ks",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kt",
+     "text": "Gier, N. R., Kurz, J., & Kenning, P. (2020). Online Reviews as Marketing placebo? First          Insights from Neuro-is utilising fNIRS. In ECIS.",
+     "marks": [
+      "em"
+     ]
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ku",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kv",
+     "text": "Wals, S. F., & Wichary, S. (2022). Under Pressure: Cognitive Effort During Website-     Based Task Performance is Associated with Pupil Size, Visual Exploration, and       Users’ Intention to Recommend. International Journal of Human–Computer         Interaction, 1-12.",
+     "marks": [
+      "em"
+     ]
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "kw",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kx",
+     "text": "6. Where do you see your research group in five years?",
+     "marks": [
+      "strong",
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ky",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kz",
+     "text": "In five years, we believe that SBE will have a modern neuromarketing lab to study consumer behavior with innovative methods to contribute to cutting-edge research.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k10",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k11",
+     "text": "In the short term, we aim to extend the current range of research methods available by adding EEG equipment and further improving the research infrastructure. We will work to foster adoption by organizing workshops and making more research methods available to researchers from SBE. This research infrastructure enables SBE research to perform cutting-edge neuromarketing research.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k12",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k13",
+     "text": "In the long term, we aim to broaden the scope of the group by contributing to science, industry, and education. The fields of decision neuroscience, neuromarketing, and neuroeconomics are all still relatively new and rapidly evolving. We aim to establish a strong research group, involving senior staff, which allows for the exploration of cutting-edge research topics, methodologies, and technologies. This can lead to the development of new theories, frameworks, and tools that advance both academic knowledge and industry practices. For industry, we aim to establish industry collaborations to apply these methods in practice, addressing real-world marketing challenges and providing valuable insights and solutions. For education, the developments in the lab support the reestablishment of the neuroeconomics research master. The methods in the lab could be open for use in the research master program, ensuring that students have access to the latest knowledge and practical skills in this emerging field.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k14",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_9fc7911f3fbb499ca9d941fbada2e8d9~mv2.jpeg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k15",
+   "style": "normal",
+   "markDefs": [
+    {
+     "_type": "link",
+     "_key": "k17",
+     "href": "https://www.linkedin.com/company/neurodm-research-initiative/"
+    },
+    {
+     "_type": "link",
+     "_key": "k19",
+     "href": "https://www.linkedin.com/company/neurodm-research-initiative/"
+    }
+   ],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k16",
+     "text": "Many thanks to Sammy Wals for enlightening us on the NeuroDM Research Initiative's groundbreaking efforts in neuromarketing and decision neuroscience. It's an honor to have such a dedicated team, pushing the boundaries of understanding consumer behavior and digital interactions, within the DEXLab community. Eager to learn more about NeuroDM's innovative research and stay attuned to DEXLab's evolving journey? Ensure you follow the NeuroDM Research Initiative on LinkedIn. ",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k18",
+     "text": "(",
+     "marks": [
+      "k17",
+      "em",
+      "underline"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k1a",
+     "text": "https://www.linkedin.com/company/neurodm-research-initiative/",
+     "marks": [
+      "k19",
+      "underline"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k1b",
+     "text": ").",
+     "marks": [
+      "underline"
+     ]
+    }
+   ]
+  }
+ ],
+ "embeds": []
+}

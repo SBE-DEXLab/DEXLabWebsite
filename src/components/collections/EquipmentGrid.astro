@@ -1,0 +1,122 @@
+---
+import Img from '../Img.astro'
+import {getEquipment} from '../../lib/queries'
+
+const items = await getEquipment()
+const labels: Record<string, string> = {
+  immersive: 'Immersive technology',
+  robotics: 'Robotics',
+  mobile: 'Mobile & computing',
+  biometric: 'Biometrics',
+  other: 'Other',
+}
+const categories = Object.keys(labels).filter((c) => items.some((i) => i.category === c))
+---
+
+<div data-equipment>
+  <div class="tabs" role="toolbar" aria-label="Filter equipment">
+    <button aria-pressed="true" data-filter="">All</button>
+    {categories.map((c) => <button aria-pressed="false" data-filter={c}>{labels[c]}</button>)}
+  </div>
+  <ul class="items">
+    {
+      items.map((it) => (
+        <li class="item" data-cat={it.category}>
+          <div class="img">
+            <Img image={it.image} width={240} fit="max" alt={it.name} />
+          </div>
+          <h3>{it.name}</h3>
+          {it.quantity ? <p class="qty">× {it.quantity}</p> : null}
+          {it.description && <p class="desc">{it.description}</p>}
+        </li>
+      ))
+    }
+  </ul>
+</div>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-equipment]').forEach((root) => {
+    const buttons = root.querySelectorAll<HTMLButtonElement>('[data-filter]')
+    buttons.forEach((b) =>
+      b.addEventListener('click', () => {
+        buttons.forEach((x) => x.setAttribute('aria-pressed', String(x === b)))
+        root.querySelectorAll<HTMLElement>('[data-cat]').forEach((li) => {
+          li.hidden = Boolean(b.dataset.filter) && li.dataset.cat !== b.dataset.filter
+        })
+      }),
+    )
+  })
+</script>
+
+<style>
+  .tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 32px;
+  }
+  .tabs button {
+    font: 600 0.95rem var(--font-body);
+    padding: 9px 18px;
+    border-radius: 999px;
+    border: 1.5px solid var(--line);
+    background: #fff;
+    color: var(--navy);
+    cursor: pointer;
+  }
+  .tabs button[aria-pressed='true'] {
+    background: var(--navy);
+    border-color: var(--navy);
+    color: #fff;
+  }
+  .items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 18px;
+  }
+  .item {
+    background: #fff;
+    border-radius: var(--radius);
+    padding: 22px 16px 18px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: transform 0.25s;
+  }
+  .item:hover {
+    transform: translateY(-3px);
+  }
+  .img {
+    height: 110px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 12px;
+  }
+  .img :global(img) {
+    max-height: 110px;
+    width: auto;
+    object-fit: contain;
+  }
+  h3 {
+    font-size: 1rem;
+    margin: 0;
+  }
+  .qty {
+    display: inline-block;
+    margin: 8px 0 0;
+    font-weight: 700;
+    color: var(--orange);
+    background: var(--peach-2);
+    border-radius: 999px;
+    padding: 2px 12px;
+    font-size: 0.9rem;
+  }
+  .desc {
+    font-size: 0.88rem;
+    color: var(--muted);
+    margin: 8px 0 0;
+  }
+</style>

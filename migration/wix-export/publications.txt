@@ -1,0 +1,82 @@
+2025
+Chong, T., Yu, T., Keeling, D. I., de Ruyter, K., & Hilken, T. (2025). Value-by-Proxy: Engaging Stakeholders in AI Service Interactions. JOURNAL OF PRODUCT INNOVATION MANAGEMENT, 1-50.
+Dong, X., Hu, C., Heller, J., & Deng, N. (2025). Does using augmented reality in online shopping affect post-purchase product perceptions? A mixed design using machine-learning based sentiment analysis, lab experiments, and focus groups. International Journal of Information Management, 82, 102872.
+Herold, S., Heller, J., Rozemeijer, F., & Mahr, D. (2025). Brave New Procurement Deals: An Experimental Study of how Generative Artificial Intelligence Reshapes Buyer–Supplier Negotiations. Journal of Purchasing and Supply Management, 101012.
+Mahr, D., Odekerken-Schröder, G., & van Doorn, J. (2025). Evolution of service robots in marketing: A relational framework and future research agenda. Journal of Business Research, 192, 115204.
+Peusen, B., Mennens, K., & Mahr, D. (2025). Partner, master, or servant? How older adults experience their relationship with socially assistive robots. In Handbook of Service Experience(pp. 162-175). Edward Elgar Publishing.
+Phillips, C., Odekerken-Schröder, G., Russell-Bennett, R., Steins, M., Mahr, D., & Letheren, K. (2025). Service robot–employee task allocation strategies: well-being within the intrusion challenge. Journal of Service Management.
+2024
+Barrett, J. A. M., Jaakkola, E., Heller, J., & Brüggen, E. C. (2024). Customer engagement in utilitarian vs. hedonic service contexts. Journal of Service Research, 10946705241242901
+Mahr, D., Odekerken‐Schröder, G., & Steins, M. (2024). Service robots and innovation: An ecosystem approach. Journal of Product Innovation Management.
+Mennens, K., Becker, M., Briker, R., Mahr, D., & Steins, M. (2024). I Care That You Don’t Share: Confidentiality in Student-Robot Interactions. Journal of Service Research, 10946705241295849.
+Moonen, N., Heller, J., Hilken, T., Danny Han, D. I., & Mahr, D. (2024). Immersion or social presence? Investigating the effect of virtual reality immersive environments on sommelier learning experiences. Journal of Wine Research, 35(2), 101-118.
+Phillips, C., Becker, M., Odekerken-Schröder, G., & Mahr, D. (2024). Introducing the Service Robot Innovation Canvas. In The Impact of Digitalization on Current Marketing Strategies(pp. 97-115). Emerald Publishing Limited.
+Rauschnabel, P. A., Felix, R., Heller, J., & Hinsch, C. (2024). The 4C framework: Towards a holistic understanding of consumer engagement with augmented reality. Computers in Human Behavior, 154, 108105.
+Schiefer, T., Mahr, D., van Fenema, P. C., & Mennens, K. (2024). A collaborative approach to manage continuous service innovation. Technovation, 134, 103029.
+Sidaoui, K., Mahr, D., & Odekerken-Schröder, G. (2024). Generative AI in Responsible Conversational Agent Integration: Guidelines for Service Managers. Organizational Dynamics, 101045.
+Spanjol, J., Noble, C. H., Baer, M., Bogers, M. L., Bohlmann, J., Bouncken, R. B., ... & Wetzels, M. (2024). Fueling innovation management research: Future directions and five forward‐looking paths. Journal of Product Innovation Management, 41(5), 893-948.
+Stallone, V., Wetzels, M., Mahr, D., & Klaas, M. (2024). Enhancing Digital Advertising with Blockchain Technology. Journal of Interactive Marketing, 59(1), 76-98.
+Steins, M., Becker, M., Odekerken-Schröder, G., Mathmann, F., Mahr, D., & Russell-Bennett, R. (2024). Do we think and feel Alike? field evidence on developing a shared reality when dealing with service robots. Journal of Business Research, 180, 114729.
+Werf, M., Meacham, D., Brüggen, E., Hogreve, J., Heller, J., Gianni, R., & Post, T. (2024). Challenges of Automated Financial Advice: Definition and Ethical Considerations. Netspar.
+Windhausen, A., Heller, J., Hilken, T., Mahr, D., Di Palma, R., & Quintens, L. (2024). Exploring the impact of augmented reality smart glasses on worker well-being in warehouse order picking. Computers in Human Behavior, 155, 108153.
+2023
+Becker, M., Mahr, D., & Odekerken-Schröder, G. (2023). Customer comfort during service robot interactions. Service Business, 17(1), 137-165.
+Ciuchita, R., Heller, J., Köcher, S., Köcher, S., Leclercq, T., Sidaoui, K., & Stead, S. (2023). It is really not a game: An integrative review of gamification for service research. Journal of Service Research, 26(1), 3-20.
+Glebova, E., Book, R., Su, Y., Perić, M., & Heller, J. (2023). Sports venue digital twin technology from a spectator virtual visiting perspective. Frontiers in Sports and Active Living, 5.
+Heller, J., Mahr, D., de Ruyter, K., Schaap, E., Hilken, T., Keeling, D. I., ... & Rauschnabel, P. A. (2023). An interdisciplinary Co-authorship networking perspective on AR and human behavior: Taking stock and moving ahead. Computers in Human Behavior, 143, 107697.
+Herold, S., Heller, J., Rozemeijer, F., & Mahr, D. (2023). Dynamic capabilities for digital procurement transformation: a systematic literature review. International Journal of Physical Distribution & Logistics Management, 53(4), 424-447.
+Mahr, D., De Ruyter, K., & Heller, J. (2023). Augmented Reality: The blurring of reality in human computer interaction.
+Mahr, D., Heller, J., Hilken, T., & Wigger, M. (2023). Die Innovation synthetischer Kunden erlebnisse: Machen ist wichtiger als Denken. Transfer: Zeitschrift für Kommunikation & Markenmanagement, 69(3).
+Pfeifer, P., Hilken, T., Heller, J., Alimamy, S., & Di Palma, R. (2023). More than meets the eye: In-store retail experiences with augmented reality smart glasses. Computers in Human Behavior, 146, 107816.
+Phillips, C., Russell–Bennett, R., Odekerken-Schröder, G., Mahr, D., & Letheren, K. (2023). The Robotic-Human Service Trilemma: the challenges for well-being within the human service triad. Journal of Service Management, 34(4), 770-805.
+Guha, A., Bressgott, T., Grewal, D., Mahr, D., Wetzels, M., & Schweiger, E. (2023). How artificiality and intelligence affect voice assistant evaluations. Journal of the Academy of Marketing Science, 51(4), 843-866.
+Hilken, T., Heller, J., & Mahr, D. (2023). Closing the Customer Imagination Gap with Augmented and Virtual Reality. NIM Marketing Intelligence Review, 15(2), 30-35.
+2022
+Chylinski, M., & Heller, J. (2022). The customer loyalty journey-technology enabled loyalty touchpoints. In Handbook of research on customer loyalty (pp. 42-54). Edward Elgar Publishing.
+Golf-Papez, M., Heller, J., Hilken, T., Chylinski, M., de Ruyter, K., Keeling, D. I., & Mahr, D. (2022). Embracing falsity through the metaverse: The case of synthetic customer experiences. Business Horizons, 65(6), 739-749.
+Heller, J. (2022). Predicting demographics based on eye tracking data using machine learning (Master's thesis).
+Hilken, T., Chylinski, M., de Ruyter, K., Heller, J., & Keeling, D. I. (2022). Exploring the frontiers in reality-enhanced service communication: from augmented and virtual reality to neuro-enhanced reality. Journal of Service Management, 33(4/5), 657-674.
+Hilken, T., Chylinski, M., Keeling, D. I., Heller, J., de Ruyter, K., & Mahr, D. (2022). How to strategically choose or combine augmented and virtual reality for improved online experiential retailing. Psychology & Marketing, 39(3), 495-507
+Hilken, T., Heller, J., Keeling, D. I., Chylinski, M., Mahr, D., & de Ruyter, K. (2022). Bridging imagination gaps on the path to purchase with augmented reality: Field and experimental evidence. Journal of Interactive Marketing, 57(2), 356-375.
+Hilken, T., Keeling, D. I., Chylinski, M., De Ruyter, K., Golf Papez, M., Heller, J., ... & Alimamy, S. (2022). Disrupting marketing realities: A research agenda for investigating the psychological mechanisms of next‐generation experiences with reality‐enhancing technologies. Psychology & Marketing, 39(8), 1660-1671.
+Hilken, T., Mahr, D., & Han, D. I. D. (2022). Building customer loyalty with augmented reality: current and future trends. Handbook of Research on Customer Loyalty, 274-290.
+Mahr, D., Hilken, T., & Bressgott, T. (2022). Habitual behaviour: design for automaticity during customer loyalty decisions. In Handbook of Research on Customer Loyalty (pp. 228-243). Edward Elgar Publishing.
+Ruggiero, A., Mahr, D., Odekerken-Schröder, G., Spena, T. R., & Mele, C. (2022). Companion robots for well-being: a review and relational framework. Research handbook on services management, 309-330.
+2021
+Heller, J., Chylinski, M., de Ruyter, K., Keeling, D. I., Hilken, T., & Mahr, D. (2021). Tangible service automation: Decomposing the technology-enabled engagement process (TEEP) for augmented reality. Journal of Service Research, 24(1), 84-103.
+Lammerding, L., Hilken, T., Mahr, D., & Heller, J. (2021). Too real for comfort: Measuring consumers’ augmented reality information privacy concerns. In Augmented reality and virtual reality: New trends in immersive technology (pp. 95-108). Cham: Springer International Publishing.
+Odekerken-Schröder, G., Mennens, K., Steins, M., & Mahr, D. (2021). The service triad: an empirical study of service robots, customers and frontline employees. Journal of Service Management, 33(2), 246-292.
+2020
+Čaić, M., Avelino, J., Mahr, D., Odekerken-Schröder, G., & Bernardino, A. (2020). Robotic versus human coaches for active aging: An automated social presence perspective. , (4), 867-882. International Journal of Social Robotics, 12(4), 867-882.
+Chylinski, M., Heller, J., Hilken, T., Keeling, D. I., Mahr, D., & de Ruyter, K. (2020). Augmented reality marketing: A technology-enabled approach to situated customer experience. Australasian Marketing Journal (AMJ).
+De Ruyter, K., Heller, J., Hilken, T., Chylinski, M., Keeling, D. I., & Mahr, D. (2020). Seeing with the customer’s eye: Exploring the challenges and opportunities of AR advertising. Journal of Advertising, 49(2), 109-124.
+Hilken, T., Keeling, D. I., de Ruyter, K., Mahr, D., & Chylinski, M. (2020). Seeing eye to eye: social augmented reality and shared decision making in the marketplace. Journal of the Academy of Marketing Science, 48(2), 143-164.
+Odekerken-Schröder, G., Mele, C., Russo-Spena, T., Mahr, D., & Ruggiero, A. (2020). Mitigating loneliness with companion robots in the COVID-19 pandemic and beyond: an integrative framework and research agenda. Journal of Service Management, 31(6), 1149-1162.
+Jessen, A., Hilken, T., Chylinski, M., Mahr, D., Heller, J., Keeling, D. I., & de Ruyter, K. (2020). The playground effect: How augmented reality drives creative customer engagement. Journal of Business Research, 116, 85-98.
+Van Esch, P., Northey, G., Duffy, S., Heller, J., & Striluk, M. (2020). The moderating influence of country of origin information seeking on homophily and product satisfaction. In Country of Origin Effect (pp. 40-56). Routledge.
+Van Pinxteren, M. M., Pluymaekers, M., & Lemmink, J. G. (2020). Human-like communication in conversational agents: a literature review and research agenda. Journal of Service Management.
+2019
+Carrozzi, A., Chylinski, M., Heller, J., Hilken, T., Keeling, D. I., & de Ruyter, K. (2019). What's mine is a hologram? How shared augmented reality augments psychological ownership. Journal of Interactive Marketing, 48, 71-88.
+Heller, J. (2019). Reality Re-Imagined: How augmented reality redefines decision processes and consumer behaviour in retailing (Doctoral dissertation, UNSW Sydney).
+Heller, J., Chylinski, M., de Ruyter, K., Mahr, D., & Keeling, D. I. (2019). Touching the untouchable: exploring multi-sensory augmented reality in the context of online retailing. Journal of Retailing, 95(4), 219-234.
+Heller, J., Chylinski, M., de Ruyter, K., Mahr, D., & Keeling, D. I. (2019). Let me imagine that for you: Transforming the retail frontline through augmenting customer mental imagery ability. Journal of Retailing, 95(2), 94-114.
+Van Esch, P., Duffy, S. M., Teufel, J., Northey, G., Elder, E., Frethey-Bentham, C., ... & Heller, J. (2019). ExerStart: helping seniors be active and independent for less. Journal of Social Marketing, 9(2), 146-160.
+Van Esch, P., Heller, J., & Northey, G. (2019). The effects of inner packaging color on the desirability of food. Journal of Retailing and Consumer Services, 50, 94-102.
+2018
+Čaić, M., Odekerken-Schröder, G., & Mahr, D. (2018). Service robots: value co-creation and co-destruction in elderly care networks. Journal of Service Management, 29(2), 178-205.
+Hilken, T. (2018). Seeing is believing: Enhancing the customer experience with augmented reality.
+Hilken, T., Heller, J., Chylinski, M., Keeling, D. I., Mahr, D., & de Ruyter, K. (2018). Making omnichannel an augmented reality: the current and future state of the art. Journal of Research in Interactive Marketing.
+Mahr, D., Lievens, A., & Blazevic, V. (2014). The value of customer cocreated knowledge during the innovation process. Journal of Product Innovation Management, 31(3), 599-615.
+Rozemeijer, F., Quintens, L., & Heller, J. (2018). Buyers better be social: Job-related social media use as enabler for creativity in procurement. In Purchasing and Supply Chain Management: Fostering Innovation: IPSERA 2018 Conference Proceedings (pp. 657-672). IPSERA.
+2017
+Heller, J., de Ruyter, K., & Chylinski, M. (2017). Augmented shopping in a socially situated context: The role of augmentation on purchase decision satisfaction in an online shopping environment.
+Hilken, T., de Ruyter, K., Chylinski, M., Mahr, D., & Keeling, D. I. (2017). Augmenting the eye of the beholder: exploring the strategic potential of augmented reality to enhance online service experiences. Journal of the Academy of Marketing Science, 45(6), 884-905.
+Van Esch, P., Geisler, A., Kleintop, L., Northey, G., & Heller, J. (2017). The Role of Women, Sexualization and Objectification in LGBTQ Advertising. Advances in Consumer Research, 45, 928-929.
+2016
+Heller, J., Chylinski, M., Northey, G., de Ruyter, K., Sinha, A., van Esch, P., ... & Mahr, D. (2016). Topology of augmented commerce: The state and directions for future research. In ANZMAC Conference 2016" Marketing in a Post-Disciplinary Era" Proceedings (pp. 88-95). University of Canterbury, Department of Management, Marketing and Entrepreneurship, College of Business and Law.
+Kiratli, N., Rozemeijer, F., Hilken, T., de Ruyter, K., & de Jong, A. (2016). Climate setting in sourcing teams: Developing a measurement scale for team creativity climate. Journal of Purchasing and Supply Management, 22(3), 196-204.
+Van Esch, P., Northey, G., Chylinski, M., Heller, J., De Ruyter, K., Sinha, A., & Hilken, T. (2016). Augmented reality: Consumer saviour or disruptive agent in the retail power pendulum. In Australian and New Zealand Marketing Academy Conference (ANZMAC) (pp. 728-728).
+2015
+Aguirre, E., Mahr, D., Grewal, D., De Ruyter, K., & Wetzels, M. (2015). Unraveling the personalization paradox: The effect of information collection and trust-building strategies on online advertisement effectiveness. Journal of retailing, 91(1), 34-49.
+2014
+Mahr, D., Lievens, A., & Blazevic, V. (2014). The value of customer cocreated knowledge during the innovation process. Journal of Product Innovation Management, 31(3), 599-615.

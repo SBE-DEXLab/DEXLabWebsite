@@ -1,0 +1,201 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/meet-the-new-dexlab-intern",
+ "slug": "meet-the-new-dexlab-intern",
+ "title": "Meet the new DEXLab intern!",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "augmented-research"
+  },
+  "dateModified": "2023-02-09T09:42:44.566Z",
+  "datePublished": "2023-02-09T09:42:44.566Z",
+  "headline": "Meet the new DEXLab intern!",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/meet-the-new-dexlab-intern",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/meet-the-new-dexlab-intern"
+  },
+  "description": "Hello everyone,My name is Philipp, and I am the new intern at the DEXLab. As a Business Engineering (BE) student in my final semester, we are required to do an internship, which will eventually get paired with our Bachelor Thesis. In my fourth semester, I had the chance to practice a presentation with VR in the DEXLab. When I had to come up with an internship, it quickly came to my mind that I could ask Roberta and the DEXLab team whether they can take me as an intern. Thankfully they agreed and",
+  "url": "https://www.sbe-dexlab.com/post/meet-the-new-dexlab-intern",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/9aa9b6_9a0c8b59cb4a4a9181417a2c9919befa~mv2.png/v1/fill/w_834,h_834,al_c,q_90/9aa9b6_9a0c8b59cb4a4a9181417a2c9919befa~mv2.png",
+   "width": "834",
+   "height": "834"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [
+  "https://www.sbe-dexlab.com/blog/categories/meet-the-team"
+ ],
+ "og": "https://static.wixstatic.com/media/9aa9b6_9a0c8b59cb4a4a9181417a2c9919befa~mv2.png/v1/fill/w_834,h_834,al_c,q_90/9aa9b6_9a0c8b59cb4a4a9181417a2c9919befa~mv2.png",
+ "body": [
+  {
+   "_type": "block",
+   "_key": "k0",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1",
+     "text": "Hello everyone,",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k2",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_9a0c8b59cb4a4a9181417a2c9919befa~mv2.png",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k3",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k4",
+     "text": "My name is Philipp, and I am the new",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k5",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k6",
+     "text": "intern at the DEXLab. As a Business Engineering (BE) student in my final semester, we are required to do an internship, which will eventually get paired with our Bachelor Thesis. In my fourth semester, I had the chance to practice a presentation with VR in the DEXLab. When I had to come up with an internship, it quickly came to my mind that I could ask Roberta and the DEXLab team whether they can take me as an intern. Thankfully they agreed and here I am, the first official intern of the Digital Experience Lab!",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k7",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k8",
+     "text": "I was born and raised in Essen, Germany. After finishing my A-levels in 2017, I decided to go abroad and travelled to New Zealand with a friend of mine. During this time, I worked on construction sites and orchards, really diving into a completely different lifestyle to what I was used to back home. After eight months in this stunning country, we decided to head back home while visiting some countries in Asia (Singapore, Malaysia, Thailand, Myanmar, Nepal, India). This was definitely one of the craziest experiences I had in my life.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k9",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ka",
+     "text": "After a couple of months back home I realized that I was not ready to do anything ‘serious’ and when one of my best friends from home approached me and asked whether I would join him on a trip to Australia, I could not refuse (my parents weren’t amused but they did not stop me either).  In January 2019, I packed my backpack again and flew to Sydney. While having lots of similarities with New Zealand, Australia had its unique charm and can be different at times. I really enjoyed it and can highly recommend it to anyone who is not sure whether to go or not!",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kb",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kc",
+     "text": "Unfortunately, also this time had to come to an end. Partly due to Corona, I was back in Essen in March 2020 and had to decide how I would continue in my life. Luckily, another friend of mine just started his MSP Bachelor and jokingly said: ‘Why don’t you also come to Maastricht?’. I jumped on the website and saw the newly created Business Engineering program. Well, I guess the rest speaks for itself!",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kd",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ke",
+     "text": "A little bit more about myself: I love sports! I am an eager climber myself (recommendation in Maastricht: Radium Boulders!!). I also played basketball for many years and still am a huge fan (mostly NBA). Other than that, I really enjoy watching Formula One, Tennis, Darts, Football, Parkour/Free-running and Poker. I also love music and have been playing the piano and guitar for quite some years.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kf",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kg",
+     "text": "That’s it about me! A huge thanks to the DEXLab-Team for giving me the opportunity to be part of its journey as an intern! I am looking forward to the next five months.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kh",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ki",
+     "text": "If you have any questions regarding the lab, do not hesitate to write an email to dexlab@maastrichtuniversity.nl",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kj",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kk",
+     "text": "Have a great day everyone and enjoy Maastricht!",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kl",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "km",
+     "text": "Philipp",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "embeds": []
+}

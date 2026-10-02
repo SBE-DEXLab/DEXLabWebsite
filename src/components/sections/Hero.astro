@@ -1,0 +1,174 @@
+---
+import Img from '../Img.astro'
+import Buttons from '../Buttons.astro'
+import {brandify} from '../../lib/utils'
+import type {Img as ImgT, Link} from '../../lib/types'
+
+interface Props {
+  heading: string
+  eyebrow?: string
+  subheading?: string
+  image?: ImgT
+  layout?: 'overlay' | 'banner' | 'plain'
+  buttons?: Link[]
+  first?: boolean
+}
+const {heading, eyebrow, subheading, image, buttons, first = true} = Astro.props
+const layout = image?.url ? Astro.props.layout || 'banner' : 'plain'
+const H = first ? 'h1' : 'h2'
+// Respect the hotspot editors set in Sanity; default keeps faces in frame.
+const focus = image?.hotspot ? `${image.hotspot.x * 100}% ${image.hotspot.y * 100}%` : '50% 30%'
+---
+
+{
+  layout === 'overlay' ? (
+    <section class="hero overlay">
+      <Img image={image} width={1800} fit="max" class="bg" eager={first} style={`object-position: ${focus}`} />
+      <div class="container inner on-dark">
+        {eyebrow && <span class="eyebrow">{eyebrow}</span>}
+        <H set:html={brandify(heading)} />
+        {subheading && <p class="lead">{subheading}</p>}
+        <Buttons buttons={buttons} />
+      </div>
+    </section>
+  ) : layout === 'banner' ? (
+    <section class="hero banner">
+      <div class="banner-img">
+        <Img image={image} width={1800} fit="max" eager={first} style={`object-position: ${focus}`} />
+      </div>
+      <div class="container">
+        <div class="banner-card">
+          {eyebrow && <span class="eyebrow">{eyebrow}</span>}
+          <H set:html={brandify(heading)} />
+          {subheading && <p class="lead">{subheading}</p>}
+          <Buttons buttons={buttons} center />
+        </div>
+      </div>
+    </section>
+  ) : (
+    <section class="hero plain">
+      <div class="glow" aria-hidden="true" />
+      <div class="container narrow-wide">
+        {eyebrow && <span class="eyebrow">{eyebrow}</span>}
+        <H set:html={brandify(heading)} />
+        {subheading && <p class="lead">{subheading}</p>}
+        <Buttons buttons={buttons} center />
+      </div>
+    </section>
+  )
+}
+
+<style>
+  .hero {
+    position: relative;
+    text-align: center;
+  }
+  .lead {
+    font-size: clamp(1.05rem, 1.6vw, 1.22rem);
+    color: var(--muted);
+    max-width: 780px;
+    margin: 0 auto;
+  }
+
+  /* overlay: full-bleed photo with text */
+  .overlay {
+    min-height: min(82vh, 760px);
+    display: grid;
+    align-items: end;
+    text-align: left;
+    color: #fff;
+    overflow: hidden;
+  }
+  .overlay :global(.bg) {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .overlay::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(180deg, rgb(7 28 61 / 0.05) 0%, rgb(7 28 61 / 0.55) 50%, rgb(7 28 61 / 0.92) 100%),
+      linear-gradient(90deg, rgb(7 28 61 / 0.55), transparent 70%);
+  }
+  .overlay .inner {
+    position: relative;
+    z-index: 1;
+    padding-block: clamp(120px, 18vh, 200px) clamp(48px, 8vh, 88px);
+  }
+  .overlay :global(h1),
+  .overlay :global(h2) {
+    color: #fff;
+    max-width: 880px;
+    font-size: clamp(2.4rem, 6vw, 4.4rem);
+  }
+  .overlay :global(.brand-dex) {
+    color: #4cc6f0;
+  }
+  .overlay :global(.brand-lab) {
+    color: #ff7a45;
+  }
+  .overlay .eyebrow {
+    color: var(--peach);
+  }
+  .overlay .lead {
+    color: #e4ebf5;
+    margin: 0;
+    max-width: 700px;
+  }
+
+  /* banner: photo with an overlapping text card */
+  .banner-img {
+    height: clamp(220px, 38vw, 480px);
+    overflow: hidden;
+    background: var(--grey);
+  }
+  .banner-img :global(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .banner-card {
+    position: relative;
+    margin: clamp(-120px, -8vw, -48px) auto 0;
+    max-width: 920px;
+    background: #fff;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-lg);
+    padding: clamp(28px, 5vw, 56px);
+  }
+  .banner-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    translate: -50% 0;
+    width: 96px;
+    height: 5px;
+    border-radius: 0 0 6px 6px;
+    background: linear-gradient(90deg, var(--blue) 0 50%, var(--orange) 50% 100%);
+  }
+
+  /* plain: text only, with soft brand glow */
+  .plain {
+    padding-block: clamp(64px, 10vw, 120px) clamp(40px, 6vw, 72px);
+    overflow: hidden;
+    background: linear-gradient(180deg, var(--peach-2), #fff);
+  }
+  .glow {
+    position: absolute;
+    inset: -40% -10% auto;
+    height: 140%;
+    background:
+      radial-gradient(40% 50% at 20% 30%, rgb(0 162 219 / 0.14), transparent 70%),
+      radial-gradient(35% 45% at 85% 20%, rgb(232 78 16 / 0.12), transparent 70%);
+    pointer-events: none;
+  }
+  .plain .container {
+    position: relative;
+    max-width: 960px;
+  }
+</style>

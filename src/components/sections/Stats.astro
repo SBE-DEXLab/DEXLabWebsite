@@ -1,0 +1,118 @@
+---
+import {brandify} from '../../lib/utils'
+
+interface Props {
+  heading?: string
+  caption?: string
+  items?: {_key: string; value: string; label?: string}[]
+  tone?: string
+}
+const {heading, caption, items = [], tone = 'muted'} = Astro.props
+---
+
+<section class:list={['section stats', `tone-${tone}`]}>
+  <div class="container">
+    {heading && <h2 class="center-h" set:html={brandify(heading)} />}
+    {caption && <p class="caption">{caption}</p>}
+    <dl class="stats-grid" style={`--n: ${items.length}`}>
+      {
+        items.map((s) => (
+          <div class="stat">
+            <dt>{s.label}</dt>
+            <dd data-count={s.value}>{s.value}</dd>
+          </div>
+        ))
+      }
+    </dl>
+  </div>
+</section>
+
+<script>
+  // Count numbers up when they scroll into view.
+  const els = document.querySelectorAll<HTMLElement>('[data-count]')
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  if (!reduce && 'IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      for (const e of entries) {
+        if (!e.isIntersecting) continue
+        io.unobserve(e.target)
+        const el = e.target as HTMLElement
+        const raw = el.dataset.count || ''
+        const m = /^([^\d]*)([\d,.]+)(.*)$/.exec(raw)
+        if (!m) continue
+        const target = Number(m[2].replace(/,/g, ''))
+        const start = performance.now()
+        const tick = (t: number) => {
+          const p = Math.min(1, (t - start) / 1200)
+          const v = Math.round(target * (1 - Math.pow(1 - p, 3)))
+          el.textContent = m[1] + v.toLocaleString('en-GB') + m[3]
+          if (p < 1) requestAnimationFrame(tick)
+        }
+        requestAnimationFrame(tick)
+      }
+    }, {threshold: 0.5})
+    els.forEach((el) => io.observe(el))
+  }
+</script>
+
+<style>
+  .stats {
+    padding-block: clamp(48px, 7vw, 80px);
+  }
+  .center-h {
+    text-align: center;
+  }
+  .caption {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: 0.85rem;
+    font-weight: 600;
+    opacity: 0.8;
+    margin-bottom: 28px;
+  }
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(var(--n), minmax(0, 1fr));
+    gap: 24px;
+    margin: 0;
+    text-align: center;
+  }
+  .stat {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  dd {
+    margin: 0;
+    font-family: var(--font-head);
+    font-weight: 800;
+    font-size: clamp(2.6rem, 6vw, 4.2rem);
+    line-height: 1;
+    letter-spacing: -0.03em;
+    color: var(--navy);
+    font-variant-numeric: tabular-nums;
+  }
+  .tone-navy dd {
+    color: #fff;
+  }
+  .stat:nth-child(even) dd {
+    color: var(--blue);
+  }
+  .tone-navy .stat:nth-child(even) dd {
+    color: #4cc6f0;
+  }
+  dt {
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.82rem;
+    font-weight: 600;
+    opacity: 0.8;
+  }
+  @media (max-width: 640px) {
+    .stats-grid {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 36px;
+    }
+  }
+</style>

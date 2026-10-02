@@ -1,0 +1,361 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/maastrichtmba-goes-metaverse",
+ "slug": "maastrichtmba-goes-metaverse",
+ "title": "MaastrichtMBA goes Metaverse",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "augmented-research"
+  },
+  "dateModified": "2022-11-18T10:54:37.327Z",
+  "datePublished": "2022-11-18T10:54:37.327Z",
+  "headline": "MaastrichtMBA goes Metaverse",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/maastrichtmba-goes-metaverse",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/maastrichtmba-goes-metaverse"
+  },
+  "description": "&#010;On November 8 and 9, the DEXLab hosted an enthusiastic group of MaastrichtMBA students for two teaching modules on Marketing in the Metaverse. Following John Keats’ proverb that “nothing ever becomes real till it is experienced”, we kicked things off with a hands-on workshop with four metaverse technologies:  • Shared spaces in Virtual Reality: 3,2,1, see you on the other side… and suddenly everyone was immersed a shared virtual environment they could explore with their personalized avatar and ",
+  "url": "https://www.sbe-dexlab.com/post/maastrichtmba-goes-metaverse",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/9aa9b6_f63a23790f654c55afe020320f095f54~mv2.jpg/v1/fill/w_1000,h_750,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_f63a23790f654c55afe020320f095f54~mv2.jpg",
+   "width": "4032",
+   "height": "3024"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [
+  "https://www.sbe-dexlab.com/blog/categories/digital-education"
+ ],
+ "og": "https://static.wixstatic.com/media/9aa9b6_f63a23790f654c55afe020320f095f54~mv2.jpg/v1/fill/w_1000,h_750,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_f63a23790f654c55afe020320f095f54~mv2.jpg",
+ "body": [
+  {
+   "_type": "block",
+   "_key": "k0",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1",
+     "text": "On November 8 and 9, the DEXLab hosted an enthusiastic group of MaastrichtMBA students for two teaching modules on ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k2",
+     "text": "Marketing in the Metaverse. ",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k3",
+     "text": "Following John Keats’ proverb that “nothing ever becomes real till it is experienced”, we kicked things off with a hands-on workshop with four metaverse technologies:",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k4",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k5",
+     "text": "Shared spaces in Virtual Reality:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k6",
+     "text": " 3,2,1, see you on the other side… and suddenly everyone was immersed a shared virtual environment they could explore with their personalized avatar and discover a hidden ‘portal’ into a virtual art gallery with unique NFT art on display. Hosted by Tim Hilken – DEXLab Director",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "image",
+   "_key": "k7",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_f63a23790f654c55afe020320f095f54~mv2.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k8",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k9",
+     "text": "Marketing Skills in Virtual Reality:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "ka",
+     "text": " When the annual presentation to the Board is coming up but practicing in front of the mirror just doesn’t cut it… Using our unique VR presentation skills software, everyone could practice their pitch in front of a lifelike audience and received AI-based, personalized feedback. Hosted by Roberta Di Palma – DEXLab Coordinator",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "image",
+   "_key": "kb",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_cc0ce9e62b1343ef8f9223808b19e476~mv2.png",
+   "alt": ""
+  },
+  {
+   "_type": "image",
+   "_key": "kc",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_242c3462cd424db195cee6b4a9c203c5~mv2.jpeg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "kd",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ke",
+     "text": "Holograms in Augmented Reality:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kf",
+     "text": " Wait a moment, are these for real…? Participants put on the Microsoft HoloLens and were in awe as a gamified world with four magic islands appeared around them. Walking through the room, they could explore the islands and strike up a conversation with their surprisingly chatty inhabitants. ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kg",
+     "text": "Hosted by Alexandru Maris – Digital Marketing Specialist",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kh",
+     "text": "",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ki",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kj",
+     "text": "Brain-computer interfaces for Consumers",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kk",
+     "text": ": What do you mean ‘use your thoughts to move the digital cube’? Is this like ‘use the force, Luke’? Yes, in way that is how so-called BCIs work. Participants put on a sleek-looking EEG headset and after successful calibration could not only see their brain activity, but also try to control digital objects on the screen of a laptop. ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kl",
+     "text": "Hosted by Alexander Kies – DEXLab Visiting Reseacher from RWTH Aachen",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "km",
+     "text": "",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "image",
+   "_key": "kn",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_2c62a746b30b43499d7ed6920c46647a~mv2.png",
+   "alt": ""
+  },
+  {
+   "_type": "image",
+   "_key": "ko",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_8ecf9f29bd584f32a5f18a3d9bf987b9~mv2.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "kp",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kq",
+     "text": "In the second module, we then connected these experiences with contemporary research from the digital marketing field and tried to tackle the question of whether the much-acclaimed Metaverse will live up to the current hype. A key takeaway was that we need a new, ‘post-Zuckerberg’ vision of the metaverse that is not based on wearing a headset all day to log onto THE one and only Metaverse – instead, we should view the metaverse as an eco-system of reality-enhancing technologies that includes Augmented Reality (AR), Virtual Reality (VR), and Neuro-enhanced Reality (NeR) in addition to Blockchain, Cryptocurrencies, and NFTs. Other inspiring discussion topics and business ideas included:",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kr",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ks",
+     "text": "AR and VR are no longer a vision for the future, but rather should be key elements in all organizations’ marketing strategies. Such marketing applications go beyond the traditional ‘selling products paradigm’ and can include different notions of ‘value creation’ such as:",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "kt",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ku",
+     "text": "“I am there with you” – Using AR holograms to let family visit patients in the hospital.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "kv",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kw",
+     "text": "“Trauma in a Box” – Using VR to let traffic violators and new drivers experience the possible consequences of unresponsible driving behavior.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "kx",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ky",
+     "text": "There is a growing market for AI-powered holograms of people that can ‘live on’ even after the physical person has passed away.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "kz",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k10",
+     "text": "We need to reject the traditional dichotomy of ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k11",
+     "text": "physical = real ",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k12",
+     "text": "and ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k13",
+     "text": "digital = false",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k14",
+     "text": " in order to unlock value from the metaverse.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "k15",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k16",
+     "text": "There are vast ethical considerations of all these developments: What is the bigger societal vision, and associated boundaries, of this metaverse? Does our future look like that of Bruce Willis in the popular Surrogates film; we don’t believe so, but how can digitization be managed so it does not create such dystopia?",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  }
+ ],
+ "embeds": []
+}

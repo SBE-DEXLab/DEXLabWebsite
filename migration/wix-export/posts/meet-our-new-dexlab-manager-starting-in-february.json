@@ -1,0 +1,145 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/meet-our-new-dexlab-manager-starting-in-february",
+ "slug": "meet-our-new-dexlab-manager-starting-in-february",
+ "title": "Meet our new DEXLab Manager starting in February",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "sbe-dexlab"
+  },
+  "dateModified": "2024-05-23T13:15:32.638Z",
+  "datePublished": "2024-01-30T12:02:04.573Z",
+  "headline": "Meet our new DEXLab Manager starting in February &#010;",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/meet-our-new-dexlab-manager-starting-in-february",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/meet-our-new-dexlab-manager-starting-in-february"
+  },
+  "description": "This February, DEXLab is excited to welcome David as our new manager. With a unique combination of a passion for teaching, technology, and a commitment to student-centric values, David is poised to bring fresh perspectives to our innovative lab. David's decision to join DEXLab stems from his lifelong interests in technology and education. He believes in putting students at the center of the educational experience and is eager to leverage his technological expertise to enhance their learning jour",
+  "url": "https://www.sbe-dexlab.com/post/meet-our-new-dexlab-manager-starting-in-february",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/9aa9b6_be17fc3a748f47fab3c9c1784032dd43~mv2.jpg/v1/fill/w_754,h_1000,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_be17fc3a748f47fab3c9c1784032dd43~mv2.jpg",
+   "width": "1576",
+   "height": "2090"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [
+  "https://www.sbe-dexlab.com/blog/categories/meet-the-team"
+ ],
+ "og": "https://static.wixstatic.com/media/9aa9b6_be17fc3a748f47fab3c9c1784032dd43~mv2.jpg/v1/fill/w_754,h_1000,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_be17fc3a748f47fab3c9c1784032dd43~mv2.jpg",
+ "body": [
+  {
+   "_type": "image",
+   "_key": "k0",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_be17fc3a748f47fab3c9c1784032dd43~mv2.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k1",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k2",
+     "text": "This February, DEXLab is excited to welcome David as our new manager. With a unique combination of a passion for teaching, technology, and a commitment to student-centric values, David is poised to bring fresh perspectives to our innovative lab.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k3",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k4",
+     "text": "David's decision to join DEXLab stems from his lifelong interests in technology and education. He believes in putting students at the center of the educational experience and is eager to leverage his technological expertise to enhance their learning journey.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k5",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k6",
+     "text": "Throughout his academic and professional career, David has embraced the nuanced principle that things are seldom black or white but often shades of grey. This perspective has been a guiding force in his approach to both personal and professional challenges, emphasizing the importance of considering multiple viewpoints and remaining critical.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k7",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k8",
+     "text": "For David, DEXLab represents the perfect amalgamation of his passions and skills. As an academic, a tech enthusiast, and a teacher, he finds DEXLab to be the ideal setting for combining digital technologies with academic pursuits. He views the lab as a valuable resource that aligns closely with his professional goals and personal interests.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k9",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ka",
+     "text": "Outside of his professional life, David has a variety of hobbies that reflect his diverse interests. He's an avid fan of cars, racing, and particularly Formula 1, enjoying not just the sport but also the mechanics and strategy behind it. Music and the music industry are also among his passions, alongside staying active in the gym and engaging in gaming.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kb",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kc",
+     "text": "When asked about a desired superpower, David's choice is to be incredibly lucky. He views this as a subtle yet impactful ability that can navigate life's uncertainties more smoothly than more conventional superpowers.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kd",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ke",
+     "text": "As David begins his role at DEXLab, his rich background and diverse interests are set to infuse new energy and ideas into the lab. His journey highlights the importance of integrating academic knowledge with practical application.",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "embeds": []
+}

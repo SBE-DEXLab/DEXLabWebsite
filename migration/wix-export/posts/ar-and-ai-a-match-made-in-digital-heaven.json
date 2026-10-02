@@ -1,0 +1,397 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/ar-and-ai-a-match-made-in-digital-heaven",
+ "slug": "ar-and-ai-a-match-made-in-digital-heaven",
+ "title": "AR and AI: A Match Made in Digital Heaven",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "Jonas Heller"
+  },
+  "dateModified": "2024-06-27T13:16:01.160Z",
+  "datePublished": "2024-06-18T07:37:56.658Z",
+  "headline": "AR and AI: A Match Made in Digital Heaven",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/ar-and-ai-a-match-made-in-digital-heaven",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/ar-and-ai-a-match-made-in-digital-heaven"
+  },
+  "description": "Combine augmented reality (AR) and artificial intelligence (AI) to intuitively use advanced technology and innovative education.",
+  "url": "https://www.sbe-dexlab.com/post/ar-and-ai-a-match-made-in-digital-heaven",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/9aa9b6_be0b4625c27e432c8d85a7307f4f3d09~mv2.png/v1/fill/w_1000,h_1000,al_c,q_90,usm_0.66_1.00_0.01/9aa9b6_be0b4625c27e432c8d85a7307f4f3d09~mv2.png",
+   "width": "1024",
+   "height": "1024"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [
+  "https://www.sbe-dexlab.com/blog/categories/research",
+  "https://www.sbe-dexlab.com/blog/categories/food-for-thought"
+ ],
+ "og": "https://static.wixstatic.com/media/9aa9b6_be0b4625c27e432c8d85a7307f4f3d09~mv2.png/v1/fill/w_1000,h_1000,al_c,q_90,usm_0.66_1.00_0.01/9aa9b6_be0b4625c27e432c8d85a7307f4f3d09~mv2.png",
+ "body": [
+  {
+   "_type": "block",
+   "_key": "k0",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1",
+     "text": "A Dream Team",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k2",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_be0b4625c27e432c8d85a7307f4f3d09~mv2.png",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k3",
+   "style": "normal",
+   "markDefs": [
+    {
+     "_type": "link",
+     "_key": "k5",
+     "href": "https://www.forbes.com/sites/briansolis/2024/02/13/2024-a-spatial-computing-odyssey-charts-a-course-to-a-metaverse/"
+    },
+    {
+     "_type": "link",
+     "_key": "k8",
+     "href": "https://www.thedrum.com/opinion/2024/01/22/mixed-reality-wearable-tech-and-ai-2024-the-year-spatial-computing-takes#:~:text=Niantic&text=Niantic's%20Tom%20Emrich%20looks%20at,mixed%20reality%20and%20spatial%20computing."
+    }
+   ],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k4",
+     "text": "Welcome to the innovative world of Augmented Reality (AR) and Artificial Intelligence (AI)! These two technologies share more than just the first letter of their abbreviation. There are going to be two trends to watch in 2024. Why 2024? As various experts announced early in 2024 (",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k6",
+     "text": "Forbes",
+     "marks": [
+      "k5",
+      "underline"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k7",
+     "text": ", ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k9",
+     "text": "TheDrum",
+     "marks": [
+      "k8",
+      "underline"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "ka",
+     "text": "), this year is the year of spatial computing. Today, almost halfway through 2024, I will reflect on whether what they have depicted is true. But first, let’s get some terminology straight.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kb",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kc",
+     "text": "Where Did It All Start?",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kd",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ke",
+     "text": "The concept of spatial computing is not entirely new. It has roots in virtual reality (VR) and AR technologies that started gaining traction in the early 2010s. Companies like Google and Microsoft began exploring how to integrate digital information with the physical world. By 2024, advances in technology have made it possible for spatial computing to become more mainstream and accessible.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kf",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kg",
+     "text": "AI and AR: A Perfect Match for Spatial Computing",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kh",
+   "style": "normal",
+   "markDefs": [
+    {
+     "_type": "link",
+     "_key": "kj",
+     "href": "https://www.sciencedirect.com/science/article/pii/S002243591930020X"
+    },
+    {
+     "_type": "link",
+     "_key": "km",
+     "href": "https://www.sciencedirect.com/science/article/abs/pii/S0022435919300673?casa_token=10-ivbgW8xIAAAAA:08lCbYm0hMIHTeUQrdOBICSeLvq2WoOluKw6VjESy2I1OMdMjBkXOjSgxzZabSYJc51LIaQ"
+    },
+    {
+     "_type": "link",
+     "_key": "kp",
+     "href": "https://journals.sagepub.com/doi/10.1177/10949968221083555"
+    }
+   ],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ki",
+     "text": "AI and AR are the dynamic duo driving spatial computing forward. We know that AR enables users to bridge imagination gaps when making purchase decisions (e.g. ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kk",
+     "text": "Heller 2019a",
+     "marks": [
+      "kj",
+      "underline"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kl",
+     "text": ", ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kn",
+     "text": "Heller et al. 2019b",
+     "marks": [
+      "km",
+      "underline"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "ko",
+     "text": ", ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kq",
+     "text": "Hilken et al. 2022",
+     "marks": [
+      "kp",
+      "underline"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kr",
+     "text": "),. Since OpenAI released its newest GPT4.o model in April 2024, the model can interact with and sense its spatial surroundings, by simply “seeing” (through the phone’s camera ) what the user wants to show the AI. We have come a step closer to understanding and experiencing what spatial computing could mean. Here’s an example to illustrate how they work together:",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ks",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kt",
+     "text": "Imagine you’re a DIY enthusiast working on a home improvement project. You put on a pair of AR glasses. These glasses are equipped with AI that understands what you are looking at and what you're trying to do. As you look around your workspace, the AR glasses project digital instructions and guides onto the real-world objects in front of you. The AI is sensing the environment  and creating instructions and guides, the AR is visualizing these in a seamless and real-time manner in front of your eyes.",
+     "marks": [
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "ku",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_c2d83e83dae4463aa886afe9c05372a3~mv2.png",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "kv",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kw",
+     "text": "Let’s say you’re assembling a new piece of furniture. The AI identifies each part and the AR overlays step-by-step assembly instructions right on the parts themselves. If you’re about to make a mistake, the AI can detect this, and the AR can highlight the correct pieces or show you the correct placement in real time. This combination of AI and AR not only makes the task easier but also significantly reduces the chances of errors.",
+     "marks": [
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kx",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ky",
+     "text": "Why Does It Matter?",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kz",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k10",
+     "text": "Spatial computing makes technology more intuitive and easier to use. It can revolutionize many fields, from education and healthcare to manufacturing and entertainment, by making digital interactions more natural and immersive. As the technology continues to evolve, the possibilities for what we can achieve with spatial computing are almost limitless. In 2024, spatial computing isn’t just a concept. It’s becoming a part of our everyday lives, making the digital world seamlessly blend with our physical reality.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k11",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k12",
+     "text": "The Crucial Need for Research in Combining AR and AI for Education",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k13",
+   "style": "normal",
+   "markDefs": [
+    {
+     "_type": "link",
+     "_key": "k15",
+     "href": "https://www.sciencedirect.com/science/article/pii/S0747563223004569"
+    }
+   ],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k14",
+     "text": "As we stand on the brink of a technological revolution, the integration of AR and AI promises to transform how we live, work, and learn. While much attention has been given to the potential of these technologies in business and marketing, it is imperative that we also focus on their educational applications. To truly harness the power of AR and AI, we need dedicated research with an applicable framework for managers (e.g. ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k16",
+     "text": "Rauschnabel, Felix, Heller et al., 2024",
+     "marks": [
+      "k15",
+      "underline"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k17",
+     "text": ") to explore how these tools",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k18",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k19",
+     "text": "In reflecting on the predictions made at the start of 2024, it's clear that AR and AI indeed form a dream team, particularly in the realm of spatial computing. Their combined power not only stands to revolutionize business and marketing but also holds tremendous potential for transforming education. By prioritizing research in this area, we can unlock new ways to engage and educate, ensuring that the advancements of 2024 pave the way for a smarter, more connected future. As we move forward, let us embrace the opportunities these technologies offer and continue to explore how they can enhance our world.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k1a",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_254f12bc8acb443fab52329c240d83d5~mv2.jpeg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k1b",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1c",
+     "text": "Author: Jonas Heller",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1d",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1e",
+     "text": "Publish date: the 30th of May 2024",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "embeds": []
+}

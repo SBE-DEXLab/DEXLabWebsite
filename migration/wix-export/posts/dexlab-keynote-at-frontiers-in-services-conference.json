@@ -1,0 +1,396 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/dexlab-keynote-at-frontiers-in-services-conference",
+ "slug": "dexlab-keynote-at-frontiers-in-services-conference",
+ "title": "DEXLab Keynote at Frontiers in Services Conference",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "augmented-research"
+  },
+  "dateModified": "2023-06-30T10:17:45.775Z",
+  "datePublished": "2023-06-30T09:07:00.418Z",
+  "headline": "DEXLab Keynote at Frontiers in Services Conference",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/dexlab-keynote-at-frontiers-in-services-conference",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/dexlab-keynote-at-frontiers-in-services-conference"
+  },
+  "description": "The Frontiers in Service 2023 is coming to an end, the DEXLab was present in the form of providing a digital booth, with several of our researchers preseting papers about emerging technologies, and last but not least our interactive keynote and panel session on Digital Expereinces. We certainly had a blast, read the summary below.The DEXlab was represented in a keynote exploring the frontiers of digital experiences. In a joint session with Jonas Heller &amp; Samuel Fung from Starbucks, we first lear",
+  "url": "https://www.sbe-dexlab.com/post/dexlab-keynote-at-frontiers-in-services-conference",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/9aa9b6_a4521ab93a024f3b9a160738d8007ca0~mv2.png/v1/fill/w_960,h_540,al_c,q_90/9aa9b6_a4521ab93a024f3b9a160738d8007ca0~mv2.png",
+   "width": "960",
+   "height": "540"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [],
+ "og": "https://static.wixstatic.com/media/9aa9b6_a4521ab93a024f3b9a160738d8007ca0~mv2.png/v1/fill/w_960,h_540,al_c,q_90/9aa9b6_a4521ab93a024f3b9a160738d8007ca0~mv2.png",
+ "body": [
+  {
+   "_type": "block",
+   "_key": "k0",
+   "style": "normal",
+   "markDefs": [
+    {
+     "_type": "link",
+     "_key": "k2",
+     "href": "https://www.linkedin.com/company/frontiers-in-service-2023/"
+    }
+   ],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1",
+     "text": "The ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k3",
+     "text": "Frontiers in Service 2023",
+     "marks": [
+      "k2"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k4",
+     "text": " is coming to an end, the DEXLab was present in the form of providing a digital booth, with several of our researchers preseting papers about emerging technologies, and last but not least our interactive keynote and panel session on Digital Expereinces. We certainly had a blast, read the summary below.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k5",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_a4521ab93a024f3b9a160738d8007ca0~mv2.png",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k6",
+   "style": "normal",
+   "markDefs": [
+    {
+     "_type": "link",
+     "_key": "k8",
+     "href": "https://www.linkedin.com/in/ACoAAAW2X88BwGBZ4h35rk8yAfeml0i-5a9IRC0"
+    },
+    {
+     "_type": "link",
+     "_key": "kb",
+     "href": "https://www.linkedin.com/in/ACoAAAAHfCkBlpELmVCkzYLNzudf_TAd3G65BXE"
+    },
+    {
+     "_type": "link",
+     "_key": "ke",
+     "href": "https://www.linkedin.com/company/starbucks/"
+    }
+   ],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k7",
+     "text": "The DEXlab was represented in a keynote exploring the frontiers of digital experiences. In a joint session with ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k9",
+     "text": "Jonas Heller",
+     "marks": [
+      "k8"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "ka",
+     "text": " & ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kc",
+     "text": "Samuel Fung",
+     "marks": [
+      "kb"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kd",
+     "text": " from ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kf",
+     "text": "Starbucks",
+     "marks": [
+      "ke"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kg",
+     "text": ", we first learned about how digital experiences create human connections.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kh",
+   "style": "normal",
+   "markDefs": [
+    {
+     "_type": "link",
+     "_key": "kj",
+     "href": "https://www.linkedin.com/in/ACoAAACI6TIBV4OQu5-9fYwyeoDPkTMvG4_rLqU"
+    },
+    {
+     "_type": "link",
+     "_key": "km",
+     "href": "https://www.linkedin.com/in/ACoAABG7eP0B7_ew8__6-116haVGHbWO6n6Z7k4"
+    },
+    {
+     "_type": "link",
+     "_key": "kp",
+     "href": "https://www.linkedin.com/in/ACoAAC2vS5cByXUwSkfh0csMA7ectCj7Ddc3wcM"
+    },
+    {
+     "_type": "link",
+     "_key": "ks",
+     "href": "https://www.linkedin.com/in/ACoAACgB6GYBvotVhafnNTaEGCzXtThcHIEU-bw"
+    },
+    {
+     "_type": "link",
+     "_key": "kv",
+     "href": "https://www.linkedin.com/in/ACoAAAW2X88BwGBZ4h35rk8yAfeml0i-5a9IRC0"
+    },
+    {
+     "_type": "link",
+     "_key": "ky",
+     "href": "https://www.linkedin.com/in/ACoAAAAHfCkBlpELmVCkzYLNzudf_TAd3G65BXE"
+    }
+   ],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ki",
+     "text": "Then the DEXLab, in particular ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kk",
+     "text": "Dominik Mahr",
+     "marks": [
+      "kj"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kl",
+     "text": ", ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kn",
+     "text": "Tim Hilken",
+     "marks": [
+      "km"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "ko",
+     "text": ", ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kq",
+     "text": "Roberta Di Palma",
+     "marks": [
+      "kp"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kr",
+     "text": " & ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kt",
+     "text": "Noah Moonen",
+     "marks": [
+      "ks"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "ku",
+     "text": " presented an interactive keynote with three use cases on emerging technologies, namely VR, AR, and Brain-Computer Interfaces (BCIs). The keynote concluded with a panel session joint by ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kw",
+     "text": "Jonas Heller",
+     "marks": [
+      "kv"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kx",
+     "text": " & ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kz",
+     "text": "Samuel Fung",
+     "marks": [
+      "ky"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k10",
+     "text": ", reflecting on how service research as a discipline is affected through the rise of digital technologies, and discussing how this might change the data and methods in service research.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k11",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_fea81c615bc44f53a8a964106b660c77~mv2.png",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k12",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k13",
+     "text": "Check out the video abour our live VR demonstration here:",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "embed",
+   "_key": "k14",
+   "url": "https://5063f72d-50a8-4f2d-8f57-c76e667068b9.usrfiles.com/html/2b2e4b_d767b483cae16e027c4ea8ac7906fbf4.html"
+  },
+  {
+   "_type": "block",
+   "_key": "k15",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k16",
+     "text": "We also presented several projects in the sessions on the organizational frontlines and immersive technologies and represented the DEXLab with an interactive booth for conference participants to experience various VR applications first-hand.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k17",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_89be3901d5524c01b2569339e5d2b2e0~mv2.png",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k18",
+   "style": "normal",
+   "markDefs": [
+    {
+     "_type": "link",
+     "_key": "k1a",
+     "href": "https://www.linkedin.com/company/maastricht-university-school-of-business-and-economics/"
+    }
+   ],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k19",
+     "text": "We would like to thank the organizers of the event ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k1b",
+     "text": "Maastricht University School of Business and Economics",
+     "marks": [
+      "k1a"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k1c",
+     "text": ", in particular the Department of Marketing & Supply Chain Management, for a perfectly crafted conference that resulted in meeting service scholars from around the world.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1d",
+   "style": "normal",
+   "markDefs": [
+    {
+     "_type": "link",
+     "_key": "k1f",
+     "href": "https://www.linkedin.com/company/sbedexlab/"
+    }
+   ],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1e",
+     "text": "Check out our ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k1g",
+     "text": "LinkedIn",
+     "marks": [
+      "k1f",
+      "underline"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k1h",
+     "text": " and follow us to stay up to date",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "embeds": [
+  "https://5063f72d-50a8-4f2d-8f57-c76e667068b9.usrfiles.com/html/2b2e4b_d767b483cae16e027c4ea8ac7906fbf4.html"
+ ]
+}

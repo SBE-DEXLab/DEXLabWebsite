@@ -1,0 +1,159 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/meet-our-new-intern-thies-verbraak",
+ "slug": "meet-our-new-intern-thies-verbraak",
+ "title": "Meet our new intern: Thies Verbraak",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "augmented-research"
+  },
+  "dateModified": "2023-09-13T09:00:12.219Z",
+  "datePublished": "2023-09-13T09:00:12.219Z",
+  "headline": "Meet our new intern: Thies Verbraak",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/meet-our-new-intern-thies-verbraak",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/meet-our-new-intern-thies-verbraak"
+  },
+  "description": "Hey there everyone,I am Thies Verbraak, currently in my third year of Healthcare Engineering at Zuyd University of Applied Science in Heerlen. Here in Maastricht, I got offered a 20-week internship at the DEXLab, where I'll be working as a developer to enhance my programming skills of Virtual Reality.As a Healthcare Engineer, my knowledge spans a wide spectrum, ranging from Virtual Reality programming to PLC design and even a basic understanding of human anatomy. This diverse skill set has allow",
+  "url": "https://www.sbe-dexlab.com/post/meet-our-new-intern-thies-verbraak",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/9aa9b6_cb8631cf58494307ad60961ca5390354~mv2.jpeg/v1/fill/w_800,h_800,al_c,q_85/9aa9b6_cb8631cf58494307ad60961ca5390354~mv2.jpeg",
+   "width": "800",
+   "height": "800"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [
+  "https://www.sbe-dexlab.com/blog/categories/meet-the-team"
+ ],
+ "og": "https://static.wixstatic.com/media/9aa9b6_cb8631cf58494307ad60961ca5390354~mv2.jpeg/v1/fill/w_800,h_800,al_c,q_85/9aa9b6_cb8631cf58494307ad60961ca5390354~mv2.jpeg",
+ "body": [
+  {
+   "_type": "image",
+   "_key": "k0",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_cb8631cf58494307ad60961ca5390354~mv2.jpeg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k1",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k2",
+     "text": "Hey there everyone,",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k3",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k4",
+     "text": "I am Thies Verbraak, currently in my third year of Healthcare Engineering at Zuyd University of Applied Science in Heerlen. Here in Maastricht, I got offered a 20-week internship at the DEXLab, where I'll be working as a developer to enhance my programming skills of Virtual Reality.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k5",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k6",
+     "text": "As a Healthcare Engineer, my knowledge spans a wide spectrum, ranging from Virtual Reality programming to PLC design and even a basic understanding of human anatomy. This diverse skill set has allowed me to specialize in a field of my choice, mine being Virtual Reality. Throughout my academic journey, I've developed a keen interest in the potential of VR in education and the possibilities it has to offer. So when DEXLab presented me with the opportunity to create a VR environment for students at Maastricht University, I couldn't resist seizing this chance.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k7",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k8",
+     "text": "Born and raised in Limburg alongside my three siblings, I embarked on my academic journey after graduating from VWO. My preference for hands-on working led me to opt for an HBO study at Zuyd Hogeschool instead of pursuing a research path at a university.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k9",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ka",
+     "text": "Being the youngest of four, I come from a large family of six and two dogs, with two sisters and a brother. Due to the size of mine, family is a large part of my life, and I make it a point to visit my parents during the weekends. With my siblings already having one or two kids of their own, it’s never dull whenever I visit.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kb",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kc",
+     "text": "In my spare time, I am a passionate handball player, occupying the position of a goalkeeper, a sport I've been practicing for 16 years at HV Gemini in Voerendaal. A bit accident-prone, I've had my fair share of injuries, including two concussions, two broken bones, and a metal plate in my arm. Recently, I've taken on the role of training and coaching a youth team, and I'm excited about the opportunity to pass on my knowledge and experience to the next generation.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kd",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ke",
+     "text": "So yeah, that’s me! I’m grateful for DEXLab for providing me with this opportunity and I’m excited to embark on this journey with them!",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kf",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kg",
+     "text": "Thies",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "embeds": []
+}

@@ -1,0 +1,258 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/dexlab-x-service-design-course",
+ "slug": "dexlab-x-service-design-course",
+ "title": "DEXlab x Service Design Course",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "augmented-research"
+  },
+  "dateModified": "2022-09-19T11:38:03.040Z",
+  "datePublished": "2022-09-19T11:38:03.040Z",
+  "headline": "DEXlab x Service Design Course",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/dexlab-x-service-design-course",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/dexlab-x-service-design-course"
+  },
+  "description": "Learning is both theory and practice. Maastricht University School of Business and Economics is pioneering in technology-enhanced education using small-class settings combined with practical, hands-on experiences. Master students of the Business Innovation and Smart Services master had the chance to visit SBE’s DexLab and try out some technological innovations. RoboticsUsing Temi, an intelligent Robot as a Service solution (RaaS), students explore what a personal robot can do and how it can help",
+  "url": "https://www.sbe-dexlab.com/post/dexlab-x-service-design-course",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/9aa9b6_ea197c62f5d44b6380f9664d2d83bbfa~mv2.png/v1/fill/w_1000,h_750,al_c,q_90,usm_0.66_1.00_0.01/9aa9b6_ea197c62f5d44b6380f9664d2d83bbfa~mv2.png",
+   "width": "2640",
+   "height": "1980"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [
+  "https://www.sbe-dexlab.com/blog/categories/digital-education"
+ ],
+ "og": "https://static.wixstatic.com/media/9aa9b6_ea197c62f5d44b6380f9664d2d83bbfa~mv2.png/v1/fill/w_1000,h_750,al_c,q_90,usm_0.66_1.00_0.01/9aa9b6_ea197c62f5d44b6380f9664d2d83bbfa~mv2.png",
+ "body": [
+  {
+   "_type": "block",
+   "_key": "k0",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1",
+     "text": "Learning is both theory and practice. Maastricht University School of Business and Economics is pioneering in technology-enhanced education using small-class settings combined with practical, hands-on experiences. Master students of the Business Innovation and Smart Services master had the chance to visit SBE’s DexLab and try out some technological innovations.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k2",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k3",
+     "text": "Robotics",
+     "marks": [
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k4",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k5",
+     "text": "Using Temi, an intelligent Robot as a Service solution (RaaS), students explore what a personal robot can do and how it can help to improve various services.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k6",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_ea197c62f5d44b6380f9664d2d83bbfa~mv2.png",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k7",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k8",
+     "text": "Virtual Reality",
+     "marks": [
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k9",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ka",
+     "text": "Virtual Reality is a powerful tool to give persons an efficient and effective way of “being present” somewhere. Imagine having a look at what your holiday apartment or hotel room will exactly look like. Or students getting feedback on their pitch performance, eye contact held with the audience, filling words used, and much more. VR has the possibility to improve a wide array of services, and students tried out how they would use the technology to improve a service.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "kb",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_831111ae40b1419dad3ebff51b8d7bb7~mv2.png",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "kc",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kd",
+     "text": "AR",
+     "marks": [
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ke",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kf",
+     "text": "Ever sat in a restaurant and wondered what the dish on the menu will actually look like? AR has the power to show you the dish as it would look like – before you ordered. No more disappointments, no more dish returns. Just put on your AR smart glasses or use your phone and see what’s in for you.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "kg",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_f384d21f2da942229b213b44b5c253cb~mv2.png",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "kh",
+   "style": "normal",
+   "markDefs": [
+    {
+     "_type": "link",
+     "_key": "kj",
+     "href": "mailto:sbe-dexlab@maastrichtuniversity.nl"
+    }
+   ],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ki",
+     "text": "If you also plan to facilitate your students learning experience by linking technology and theoretical concepts, feel free to contact the lab manager at ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kk",
+     "text": "sbe-dexlab@maastrichtuniversity.nl",
+     "marks": [
+      "kj",
+      "underline"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kl",
+     "text": " regarding some interdisciplinary collaboration.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "km",
+   "style": "normal",
+   "markDefs": [
+    {
+     "_type": "link",
+     "_key": "kn",
+     "href": "https://www.sbe-dexlab.com/blog/hashtags/technology"
+    },
+    {
+     "_type": "link",
+     "_key": "kq",
+     "href": "https://www.sbe-dexlab.com/blog/hashtags/education"
+    },
+    {
+     "_type": "link",
+     "_key": "kt",
+     "href": "https://www.sbe-dexlab.com/blog/hashtags/DEXlab"
+    }
+   ],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ko",
+     "text": "#technology",
+     "marks": [
+      "kn"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kp",
+     "text": " ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kr",
+     "text": "#education",
+     "marks": [
+      "kq"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "ks",
+     "text": " ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "ku",
+     "text": "#DEXlab",
+     "marks": [
+      "kt"
+     ]
+    }
+   ]
+  }
+ ],
+ "embeds": []
+}

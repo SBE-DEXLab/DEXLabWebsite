@@ -1,0 +1,15 @@
+---
+import PostCard from '../PostCard.astro'
+import {getPosts} from '../../lib/queries'
+
+interface Props {
+  limit: number
+  category?: string
+}
+const {limit, category} = Astro.props
+const posts = await getPosts(limit, category)
+---
+
+<div class="grid" style="--cols: 3">
+  {posts.map((post) => <PostCard post={post} />)}
+</div>

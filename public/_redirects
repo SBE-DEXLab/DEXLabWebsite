@@ -1,0 +1,15 @@
+# Old Wix URLs that moved in the rebuild (301 = permanent, keeps Google ranking)
+/emerging-technologies-workshop      /workshops/emerging-technologies         301
+/immersive-technologies-workshop     /workshops/immersive-technologies        301
+/dexlab-showcase                     /workshops/dexlab-showcase               301
+/genai-workshop                      /workshops/dexplore-genai                301
+/vr-presentation-skills-training     /workshops/presentation-skills-training  301
+/events                              /blog/categories/events                  301
+/dontworkduringholidays              /                                        301
+/post/immersive-well-being-with-alexandru-mari%C8%99-dexlab-researcher  /post/immersive-well-being-with-alexandru-maris-dexlab-researcher  301
+/blog-feed.xml                       /rss.xml                                 301
+/blog/page/1                         /blog                                    301
+
+# Sanity Studio is a single-page app served from /admin
+/admin/*                             /admin/index.html                        200
+/static/*                            /admin/static/:splat                     200

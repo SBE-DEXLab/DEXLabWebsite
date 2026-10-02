@@ -1,0 +1,461 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/dexlab-explains-understanding-the-difference-between-ai-and-genai",
+ "slug": "dexlab-explains-understanding-the-difference-between-ai-and-genai",
+ "title": "DEXLab Explains: Understanding the Difference Between AI and GenAI",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "David Grigorjan"
+  },
+  "dateModified": "2024-06-03T06:26:08.032Z",
+  "datePublished": "2024-06-03T06:26:08.032Z",
+  "headline": "DEXLab Explains: Understanding the Difference Between AI and GenAI ",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/dexlab-explains-understanding-the-difference-between-ai-and-genai",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/dexlab-explains-understanding-the-difference-between-ai-and-genai"
+  },
+  "description": "Artificial Intelligence (AI) and Generative AI (GenAI) are two terms that are increasingly becoming commonplace in academia. While they are often used interchangeably, they represent very different domains within the broader AI landscape. This blog post aims to help in understanding the distinctions between these two domains for better navigating their impact on teaching, research, and scholarly integrity. First of all, what is Artificial Intelligence? Artificial Intelligence (or AI) is a broad ",
+  "url": "https://www.sbe-dexlab.com/post/dexlab-explains-understanding-the-difference-between-ai-and-genai",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/9aa9b6_ce405bebd93a472f86600cefe0a9c520~mv2.jpg/v1/fill/w_1000,h_919,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_ce405bebd93a472f86600cefe0a9c520~mv2.jpg",
+   "width": "1024",
+   "height": "941"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [
+  "https://www.sbe-dexlab.com/blog/categories/food-for-thought",
+  "https://www.sbe-dexlab.com/blog/categories/research"
+ ],
+ "og": "https://static.wixstatic.com/media/9aa9b6_ce405bebd93a472f86600cefe0a9c520~mv2.jpg/v1/fill/w_1000,h_919,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_ce405bebd93a472f86600cefe0a9c520~mv2.jpg",
+ "body": [
+  {
+   "_type": "image",
+   "_key": "k0",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_913224adf29d4fd69e27fb6521dedf92~mv2.png",
+   "alt": "The difference between Artificial Intelligence (AI) and Gen AI "
+  },
+  {
+   "_type": "block",
+   "_key": "k1",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k2",
+     "text": "Artificial Intelligence (AI) and Generative AI (GenAI) are two terms that are increasingly becoming commonplace in academia. While they are often used interchangeably, they represent very different domains within the broader AI landscape. This blog post aims to help in understanding the distinctions between these two domains for better navigating",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k3",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k4",
+     "text": "their impact on teaching, research, and scholarly integrity.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k5",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k6",
+     "text": "First of all, what is Artificial Intelligence?",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k7",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k8",
+     "text": "Artificial Intelligence (or AI) is a broad field of computer science focused on creating systems capable of performing tasks that would normally require human intelligence. These tasks include learning, reasoning, problem-solving, perception, and language understanding. Imagine a machine that mimics our thought processes.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k9",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ka",
+     "text": "Now, what is Generative AI (GenAI)?",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kb",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kc",
+     "text": "Generative AI (GenAI) is a subset of AI focused on generating new content, such as text, images, music, or even code, that is similar to existing data. GenAI systems learn the patterns and structures of the input data and use this understanding to create novel outputs. Think about Transformer Models: Such as GPT-4 or Google Gemini, these models excel at generating human-like text.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kd",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ke",
+     "text": "Let’s put the puzzle pieces together!",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kf",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kg",
+     "text": "How do these two relate to each other? For that, we need to also introduce you to Machine Learning and Deep Learning:",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kh",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ki",
+     "text": "Imagine a pyramid. At the very top, the most general concept is Artificial Intelligence (AI).  Everything within AI is aimed at mimicking human intelligence in machines.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kj",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kk",
+     "text": "Going down one level, we get to Machine Learning (ML). This is a subfield of AI that deals with training algorithms to learn from data. So, instead of explicitly programming a machine for every situation, we can give it a bunch of data and let it figure things out for itself.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "kl",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_426087cf855948f5a3da91aa7fc05219~mv2.png",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "km",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kn",
+     "text": "Deep Learning (DL) is a more specific type of machine learning. It uses complex algorithms called artificial neural networks, inspired by the structure of the human brain. These neural networks are particularly good at finding patterns in very large datasets.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ko",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kp",
+     "text": "Finally, Generative AI (GenAI) is a particular application of deep learning. Here, the AI isn't focused on just making predictions or classifications based on data. Instead, it's trying to use what it has learned to create entirely new things, like text, images, or even music.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kq",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kr",
+     "text": "Critical Considerations",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ks",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kt",
+     "text": "While AI and GenAI offer immense potential, they also raise challenges and ethical concerns:",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ku",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kv",
+     "text": "AI Concern",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kw",
+     "text": "s: Bias, lack of transparency, and potential job displacement.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kx",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ky",
+     "text": "GenAI Concerns",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kz",
+     "text": ": Misinformation, intellectual property ownership, and misuse for creating deceptive content.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k10",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k11",
+     "text": "The Road Ahead",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k12",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k13",
+     "text": "Distinguishing between AI and GenAI is crucial for leveraging their capabilities effectively. AI focuses on replicating human intelligence for decision-making and automation, while GenAI specializes in generating novel content that mimics human-created data. Both fields are rapidly evolving, presenting exciting opportunities alongside significant challenges.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k14",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k15",
+     "text": "The University Perspective",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k16",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k17",
+     "text": "As educators, staying informed about these technologies and their implications is essential. We must embrace the benefits while critically evaluating the risks to harness AI and GenAI responsibly and innovatively within our curriculum and research endeavors.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k18",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k19",
+     "text": "So, how do we go from here?",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1a",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1b",
+     "text": "How can we integrate GenAI into our curriculum in a way that fosters, not hinders, critical thinking skills?",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1c",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1d",
+     "text": "What potential ethical issues arise from the use of GenAI-generated content?",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1e",
+   "style": "normal",
+   "markDefs": [
+    {
+     "_type": "link",
+     "_key": "k1g",
+     "href": "mailto:sbe-dexlab@maastrichtuniversity.nl"
+    }
+   ],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1f",
+     "text": "Feel free to reach out for more in-depth discussions or workshops on AI and GenAI. Let's continue to explore and understand these emerging technologies together. Feel free to reach out to us at ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k1h",
+     "text": "sbe-dexlab@maastrichtuniversity.nl",
+     "marks": [
+      "k1g",
+      "underline"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k1i",
+     "text": ".",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k1j",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_0e44d5e21816435490e96d0396157572~mv2.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k1k",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1l",
+     "text": "Author: David Grigorjan",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1m",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1n",
+     "text": "Publish date: the 3rd of June 2024",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "embeds": []
+}

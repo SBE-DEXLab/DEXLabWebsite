@@ -1,0 +1,36 @@
+---
+import {imageUrl, srcSet} from '../lib/image'
+import type {Img} from '../lib/types'
+
+interface Props {
+  image?: Img
+  width: number
+  height?: number
+  sizes?: string
+  fit?: 'crop' | 'max'
+  class?: string
+  eager?: boolean
+  alt?: string
+  style?: string
+}
+const {image, width, height, sizes = '100vw', fit = 'crop', class: className, eager = false, alt, style} = Astro.props
+const src = imageUrl(image, {width, height, fit})
+---
+
+{
+  src && (
+    <img
+      src={src}
+      srcset={srcSet(image, width, height, fit)}
+      sizes={sizes}
+      width={width}
+      height={height || Math.round(width * 0.66)}
+      alt={alt ?? image?.alt ?? ''}
+      class={className}
+      style={style}
+      loading={eager ? 'eager' : 'lazy'}
+      fetchpriority={eager ? 'high' : undefined}
+      decoding="async"
+    />
+  )
+}

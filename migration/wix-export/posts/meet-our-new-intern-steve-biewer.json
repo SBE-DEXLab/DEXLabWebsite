@@ -1,0 +1,103 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/meet-our-new-intern-steve-biewer",
+ "slug": "meet-our-new-intern-steve-biewer",
+ "title": "Meet our new intern: Steve Biewer",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "augmented-research"
+  },
+  "dateModified": "2023-11-24T10:31:40.244Z",
+  "datePublished": "2023-11-24T10:31:40.244Z",
+  "headline": "Meet our new intern: Steve Biewer",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/meet-our-new-intern-steve-biewer",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/meet-our-new-intern-steve-biewer"
+  },
+  "description": "Hi, my name is Steve Biewer, I am 22 years old and I am in my last year of Business Engineering here at the university of Maastricht. My internship at DexLab will be until the end of March. I like doing sport, especially table-tennis. I play in a club in Sittard for the first team. I like solving problems and DexLab is the right place for this. I am working on the marketing side to help out DexLab to get more reach and to promote our services. DexLab enables me to use high tech equipment which h",
+  "url": "https://www.sbe-dexlab.com/post/meet-our-new-intern-steve-biewer",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/9aa9b6_04a8cd24c3bc43feb91bfb42c49e25bd~mv2.png/v1/fill/w_750,h_1000,al_c,q_90,usm_0.66_1.00_0.01/9aa9b6_04a8cd24c3bc43feb91bfb42c49e25bd~mv2.png",
+   "width": "3024",
+   "height": "4032"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [
+  "https://www.sbe-dexlab.com/blog/categories/meet-the-team"
+ ],
+ "og": "https://static.wixstatic.com/media/9aa9b6_04a8cd24c3bc43feb91bfb42c49e25bd~mv2.png/v1/fill/w_750,h_1000,al_c,q_90,usm_0.66_1.00_0.01/9aa9b6_04a8cd24c3bc43feb91bfb42c49e25bd~mv2.png",
+ "body": [
+  {
+   "_type": "block",
+   "_key": "k0",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1",
+     "text": "Hi, my name is Steve Biewer, I am 22 years old and I am in my last year of Business Engineering here at the university of Maastricht.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k2",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_04a8cd24c3bc43feb91bfb42c49e25bd~mv2.png",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k3",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k4",
+     "text": "My internship at DexLab will be until the end of March. I like doing sport, especially table-tennis. I play in a club in Sittard for the first team. I like solving problems and DexLab is the right place for this. I am working on the marketing side to help out DexLab to get more reach and to promote our services.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k5",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k6",
+     "text": "DexLab enables me to use high tech equipment which helps me for my research in Virtual reality. My research is about analyzing a virtual reality application about table-tennis on the new Oculus Quest 3 glasses. I am doing this as my bachelor thesis. The research is about figuring out how far the replacement of reality can go in table-tennis. With a long-term idea to completely replace reality by virtual reality in this sport. Besides that,",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k7",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k8",
+     "text": "I am an eager person that likes new things and progress in unexplored fields, and I am looking forward to develop DexLab further.",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "embeds": []
+}

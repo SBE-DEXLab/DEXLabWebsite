@@ -1,0 +1,224 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/dexlab-launches-at-the-sbe",
+ "slug": "dexlab-launches-at-the-sbe",
+ "title": "DEXLab launches at the SBE",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "Jonas Heller"
+  },
+  "dateModified": "2022-03-14T08:32:39.907Z",
+  "datePublished": "2022-03-14T08:29:12.060Z",
+  "headline": "DEXLab launches at the SBE",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/dexlab-launches-at-the-sbe",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/dexlab-launches-at-the-sbe"
+  },
+  "description": "Picture this: students receiving real-time feedback on their presentation skills in VR. Researchers using AR to improve customer support and experiences. Coordinators and teachers enabling hybrid students to feel connected to their peers by joining in telepresence through a service robot. These scenarios do not represent an idealistic and distant future at UM and SBE, the future is now, and it is called “DEXLab”. A new research laboratory, the “Digital Experience Lab” (DEXLab) is now open for SB",
+  "url": "https://www.sbe-dexlab.com/post/dexlab-launches-at-the-sbe",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/9aa9b6_8554dfa494444cb191cf6d032d164d53~mv2.png/v1/fill/w_1000,h_637,al_c,q_90,usm_0.66_1.00_0.01/9aa9b6_8554dfa494444cb191cf6d032d164d53~mv2.png",
+   "width": "2118",
+   "height": "1350"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [],
+ "og": "https://static.wixstatic.com/media/9aa9b6_8554dfa494444cb191cf6d032d164d53~mv2.png/v1/fill/w_1000,h_637,al_c,q_90,usm_0.66_1.00_0.01/9aa9b6_8554dfa494444cb191cf6d032d164d53~mv2.png",
+ "body": [
+  {
+   "_type": "block",
+   "_key": "k0",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1",
+     "text": "Picture this: students receiving real-time feedback on their presentation skills in VR. Researchers using AR to improve customer support and experiences. Coordinators and teachers enabling hybrid students to feel connected to their peers by joining in telepresence through a service robot. These scenarios do not represent an idealistic and distant future at UM and SBE, the future is now, and it is called “DEXLab”.",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k2",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_8554dfa494444cb191cf6d032d164d53~mv2.png",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k3",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k4",
+     "text": "A new research laboratory, the “Digital Experience Lab” (DEXLab) is now open for SBE’s researchers to be used. The purpose of the DEXLab is to drive understanding of digital experiences at SBE with a variety of mobile and wearable devices, which are cutting-edge, usable without extensive technical support, potentially useful for various research applications and focus on user experience. After about 9 months of conceptualization and setting up the lab, the lab opens its doors to all SBE researchers on 14 March, 2022.\nWith recent diversification and globalization taking place in business research and ever-growing competition, the DEXLab is launched to set up and future-proof the SBE regarding technological research & digital education. The DEXLab provides SBE’s faculty and students with resources to conduct experimental research on digital experiences in business and service contexts. Located at the new Tapijnkazerne campus, the lab serves not only as a laboratory space but also serves as a hub connection of researchers, educators, students and societal stakeholders outside of UM.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k5",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k6",
+     "text": "The initiative for the new lab sparked in the department of Marketing and Supply Chain Management where several researchers work with cutting-edge technologies, such as Augmented- or Virtual Reality smart glasses or robots and were in need of a laboratory that offers a more flexible and spacious setup than the cubicle-setup that the BEELab currently offers.\n",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k7",
+     "text": "“We have now 8 mobile participant workstations and various digital technologies (e.g. mobile tablets, AR smart glasses, VR smart glasses) that researchers can use,”",
+     "marks": [
+      "strong",
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k8",
+     "text": " - Roberta Di Palma, lecturer at MSCM, co-founder and current lab manager.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k9",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ka",
+     "text": "“We wanted to design a laboratory that allows researchers to experiment with new technologies in flexible spaces while still maintaining a setup that allows for multiple participants per session,”",
+     "marks": [
+      "strong",
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kb",
+     "text": " ",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kc",
+     "text": "- Jonas Heller, Assistant Professor at MSCM, co-founder and lab coordinator of the DEXLab.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kd",
+   "style": "normal",
+   "markDefs": [
+    {
+     "_type": "link",
+     "_key": "kf",
+     "href": "https://intranet.maastrichtuniversity.nl/en/landing/research/sbe-labs/beelab"
+    }
+   ],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ke",
+     "text": "While setting up the DEXLab, ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kg",
+     "text": "the BEELab",
+     "marks": [
+      "kf"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kh",
+     "text": " was of tremendous help and supported with advice on how to set up procedures, consulted on administrative issues, and shared experiences to allow the DEXLab to be set up in a rather short time. Together with the BEELab, the DEXLab complements the available laboratories at the SBE to further increase research possibilities and efficiencies, while also allowing for teaching innovation. We are currently developing “Digital breakouts” for course coordinators to plan into their syllabi, in which the technologies of the DEXLab can be experienced by educators and students, for example to kick-off an innovative service project in a course. Another application of the digital technology from the DEXLab made available to students was the pilot project of Roberta/Dominik called “VR Education Innovation”.The official launch of the DEXLab is on the 14th of March, however, some research groups of the SBE have already piloted experiments in the DEXLab. For example, recent pilot experiments have investigated how Virtual Reality experiences can affect the donation behaviour of customers, or how AR-product previews impact consumer decision making.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ki",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kj",
+     "text": "Additionally, we have a “DEXLab Opening Reception” on the 31st of March, 15:00 in the DEXLab (Tapijn I1.017). Interested SBE",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kk",
+   "style": "normal",
+   "markDefs": [
+    {
+     "_type": "link",
+     "_key": "km",
+     "href": "mailto:sbe-dexlab@maastrichtuniversity.nl"
+    }
+   ],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kl",
+     "text": "researchers can sign up by emailing ",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kn",
+     "text": "sbe-dexlab@maastrichtuniversity.nl",
+     "marks": [
+      "km",
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "ko",
+     "text": ". During the reception, we introduce the DEXLab, its mission, and available state-of-the-art digital equipment such as VR and AR devices will be demonstrated.",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  }
+ ],
+ "embeds": []
+}

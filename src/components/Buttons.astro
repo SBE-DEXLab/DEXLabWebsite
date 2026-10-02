@@ -1,0 +1,27 @@
+---
+import type {Link} from '../lib/types'
+import {isExternal} from '../lib/utils'
+
+interface Props {
+  buttons?: Link[]
+  center?: boolean
+}
+const {buttons, center} = Astro.props
+---
+
+{
+  buttons?.length ? (
+    <div class:list={['btn-row', {center}]}>
+      {buttons.map((b) => (
+        <a
+          class:list={['btn', {secondary: b.style === 'secondary'}]}
+          href={b.href}
+          {...(isExternal(b.href) ? {target: '_blank', rel: 'noopener'} : {})}
+        >
+          {b.label}
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+      ))}
+    </div>
+  ) : null
+}

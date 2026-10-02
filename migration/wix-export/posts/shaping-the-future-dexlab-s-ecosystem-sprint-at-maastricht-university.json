@@ -1,0 +1,621 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/shaping-the-future-dexlab-s-ecosystem-sprint-at-maastricht-university",
+ "slug": "shaping-the-future-dexlab-s-ecosystem-sprint-at-maastricht-university",
+ "title": "Shaping the Future: DEXLab's Ecosystem Sprint at Maastricht University",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "augmented-research"
+  },
+  "dateModified": "2025-03-06T11:00:06.420Z",
+  "datePublished": "2025-03-06T11:00:06.420Z",
+  "headline": "Shaping the Future: DEXLab's Ecosystem Sprint at Maastricht University",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/shaping-the-future-dexlab-s-ecosystem-sprint-at-maastricht-university",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/shaping-the-future-dexlab-s-ecosystem-sprint-at-maastricht-university"
+  },
+  "description": "At DEXLab, we believe true innovation happens when ideas are put into practice. Our Ecosystem Innovation Sprint at Maastricht University brought together third year Business Engineering students as part of their Ecosystems course.  The challenge? To develop innovative solutions for real-world problems in the fields of Extended Reality, Service Robots, and Automated Logistics. Over the course of the sprint, nine student teams explored these emerging fields, developing business models and ecosyste",
+  "url": "https://www.sbe-dexlab.com/post/shaping-the-future-dexlab-s-ecosystem-sprint-at-maastricht-university",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/9aa9b6_b1dd0c3030a444449ccae062dc8e0465~mv2.png/v1/fill/w_900,h_718,al_c,q_90/9aa9b6_b1dd0c3030a444449ccae062dc8e0465~mv2.png",
+   "width": "900",
+   "height": "718"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [],
+ "og": "https://static.wixstatic.com/media/9aa9b6_b1dd0c3030a444449ccae062dc8e0465~mv2.png/v1/fill/w_900,h_718,al_c,q_90/9aa9b6_b1dd0c3030a444449ccae062dc8e0465~mv2.png",
+ "body": [
+  {
+   "_type": "block",
+   "_key": "k0",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1",
+     "text": "At ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k2",
+     "text": "DEXLab",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k3",
+     "text": ", we believe true innovation happens when ideas are put into practice. Our ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k4",
+     "text": "Ecosystem Innovation Sprint ",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k5",
+     "text": "at Maastricht University brought together ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k6",
+     "text": "third year Business Engineering students",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k7",
+     "text": " as part of their Ecosystems course.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k8",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k9",
+     "text": "The challenge?",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "ka",
+     "text": " To develop innovative solutions for real-world problems in the fields of ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kb",
+     "text": "Extended Reality, Service Robots, and Automated Logistics",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kc",
+     "text": ".",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kd",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ke",
+     "text": "Over the course of the sprint, ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kf",
+     "text": "nine student teams",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kg",
+     "text": " explored these emerging fields, ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kh",
+     "text": "developing business models and ecosystem strategies",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "ki",
+     "text": " to address real-world issues. Here’s a look at some of the participants’ experiences, key learnings, and insights:",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kj",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kk",
+     "text": "🔹 The Challenges & Ideas",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kl",
+     "text": "",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "km",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kn",
+     "text": "Throughout the sprint, students tackled complex challenges, turning them into opportunities for innovation. Here’s what some of them had to say about their projects:",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ko",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kp",
+     "text": "🤖 ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kq",
+     "text": "“We had to automate a system. We decided to go with a robotics warehouse – the idea being that an order from a website is loaded onto a drone and delivered to the house automatically.”",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kr",
+     "text": "",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "ks",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_b1dd0c3030a444449ccae062dc8e0465~mv2.png",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "kt",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ku",
+     "text": "📦 ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kv",
+     "text": "“Our topic was automated logistics. We tried to create an ecosystem based in the Limburg area. We worked on the business plan and identified key stakeholders.”",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kw",
+     "text": "",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kx",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ky",
+     "text": "💡 ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kz",
+     "text": "“Our team focused on service robots in the healthcare industry for elderly people. Brainstorming really helped us to start building an ecosystem around that idea.”",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k10",
+     "text": "",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k13",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k14",
+     "text": "🔹 Favourite Moments & Key Takeaways",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k15",
+     "text": "",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k16",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k17",
+     "text": "Beyond the technical and business aspects, the sprint also provided students with valuable learning experiences. Here are some highlights from their journey:",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k18",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k19",
+     "text": "✨ ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k1a",
+     "text": "“I really enjoyed how everybody had their individual time, and then we had other collaborative tasks to do altogether. That would be my favourite moment.”",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k1b",
+     "text": "",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1c",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1d",
+     "text": "🛠 ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k1e",
+     "text": "“My key takeaway is that I loved the guided process of this. If I had to do it alone at home, it might have been a bit more tedious, I’d be more lost. Being able to use these new concepts together in practice was the best part for me.”",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k1f",
+     "text": "",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1g",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1h",
+     "text": "🧠 ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k1i",
+     "text": "“It was probably when we brought our individual ideas together – it was fun. When you work on every step together you might get one opinion dominating the others. When you do it individually first and then bring it together you can see someone sharing an idea that otherwise they wouldn’t have been willing to share.”",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k1j",
+     "text": "",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k1k",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_ccb581ed6e6c4f7f9a9c78f6d85e6172~mv2.png",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k1l",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1m",
+     "text": "📊 ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k1n",
+     "text": "“The groupwork was really nice, because we usually don’t have time to do these interactive activities outside of the tutorials. The Business Model Canvas exercise made it really clear what we needed to focus on for our project. It gave us structure and helped us dive deeper.”",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k1o",
+     "text": "",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1p",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1q",
+     "text": "🔹 Applying These Learnings in the Future",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k1r",
+     "text": "",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1s",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1t",
+     "text": "The sprint not only challenged students but also equipped them with skills they can apply in their future careers:",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1u",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1v",
+     "text": "🤝 ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k1w",
+     "text": "“The main thing I’ve practiced is how to work with people – how to build up a process, how to go from just an idea to a proper plan, and that’s going to be very useful going forward.”",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k1x",
+     "text": "",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1y",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1z",
+     "text": "💡 ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k20",
+     "text": "“How to work as a team – I think that was one of the key takeaways. And how to create an ecosystem based on a specific area. It was great to work as a team where everyone came from different backgrounds and contributed unique insights.”",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k21",
+     "text": "",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k22",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k23",
+     "text": "🌍  ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k24",
+     "text": "“It helped me become more aware of key stakeholders - not just in the supply chain, but also anyone impacted by our project. The collaborative environment made a big difference.”",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k25",
+     "text": "",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k28",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k29",
+     "text": "Overall, the event was a great success and hand-on learning opportunity! A big shoutout to all the students taking part in this course for their engagement, enthusiasm and for sharing their lovely experience with us for this blog post!",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k2c",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k2d",
+     "text": "A huge thank you to ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k2e",
+     "text": "Prof. Dr. Dominik Mahr, Mark Steins, Ayat Azzimani, and Lara Grunschel",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k2f",
+     "text": " for leading and supporting this inspiring event! 🙌",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k2g",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_716c07fe54be45eb944974e01e2e1a39~mv2.png",
+   "alt": ""
+  }
+ ],
+ "embeds": []
+}

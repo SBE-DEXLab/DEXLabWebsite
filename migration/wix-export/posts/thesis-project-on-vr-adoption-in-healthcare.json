@@ -1,0 +1,139 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/thesis-project-on-vr-adoption-in-healthcare",
+ "slug": "thesis-project-on-vr-adoption-in-healthcare",
+ "title": "Thesis Project on VR adoption in Healthcare",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "augmented-research"
+  },
+  "dateModified": "2023-09-20T06:06:54.898Z",
+  "datePublished": "2023-02-14T10:21:18.822Z",
+  "headline": "Thesis Project on VR adoption in Healthcare",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/thesis-project-on-vr-adoption-in-healthcare",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/thesis-project-on-vr-adoption-in-healthcare"
+  },
+  "description": "Hi all!Let me introduce myself; my name is Renée van Hout, and I am currently studying for a Master's in International Business, specialising in Strategic Marketing. As part of the Master's course, there are several real-life case assignments you execute, of which one ended with a Hackathon event. During this event, several companies attended to give a pitch, and it was possible to network afterwards. Here I spoke with Psylaris: A company that aims to create the ultimate combination of smart sof",
+  "url": "https://www.sbe-dexlab.com/post/thesis-project-on-vr-adoption-in-healthcare",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/9aa9b6_a61bc525ac684339bfca266698c16c3a~mv2.jpeg/v1/fill/w_750,h_1000,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_a61bc525ac684339bfca266698c16c3a~mv2.jpeg",
+   "width": "768",
+   "height": "1024"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [
+  "https://www.sbe-dexlab.com/blog/categories/thesis-projects",
+  "https://www.sbe-dexlab.com/blog/categories/research"
+ ],
+ "og": "https://static.wixstatic.com/media/9aa9b6_a61bc525ac684339bfca266698c16c3a~mv2.jpeg/v1/fill/w_750,h_1000,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_a61bc525ac684339bfca266698c16c3a~mv2.jpeg",
+ "body": [
+  {
+   "_type": "block",
+   "_key": "k0",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1",
+     "text": "Hi all!",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k2",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k3",
+     "text": "Let me introduce myself; my name is Renée van Hout, and I am currently studying for a Master's in International Business, specialising in Strategic Marketing. As part of the Master's course, there are several real-life case assignments you execute, of which one ended with a Hackathon event. During this event, several companies attended to give a pitch, and it was possible to network afterwards. Here I spoke with Psylaris: A company that aims to create the ultimate combination of smart software and therapists to ensure everyone has access to efficient mental health care. A company with such an inspiring mission appealed to me, which is why I am proud to say that I am now writing my Master's thesis connected to Psylaris. The overall thesis aims to find out the drivers and obstacles of healthcare professionals' intention to adopt VR services and how these can be positively influenced by the company offering the VR services. I am curious about the findings and look forward to learning more about the world of Virtual Reality.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k4",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k5",
+     "text": "Best,",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k6",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k7",
+     "text": "Renée van Hout",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k8",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_a61bc525ac684339bfca266698c16c3a~mv2.jpeg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k9",
+   "style": "normal",
+   "markDefs": [
+    {
+     "_type": "link",
+     "_key": "kb",
+     "href": "mailto:sbe-dexlab@maastrichtuniversity.nl"
+    }
+   ],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ka",
+     "text": "If you are also interested in writing a thesis about virtual reality, do not hesitate to contact us at ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kc",
+     "text": "sbe-dexlab@maastrichtuniversity.nl",
+     "marks": [
+      "kb",
+      "underline"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kd",
+     "text": "",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "embeds": []
+}

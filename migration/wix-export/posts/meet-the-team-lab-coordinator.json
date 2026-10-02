@@ -1,0 +1,213 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/meet-the-team-lab-coordinator",
+ "slug": "meet-the-team-lab-coordinator",
+ "title": "Meet the Team: Lab Coordinator!",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "augmented-research"
+  },
+  "dateModified": "2022-10-07T17:03:05.604Z",
+  "datePublished": "2022-10-07T16:41:50.355Z",
+  "headline": "Meet the Team: Lab Coordinator! ",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/meet-the-team-lab-coordinator",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/meet-the-team-lab-coordinator"
+  },
+  "description": " Hello everyone, &#010;My name is Roberta Di Palma and I am the DEXLab coordinator. I am very proud to be one of the founders of the SBE DEXLab and with this post I would like to introduce myself on a bit of a more personal level.  I was born in Naples (Italy) and a fun fact about me is that before moving to Maastricht, I moved to a new city every three to four years, experiencing more than seven different schools (and their subsequent educational systems) by the time I graduated highschool. Particul",
+  "url": "https://www.sbe-dexlab.com/post/meet-the-team-lab-coordinator",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/9aa9b6_4f634aea42cf4618a1943cf30b5f163b~mv2.jpg/v1/fill/w_667,h_1000,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_4f634aea42cf4618a1943cf30b5f163b~mv2.jpg",
+   "width": "4480",
+   "height": "6720"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [
+  "https://www.sbe-dexlab.com/blog/categories/meet-the-team"
+ ],
+ "og": "https://static.wixstatic.com/media/9aa9b6_4f634aea42cf4618a1943cf30b5f163b~mv2.jpg/v1/fill/w_667,h_1000,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_4f634aea42cf4618a1943cf30b5f163b~mv2.jpg",
+ "body": [
+  {
+   "_type": "block",
+   "_key": "k2",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k3",
+     "text": "Hello everyone,",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k4",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k5",
+     "text": "My name is Roberta Di Palma and I am the DEXLab coordinator. I am very proud to be one of the founders of the SBE DEXLab and with this post I would like to introduce myself on a bit of a more personal level.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k6",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_4f634aea42cf4618a1943cf30b5f163b~mv2.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k7",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k8",
+     "text": "I was born in Naples (Italy) and a fun fact about me is that before moving to Maastricht, I moved to a new city every three to four years, experiencing more than seven different schools (and their subsequent educational systems) by the time I graduated highschool. Particularly formative was my time spent in Texas (USA), where I attended elementary school. I was immediately captivated by how different the educational system, with regards to teaching methods and teacher-student relationship, was compared to my home country. At the age of sixteen I moved to Maastricht where I completed the International Baccalaureate. After this, I decided to enrol at Maastricht University School of Business and Economics (SBE) to pursue a bachelor in International Business.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k9",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ka",
+     "text": "Here, the educational system of UM, or what is known as problem-based learning, was what attracted me the most to the university. Its practicality and hands on-approach kept me engaged throughout the years, and my love for Maastricht as a city also grew. Having enjoyed my bachelor so much, I decided to stay and also do my masters at SBE, specifically in Strategic Marketing. During my masters is when I became a student tutor. This led me to become a lecturer of marketing and supply chain management, which is a position I proudly held for two years. This September I started a PhD on the use of Virtual Reality in education, specifically on how VR can be used to train soft skills that are important for higher business education graduates. This topic is particularly intriguing to me because it allows me to combine my two passions, education and marketing. As you have probably noticed at this point, educational systems and educators have shaped a great part of my life. By starting a PhD, my hope is to be able to pass this on and hopefully (in my small way) help shape future generations as well.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "kb",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_f825440a72484ba6ba541fe06251838b~mv2.jpeg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "kc",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kd",
+     "text": "My involvement with the DEXLab started during my time as a lecturer. Having worked for about a year on a project titled “SBE Education Innovation”, which aimed to uncover the advantages and disadvantages of integrating VR within problem-based learning classrooms, the need for a digital experience lab at SBE was very evident to me. Together with Prof. Dr. Dominik Mahr, Dr. Jonas Heller and Dr. Tim Hilken, we worked hard on ideating and implementing what is now known as the DEXLab. The beauty of the DEXLab resides in its equal efforts in advancing innovative research in many fields and the diffusion of tech-enabled educational practices at UM and beyond. I am excited to see what the future holds for this very young, yet mighty, lab!",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kg",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kh",
+     "text": "Beyond work, in my day-to-day life, I like to spend time with my one-year old cat Capri (yes, like the island). When she’s not running from room to room, knocking over everything in her path, you will probably find her peacefully sleeping. Beyond this, I spend a lot of time cooking (Italian food of course) or hanging out with friends. During COVID I picked up sewing as a hobby, and I am proud to say that it was not just a “phase”. Every week I attend a sewing class, which I look forward to everyday as I consider it to be my creative outlet these day. Last but not least, I am also guilty of having hopped on the padel trend and while I am in no way a professional, I can say that it is great fun.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "ki",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_40fcc820408e4e079319b3a26dc412ef~mv2.jpeg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "kj",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kk",
+     "text": "And with that, I conclude my story (for now). I hope that through this post you got to know me a little bit.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kl",
+   "style": "normal",
+   "markDefs": [
+    {
+     "_type": "link",
+     "_key": "kn",
+     "href": "mailto:sbe-dexlab@maastrichtuniversity.nl"
+    }
+   ],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "km",
+     "text": "I look forward to seeing you at lab and for any lab related questions, feel free to contact us at ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "ko",
+     "text": "sbe-dexlab@maastrichtuniversity.nl",
+     "marks": [
+      "kn"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kr",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ks",
+     "text": "Best,",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kt",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ku",
+     "text": "Roberta",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "embeds": []
+}

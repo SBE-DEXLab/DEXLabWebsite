@@ -1,0 +1,434 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/good-vibrations-measuring-brain-activity-with-eeg",
+ "slug": "good-vibrations-measuring-brain-activity-with-eeg",
+ "title": "Good Vibrations: Measuring brain activity with EEG",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "augmented-research"
+  },
+  "dateModified": "2023-09-20T06:07:20.492Z",
+  "datePublished": "2023-01-13T08:36:24.125Z",
+  "headline": "Good Vibrations: Measuring brain activity with EEG ",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/good-vibrations-measuring-brain-activity-with-eeg",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/good-vibrations-measuring-brain-activity-with-eeg"
+  },
+  "description": "A tech review by Sammy WalsThe action potential: The brain consists of billions of neurons connected in a network via synapses, which process information by using a lot of very small electrical signals. These neurons fire and create “action potentials”, causing an electrical current to flow from one neuron to the next. This is the basic mechanism for information processing in the brain.  Figure 1: The action potential (left), a small electrical impulse of a single neuron firing. And on the right",
+  "url": "https://www.sbe-dexlab.com/post/good-vibrations-measuring-brain-activity-with-eeg",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/9aa9b6_d0e7c02fbfbe499f8c87ec2ccd3204e7~mv2.jpg/v1/fill/w_730,h_486,al_c,lg_1,q_80/9aa9b6_d0e7c02fbfbe499f8c87ec2ccd3204e7~mv2.jpg",
+   "width": "608",
+   "height": "405"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [
+  "https://www.sbe-dexlab.com/blog/categories/food-for-thought",
+  "https://www.sbe-dexlab.com/blog/categories/research"
+ ],
+ "og": "https://static.wixstatic.com/media/9aa9b6_d0e7c02fbfbe499f8c87ec2ccd3204e7~mv2.jpg/v1/fill/w_730,h_486,al_c,lg_1,q_80/9aa9b6_d0e7c02fbfbe499f8c87ec2ccd3204e7~mv2.jpg",
+ "body": [
+  {
+   "_type": "block",
+   "_key": "k0",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1",
+     "text": "A tech review by Sammy Wals",
+     "marks": [
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k2",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k3",
+     "text": "The action potential:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k4",
+     "text": " The brain consists of billions of neurons connected in a network via synapses, which process information by using a lot of very small electrical signals. These neurons fire and create “action potentials”, causing an electrical current to flow from one neuron to the next. This is the basic mechanism for information processing in the brain.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k5",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_d0e7c02fbfbe499f8c87ec2ccd3204e7~mv2.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "image",
+   "_key": "k6",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_f31326493bf64e3bb222f113036cffcb~mv2.png",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k7",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k8",
+     "text": "Figure 1: The action potential (left), a small electrical impulse of a single neuron firing. And on the right, an EEG being setup with a participant in a scientific study.",
+     "marks": [
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k9",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ka",
+     "text": "The EEG:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kb",
+     "text": " ",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kc",
+     "text": "Scientists have developed a method to observe this electrical activity of the brain. The “electroencephalogram” (EEG) is a method where small electrodes are placed on the scalp to measure electrical brain activity. Most notably, Hans Berger (1924) is credited for recording the first electroencephalogram, which you can see below in Figure 2.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "kf",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_40ad4ce8d982446995cff4e89752940a~mv2.png",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "kg",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kh",
+     "text": "Figure 2: The upper line is the first recorded EEG signal by Hans Berger (1924)",
+     "marks": [
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ki",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kj",
+     "text": "Brain waves",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kk",
+     "text": ":",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kl",
+     "text": " ",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "km",
+     "text": "What the electroencephalogram (EEG) essentially measures is a summation of these action potentials across a large number of neurons. Research has shown that there are different frequencies in these electrical signals (Buzsaki, 2006); more generally called “brainwaves” (figure 4). It has been shown that brain areas can “synchronize” with each other by operating on the same frequency. In this way, current neuroscientific theories state that information can be organized and bundled together by separating information across different frequencies. As the brain consists of billions of neurons, which operate in parallel to process different kinds of information, this organization is necessary for efficient information processing. Moreover, synchronization between areas is believed to be a mechanism for how brain areas work together and influence each other.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "kn",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_9f74bbdc01504cd0bee71ad14597e923~mv2.png",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "ko",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kp",
+     "text": "Figure 4: An EEG signal decomposed into different frequency bands",
+     "marks": [
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kq",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kr",
+     "text": "Interpreting EEG signals:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "ks",
+     "text": " ",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kt",
+     "text": "However, inferring mental states from EEG signals is not easy. This is called the “reverse inference problem” (Poldrack, 2006), where certain brain signals (and brain areas) have multiple functions and therefore have a variety of possible interpretations. For example, alpha waves are associated with attentional control but also with arousal. A change in alpha power therefore does not have a clear interpretation such as “relaxation” or “lapses in attention”.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ku",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kv",
+     "text": "Decoding the brain:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kw",
+     "text": " ",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kx",
+     "text": "That being said, EEG signals contain useful information and researchers have tried “decoding” the brain. Neuromarketing research has shown that EEG data can be used to predict the effectiveness of advertising (Dmochowski et al., 2014). Moreover, brain-computer interfaces (BCI’s) allow people with disabilities to control prosthetic limbs directly with their brains. These studies show that EEG data is a rich source of information, and that it contains predictive information about people´s behavioral intentions and level of engagement over time.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ky",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kz",
+     "text": "The great unknown: ",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k10",
+     "text": "The exact functioning of the brain remains unknown, and how to correctly apply neuroscientific methods to marketing problems is an area of active research (Ramsøy, 2019). EEG allows researchers to measure brain activity over time, but further research is needed to establish valid and reliable metrics of relevant mental processes. Exciting and innovative research has shown that such neuroscientific measurements have the ability to predict future behavior; arguably with higher accuracy than self-report data (Dmochowski et al., 2014). However, the exact functioning of the brain, and how it creates our sense of consciousness, will remain a big mystery to solve in the future.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k11",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k12",
+     "text": "References:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k13",
+     "text": "",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k14",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k15",
+     "text": "Buzsaki, G. (2006). ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k16",
+     "text": "Rhythms of the Brain.",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k17",
+     "text": " Oxford university press.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k18",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k19",
+     "text": "Dmochowski, J. P., Bezdek, M. A., Abelson, B. P., Johnson, J. S., Schumacher, E. H., & \tParra, L. C. (2014). Audience preferences are predicted by temporal reliability of \tneural processing",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k1a",
+     "text": ". Nature communications, 5",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k1b",
+     "text": "(1), 1-9.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1c",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1d",
+     "text": "Poldrack, R. A. (2006). Can cognitive processes be inferred from neuroimaging data",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k1e",
+     "text": "?. Trends \tin cognitive sciences, 10",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k1f",
+     "text": "(2), 59-63.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1g",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1h",
+     "text": "Ramsøy, T. Z. (2019). Building a foundation for neuromarketing and consumer neuroscience \tresearch: How researchers can apply academic rigor to the neuroscientific study of \tadvertising effects. ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k1i",
+     "text": "Journal of Advertising Research, 59",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k1j",
+     "text": "(3), 281-294.",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "embeds": []
+}

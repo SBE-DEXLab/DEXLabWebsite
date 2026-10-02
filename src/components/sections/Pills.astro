@@ -1,0 +1,59 @@
+---
+import {brandify} from '../../lib/utils'
+
+interface Props {
+  heading?: string
+  intro?: string
+  items?: string[]
+  tone?: string
+}
+const {heading, intro, items = [], tone = 'default'} = Astro.props
+---
+
+<section class:list={['section', `tone-${tone}`]}>
+  <div class="container">
+    {
+      (heading || intro) && (
+        <div class="section-head">
+          {heading && <h2 set:html={brandify(heading)} />}
+          {intro && <p>{intro}</p>}
+        </div>
+      )
+    }
+    <ul class="pills">
+      {items.map((p) => <li>{p}</li>)}
+    </ul>
+  </div>
+</section>
+
+<style>
+  .pills {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 960px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+  .pills li {
+    padding: 10px 20px;
+    border-radius: 999px;
+    background: #fff;
+    border: 1.5px solid var(--line);
+    font-weight: 600;
+    color: var(--navy);
+    transition: border-color 0.2s, color 0.2s, transform 0.2s;
+  }
+  .pills li:nth-child(3n + 1) {
+    border-color: rgb(0 162 219 / 0.45);
+  }
+  .pills li:nth-child(3n + 2) {
+    border-color: rgb(232 78 16 / 0.4);
+  }
+  .pills li:hover {
+    transform: translateY(-2px);
+    color: var(--orange);
+  }
+</style>

@@ -1,0 +1,195 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/from-maastricht-to-busan-a-first-time-academic-adventure",
+ "slug": "from-maastricht-to-busan-a-first-time-academic-adventure",
+ "title": "From Maastricht to Busan: A First-Time Academic Adventure",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "sbe-dexlab"
+  },
+  "dateModified": "2024-05-27T11:19:37.694Z",
+  "datePublished": "2024-05-27T11:19:37.694Z",
+  "headline": "From Maastricht to Busan: A First-Time Academic Adventure ",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/from-maastricht-to-busan-a-first-time-academic-adventure",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/from-maastricht-to-busan-a-first-time-academic-adventure"
+  },
+  "description": "Ibrahim Humdi recently attended the XR Conference in Korea together with other DEXLab researchers. Here, you can read all about the XR Conference from a first-year PhD's perspective. I was super excited to travel to Busan and attend the first academic conference as a PhD student. Coming from an industry where I attended many business conferences, I was curious to learn the difference between the two.  The 32-hour trip involved a lot of travel and waiting, with some good book time thrown in. Unfo",
+  "url": "https://www.sbe-dexlab.com/post/from-maastricht-to-busan-a-first-time-academic-adventure",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/9aa9b6_12320405188c4405912164e8be3e7cca~mv2.jpg/v1/fill/w_985,h_1000,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_12320405188c4405912164e8be3e7cca~mv2.jpg",
+   "width": "1242",
+   "height": "1261"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [
+  "https://www.sbe-dexlab.com/blog/categories/events"
+ ],
+ "og": "https://static.wixstatic.com/media/9aa9b6_12320405188c4405912164e8be3e7cca~mv2.jpg/v1/fill/w_985,h_1000,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_12320405188c4405912164e8be3e7cca~mv2.jpg",
+ "body": [
+  {
+   "_type": "image",
+   "_key": "k0",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_12320405188c4405912164e8be3e7cca~mv2.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k1",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k2",
+     "text": "Ibrahim Humdi recently attended the XR Conference in Korea together with other DEXLab researchers. Here, you can read all about the XR Conference from a first-year PhD's perspective.",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k3",
+     "text": "",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k4",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k5",
+     "text": "I was super excited to travel to Busan and attend the first academic conference as a PhD student. Coming from an industry where I attended many business conferences, I was curious to learn the difference between the two.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k6",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k7",
+     "text": "The 32-hour trip involved a lot of travel and waiting, with some good book time thrown in. Unfortunately, sleeping on planes isn't my strong suit, so I arrived feeling a bit tired. But hey, no pain, no gain, right?",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k8",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k9",
+     "text": "Busan is like a giant soup pot! I just got here, and I'm already melting. Back home, it gets crazy hot too - like, 60 degrees hot! But me? I hate hot weather. Maybe that's why I left for Europe, haha!  Looks like even deserts aren't hot enough training for Busan! However, I quickly adapted to the conditions during my stay because I love exploring, which is a prominent characteristic of researchers that helped me move forward: patience, endurance, and exploration.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ka",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kb",
+     "text": "Beyond the conference, I explored Busan's bustling markets and lively streets. The beautiful crafts and traditional clothing showcased the city's rich culture. I loved soaking it all in and learning more about Busan's unique identity.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kc",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kd",
+     "text": "The Koreans' deep pride in their country was truly inspiring. They shared their culture in everything, from big things to small details. And the food – wow! Kimchi, tteokbokki, and all the other delicious dishes were a treat.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ke",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kf",
+     "text": "The benefits of the conference extended beyond the poster presentation and workshops to include important meetings with other researchers after the event. We had dinner together, exchanged ideas, and drew inspiration from each other. Several attendees also offered me ideas for collaboration on future research projects, which excited me and encouraged me to move forward with my research.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kg",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kh",
+     "text": "I am excited to return to Maastricht with a wealth of new ideas and inspiration, ready to continue my research with renewed passion.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ki",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kj",
+     "text": "I will always remember my trip to Busan with all its adventures and unique experiences, and I will make sure to return to this wonderful city in the future.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kk",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kl",
+     "text": "In the end, I would like to thank everyone who made this happen: my supervisors, my teammates, the organizers, and lastly, the Korean people for being so nice, helpful, and welcoming.",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "embeds": []
+}

@@ -1,0 +1,112 @@
+---
+import Img from '../Img.astro'
+import Buttons from '../Buttons.astro'
+import {brandify, youtubeId} from '../../lib/utils'
+import {renderRichText} from '../../lib/portableText'
+import type {Img as ImgT, Link, RichText} from '../../lib/types'
+
+interface Props {
+  anchor?: string
+  heading?: string
+  body?: RichText
+  image?: ImgT
+  imagePosition?: 'left' | 'right'
+  video?: string
+  buttons?: Link[]
+  tone?: string
+  centered?: boolean
+}
+const {anchor, heading, body, image, imagePosition = 'right', video, buttons, tone = 'default', centered} = Astro.props
+const yt = youtubeId(video)
+const hasMedia = Boolean(yt || image?.url)
+---
+
+<section id={anchor} class:list={['section', `tone-${tone}`]}>
+  <div class:list={['container', {split: hasMedia, reverse: imagePosition === 'left', solo: !hasMedia, center: centered}]}>
+    <div class="copy">
+      {heading && <h2 class="accent-rule" set:html={brandify(heading)} />}
+      <div class="prose" set:html={renderRichText(body)} />
+      <Buttons buttons={buttons} center={centered && !hasMedia} />
+    </div>
+    {
+      hasMedia && (
+        <div class="media">
+          {yt ? (
+            <div class="video-frame">
+              <iframe
+                src={`https://www.youtube-nocookie.com/embed/${yt}`}
+                title={heading || 'Video'}
+                loading="lazy"
+                allow="accelerometer; encrypted-media; picture-in-picture; fullscreen"
+                allowfullscreen
+              />
+            </div>
+          ) : (
+            <Img image={image} width={640} sizes="(min-width: 1000px) 560px, 100vw" fit="max" />
+          )}
+        </div>
+      )
+    }
+  </div>
+</section>
+
+<style>
+  .split {
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap: clamp(32px, 6vw, 80px);
+    align-items: center;
+  }
+  .split.reverse .media {
+    order: -1;
+  }
+  .solo .copy {
+    max-width: 800px;
+    margin-inline: auto;
+  }
+  .center .copy {
+    text-align: center;
+  }
+  .accent-rule::after {
+    margin-left: 0;
+  }
+  .center .accent-rule::after {
+    margin-left: auto;
+  }
+  .media :global(img) {
+    width: 100%;
+    background: #fff;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+  }
+  .media {
+    position: relative;
+  }
+  .media::before {
+    content: '';
+    position: absolute;
+    inset: 18px -18px -18px 18px;
+    border-radius: var(--radius);
+    background: var(--orange);
+    opacity: 0.9;
+    z-index: -1;
+  }
+  .reverse .media::before {
+    inset: 18px 18px -18px -18px;
+    background: var(--blue);
+  }
+  .section {
+    isolation: isolate;
+  }
+  @media (max-width: 860px) {
+    .split {
+      grid-template-columns: 1fr;
+    }
+    .split.reverse .media {
+      order: 0;
+    }
+    .media::before {
+      display: none;
+    }
+  }
+</style>

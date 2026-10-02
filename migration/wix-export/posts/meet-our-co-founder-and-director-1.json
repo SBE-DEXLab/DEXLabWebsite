@@ -1,0 +1,181 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/meet-our-co-founder-and-director-1",
+ "slug": "meet-our-co-founder-and-director-1",
+ "title": "Meet our co-founder and director!",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "augmented-research"
+  },
+  "dateModified": "2023-09-20T07:11:27.438Z",
+  "datePublished": "2023-05-04T17:30:20.461Z",
+  "headline": "Meet our co-founder and director! ",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/meet-our-co-founder-and-director-1",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/meet-our-co-founder-and-director-1"
+  },
+  "description": "Hi everyone, my name is Tim Hilken. I am proud to be a co-founder and Director of the DEXLab, and an Assistant Professor atMaastricht University’s School of Business and Economics (SBE), Department of Marketing and Supply Chain Management (MSCM). In this post, I would like to introduce myself and talk about my passion for researching, teaching, and creating impact with digital experiences.I grew up in Germany and Canada, and after finishing high school I decided to go study International Busines",
+  "url": "https://www.sbe-dexlab.com/post/meet-our-co-founder-and-director-1",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/9aa9b6_027afbbf9abc461c8453a36ad1389200~mv2.jpeg/v1/fill/w_800,h_1000,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_027afbbf9abc461c8453a36ad1389200~mv2.jpeg",
+   "width": "1638",
+   "height": "2048"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [
+  "https://www.sbe-dexlab.com/blog/categories/meet-the-team"
+ ],
+ "og": "https://static.wixstatic.com/media/9aa9b6_027afbbf9abc461c8453a36ad1389200~mv2.jpeg/v1/fill/w_800,h_1000,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_027afbbf9abc461c8453a36ad1389200~mv2.jpeg",
+ "body": [
+  {
+   "_type": "block",
+   "_key": "k0",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1",
+     "text": "Hi everyone, my name is Tim Hilken. I am proud to be a co-founder and Director of the DEXLab, and an Assistant Professor atMaastricht University’s School of Business and Economics (SBE), Department of Marketing and Supply Chain Management (MSCM). In this post, I would like to introduce myself and talk about my passion for researching, teaching, and creating impact with digital experiences.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k2",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_027afbbf9abc461c8453a36ad1389200~mv2.jpeg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k3",
+   "style": "normal",
+   "markDefs": [
+    {
+     "_type": "link",
+     "_key": "k9",
+     "href": "https://www.augmented-research.com/"
+    }
+   ],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k4",
+     "text": "I grew up in Germany and Canada, and after finishing high school I decided to go study International Business in Maastricht because I was attracted by the international environment and PBL system. Throughout my studies, I developed a passion for research based on a curiosity to understand the ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k5",
+     "text": "why’s",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k6",
+     "text": " and ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k7",
+     "text": "how’s",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k8",
+     "text": " of the research papers that I was reading. I have always been passionate about education, working as tutor for high school students and sports coach. Towards the end of my undergrad studies, it thus made sense for me to choose a career path in academia – without quite knowing what I was getting myself into. I then completed the Business Research Master where I gained many valuable skills and important mentors – and I learned about an up-and-coming technology called “Augmented Reality”. Fast forward 3.5 years, I am defending my PhD on AR Marketing and working on cutting-edge research projects with an amazing team in the ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "ka",
+     "text": "Augmented Research",
+     "marks": [
+      "k9",
+      "underline"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kb",
+     "text": " initiative.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kc",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kd",
+     "text": "Since 2018, I work as an Assistant Professor at MSCM which, like all of SBE and UM, has a culture characterized by immense personal connection and support, paired with a strive for excellence and innovation as well as the freedom to explore and experiment. These qualities are what made the founding of the DEXLab in 2022 possible, which is is one of the highlights in my research career so far. Having the DEXLab as both a physical space and larger network of digital enthusiasts is a huge step forward from our early – admittedly adventurous and exciting – ‘out-of-the-garage/teaching room’ operations. I am proud of the many achievements within the first year, including dozens of educational activities and research studies with almost 2,000 participants in total, workshops in our MBA program and for companies such as Allianz or Bechtle, nearly 100,000 Euros in new funding, many exciting visitors and guests, and a doubling in the DEXLab team size. I look forward to what’s next and invite everyone at SBE, UM, and beyond to come connect with us, to explore how the DEXLab can accelerate digital experiences in your research, teaching, or business activities.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ke",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kf",
+     "text": "When I am not logged into the academic metaverse, I enjoy spending time with my family and friends, doing sports, cycling through the Dutch mountains, listening to podcasts, and trying out new cooking recipes (currently hooked on Ottolenghi). I am also a slightly-too-ambitious hobby barista, and I recently discovered that I am far better at ‘prompting’ artworks with the help of Midjourney rather than attempting to draw something myself (will save that for retirement).",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kg",
+   "style": "normal",
+   "markDefs": [
+    {
+     "_type": "link",
+     "_key": "ki",
+     "href": "mailto:dexlab@maastrichtuniversity.nl"
+    }
+   ],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kh",
+     "text": "That’s it from my side, if you would like to reach out, please do not hesitate to write an email to ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kj",
+     "text": "dexlab@maastrichtuniversity.nl",
+     "marks": [
+      "ki",
+      "underline"
+     ]
+    }
+   ]
+  }
+ ],
+ "embeds": []
+}

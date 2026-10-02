@@ -1,0 +1,105 @@
+---
+interface Props {
+  items?: {_key: string; quote: string; source?: string}[]
+}
+const {items = []} = Astro.props
+---
+
+<section class="section tone-blue quotes" data-quotes>
+  <div class="container">
+    <svg class="mark" width="56" height="44" viewBox="0 0 56 44" aria-hidden="true">
+      <path fill="currentColor" d="M0 44V27C0 12 7 3 21 0l3 6c-8 3-12 8-12 15h10v23H0zm32 0V27c0-15 7-24 21-27l3 6c-8 3-12 8-12 15h10v23H32z" />
+    </svg>
+    <div class="track">
+      {
+        items.map((q, i) => (
+          <figure class="quote" data-quote hidden={i > 0}>
+            <blockquote>{q.quote}</blockquote>
+            {q.source && <figcaption>{q.source}</figcaption>}
+          </figure>
+        ))
+      }
+    </div>
+    {
+      items.length > 1 && (
+        <div class="dots" role="tablist" aria-label="Testimonials">
+          {items.map((_, i) => (
+            <button role="tab" aria-selected={i === 0 ? 'true' : 'false'} aria-label={`Testimonial ${i + 1}`} data-dot={i} />
+          ))}
+        </div>
+      )
+    }
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-quotes]').forEach((root) => {
+    const quotes = [...root.querySelectorAll<HTMLElement>('[data-quote]')]
+    const dots = [...root.querySelectorAll<HTMLButtonElement>('[data-dot]')]
+    if (quotes.length < 2) return
+    let current = 0
+    const show = (n: number) => {
+      current = (n + quotes.length) % quotes.length
+      quotes.forEach((q, i) => (q.hidden = i !== current))
+      dots.forEach((d, i) => d.setAttribute('aria-selected', String(i === current)))
+    }
+    dots.forEach((d, i) => d.addEventListener('click', () => show(i)))
+    let timer = setInterval(() => show(current + 1), 8000)
+    root.addEventListener('mouseenter', () => clearInterval(timer))
+    root.addEventListener('mouseleave', () => (timer = setInterval(() => show(current + 1), 8000)))
+  })
+</script>
+
+<style>
+  .quotes {
+    text-align: center;
+    background: linear-gradient(135deg, var(--blue), #0089c0);
+  }
+  .mark {
+    margin: 0 auto 20px;
+    color: rgb(255 255 255 / 0.5);
+  }
+  blockquote {
+    margin: 0 auto;
+    max-width: 860px;
+    font-family: var(--font-head);
+    font-size: clamp(1.25rem, 2.6vw, 1.85rem);
+    font-weight: 700;
+    line-height: 1.4;
+    color: #fff;
+  }
+  figcaption {
+    margin-top: 22px;
+    font-weight: 600;
+    opacity: 0.9;
+  }
+  figcaption::before {
+    content: '';
+    display: inline-block;
+    width: 28px;
+    height: 2px;
+    background: currentColor;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  .dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 28px;
+  }
+  .dots button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 0;
+    background: rgb(255 255 255 / 0.45);
+    cursor: pointer;
+    padding: 0;
+  }
+  .dots button[aria-selected='true'] {
+    background: #fff;
+    width: 26px;
+    border-radius: 6px;
+  }
+</style>

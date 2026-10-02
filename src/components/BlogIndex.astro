@@ -1,0 +1,146 @@
+---
+import Base from '../layouts/Base.astro'
+import Hero from './sections/Hero.astro'
+import PostCard from './PostCard.astro'
+import Img from './Img.astro'
+import type {Category, PostCard as PostCardT} from '../lib/types'
+
+interface Props {
+  posts: PostCardT[]
+  categories: Category[]
+  active?: Category
+  page: number
+  pages: number
+  baseUrl: string
+}
+const {posts, categories, active, page, pages, baseUrl} = Astro.props
+const pageHref = (n: number) => (n === 1 ? baseUrl : `${baseUrl.replace(/\/$/, '')}/page/${n}`)
+const [featured, ...rest] = posts
+const showFeatured = !active && page === 1 && featured
+---
+
+<Base
+  title={active ? `${active.title} | Blog` : page > 1 ? `Blog, page ${page}` : 'Blog'}
+  description={active?.description || 'News, interviews, experiments and ideas from the DEXLab team at Maastricht University.'}
+>
+  <Hero
+    heading={active ? active.title : 'The DEXLab Blog'}
+    subheading={active?.description || 'News, interviews, experiments and food for thought from the lab.'}
+  />
+  <section class="section blog">
+    <div class="container">
+      <nav class="cats" aria-label="Blog categories">
+        <a href="/blog" aria-current={!active ? 'page' : undefined}>All posts</a>
+        {
+          categories
+            .filter((c) => c.count)
+            .map((c) => (
+              <a href={`/blog/categories/${c.slug}`} aria-current={active?.slug === c.slug ? 'page' : undefined}>
+                {c.title} <span class="n">{c.count}</span>
+              </a>
+            ))
+        }
+      </nav>
+
+      {
+        showFeatured && (
+          <a class="featured card" href={`/post/${featured.slug}`}>
+            <div class="f-media">
+              <Img image={featured.coverImage} width={960} height={640} sizes="(min-width: 800px) 640px, 100vw" alt="" eager />
+            </div>
+            <div class="f-body">
+              <span class="eyebrow">Latest post</span>
+              <h2>{featured.title}</h2>
+              {featured.excerpt && <p>{featured.excerpt}</p>}
+              <span class="text-link">
+                Read the post <span aria-hidden="true">→</span>
+              </span>
+            </div>
+          </a>
+        )
+      }
+
+      <div class="grid" style="--cols: 3">
+        {(showFeatured ? rest : posts).map((p) => <PostCard post={p} />)}
+      </div>
+
+      {
+        pages > 1 && (
+          <nav class="pager" aria-label="Pagination">
+            {page > 1 && <a class="btn secondary" href={pageHref(page - 1)} rel="prev">← Newer</a>}
+            <span>Page {page} of {pages}</span>
+            {page < pages && <a class="btn secondary" href={pageHref(page + 1)} rel="next">Older →</a>}
+          </nav>
+        )
+      }
+    </div>
+  </section>
+</Base>
+
+<style>
+  .blog {
+    padding-top: 8px;
+  }
+  .cats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 48px;
+  }
+  .cats a {
+    padding: 8px 16px;
+    border-radius: 999px;
+    border: 1.5px solid var(--line);
+    text-decoration: none;
+    color: var(--navy);
+    font-weight: 600;
+    font-size: 0.92rem;
+  }
+  .cats a:hover {
+    border-color: var(--blue);
+  }
+  .cats a[aria-current='page'] {
+    background: var(--navy);
+    border-color: var(--navy);
+    color: #fff;
+  }
+  .n {
+    font-weight: 500;
+    opacity: 0.6;
+    margin-left: 2px;
+  }
+  .featured {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    margin-bottom: 40px;
+  }
+  .f-media :global(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: 320px;
+  }
+  .f-body {
+    padding: clamp(24px, 4vw, 48px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .f-body p {
+    color: var(--muted);
+  }
+  .pager {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 48px;
+    color: var(--muted);
+  }
+  @media (max-width: 800px) {
+    .featured {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

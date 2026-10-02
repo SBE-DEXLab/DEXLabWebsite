@@ -1,0 +1,345 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/meet-our-dexlab-director-dominik-mahr",
+ "slug": "meet-our-dexlab-director-dominik-mahr",
+ "title": "Meet our DEXLab Director Dominik Mahr!",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "augmented-research"
+  },
+  "dateModified": "2023-09-20T07:11:10.361Z",
+  "datePublished": "2023-05-26T06:57:36.613Z",
+  "headline": "Meet our DEXLab Director Dominik Mahr!",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/meet-our-dexlab-director-dominik-mahr",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/meet-our-dexlab-director-dominik-mahr"
+  },
+  "description": "Hi, please tell us a bit about yourself and your academic background!I'm Dominik Mahr, Professor of Digital Innovation &amp; Marketing and the Head of the Marketing and Supply Chain Management (MSCM) Department at SBE. I'm also the Scientific Director of the Service Science Factory (SSF).Initially, I did not consider being an academic, as I was working in industry. However, my job is a perfect combination for me: in what I do now there is always a combination of business or societal challenges and s",
+  "url": "https://www.sbe-dexlab.com/post/meet-our-dexlab-director-dominik-mahr",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/9aa9b6_e2dbd7397e3145578d5afc5064a865ef~mv2.jpeg/v1/fill/w_800,h_1000,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_e2dbd7397e3145578d5afc5064a865ef~mv2.jpeg",
+   "width": "1638",
+   "height": "2048"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [
+  "https://www.sbe-dexlab.com/blog/categories/meet-the-team"
+ ],
+ "og": "https://static.wixstatic.com/media/9aa9b6_e2dbd7397e3145578d5afc5064a865ef~mv2.jpeg/v1/fill/w_800,h_1000,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_e2dbd7397e3145578d5afc5064a865ef~mv2.jpeg",
+ "body": [
+  {
+   "_type": "block",
+   "_key": "k0",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1",
+     "text": "Hi, please tell us a bit about yourself and your academic background!",
+     "marks": [
+      "strong",
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k2",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k3",
+     "text": "I'm Dominik Mahr, Professor of Digital Innovation & Marketing and the Head of the Marketing and Supply Chain Management (MSCM) Department at SBE. I'm also the Scientific Director of the Service Science Factory (SSF).",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k4",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_e2dbd7397e3145578d5afc5064a865ef~mv2.jpeg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k5",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k6",
+     "text": "Initially, I did not consider being an academic, as I was working in industry. However, my job is a perfect combination for me: in what I do now there is always a combination of business or societal challenges and seeing how academia can help address them.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k7",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k8",
+     "text": "My focus is on the positive and negative sides of digitalization and what type of innovation is really beneficial. For example, I've worked with projects on augmented reality applications, which can help visualize certain elements, but they can also lead information overload and too much reliance on digital technology. Virtual reality is fantastic for practicing skills or simulating special situations, but people don’t want to be wearing VR headsets 24/7.  Therefore, finding the balance between the benefits and drawbacks is crucial, and that's what I'm interested in learning more about.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k9",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ka",
+     "text": "What makes working for the department MSCM so special for you?",
+     "marks": [
+      "strong",
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kb",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kc",
+     "text": "The reason why I chose to work in academia and in the MSCM department in particular, is that I have always been interested in dealing with real-world problems. There is a significant gap between research and practice. I want to bridge that gap, but I also realized that a gap can  be helpful. The skills and mindset that we want to teach students are sometimes different from what a company needs for its immediate business goals.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kd",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ke",
+     "text": "In the MSCM department, I have the opportunity to work on cutting-edge research like related to the DEXLab that is relevant to the business world. In addition, the department has a very supportive, fun and collaborative environment that encourages innovation and excellence in education.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kf",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kg",
+     "text": "Working in academia also gives me with the freedom to pursue research areas that interest me and contribute to the knowledge of the academic community. Working in an academic setting allows you to have a positive impact on students' lives by teaching and mentoring them to develop critical thinking and problem-solving skills. Overall, my passion for research, teaching, and making a positive impact on society led me to work in academia and specifically the MSCM department.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kh",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ki",
+     "text": "What have been the highlights of your career so far?",
+     "marks": [
+      "strong",
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kj",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kk",
+     "text": "When I reflect on my research career, there are several highlights that come to mind. Of course, there are the publications, awards, promotions, roles, and funding projects that have been significant accomplishments. However, what stands out the most to me are the interactions and involvement with students. I have had the opportunity to work with students at various levels, from bachelor's to PhD and executive education programs. Seeing their growth and development throughout the learning process is incredibly rewarding.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kl",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "km",
+     "text": "In terms of research, I have focused on digitalization and innovation, especially the human side of digitalization. My research on service robots teaches me every day about the “right” balance between technology and human relationships.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kn",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ko",
+     "text": "What does the DEXLab mean to you?",
+     "marks": [
+      "strong",
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kp",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kq",
+     "text": "The DEXLab provides value to SBE researchers and educators as a place to experiment and play with digital experiences in a structured and sound way. It's not just a place to talk about digital experiences, but a place to put them into action. The DEXLab is a safe playground for experimenting and exploring digital experiences, which is essential in today's world.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kr",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ks",
+     "text": "With the DEXLab, SBE is taking a pioneering role. At the same time, such facilities will become standard at similar faculties too. And this is what students expect. I well recall the feedback from one of our students who said “This is great! This is what a business school should do!”",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kt",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ku",
+     "text": "We’ve heard that there is also a life outside of the university. What do you like to do in your spare time?",
+     "marks": [
+      "strong",
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kv",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kw",
+     "text": "While I love working in academia and doing research, there is indeed a life beyond 😊. I enjoy traveling, cooking, spending time with friends, trying out new tech gadgets, and doing activities together like as biking, playing basketball, or watching TV series. Spending time with friends is important to me because it helps me to relax and recharge.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kx",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ky",
+     "text": "I just love having a barbecue with a friends and family! The smell of the barbecue and sitting outside and chatting in the summertime, that's a perfect moment in time.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kz",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k10",
+     "text": "Currently, I spend a lot of time with my family. I have three young children, ages 4 to 6, who bring me a lot of joy and always teach me something new. They give me with a different perspective on life and keep me grounded.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k11",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k12",
+     "text": "If you could have one superpower, what would it be?",
+     "marks": [
+      "strong",
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k13",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k14",
+     "text": "If I could have any superpower, it would be to learn from each previous experience and do things better each time. As researchers, we strive to improve with each project, but sometimes, instead of avoiding a mistake, we make a different one. So, my envisioned superpower would be to be a perfect learner and continually get better with each experience.",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "embeds": []
+}

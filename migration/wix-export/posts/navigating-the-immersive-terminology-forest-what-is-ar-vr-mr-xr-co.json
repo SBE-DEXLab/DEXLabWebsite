@@ -1,0 +1,245 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/navigating-the-immersive-terminology-forest-what-is-ar-vr-mr-xr-co",
+ "slug": "navigating-the-immersive-terminology-forest-what-is-ar-vr-mr-xr-co",
+ "title": "Navigating the Immersive Terminology Forest: What is AR, VR, MR, XR, & co.?",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "augmented-research"
+  },
+  "dateModified": "2024-07-10T09:34:11.066Z",
+  "datePublished": "2024-07-10T09:34:11.066Z",
+  "headline": "Navigating the Immersive Terminology Forest: What is AR, VR, MR, XR, &amp; co.?",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/navigating-the-immersive-terminology-forest-what-is-ar-vr-mr-xr-co",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/navigating-the-immersive-terminology-forest-what-is-ar-vr-mr-xr-co"
+  },
+  "description": "The world of immersive technology is rapidly evolving, introducing a proliferation of terms and acronyms that can be daunting for those new to the field. From AR and VR to XR and spatial computing, the terminology signals dynamic developments but also creates confusion. This blog post aims to provide a simplified overview of these terms based on current research and practice. While not claiming to be the final word, we hope to map common ground and foster a deeper understanding.AR &amp; VR: The Cons",
+  "url": "https://www.sbe-dexlab.com/post/navigating-the-immersive-terminology-forest-what-is-ar-vr-mr-xr-co",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/9aa9b6_7544a260f63946d59a6aa36121bb3831~mv2.jpg/v1/fill/w_1000,h_1000,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_7544a260f63946d59a6aa36121bb3831~mv2.jpg",
+   "width": "1024",
+   "height": "1024"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [],
+ "og": "https://static.wixstatic.com/media/9aa9b6_7544a260f63946d59a6aa36121bb3831~mv2.jpg/v1/fill/w_1000,h_1000,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_7544a260f63946d59a6aa36121bb3831~mv2.jpg",
+ "body": [
+  {
+   "_type": "block",
+   "_key": "k0",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1",
+     "text": "The world of immersive technology is rapidly evolving, introducing a proliferation of terms and acronyms that can be daunting for those new to the field. From AR and VR to XR and spatial computing, the terminology signals dynamic developments but also creates confusion. This blog post aims to provide a simplified overview of these terms based on current research and practice. While not claiming to be the final word, we hope to map common ground and foster a deeper understanding.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k2",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_91616b1f472d44839e851720984b9263~mv2.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k3",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k4",
+     "text": "AR & VR: The Consensus",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k5",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k6",
+     "text": "Among the myriad of terms, augmented reality (AR) and virtual reality (VR) have perhaps the most consensus. AR technology overlays digital objects onto the physical world, giving users the sense that these objects are \"here\" with them, interactively and in real-time. In contrast, VR immerses users in a completely virtual environment, providing an \"I am there\" sensation that transports them away from their physical surroundings, again interactively and in real-time.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k7",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k8",
+     "text": "MR: The Special Case",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k9",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ka",
+     "text": "Mixed reality (MR) is a bit more contentious. According to the original reality-virtuality continuum by Milgram and colleagues, MR encompasses any experience that combines real and virtual objects. This places MR between pure physical reality and pure virtuality. Microsoft, with its HoloLens, has advanced MR as a more sophisticated form of AR accessible through smart glasses. Similarly, researchers are increasingly viewing MR on wearables as a more advanced AR, surpassing simple overlays or face filters on smartphone cameras, often referred to as assisted reality.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kb",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kc",
+     "text": "XR: The Umbrella Term",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kd",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ke",
+     "text": "Immersive technologies, reality-enhancing technologies, extended reality (XR), or X-reality are often used interchangeably as umbrella terms for AR, VR, and sometimes MR. The \"X\" in XR can stand for augmented (A), virtual (V), or mixed (M) reality, highlighting the inclusive nature of this terminology.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kf",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kg",
+     "text": "The Metaverse",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kh",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ki",
+     "text": "The term \"metaverse\" has been strongly promoted by Facebook's rebranding as Meta, reflecting their vision of virtual worlds on their platform. The metaverse is often used interchangeably with virtual reality, specifically social forms of VR where multiple users share the same space. However, this is a narrow definition that contrasts with the broader implications of the term metaverse (i.e., beyond a single universe). A more inclusive definition suggests that the metaverse will not take place inside one or more locked VR worlds but will permeate every aspect of everyday life. It will seamlessly blend digital and physical realities, dissolving perceptions of the traditional dichotomy between real (i.e., physical) and synthetic (i.e., virtual) experiences. This vision could be accessed through AR, MR, VR, and potentially future neuro-reality devices.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kj",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kk",
+     "text": "Spatial Computing",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kl",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "km",
+     "text": "Apple's introduction of the Vision Pro headset has brought \"spatial computing\" into the spotlight. This technology operates in and around the real world, integrating with natural bodies and physical environments rather than being confined behind screens. While exciting for its potential to redefine interfaces, the term's boundaries with AR and VR are blurry. Some debate whether it's merely a marketing-driven term to differentiate products, especially since \"spatial computing\" has historically been associated with geo-spatial technologies like traffic jam-detecting cameras.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "kn",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_766c8ee7fcf2481385e38590c9e62a7a~mv2.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "ko",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kp",
+     "text": "Takeaways",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kq",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kr",
+     "text": "The landscape of immersive technology terminology is complex and ever-changing. Understanding the distinctions and overlaps between AR, VR, MR, XR, the metaverse, and spatial computing can be challenging. However, these terms collectively point towards a future where digital and physical realities increasingly merge, enhancing our everyday experiences. As the technology continues to develop, staying informed and adaptable will be key to navigating this immersive terminology forest.",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "embeds": []
+}

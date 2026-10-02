@@ -1,0 +1,22 @@
+{
+  "name": "dexlab-studio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "sanity dev",
+    "build": "sanity build dist -y",
+    "deploy": "sanity deploy",
+    "import": "sanity dataset import ../content/seed.ndjson production --replace"
+  },
+  "devDependencies": {
+    "@sanity/cli": "^8.13.0"
+  },
+  "dependencies": {
+    "@sanity/vision": "^6.17.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "sanity": "^6.17.0",
+    "styled-components": "^6.5.3",
+    "@sanity/icons": "^5.2.3"
+  }
+}

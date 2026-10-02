@@ -1,0 +1,55 @@
+---
+import Img from '../Img.astro'
+import {getWorkshops} from '../../lib/queries'
+import {getSettings} from '../../lib/queries'
+
+interface Props {
+  limit?: number
+}
+const {limit} = Astro.props
+const [all, settings] = await Promise.all([getWorkshops(), getSettings()])
+const workshops = limit ? all.slice(0, limit) : all
+const email = settings?.email || 'sbe-dexlab@maastrichtuniversity.nl'
+const href = (w: (typeof all)[number]) =>
+  w.externalOnly ? `mailto:${email}?subject=${encodeURIComponent(w.contactSubject || w.title)}` : `/workshops/${w.slug}`
+---
+
+<div class="grid" style="--cols: 3">
+  {
+    workshops.map((w) => (
+      <a href={href(w)} class:list={['card', 'workshop', {custom: w.externalOnly}]}>
+        <div class="card-media">
+          <Img image={w.cardImage} width={560} height={420} sizes="(min-width: 1000px) 380px, (min-width: 640px) 50vw, 100vw" />
+        </div>
+        <div class="card-body">
+          <h3>{w.title}</h3>
+          {w.summary && <p>{w.summary}</p>}
+          <span class="text-link">
+            {w.externalOnly ? 'Contact us' : 'Read more'} <span aria-hidden="true">→</span>
+          </span>
+        </div>
+      </a>
+    ))
+  }
+</div>
+
+<style>
+  .workshop .card-media {
+    aspect-ratio: 6 / 5;
+  }
+  .custom {
+    background: var(--navy);
+  }
+  .custom :global(h3) {
+    color: #fff;
+  }
+  .custom p {
+    color: #c9d4e5;
+  }
+  .custom .text-link {
+    color: var(--peach);
+  }
+  .custom:hover :global(h3) {
+    color: #fff !important;
+  }
+</style>

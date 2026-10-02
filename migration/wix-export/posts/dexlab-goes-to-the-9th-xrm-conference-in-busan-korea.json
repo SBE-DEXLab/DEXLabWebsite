@@ -1,0 +1,584 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/dexlab-goes-to-the-9th-xrm-conference-in-busan-korea",
+ "slug": "dexlab-goes-to-the-9th-xrm-conference-in-busan-korea",
+ "title": "DEXLab goes to the 9th XRM Conference in Busan, Korea",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "sbe-dexlab"
+  },
+  "dateModified": "2024-06-06T13:03:19.109Z",
+  "datePublished": "2024-06-06T13:03:19.109Z",
+  "headline": "DEXLab goes to the 9th XRM Conference in Busan, Korea ",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/dexlab-goes-to-the-9th-xrm-conference-in-busan-korea",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/dexlab-goes-to-the-9th-xrm-conference-in-busan-korea"
+  },
+  "description": "The DEXLab team went to Busan, Korea to attend the 9th Extended Reality – Metaverse (XRM) Conference. The conference is a yearly event of the International Association of Immersive Technology Innovation (IAITI) to bridge the gap between industry and academia. This year’s theme was the ‘Metaverse: Where Reality Meets Imagination’. Last week you read all about the conference through the eyes of a first-year PhD, Ibrahim Humdi. This time we will get into the perspectives of more experienced confere",
+  "url": "https://www.sbe-dexlab.com/post/dexlab-goes-to-the-9th-xrm-conference-in-busan-korea",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/9aa9b6_9724223403274648bbe2ba363aa220dc~mv2.jpeg/v1/fill/w_1000,h_750,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_9724223403274648bbe2ba363aa220dc~mv2.jpeg",
+   "width": "1600",
+   "height": "1200"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [
+  "https://www.sbe-dexlab.com/blog/categories/events"
+ ],
+ "og": "https://static.wixstatic.com/media/9aa9b6_9724223403274648bbe2ba363aa220dc~mv2.jpeg/v1/fill/w_1000,h_750,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_9724223403274648bbe2ba363aa220dc~mv2.jpeg",
+ "body": [
+  {
+   "_type": "block",
+   "_key": "k0",
+   "style": "normal",
+   "markDefs": [
+    {
+     "_type": "link",
+     "_key": "k2",
+     "href": "https://www.iaiti.org/"
+    },
+    {
+     "_type": "link",
+     "_key": "k5",
+     "href": "https://www.sbe-dexlab.com/post/from-maastricht-to-busan-a-first-time-academic-adventure"
+    }
+   ],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1",
+     "text": "The DEXLab team went to Busan, Korea to attend the 9th Extended Reality – Metaverse (XRM) Conference. The conference is a yearly event of the International Association of Immersive Technology Innovation (",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k3",
+     "text": "IAITI",
+     "marks": [
+      "k2",
+      "em",
+      "underline"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k4",
+     "text": ") to bridge the gap between industry and academia. This year’s theme was the ‘Metaverse: Where Reality Meets Imagination’. Last week you read all about the ",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k6",
+     "text": "conference through the eyes of a first-year PhD",
+     "marks": [
+      "k5",
+      "em",
+      "underline"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k7",
+     "text": ", Ibrahim Humdi. This time we will get into the perspectives of more experienced conference attendees. Dominik Mahr, Jonas Heller, and Roberta di Palma talk about their expectations, experiences, and key takeaways at this year’s XRM Conference.",
+     "marks": [
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k8",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k9",
+     "text": "From Amsterdam to Busan: A Scenic Journey",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ka",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kb",
+     "text": "Our journey to the 9th XRM Conference began with a late evening flight from Amsterdam to Seoul. We arrived in the afternoon, greeted by the vibrant energy of the city. At the Seoul train station during a long wait, we indulged in an unexpectedly exquisite Korean BBQ dinner. This fine dining experience, complete with sizzling meats and rich flavors, was a delightful surprise and a perfect introduction to Korean cuisine and a start to the conference.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ki",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kj",
+     "text": "After our meal, we boarded the bullet train to Busan. The journey was swift and comfortable, and as the Korean countryside blurred past our window in the dark, we could feel the excitement building. Arriving in Busan just before midnight, we were tired but also ready to dive into the conference activities the next day.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kk",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kl",
+     "text": "Expectations on the XRM Conference",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "km",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kn",
+     "text": "Before going into the conference, we want to know about the team’s expectations. All three of them have been to the XRM conference before and were looking forward to this year’s edition in Korea",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ko",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kp",
+     "text": "Dominik Mahr on his expectations of the conference: “I was looking forward to meeting this part of the global XR community, which is always very welcoming.  I was especially curious to see the latest trends in Asian tech. Moreover, I’m thrilled to announce that we are hosting the conference in 2025 in Maastricht.”",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kq",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kr",
+     "text": "Roberta shares in Dominik’s enthusiasm. Her words on the upcoming trip were: “I'm excited to attend the upcoming XR conference in Busan in South Korea, a country I've long wanted to explore. I look forward to meeting new and familiar faces in the XR community and sharing ideas.  I'm eager to see how academics and industry professionals are using VR in business and education, and I can't wait to gather some fresh insights and inspiration.”",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ks",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kt",
+     "text": "Lastly, Jonas adds his thoughts on the trip: “I was very excited to join the XRM conference this year in Korea to meet with fellow researchers in the XR space and meet the vibrant tech space that is driven by the innovative Korean companies.”",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ku",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kv",
+     "text": "Our Team's Experiences",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kw",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kx",
+     "text": "The XRM Conference was a week filled with activities from immersive technology papers to Extended Reality (XR) use cases spread across different industries. For example, the South Korean virtual world company Zepeto, which created and host an immersive avatar-based social universe, opened the curtain on how it grew to 300 million users with 2.3 million creators—very impressive.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k10",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_9724223403274648bbe2ba363aa220dc~mv2.jpeg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k11",
+   "style": "normal",
+   "markDefs": [
+    {
+     "_type": "link",
+     "_key": "k13",
+     "href": "https://www.maastrichtuniversity.nl/research/department-marketing-and-supply-chain-management-mscm"
+    }
+   ],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k12",
+     "text": "Dominik tried out the new Apple Vision Pro, a mixed reality device with a different user experience. He shares: “We made a very good impression in Korea with four PhD students from our ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k14",
+     "text": "Marketing & Supply Chain Management department",
+     "marks": [
+      "k13",
+      "underline"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k15",
+     "text": " from Maastricht University with very good presentations and a poster about the work. One even being awarded as the runner-up of the best conference paper”, DEXLab’s very own Roberta di Palma.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k16",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k17",
+     "text": "Roberta can only describe her experiences at the XR Metaverse 2024 as ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k18",
+     "text": "WOW",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k19",
+     "text": ":",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k1a",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_afaaa5bb1ca54cdead7e7989bdd76604~mv2.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k1b",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1c",
+     "text": "W",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k1d",
+     "text": "hat a fantastic journey this XR conference has been! Connecting with passionate researchers, attending insightful workshops on research methodologies, and absorbing keynotes from professionals integrating XR in their businesses have been immensely enriching.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1e",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1f",
+     "text": "O",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k1g",
+     "text": "verjoyed by the recognition of my paper among the academic best. It's both validating and motivating to have our work acknowledged by experts in the field. The feedback has been invaluable, pushing me to refine and expand my research.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1h",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1i",
+     "text": "W",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k1j",
+     "text": "e are thrilled to invite everyone to Maastricht in 2025 for the XR-Metaverse conference! Following the exemplary organization by Dong-Eui University and the Busan team this year, we're excited to build on their success and welcome you to an even more engaging and inspiring event.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k1k",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_1ed9286eb21240249681906022005d72~mv2.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k1l",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1m",
+     "text": "Jonas holds this conference close to his heart. He has attended four times in the last five years and says it has always been a terrific experience: “The friends in the community we made are always present and the presentations are multidisciplinary. They offer incredible insights into how XR is used in various research fields and domains. Korea was incredibly interesting from a cultural perspective and the hosts organized a very well-coordinated event. I certainly cannot wait to meet everyone again next year, when we will host it in Maastricht!”",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1n",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1o",
+     "text": "Key Takeaways",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1p",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1q",
+     "text": "AR and VR replaced by One XR",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1r",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1s",
+     "text": "Augmented Reality (AR) and Virtual Reality (VR) are blurring into one Extended Reality (XR). Some might call it differently like Mixed Reality (MR) or spatial computing, focusing on different aspects. While this merging of two technologies into one field is exciting, it also comes with additional conceptualization and definitional issues.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1t",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1u",
+     "text": "Multidisciplinary Community",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1v",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1w",
+     "text": "The community is very multidisciplinary, with people from various fields discussing diverse XR issues related to legislation, developing visualization standards, device manufacturing, customer experience with AR, Non-Fungible Tokens (NFT) fashion creation, learning surgery skills, inclusivity through AR and cycling in virtual worlds, to mention just a few.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1x",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1y",
+     "text": "A Disconnect between Academics and Industry",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1z",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k20",
+     "text": "Technology companies and companies offering XR solutions are often focusing on clear company-relevant KPIs such as reducing the number of errors in picking tasks or increasing training efficiencies in hazardous environments. Academics often tend to try to explain the underlying psychological mechanisms or conceptualize frameworks that explain XR usage or adoption, which sometimes can lead to a disconnect between academics and industry. Luckily, the XRM conference combines academia and industry in one conference and allows for an exchange of ideas with industry exhibitors.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k21",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_2898070d696d4bf587808f24516070c1~mv2.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k22",
+   "style": "normal",
+   "markDefs": [
+    {
+     "_type": "link",
+     "_key": "k24",
+     "href": "https://www.maastrichtuniversity.nl/about-um/faculties/school-business-and-economics"
+    },
+    {
+     "_type": "link",
+     "_key": "k27",
+     "href": "https://www.hotelschoolmaastricht.nl/en"
+    },
+    {
+     "_type": "link",
+     "_key": "k2a",
+     "href": "https://www.xrm2025.com/"
+    }
+   ],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k23",
+     "text": "We are very happy to announce that we will bring the XRM conference 2025 to ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k25",
+     "text": "Maastricht University SBE",
+     "marks": [
+      "k24",
+      "underline"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k26",
+     "text": " in June 2025, a cooperation together with ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k28",
+     "text": "Zuyd Hotel Management School",
+     "marks": [
+      "k27",
+      "underline"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k29",
+     "text": ". The conference host committee consists of Roberta di Palma, Tim Hilken, Jonas Heller, Dominik Mahr, and Danny Han. Sign up for more information ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k2b",
+     "text": "here",
+     "marks": [
+      "k2a",
+      "underline"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k2c",
+     "text": " and watch the XRM promotion video.",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "embeds": []
+}

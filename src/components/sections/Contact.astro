@@ -1,0 +1,172 @@
+---
+import {brandify} from '../../lib/utils'
+import {getSettings} from '../../lib/queries'
+import SocialIcon from '../SocialIcon.astro'
+
+interface Props {
+  heading?: string
+  intro?: string
+  showDepartment?: boolean
+}
+const {heading, intro, showDepartment = true} = Astro.props
+const settings = await getSettings()
+---
+
+<section class="section">
+  <div class="container contact">
+    <aside class="details">
+      <h2>Reach us directly</h2>
+      {
+        settings?.email && (
+          <p>
+            <span class="label">Email</span>
+            <a href={`mailto:${settings.email}`}>{settings.email}</a>
+          </p>
+        )
+      }
+      {
+        settings?.address && (
+          <p>
+            <span class="label">Address</span>
+            {settings.address.split('\n').map((l) => (<>{l}<br /></>))}
+            <a class="text-link" href="/visit-us">Directions <span aria-hidden="true">→</span></a>
+          </p>
+        )
+      }
+      <p>
+        <span class="label">Follow us</span>
+        <span class="socials">
+          {
+            settings?.socials?.map((s) => (
+              <a href={s.url} target="_blank" rel="noopener" aria-label={s.platform}>
+                <SocialIcon platform={s.platform} />
+              </a>
+            ))
+          }
+        </span>
+      </p>
+      <p>
+        <span class="label">Booking the lab or equipment?</span>
+        Check availability in the <a href="https://resourcebooker.maastrichtuniversity.nl/" target="_blank" rel="noopener">Resource Booker</a> and read the <a href="/faq">FAQ</a>.
+      </p>
+    </aside>
+
+    <form class="form" name="contact" method="POST" action="/thanks/?form=contact" data-netlify="true" netlify-honeypot="company">
+      {heading && <h2 set:html={brandify(heading)} />}
+      {intro && <p class="intro">{intro}</p>}
+      <input type="hidden" name="form-name" value="contact" />
+      <p class="hp"><label>Leave this empty <input name="company" tabindex="-1" autocomplete="off" /></label></p>
+      <div class="row">
+        <div class="field"><label for="c-first">First name</label><input id="c-first" name="first-name" autocomplete="given-name" /></div>
+        <div class="field"><label for="c-last">Last name</label><input id="c-last" name="last-name" autocomplete="family-name" /></div>
+      </div>
+      <div class="row">
+        <div class="field"><label for="c-email">Email *</label><input id="c-email" name="email" type="email" required autocomplete="email" /></div>
+        <div class="field"><label for="c-phone">Phone</label><input id="c-phone" name="phone" type="tel" autocomplete="tel" /></div>
+      </div>
+      {
+        showDepartment && (
+          <div class="row">
+            <div class="field"><label for="c-position">Position</label><input id="c-position" name="position" autocomplete="organization-title" /></div>
+            <div class="field"><label for="c-dept">SBE department or organisation</label><input id="c-dept" name="department" autocomplete="organization" /></div>
+          </div>
+        )
+      }
+      <div class="field">
+        <label for="c-topic">What is it about?</label>
+        <select id="c-topic" name="topic">
+          <option>General question</option>
+          <option>Booking the lab or equipment</option>
+          <option>Workshop for my team or company</option>
+          <option>Research collaboration</option>
+          <option>Thesis or internship</option>
+          <option>Media or press</option>
+        </select>
+      </div>
+      <div class="field"><label for="c-subject">Subject</label><input id="c-subject" name="subject" /></div>
+      <div class="field"><label for="c-msg">Message *</label><textarea id="c-msg" name="message" rows="6" required></textarea></div>
+      <label class="check">
+        <input type="checkbox" name="consent" value="yes" required />
+        <span>I agree that DEXLab uses my details to answer my message, as described in the <a href="/privacy">privacy statement</a>.</span>
+      </label>
+      <button class="btn" type="submit">Send message <span class="arrow" aria-hidden="true">→</span></button>
+    </form>
+  </div>
+</section>
+
+<style>
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    gap: clamp(32px, 6vw, 72px);
+    align-items: start;
+  }
+  .details {
+    background: var(--peach-2);
+    border-radius: var(--radius);
+    padding: 32px;
+  }
+  .details h2 {
+    font-size: 1.4rem;
+  }
+  .details p {
+    margin: 0 0 20px;
+  }
+  .label {
+    display: block;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--orange);
+    margin-bottom: 4px;
+  }
+  .socials {
+    display: flex;
+    gap: 10px;
+  }
+  .socials a {
+    display: grid;
+    place-items: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: var(--navy);
+    color: #fff;
+  }
+  .socials a:hover {
+    background: var(--orange);
+  }
+  .form {
+    display: grid;
+    gap: 18px;
+  }
+  .form h2 {
+    margin: 0;
+  }
+  .intro {
+    margin: 0;
+    color: var(--muted);
+  }
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+  .form .btn {
+    justify-self: start;
+  }
+  @media (max-width: 860px) {
+    .contact {
+      grid-template-columns: 1fr;
+    }
+    .details {
+      order: 2;
+    }
+  }
+  @media (max-width: 560px) {
+    .row {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

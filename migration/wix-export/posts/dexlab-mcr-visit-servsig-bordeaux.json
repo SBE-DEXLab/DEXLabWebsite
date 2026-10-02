@@ -1,0 +1,546 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/dexlab-mcr-visit-servsig-bordeaux",
+ "slug": "dexlab-mcr-visit-servsig-bordeaux",
+ "title": "DEXLab/MCR Visit: SERVSIG Bordeaux",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "augmented-research"
+  },
+  "dateModified": "2024-06-11T14:53:27.569Z",
+  "datePublished": "2024-06-11T14:32:21.703Z",
+  "headline": "DEXLab/MCR Visit: SERVSIG Bordeaux",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/dexlab-mcr-visit-servsig-bordeaux",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/dexlab-mcr-visit-servsig-bordeaux"
+  },
+  "description": "Finally time for the AMA SERVSIG conference again. This particular service conference takes place only every second year, so it is always a long wait to connect again with service scholars from around the world. The 13th edition of the SERVSIG (‘Service Special Interest Group’) was themed ‘Service for Humanity’ and took place in Bordeaux, France on June 6th to 8th. The Marketing &amp; Supply Chain Management department, DEXLab, and MCR were represented by a large group of researchers: Alexandru Mari",
+  "url": "https://www.sbe-dexlab.com/post/dexlab-mcr-visit-servsig-bordeaux",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/9aa9b6_ec36f4c48e5c4892af360d57fb931207~mv2.png/v1/fill/w_1000,h_1000,al_c,q_90,usm_0.66_1.00_0.01/9aa9b6_ec36f4c48e5c4892af360d57fb931207~mv2.png",
+   "width": "1080",
+   "height": "1080"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [],
+ "og": "https://static.wixstatic.com/media/9aa9b6_ec36f4c48e5c4892af360d57fb931207~mv2.png/v1/fill/w_1000,h_1000,al_c,q_90,usm_0.66_1.00_0.01/9aa9b6_ec36f4c48e5c4892af360d57fb931207~mv2.png",
+ "body": [
+  {
+   "_type": "block",
+   "_key": "k0",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1",
+     "text": "Finally time for the AMA SERVSIG conference again. This particular service conference takes place only every second year, so it is always a long wait to connect again with service scholars from around the world. The 13th edition of the SERVSIG (‘Service Special Interest Group’) was themed ‘Service for Humanity’ and took place in Bordeaux, France on June 6th to 8th.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k2",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k3",
+     "text": "The Marketing & Supply Chain Management department, DEXLab, and MCR were represented by a large group of researchers: ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k4",
+     "text": "Alexandru Maris, Chelsea Philipps, Mark Steins, Kars Mennens, Jonas Heller and Dominik Mahr",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k5",
+     "text": ".",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k6",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_b6e09dd8749945299a22d84a7adc1b2d~mv2.png",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k7",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k8",
+     "text": "Day 1",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k9",
+     "text": ": The conference kicked off on Thursday with a keynote address focusing on the role of services in sustainable development. The day’s sessions covered various topics, including the social impact of services, transformative service research, and circular services and sustainability. Workshops and panel discussions highlighted innovative approaches to integrating sustainability into service practices.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "kc",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_b244a814cfeb475caac5388087d6669e~mv2.png",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "kd",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ke",
+     "text": "Keynote by Yves – Full house",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "kh",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_57df74c73abb4dcfa7cd478245e214f4~mv2.png",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "ki",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kj",
+     "text": "Day 2",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kk",
+     "text": ": Friday kicked off with an inspiring keynote on open science in service research by Yves van Vaerenbergh. The research presentations featured sessions on digital services, service ecosystems, and customer experience. Attendees engaged in interactive sessions designed to foster discussion and collaboration. A highlight of the day was a special session on luxury services, followed by a gala dinner at a local vineyard, offering a quintessential Bordeaux experience. ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kl",
+     "text": "Jonas",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "km",
+     "text": " especially enjoyed the impact workshop by Arne de Keyser and colleagues: ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kn",
+     "text": "“For me, attending the SERVSIG conference was a great experience, particularly the impact workshop “Back to the Future? Services Science Myopia? - How We Get Back to Working with Industry to Advance the Services Field” by Rosenbaum, Zion, Johnson, De Keyser & Hollmann. A combination of showing how a theoretical service framework was picked up a by a marketing agency and sharing useful tips how to have more impact as an academic was enriching and polarizing opinions reminded us that as a service community, focusing on real-world problems faced by service providers is crucial for meaningful impact.”",
+     "marks": [
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "ko",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_59ca82620f524a43a5138bb0d5dc3080~mv2.png",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "kp",
+   "style": "normal",
+   "markDefs": [
+    {
+     "_type": "link",
+     "_key": "kr",
+     "href": "https://www.linkedin.com/in/arnedekeyser/"
+    },
+    {
+     "_type": "link",
+     "_key": "ku",
+     "href": "https://www.linkedin.com/in/amandajohnson1296/"
+    }
+   ],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kq",
+     "text": "Impact workshop in the wine lab by ",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "ks",
+     "text": "Arne de Keyser",
+     "marks": [
+      "kr",
+      "em",
+      "underline"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kt",
+     "text": " and ",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kv",
+     "text": "Amanda Johnson",
+     "marks": [
+      "ku",
+      "em",
+      "underline"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kw",
+     "text": " from Zion & Zion.",
+     "marks": [
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kx",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ky",
+     "text": "Day 3",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kz",
+     "text": ": The final day of the conference focused on service strategy, operations, and productivity, with additional sessions on B2B services, service design and innovation, and technological transitions in services. A session on customer experiences impressed ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k10",
+     "text": "Alexandru Maris",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k11",
+     "text": " the most, while he reflects:",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k12",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k13",
+     "text": "“The breadth of disciplines within ServSIG's welcoming community proved incredibly insightful. I’ve learned for example about the strategic adoption of robots within organizations and about the factors shaping the identity of consumer communities. However, the most impactful aspect was the \"Moving Forward\" presentation by Kelleher et al. exploring consumer experiences in immersive virtual environments through a post-humanist lens, which resonated deeply with my own vision for the near future of immersive experiences. It not only validated my existing views yet also effectively bridged some of the gaps in my current understanding. The most captivating aspect of ServSIG was the realization that, despite approaching the \"big picture” questions from varied lenses, we all address similar or even the same challenges. This diversity creates a synergistic research environment that enables our disciplines to converge.“",
+     "marks": [
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k14",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k15",
+     "text": "The conference concluded with the presentation of the SERVSIG awards, recognizing outstanding contributions to service research. We had the chance to visit the Musee du Vin and learn about the long history of wine in the Bordeaux region and around the world in general. We are also very happy that Floriane Goosse, Wafa Hammedi, and Dominik Mahr won the best paper award!",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k16",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k17",
+     "text": "Kars Mennens",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k18",
+     "text": " reflects: “",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k19",
+     "text": "I fully enjoyed the SERVSIG conference. Besides interesting and provoking research presentations from our colleagues in the service research community, for me the hospitality offered by Bordeaux and the organizing committee was a great source of inspiration for the LTAS 2024 conference we will be organizing in Maastricht in December 2024",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k1a",
+     "text": "”",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1b",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1c",
+     "text": "Throughout the conference, participants explored how services can contribute to societal well-being and sustainability, reflecting the overarching theme of “Service for Humanity.” The event not only provided valuable insights and inspiration but also reinforced the importance of service research in addressing global challenges.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1d",
+   "style": "normal",
+   "markDefs": [
+    {
+     "_type": "link",
+     "_key": "k1i",
+     "href": "https://www.servsig.org/wordpress/ltas/#:~:text=In%202024%2C%20LTAS%20will%20be,through%20their%20journey%20in%20academia."
+    }
+   ],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1e",
+     "text": "We could not summarize it any better than ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k1f",
+     "text": "Mark Steins",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k1g",
+     "text": ": ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k1h",
+     "text": "“Attending the SERVSIG conference was an excellent experience. The quality of the presentations was outstanding, offering fresh insights and stimulating discussions. The hospitality in Bordeaux, coupled with exceptional food and wine, made the event even more memorable. It was great to reconnect with academic friends and meet new colleagues. A special highlight is the growing recognition of our Maastricht Center for Robots (MCR) and DEXLab, which does not only underscore the growing influence of our work within our community, but also fosters collaboration. I can’t wait to see many academic friends again at the ",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k1j",
+     "text": "LTAS 2024 conference in Maastricht.",
+     "marks": [
+      "k1i",
+      "em",
+      "underline"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k1k",
+     "text": "”",
+     "marks": [
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k1l",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_291a4749d5f44faba7e34b33df7b30f9~mv2.png",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k1m",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1n",
+     "text": "MCR represented at SERVSIG 2024 in Bordeaux",
+     "marks": [
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k1o",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_d5906285f998499fabe7840786447c28~mv2.png",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k1p",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1q",
+     "text": "Chelsea Phillips",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k1r",
+     "text": ": ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k1s",
+     "text": "\"SERVSIG was a fantastic opportunity to engage with other scholars and be inspired by new ideas. The welcoming and engaging nature of the conference and its delegates led to inspiring sessions and highlighted future research ideas. SERVSIG provided the platform to receive valuable feedback on my own research projects, integral to my PhD journey.\"",
+     "marks": [
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1t",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1u",
+     "text": "A presentation by Chelsea Philipp reached so",
+     "marks": [
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1v",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1w",
+     "text": "many interested audience members that there",
+     "marks": [
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1x",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1y",
+     "text": "were not enough chairs",
+     "marks": [
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1z",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k20",
+     "text": "SERVSIG was incredibly fun and we cannot wait to attend the next iteration in 2026!",
+     "marks": [
+      "underline"
+     ]
+    }
+   ]
+  }
+ ],
+ "embeds": []
+}

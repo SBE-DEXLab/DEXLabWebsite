@@ -1,0 +1,263 @@
+---
+import type {Settings} from '../lib/types'
+import {brandify} from '../lib/utils'
+import SocialIcon from './SocialIcon.astro'
+
+interface Props {
+  settings: Settings | null
+}
+const {settings} = Astro.props
+const nl = settings?.newsletter
+const year = new Date().getFullYear()
+const links = (settings?.navigation || []).map((n) => ({label: n.label, href: n.href}))
+---
+
+<footer class="site-footer">
+  {
+    nl?.enabled !== false && (
+      <section class="newsletter" aria-labelledby="newsletter-heading">
+        <div class="container nl-inner">
+          <div>
+            <h2 id="newsletter-heading" set:html={brandify(nl?.heading || 'Join the DEXLab mailing list')} />
+            {nl?.text && <p>{nl.text}</p>}
+          </div>
+          <form name="newsletter" method="POST" action="/thanks/?form=newsletter" data-netlify="true" netlify-honeypot="company" class="nl-form">
+            <input type="hidden" name="form-name" value="newsletter" />
+            <p class="hp">
+              <label>
+                Leave this empty <input name="company" tabindex="-1" autocomplete="off" />
+              </label>
+            </p>
+            <div class="nl-row">
+              <label class="visually-hidden" for="nl-email">Email address</label>
+              <input id="nl-email" type="email" name="email" placeholder="you@example.com" autocomplete="email" required />
+              <button class="btn" type="submit">Subscribe</button>
+            </div>
+            <label class="check">
+              <input type="checkbox" name="consent" value="yes" required />
+              <span>
+                I agree that DEXLab stores my email address to send me news. I can unsubscribe at any time. See our <a href="/privacy">privacy statement</a>.
+              </span>
+            </label>
+          </form>
+        </div>
+      </section>
+    )
+  }
+  <div class="container footer-main">
+    <div class="footer-brand">
+      <a href="/" aria-label="DEXLab home"><img src="/brand/dexlab-logo-full.png" alt="DEXLab, Digital Experience Laboratory" width="150" height="115" loading="lazy" /></a>
+      <a href="https://www.maastrichtuniversity.nl/about-um/faculties/school-business-and-economics" target="_blank" rel="noopener">
+        <img src="/brand/um-sbe-logo.png" alt="Maastricht University School of Business and Economics" width="220" height="55" loading="lazy" />
+      </a>
+    </div>
+    <div>
+      <h3>Visit</h3>
+      <address>
+        <strong><span class="brand-dex">DEX</span><span class="brand-lab">Lab</span></strong><br />
+        {settings?.address?.split('\n').map((l) => (<>{l}<br /></>))}
+      </address>
+      <a href="/visit-us" class="text-link">How to find us <span aria-hidden="true">→</span></a>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      {settings?.email && <p><a href={`mailto:${settings.email}`}>{settings.email}</a></p>}
+      <ul class="socials">
+        {
+          settings?.socials?.map((s) => (
+            <li>
+              <a href={s.url} target="_blank" rel="noopener" aria-label={s.platform}>
+                <SocialIcon platform={s.platform} />
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+    <nav aria-label="Footer">
+      <h3>Explore</h3>
+      <ul class="footer-links">
+        {links.map((l) => <li><a href={l.href}>{l.label}</a></li>)}
+      </ul>
+    </nav>
+  </div>
+  <div class="container footer-bottom">
+    <p>© {year} DEXLab, Maastricht University{settings?.footerNote && <> · {settings.footerNote}</>}</p>
+    <p><a href="/privacy">Privacy</a> · <a href="/admin" rel="nofollow">Admin login</a></p>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    background: var(--grey);
+    margin-top: 0;
+    font-size: 0.97rem;
+  }
+  .newsletter {
+    background: var(--navy);
+    color: #dfe7f3;
+    padding-block: 48px;
+  }
+  .nl-inner {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 32px;
+    align-items: center;
+  }
+  .newsletter h2 {
+    color: #fff;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    margin-bottom: 6px;
+  }
+  .newsletter :global(.brand-dex) {
+    color: #4cc6f0;
+  }
+  .newsletter :global(.brand-lab) {
+    color: #ff7a45;
+  }
+  .newsletter p {
+    margin: 0;
+    opacity: 0.85;
+  }
+  .nl-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+  .nl-row input {
+    flex: 1;
+    min-width: 0;
+    font: inherit;
+    padding: 13px 18px;
+    border-radius: 999px;
+    border: 0;
+  }
+  .nl-row .btn {
+    background: var(--orange);
+    border-color: var(--orange);
+  }
+  .nl-row .btn:hover {
+    background: var(--blue);
+    border-color: var(--blue);
+  }
+  .newsletter .check {
+    color: #b9c6da;
+    font-size: 0.85rem;
+  }
+  .newsletter .check a {
+    color: #fff;
+  }
+  .footer-main {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1.3fr 1fr;
+    gap: 32px;
+    padding-block: 56px 32px;
+  }
+  .footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer-brand img {
+    height: auto;
+  }
+  .footer-brand a:first-child img {
+    width: 130px;
+  }
+  .footer-brand a:last-child img {
+    width: 200px;
+  }
+  .site-footer h3 {
+    font-size: 0.82rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 14px;
+  }
+  .footer-main a[href^='mailto'] {
+    white-space: nowrap;
+  }
+  address {
+    font-style: normal;
+    margin-bottom: 10px;
+  }
+  .socials {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+  }
+  .socials a {
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--navy);
+    color: #fff;
+    transition: background 0.2s;
+  }
+  .socials a:hover {
+    background: var(--orange);
+  }
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    columns: 2;
+  }
+  .footer-links li {
+    margin-bottom: 6px;
+  }
+  .footer-links a,
+  .footer-bottom a {
+    color: var(--ink);
+    text-decoration: none;
+  }
+  .footer-links a:hover,
+  .footer-bottom a:hover {
+    color: var(--orange);
+  }
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+    border-top: 1px solid var(--line);
+    padding-block: 20px 28px;
+    font-size: 0.88rem;
+    color: var(--muted);
+  }
+  .footer-bottom p {
+    margin: 0;
+  }
+  @media (max-width: 900px) {
+    .nl-inner,
+    .footer-main {
+      grid-template-columns: 1fr 1fr;
+    }
+    .nl-inner > div:first-child {
+      grid-column: 1 / -1;
+    }
+    .nl-form {
+      grid-column: 1 / -1;
+    }
+    .footer-brand {
+      grid-column: 1 / -1;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+  @media (max-width: 560px) {
+    .footer-main {
+      grid-template-columns: 1fr;
+    }
+    .nl-row {
+      flex-direction: column;
+    }
+    .nl-row .btn {
+      justify-content: center;
+    }
+  }
+</style>

@@ -1,0 +1,417 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/um-hogeschool-zuyd-are-hosting-the-10th-international-xr-metaverse-conference-in-maastricht-in-202",
+ "slug": "um-hogeschool-zuyd-are-hosting-the-10th-international-xr-metaverse-conference-in-maastricht-in-202",
+ "title": "UM & Hogeschool Zuyd are hosting the 10th International XR-Metaverse conference in Maastricht in 2025!",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "augmented-research"
+  },
+  "dateModified": "2024-09-19T11:50:16.620Z",
+  "datePublished": "2024-09-19T11:46:55.163Z",
+  "headline": "UM &amp; Hogeschool Zuyd are hosting the 10th International XR-Metaverse conference in Maastricht in 2025!",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/um-hogeschool-zuyd-are-hosting-the-10th-international-xr-metaverse-conference-in-maastricht-in-202",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/um-hogeschool-zuyd-are-hosting-the-10th-international-xr-metaverse-conference-in-maastricht-in-202"
+  },
+  "description": "DEXLab will be hosting the 10th International XR-Metaverse Conference (XRM2025) in Maastricht, The Netherlands, from June 25-27, 2025. ",
+  "url": "https://www.sbe-dexlab.com/post/um-hogeschool-zuyd-are-hosting-the-10th-international-xr-metaverse-conference-in-maastricht-in-202",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/9aa9b6_2a1c6298eb8045abae9da3fb43da4623~mv2.png/v1/fill/w_1000,h_1000,al_c,q_90,usm_0.66_1.00_0.01/9aa9b6_2a1c6298eb8045abae9da3fb43da4623~mv2.png",
+   "width": "1200",
+   "height": "1200"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [],
+ "og": "https://static.wixstatic.com/media/9aa9b6_2a1c6298eb8045abae9da3fb43da4623~mv2.png/v1/fill/w_1000,h_1000,al_c,q_90,usm_0.66_1.00_0.01/9aa9b6_2a1c6298eb8045abae9da3fb43da4623~mv2.png",
+ "body": [
+  {
+   "_type": "block",
+   "_key": "k0",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1",
+     "text": "We are thrilled to announce that DEXLab will be hosting the 10th International XR-Metaverse Conference (XRM2025) in Maastricht, The Netherlands, from June 25-27, 2025. This prestigious event brings together leading researchers, innovators, and industry professionals in the field of extended reality and metaverse technologies.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k2",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_2a1c6298eb8045abae9da3fb43da4623~mv2.png",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k3",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k4",
+     "text": "The conference theme, \"Bridging between realities: transformative, inclusive, and sustainable XR,\" reflects our commitment to advancing XR technologies that positively impact society.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k5",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k6",
+     "text": "Key Details:",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k7",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k8",
+     "text": "Dates: June 25-27, 2025 (Doctoral Colloquium on June 24)",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "k9",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ka",
+     "text": "Location: Maastricht, The Netherlands",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "kb",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kc",
+     "text": "Call for Papers Deadline: January 15, 2025",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "kd",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ke",
+     "text": "We invite submissions across scientific, poster, and industry tracks. A special healthcare stream will also highlight VR applications in medical fields.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kf",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kg",
+     "text": "For more information and to submit your abstract, please visit:",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kh",
+   "style": "normal",
+   "markDefs": [
+    {
+     "_type": "link",
+     "_key": "kj",
+     "href": "http://www.xrm2025.com/"
+    }
+   ],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ki",
+     "text": "Conference website: ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kk",
+     "text": "www.xrm2025.com",
+     "marks": [
+      "kj"
+     ]
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "kl",
+   "style": "normal",
+   "markDefs": [
+    {
+     "_type": "link",
+     "_key": "kn",
+     "href": "https://easychair.org/conferences/?conf=xrm2025"
+    }
+   ],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "km",
+     "text": "Abstract submission: ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "ko",
+     "text": "https://easychair.org/conferences/?conf=xrm2025",
+     "marks": [
+      "kn"
+     ]
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "kp",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kq",
+     "text": "The host conference committee:",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "kr",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_ee65da6bcbd54b8bac69c02ca31e0cf9~mv2.png",
+   "alt": ""
+  },
+  {
+   "_type": "image",
+   "_key": "ks",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_5dc819ea6da143389de7fd458f9ee27a~mv2.jpeg",
+   "alt": ""
+  },
+  {
+   "_type": "image",
+   "_key": "kt",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_f1d5a18fd9b94aedaa3e0d2566b3e8b1~mv2.jpeg",
+   "alt": ""
+  },
+  {
+   "_type": "image",
+   "_key": "ku",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_405e0be02ffa4ddb80dd1e113b45a1d7~mv2.jpeg",
+   "alt": ""
+  },
+  {
+   "_type": "image",
+   "_key": "kv",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_ff2b7d26d0894c18b08c77914d469288~mv2.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "kw",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kx",
+     "text": "Dr. Jonas Heller",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ky",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kz",
+     "text": "Dr. Tim Hilken",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k10",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k11",
+     "text": "Roberta di Palma",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k12",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k13",
+     "text": "Dominik Mahr",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k14",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k15",
+     "text": "Prof. Dai-In Danny Han",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k16",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k17",
+     "text": "Join us in Maastricht as we explore the cutting edge of XR technology and its potential to shape our future!",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k18",
+   "style": "normal",
+   "markDefs": [
+    {
+     "_type": "link",
+     "_key": "k19",
+     "href": "https://www.sbe-dexlab.com/blog/hashtags/XRM2025"
+    },
+    {
+     "_type": "link",
+     "_key": "k1c",
+     "href": "https://www.sbe-dexlab.com/blog/hashtags/DEXLab"
+    },
+    {
+     "_type": "link",
+     "_key": "k1f",
+     "href": "https://www.sbe-dexlab.com/blog/hashtags/XRResearch"
+    }
+   ],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1a",
+     "text": "#XRM2025",
+     "marks": [
+      "k19"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k1b",
+     "text": " ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k1d",
+     "text": "#DEXLab",
+     "marks": [
+      "k1c"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k1e",
+     "text": " ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k1g",
+     "text": "#XRResearch",
+     "marks": [
+      "k1f"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k1h",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_27abfe9bb0484f36aaaf0d552bface03~mv2.png",
+   "alt": ""
+  }
+ ],
+ "embeds": []
+}

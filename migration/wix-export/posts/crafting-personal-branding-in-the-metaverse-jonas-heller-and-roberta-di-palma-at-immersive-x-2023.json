@@ -1,0 +1,239 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/crafting-personal-branding-in-the-metaverse-jonas-heller-and-roberta-di-palma-at-immersive-x-2023",
+ "slug": "crafting-personal-branding-in-the-metaverse-jonas-heller-and-roberta-di-palma-at-immersive-x-2023",
+ "title": "Crafting Personal Branding in the Metaverse. Jonas Heller and Roberta di Palma at Immersive X 2023",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "augmented-research"
+  },
+  "dateModified": "2024-03-01T15:02:48.589Z",
+  "datePublished": "2023-12-16T14:43:53.657Z",
+  "headline": "Crafting Personal Branding in the Metaverse. Jonas Heller and Roberta di Palma at Immersive X 2023",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/crafting-personal-branding-in-the-metaverse-jonas-heller-and-roberta-di-palma-at-immersive-x-2023",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/crafting-personal-branding-in-the-metaverse-jonas-heller-and-roberta-di-palma-at-immersive-x-2023"
+  },
+  "description": "A conference in the metaverse? An idea of a faraway future? No – actual reality in the here and now – as being part of Immersive X, a conference set in the Metaverse. DEXLab's founders, Roberta Di Palma and Jonas Heller, presented a novel perspective on personal branding in the virtual space. Their session revealed into the transformative potential of Virtual Reality (VR) in enhancing personal presentation skills, a crucial aspect of professional development and personal branding.  Their present",
+  "url": "https://www.sbe-dexlab.com/post/crafting-personal-branding-in-the-metaverse-jonas-heller-and-roberta-di-palma-at-immersive-x-2023",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/9aa9b6_6ecb5ff96efa4943b26f8b1991e8fff1~mv2.png/v1/fill/w_1000,h_553,al_c,q_90,usm_0.66_1.00_0.01/9aa9b6_6ecb5ff96efa4943b26f8b1991e8fff1~mv2.png",
+   "width": "1320",
+   "height": "730"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [
+  "https://www.sbe-dexlab.com/blog/categories/events",
+  "https://www.sbe-dexlab.com/blog/categories/food-for-thought",
+  "https://www.sbe-dexlab.com/blog/categories/digital-education"
+ ],
+ "og": "https://static.wixstatic.com/media/9aa9b6_6ecb5ff96efa4943b26f8b1991e8fff1~mv2.png/v1/fill/w_1000,h_553,al_c,q_90,usm_0.66_1.00_0.01/9aa9b6_6ecb5ff96efa4943b26f8b1991e8fff1~mv2.png",
+ "body": [
+  {
+   "_type": "block",
+   "_key": "k0",
+   "style": "normal",
+   "markDefs": [
+    {
+     "_type": "link",
+     "_key": "k2",
+     "href": "https://immersive-x.de/"
+    }
+   ],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1",
+     "text": "A conference in the metaverse? An idea of a faraway future? No – actual reality in the here and now – as being part of ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k3",
+     "text": "Immersive X",
+     "marks": [
+      "k2",
+      "strong",
+      "underline"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k4",
+     "text": ", a conference set in the Metaverse.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k5",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k6",
+     "text": "DEXLab's founders, ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k7",
+     "text": "Roberta Di Palma",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k8",
+     "text": " and ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k9",
+     "text": "Jonas Heller",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "ka",
+     "text": ", presented a novel perspective on personal branding in the virtual space. Their session revealed into the transformative potential of Virtual Reality (VR) in enhancing personal presentation skills, a crucial aspect of professional development and personal branding.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "kb",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_6ecb5ff96efa4943b26f8b1991e8fff1~mv2.png",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "ke",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kf",
+     "text": "Their presentation, \"",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kg",
+     "text": "Excel in Personal Branding: Exploring VR’s Potential to Improve Personal Presentation Skills",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kh",
+     "text": "\", highlighted the importance of crafting a unique professional identity in today's competitive market. They emphasized how enhanced presentation skills, one of many crucial soft skills of the 21st century, can significantly influence career opportunities, trust-building in professional relationships, and visibility across digital platforms.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kk",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kl",
+     "text": "The duo stressed the role of VR in training and upskilling, especially in university settings where the foundation for critical thinking, collaboration, creativity, and communication skills - the 4Cs - are laid. They presented compelling research indicating the ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "km",
+     "text": "effectiveness of VR in reducing public speaking anxiety, thereby bolstering presentation skills - a requirement in 40% of job descriptions across various fields",
+     "marks": [
+      "underline"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kn",
+     "text": ".",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kq",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kr",
+     "text": "A key focus of their talk was the integration of ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "ks",
+     "text": "Constructivist and Situated Learning Theories",
+     "marks": [
+      "underline"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kt",
+     "text": " in VR training. This approach enhances learners' experience by situating them in realistic and social contexts, thus improving motivation and learning outcomes. Their research underscores the role of feedback mechanisms and presence factors in VR and their impact on motivation, learning, and skills transferability.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kw",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kx",
+     "text": "The presentation concluded with practical implications for VR training design, emphasizing the importance of balanced social and spatial presence in VR environments to foster effective personal branding. This balance, they argued, is crucial in avoiding overwhelming scenarios while maintaining focus on brand goals.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k10",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k11",
+     "text": "Their talk at Immersive X not only illuminated the path for personal branding in the VR world but also set the stage for future innovations in VR-based learning and development. As pioneers in this field, Di Palma and Heller's insights have the potential to revolutionize how professionals present and brand themselves in the ever-evolving digital age.",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "embeds": []
+}

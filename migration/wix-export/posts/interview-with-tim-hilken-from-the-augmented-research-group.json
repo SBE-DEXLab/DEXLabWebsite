@@ -1,0 +1,381 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/interview-with-tim-hilken-from-the-augmented-research-group",
+ "slug": "interview-with-tim-hilken-from-the-augmented-research-group",
+ "title": "Interview with Tim Hilken from the Augmented-Research Group",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "augmented-research"
+  },
+  "dateModified": "2023-09-20T06:04:48.051Z",
+  "datePublished": "2023-09-12T07:00:18.108Z",
+  "headline": "Interview with Tim Hilken from the Augmented-Research Group",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/interview-with-tim-hilken-from-the-augmented-research-group",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/interview-with-tim-hilken-from-the-augmented-research-group"
+  },
+  "description": "1. What is the main research focus of the AR Group?The main research focus of our is to investigate the value-added by Augmented Reality (AR) technologies in both B2C (Business-to-Consumer) and B2B (Business-to-Business) contexts. We explore applications of AR across a broad range of domains, including online and offline retail, various service settings, advertising, financial decision-making, the emerging metaverse landscape, consumer well-being, and logistics and warehousing. &#010;2. What makes th",
+  "url": "https://www.sbe-dexlab.com/post/interview-with-tim-hilken-from-the-augmented-research-group",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/9aa9b6_3d9a4f7fc19c42fd98a606f57710c6bb~mv2.jpg/v1/fill/w_800,h_1000,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_3d9a4f7fc19c42fd98a606f57710c6bb~mv2.jpg",
+   "width": "3659",
+   "height": "4574"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [
+  "https://www.sbe-dexlab.com/blog/categories/research",
+  "https://www.sbe-dexlab.com/blog/categories/interviews"
+ ],
+ "og": "https://static.wixstatic.com/media/9aa9b6_3d9a4f7fc19c42fd98a606f57710c6bb~mv2.jpg/v1/fill/w_800,h_1000,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_3d9a4f7fc19c42fd98a606f57710c6bb~mv2.jpg",
+ "body": [
+  {
+   "_type": "image",
+   "_key": "k0",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_3d9a4f7fc19c42fd98a606f57710c6bb~mv2.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k1",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k2",
+     "text": "1. What is the main research focus of the AR Group?",
+     "marks": [
+      "strong",
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k3",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k4",
+     "text": "The main research focus of our is to investigate the value-added by Augmented Reality (AR) technologies in both B2C (Business-to-Consumer) and B2B (Business-to-Business) contexts. We explore applications of AR across a broad range of domains, including online and offline retail, various service settings, advertising, financial decision-making, the emerging metaverse landscape, consumer well-being, and logistics and warehousing.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k5",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k6",
+     "text": "2. What makes the team so special? Why was a specific research group / center needed and established and who is part of it?",
+     "marks": [
+      "strong",
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k7",
+     "text": "",
+     "marks": [
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k8",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k9",
+     "text": "The AR Group is unique because it was one of the first team of business scholars to study AR, with first studies conducted in 2012. Furthermore, we are a global team of researchers from the Netherlands, Australia, and the UK that comprises experts in services marketing, consumer behavior, and supply chain management. Our knowledge in these areas allows us to conduct in-depth research on the applications of AR and its impact on businesses and consumers. The team consists of:",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kc",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kd",
+     "text": "Tim Hilken (Maastricht University)",
+     "marks": [
+      "em"
+     ]
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ke",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kf",
+     "text": "Jonas Heller (Maastricht University)",
+     "marks": [
+      "em"
+     ]
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "kg",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kh",
+     "text": "Dominik Mahr (Maastricht University)",
+     "marks": [
+      "em"
+     ]
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ki",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kj",
+     "text": "Mathew Chylinski (University of New South Wales)",
+     "marks": [
+      "em"
+     ]
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "kk",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kl",
+     "text": "Debbie Keeling (University of Sussex)",
+     "marks": [
+      "em"
+     ]
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "km",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kn",
+     "text": "Ko de Ruyter (King’s College London)",
+     "marks": [
+      "em"
+     ]
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "kq",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kr",
+     "text": "3. Can you tell us more about the mission of your initiative / center? How will your research shape the world to be a better place?",
+     "marks": [
+      "strong",
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ks",
+   "style": "normal",
+   "markDefs": [
+    {
+     "_type": "link",
+     "_key": "ku",
+     "href": "https://onlinelibrary.wiley.com/doi/full/10.1002/mar.21678"
+    }
+   ],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kt",
+     "text": "Our focus is on the user, so understanding how organizations can design AR so that it can help people to make better decisions, solve tasks more efficiently or creatively, connect with others in new ways, and achieve greater well-being in their lives overall. For example, in a recent ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kv",
+     "text": "publication",
+     "marks": [
+      "ku"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kw",
+     "text": " we outline how AR can support sustainability and pro-social interventions by creating empathy and engagement with the environment and others amongst consumers, as well as help increase societal well-being – while at the same time pointing out that potential unintended consequences of AR and new types of concerns (e.g., related to privacy) need to be monitored.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "kx",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_6d2e8a414bcf42b2ba358f076c85679f~mv2.webp",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "ky",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kz",
+     "text": "4. What are the biggest accomplishments of your group so far?",
+     "marks": [
+      "strong",
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k10",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k11",
+     "text": "Our group has a strong track record with many academic publications in leading journals such as the Journal of the Academy of Marketing Science, Journal of Service Research, Journal of Retailing, Journal of Advertising, Journal of Interactive Marketing, Journal of Business Research, Journal of Service Management, Psychology & Marketing, Business Horizons, and Computers in Human Behavior. We have also had the privilege of guest-editing special issues on AR in Psychology & Marketing and Computers in Human Behavior. We have also been successful in attracting funding for developing new AR applications, collaborating with both large organizations, SMEs, and starts-ups in developing and testing AR applications, and of course bringing AR to the university classroom to spark enthusiasm about this technology with next generation of business leaders.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k14",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_d69ded4650eb434382763d3d4dc68334~mv2.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k15",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k16",
+     "text": "5. ",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k17",
+     "text": "Where do you see your research group in five years?",
+     "marks": [
+      "strong",
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k18",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k19",
+     "text": "In five years, we envision ourself at the forefront of innovation in the rapidly evolving landscape of Augmented Reality (AR). We aim to be pioneers in the development of new immersive metaverse experiences, pushing the boundaries of spatial computing and brain-computer interfaces, crafting multi-sensory AR environments, and enriching human interactions with technology for transformative and engaging digital experiences.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1a",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1b",
+     "text": "\"Thanks to Tim Hilken for sharing details about the Augmented Research Group's work in Augmented Reality. It's interesting to learn about a team focused on understanding AR's role in various business contexts. We're pleased to have the Augmented Research Group as part of the DEXLab community. Interested in learning more about their research and keeping up with DEXLab’s upcoming projects? Ensure to explore their website at ",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k1c",
+     "text": "https://www.augmented-research.com/",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "embeds": []
+}

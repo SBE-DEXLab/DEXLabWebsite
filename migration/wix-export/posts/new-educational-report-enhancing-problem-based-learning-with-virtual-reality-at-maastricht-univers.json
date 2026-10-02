@@ -1,0 +1,865 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/new-educational-report-enhancing-problem-based-learning-with-virtual-reality-at-maastricht-univers",
+ "slug": "new-educational-report-enhancing-problem-based-learning-with-virtual-reality-at-maastricht-univers",
+ "title": "NEW: Educational Report! Enhancing Problem-Based Learning with Virtual Reality at Maastricht University",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "Roberta di Palma"
+  },
+  "dateModified": "2024-05-28T13:24:32.374Z",
+  "datePublished": "2024-05-23T11:38:34.084Z",
+  "headline": "NEW: Educational Report! Enhancing Problem-Based Learning with Virtual Reality at Maastricht University ",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/new-educational-report-enhancing-problem-based-learning-with-virtual-reality-at-maastricht-univers",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/new-educational-report-enhancing-problem-based-learning-with-virtual-reality-at-maastricht-univers"
+  },
+  "description": "VR-enhanced PBL: DEXLab and EDLAB have developed an eight-step roadmap to make VR integration at University Maastricht easy.",
+  "url": "https://www.sbe-dexlab.com/post/new-educational-report-enhancing-problem-based-learning-with-virtual-reality-at-maastricht-univers",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/9aa9b6_cdc1d0a050184879a2f8855b2a228591~mv2.webp/v1/fill/w_1000,h_1000,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_cdc1d0a050184879a2f8855b2a228591~mv2.webp",
+   "width": "1208",
+   "height": "1208"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [
+  "https://www.sbe-dexlab.com/blog/categories/research",
+  "https://www.sbe-dexlab.com/blog/categories/digital-education"
+ ],
+ "og": "https://static.wixstatic.com/media/9aa9b6_cdc1d0a050184879a2f8855b2a228591~mv2.webp/v1/fill/w_1000,h_1000,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_cdc1d0a050184879a2f8855b2a228591~mv2.webp",
+ "body": [
+  {
+   "_type": "block",
+   "_key": "k0",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1",
+     "text": "Hey educators, are you curious about how virtual reality (VR) could transform your problem-based learning (PBL) classrooms? Imagine your students walking the streets of ancient Rome, conducting a virtual dissection, or perfecting their presentation skills, all through the engaging medium of VR. This isn't just a futuristic dream; it's the present reality of ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k2",
+     "text": "VR-enhanced PBL",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k3",
+     "text": ", and we're here to guide you through it.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k4",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_cdc1d0a050184879a2f8855b2a228591~mv2.webp",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k5",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k6",
+     "text": "In collaboration with DEXLab and EDLAB, along with the invaluable contributions of many dedicated coordinators, we’ve been piloting diverse VR experiences through the project called 'VR-enhanced PBL'.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k7",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k8",
+     "text": "The project at a glance",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k9",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ka",
+     "text": "Rooted in a constructivist learning philosophy, this project specifically explored the ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kb",
+     "text": "integration of digital education technologies",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kc",
+     "text": " into our curriculum by focusing on two key VR practices that can significantly enhance the PBL experience across UM faculties by running a total of seven pilots across most UM faculties. The piloted activities included:",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kd",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ke",
+     "text": "1",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kf",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kg",
+     "text": "Training Presentation Skills in VR:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kh",
+     "text": "\nThis initiative aims to improve students' presentation skills by providing them with a virtual audience or environment where they can practice and refine their public speaking capabilities. By simulating diverse scenarios and audiences, VR offers a unique platform for real-time feedback and iterative learning, crucial for developing effective communication skills.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ki",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kj",
+     "text": "2",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kk",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kl",
+     "text": "Using 360-Degree Videos to Enhance the PBL Learning Experience:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "km",
+     "text": "\nThis aspect of the project leverages 360-degree videos to provide students with immersive experiences that deepen their understanding of complex subjects. Whether it's virtually visiting historical sites or exploring intricate biological processes, these videos make learning more engaging and contextually rich, directly enhancing curriculum-based education.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kn",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ko",
+     "text": "VR-enhanced PBL: A framework",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "kp",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_625f98655f50472ea855b029068307c8~mv2.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "kq",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kr",
+     "text": "We are proud to present our recently released educational report from Maastricht",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ks",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kt",
+     "text": "University's DEXLab in collaboration with EDLAB, which showcases how VR can revitalize your PBL classroom. This approach creates an immersive learning environment that aligns effectively with the ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "ku",
+     "text": "CCCS principles",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kv",
+     "text": " of ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kw",
+     "text": "constructivist, contextual, collaborative, and self-directed learning",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kx",
+     "text": ". Keeping the conceptual potential of VR in PBL education in mind, we've introduced a framework to classify the types of VR activities within UM’s educational settings.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "ky",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_12bff92451ab4ba9bba3ef51034e468a~mv2.png",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "kz",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k10",
+     "text": "We are proud to present our recently released educational report from Maastricht University's DEXLab in collaboration with EDLAB, which showcases how VR can revitalize your PBL classroom. This approach creates an immersive learning environment that aligns effectively with the CCCS principles of constructivist, contextual, collaborative, and self-directed learning. Keeping the conceptual potential of VR in PBL education in mind, we've introduced a framework to classify the types of VR activities within UM’s educational settings.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k11",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k12",
+     "text": "Our framework categorizes VR uses into four quadrants, each defined by the type of skill being trained—whether academic or professional—and the level of student interaction, ranging from passive to active engagement. This structure ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k13",
+     "text": "aids educators",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k14",
+     "text": " in choosing the ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k15",
+     "text": "most suitable VR",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k16",
+     "text": " activities to enhance and support the CCCS principles of PBL, ensuring that each selected activity aligns with specific learning goals and desired outcomes.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k17",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k18",
+     "text": "RoadMap to VR-enhanced PBL",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k19",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1a",
+     "text": "To ensure that these innovative practices are not only visionary but also actionable, based on what we have learned from these UM pilots, we've developed an eight-step roadmap to make VR integration at UM accessible and feasible. This roadmap is designed to guide educators through the process of incorporating VR into their teaching, from initial planning to the final assessment of the VR activities.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k1b",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_274994526dca4d8ab498f5c5a104fd5f~mv2.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k1c",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1d",
+     "text": "1",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1e",
+   "style": "normal",
+   "markDefs": [
+    {
+     "_type": "link",
+     "_key": "k1h",
+     "href": "http://meta.com/"
+    },
+    {
+     "_type": "link",
+     "_key": "k1k",
+     "href": "https://sidequestvr.com/"
+    }
+   ],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1f",
+     "text": "Plan it Out",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k1g",
+     "text": "\nAlign VR with your curriculum. Based on your learning objectives, choose the VR activity type (e.g., active skills training or 360 video experiences) that best fits your goals. Search for pre-existing VR experiences available for the Oculus Quest 2 (the VR headsets available at all UM faculties). Consult websites like the ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k1i",
+     "text": "Oculus Quest Store",
+     "marks": [
+      "k1h",
+      "underline"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k1j",
+     "text": " and ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k1l",
+     "text": "Sidequest",
+     "marks": [
+      "k1k",
+      "underline"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k1m",
+     "text": " to see what is already available for you to test out.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1n",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1o",
+     "text": "Team up",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k1p",
+     "text": "\nCollaborate with your university's VR support team or educational tech lab 3-6 months in advance. They can help you explore VR options and ensure a smooth experience by sharing best practices and technical support and guidance.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1q",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1r",
+     "text": "2",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1s",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1t",
+     "text": "3",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1u",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1v",
+     "text": "Pick your spot",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k1w",
+     "text": "\nDetermine when VR integrates best into your course schedule. Consider how it impacts learning and course flow. Keep VR sessions under 20-30 minutes to avoid fatigue, and plan for extra space or breaks if needed.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1x",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1y",
+     "text": "Tech Check",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k1z",
+     "text": "\nA few days before your VR activity, ensure the hardware is working, software is updated, and technical support is on standby. Train course tutors who will be assisting students during the VR experience.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k20",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k21",
+     "text": "4",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k22",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k23",
+     "text": "5",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k24",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k25",
+     "text": "Get your students Pumped",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k26",
+     "text": "\nPrepare students for VR! Highlight how the VR activities connect to the broader course content and learning objectives. Consider using sign-up mechanisms or incorporating VR into tutorial groups to ensure everyone gets involved.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k27",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k28",
+     "text": "It's Time!",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k29",
+     "text": "\nFacilitate the VR experience. This could involve guiding students through skills training or leading post-discussion questions after a VR adventure. Offer technical support and consider screen sharing the VR experience to enhance understanding for all students involved.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k2a",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k2b",
+     "text": "6",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k2c",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k2d",
+     "text": "7",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k2e",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k2f",
+     "text": "Reflect and Debrief",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k2g",
+     "text": "\nOrganize debriefing sessions to allow students to reflect on their VR experiences and connect them to course content. Encourage feedback to gauge how effective the VR activity was and identify areas for improvement in the future.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k2h",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k2i",
+     "text": "Measure Up!",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k2j",
+     "text": "\nAssess the impact of VR activities. Look at student feedback, performance data, and your own observations. Use this information to continuously improve how you integrate VR to enhance future learning experiences!",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k2k",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k2l",
+     "text": "8",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k2m",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k2n",
+     "text": "Join the UM XR network",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k2o",
+   "style": "normal",
+   "markDefs": [
+    {
+     "_type": "link",
+     "_key": "k2q",
+     "href": "mailto:sbe-dexlab@maastrichtuniversity.nl"
+    }
+   ],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k2p",
+     "text": "As we continue to explore the potential of VR in education in our PBL classrooms at UM, we are developing a network of interest for XR educators. If you're interested in learning more about how VR and other emerging technologies can be used in your courses, or if you want to connect with fellow educators to share insights and experiences, we encourage you to join our community. Please email us at ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k2r",
+     "text": "sbe-dexlab@maastrichtuniversity.nl",
+     "marks": [
+      "k2q",
+      "strong",
+      "underline"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k2s",
+     "text": " to become part of this innovative group. Together, we can explore the vast potential of VR in education, making learning more dynamic and engaging for all students.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k2t",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k2u",
+     "text": "So, are you ready to ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k2v",
+     "text": "supercharge your lessons",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k2w",
+     "text": " and take student learning to the next level?",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k2x",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k2y",
+     "text": "Download the ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k2z",
+     "text": "full report",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k30",
+     "text": " – today!",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k31",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_d77beb01612a4679b36ee47af873e44c~mv2.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k32",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k33",
+     "text": "Author: Roberta di Palma",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k34",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k35",
+     "text": "Publish date: the 23rd of May 2024",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "embeds": []
+}

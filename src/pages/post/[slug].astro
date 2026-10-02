@@ -1,0 +1,167 @@
+---
+import Base from '../../layouts/Base.astro'
+import Img from '../../components/Img.astro'
+import PostCard from '../../components/PostCard.astro'
+import {getPosts, getPost} from '../../lib/queries'
+import {renderRichText} from '../../lib/portableText'
+import {formatDate, readingTime} from '../../lib/utils'
+import {imageUrl} from '../../lib/image'
+
+export async function getStaticPaths() {
+  const posts = await getPosts()
+  return posts.map((p) => ({params: {slug: p.slug}}))
+}
+
+const post = await getPost(Astro.params.slug!)
+if (!post) return Astro.redirect('/404')
+
+// Wix posts often repeat the cover image as the first image in the body.
+const body = (post.body || []).filter((b, i) => !(i < 3 && b._type === 'image' && b.url && b.url === post.coverImage?.url))
+const authors = post.authors?.map((a) => a.name) ?? (post.authorName ? [post.authorName] : [])
+const url = new URL(Astro.url.pathname, Astro.site).href
+const share = {
+  linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`,
+  email: `mailto:?subject=${encodeURIComponent(post.title)}&body=${encodeURIComponent(url)}`,
+}
+const ld = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: post.title,
+  datePublished: post.publishedAt,
+  image: imageUrl(post.coverImage, {width: 1200, height: 630}),
+  author: authors.length ? authors.map((name) => ({'@type': 'Person', name})) : {'@type': 'Organization', name: 'DEXLab'},
+  publisher: {'@type': 'Organization', name: 'DEXLab, Maastricht University'},
+  mainEntityOfPage: url,
+}
+---
+
+<Base title={post.seo?.title || post.title} description={post.seo?.description || post.excerpt} image={post.seo?.image || post.coverImage} type="article" jsonLd={ld}>
+  <article class="post">
+    <header class="post-head">
+      <div class="container narrow">
+        <a href="/blog" class="back">← All posts</a>
+        <div class="meta">
+          {post.categories?.map((c) => <a class="chip" href={`/blog/categories/${c.slug}`}>{c.title}</a>)}
+        </div>
+        <h1>{post.title}</h1>
+        <p class="byline">
+          {authors.length > 0 && <span>By {authors.join(', ')}</span>}
+          <time datetime={post.publishedAt}>{formatDate(post.publishedAt)}</time>
+          <span>{readingTime(post.body)} min read</span>
+        </p>
+      </div>
+    </header>
+    {
+      post.coverImage?.url && (
+        <div class="container cover">
+          <Img image={post.coverImage} width={1100} fit="max" sizes="(min-width: 1100px) 1000px, 100vw" eager />
+        </div>
+      )
+    }
+    <div class="container narrow">
+      <div class="prose" set:html={renderRichText(body)} />
+      <footer class="post-foot">
+        <span>Share this post</span>
+        <a href={share.linkedin} target="_blank" rel="noopener">LinkedIn</a>
+        <a href={share.email}>Email</a>
+        <button type="button" data-copy={url}>Copy link</button>
+      </footer>
+    </div>
+  </article>
+
+  {
+    post.related?.length ? (
+      <section class="section tone-muted">
+        <div class="container">
+          <div class="section-head">
+            <h2>Keep reading</h2>
+          </div>
+          <div class="grid" style="--cols: 3">
+            {post.related.map((p) => (
+              <PostCard post={p} />
+            ))}
+          </div>
+        </div>
+      </section>
+    ) : null
+  }
+</Base>
+
+<script>
+  document.querySelectorAll<HTMLButtonElement>('[data-copy]').forEach((b) =>
+    b.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(b.dataset.copy!)
+        b.textContent = 'Link copied'
+      } catch {
+        b.textContent = b.dataset.copy!
+      }
+    }),
+  )
+</script>
+
+<style>
+  .post-head {
+    padding-block: clamp(40px, 7vw, 80px) 32px;
+    background: linear-gradient(180deg, var(--peach-2), #fff);
+  }
+  .back {
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.95rem;
+  }
+  .meta {
+    display: flex;
+    gap: 8px;
+    margin: 20px 0 14px;
+    flex-wrap: wrap;
+  }
+  h1 {
+    font-size: clamp(2rem, 4.4vw, 3rem);
+  }
+  .byline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 18px;
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin: 0;
+  }
+  .cover {
+    max-width: 1100px;
+    margin-bottom: 40px;
+  }
+  .cover :global(img) {
+    width: 100%;
+    max-height: 640px;
+    object-fit: cover;
+    border-radius: var(--radius);
+  }
+  .post-foot {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 16px;
+    margin: 48px 0 72px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    font-weight: 600;
+    color: var(--navy);
+  }
+  .post-foot a,
+  .post-foot button {
+    font: 600 0.92rem var(--font-body);
+    padding: 7px 14px;
+    border: 1.5px solid var(--line);
+    border-radius: 999px;
+    background: #fff;
+    color: var(--navy);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .post-foot a:hover,
+  .post-foot button:hover {
+    border-color: var(--blue);
+    color: var(--blue-dark);
+  }
+</style>

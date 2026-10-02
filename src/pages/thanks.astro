@@ -1,0 +1,31 @@
+---
+import Base from '../layouts/Base.astro'
+import Hero from '../components/sections/Hero.astro'
+---
+
+<Base title="Thank you" noindex>
+  <div data-thanks="contact">
+    <Hero
+      heading="Thanks, your message is on its way"
+      eyebrow="Message sent"
+      subheading="We will get back to you within a few working days."
+      buttons={[{label: 'Back to the home page', href: '/'}]}
+    />
+  </div>
+  <div data-thanks="newsletter" hidden>
+    <Hero
+      heading="You are on the DEXLab mailing list"
+      eyebrow="Subscribed"
+      subheading="Thanks for signing up. Expect news on workshops, experiments and events."
+      buttons={[{label: 'Read the latest posts', href: '/blog'}]}
+    />
+  </div>
+</Base>
+
+<script>
+  const form = new URLSearchParams(location.search).get('form')
+  if (form === 'newsletter') {
+    document.querySelector<HTMLElement>('[data-thanks="contact"]')!.hidden = true
+    document.querySelector<HTMLElement>('[data-thanks="newsletter"]')!.hidden = false
+  }
+</script>

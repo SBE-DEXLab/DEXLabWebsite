@@ -1,0 +1,117 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/yvonne-schwan-starts-her-journey-at-dexlab-get-to-know-her",
+ "slug": "yvonne-schwan-starts-her-journey-at-dexlab-get-to-know-her",
+ "title": "Yvonne Schwan Starts Her Journey at DEXLab: Get to Know Her!",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "sbe-dexlab"
+  },
+  "dateModified": "2024-05-23T13:13:39.776Z",
+  "datePublished": "2024-05-14T12:55:30.730Z",
+  "headline": "Yvonne Schwan Starts Her Journey at DEXLab: Get to Know Her!",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/yvonne-schwan-starts-her-journey-at-dexlab-get-to-know-her",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/yvonne-schwan-starts-her-journey-at-dexlab-get-to-know-her"
+  },
+  "description": "Hello everyone! My name is Yvonne and I'm happy to tell you a little bit about myself. I'm 30 years old and I'm in my final year of the Management &amp; Media (MM) program at the University of the Federal Armed Forces in Munich. I am here as an exchange student and am excited to be able to do a five-month internship at DEXLab, where I am doing research for my Master's thesis.My project is about comparing consumer and purchasing behavior in online retail, especially with the integration of augmented ",
+  "url": "https://www.sbe-dexlab.com/post/yvonne-schwan-starts-her-journey-at-dexlab-get-to-know-her",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/9aa9b6_2eb4ba32877e4a9ebbf9d39f3aeee2ea~mv2.jpg/v1/fill/w_750,h_1000,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_2eb4ba32877e4a9ebbf9d39f3aeee2ea~mv2.jpg",
+   "width": "4284",
+   "height": "5712"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [
+  "https://www.sbe-dexlab.com/blog/categories/meet-the-team"
+ ],
+ "og": "https://static.wixstatic.com/media/9aa9b6_2eb4ba32877e4a9ebbf9d39f3aeee2ea~mv2.jpg/v1/fill/w_750,h_1000,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_2eb4ba32877e4a9ebbf9d39f3aeee2ea~mv2.jpg",
+ "body": [
+  {
+   "_type": "image",
+   "_key": "k0",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_2eb4ba32877e4a9ebbf9d39f3aeee2ea~mv2.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k1",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k2",
+     "text": "Hello everyone! My name is Yvonne and I'm happy to tell you a little bit about myself. I'm 30 years old and I'm in my final year of the Management & Media (MM) program at the University of the Federal Armed Forces in Munich. I am here as an exchange student and am excited to be able to do a five-month internship at DEXLab, where I am doing research for my Master's thesis.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k3",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k4",
+     "text": "My project is about comparing consumer and purchasing behavior in online retail, especially with the integration of augmented reality, with traditional shopping in local stores. I am fortunate that DEXLab offers access to cutting-edge technology, which greatly enhances my research opportunities.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k5",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k6",
+     "text": "As an officer in the German Armed Forces, I would like to make an important contribution to DEXLab. I look forward to the challenges that lie ahead and to growing professionally and personally during my time in Maastricht.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k7",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k8",
+     "text": "Outside of work, I am passionate about running and walking. I enjoy discovering new cafés, restaurants, and bars and immersing myself in the local culture. I also enjoy meeting new people and appreciate the enriching conversations and different perspectives that arise with each new encounter.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k9",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ka",
+     "text": "A saying I like to apply both in life and in research is \"Every person that you meet knows something you don't; learn from them.\" by H. Jackson Brown Jr. This not only fits with my interest in new encounters but also the desire to learn and develop from these experiences.",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "embeds": []
+}

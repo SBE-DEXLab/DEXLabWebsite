@@ -1,0 +1,154 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/attachment-and-psychological-ownership-of-digital-objects",
+ "slug": "attachment-and-psychological-ownership-of-digital-objects",
+ "title": "Attachment and Psychological Ownership of Digital Objects",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "augmented-research"
+  },
+  "dateModified": "2023-09-20T06:06:40.516Z",
+  "datePublished": "2023-07-07T07:09:36.787Z",
+  "headline": "Attachment and Psychological Ownership of Digital Objects",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/attachment-and-psychological-ownership-of-digital-objects",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/attachment-and-psychological-ownership-of-digital-objects"
+  },
+  "description": "A Thesis Experiment by Floris Westerbeek and Lea Schmickler As the marketing environment is fundamentally changing due to digitalisation, how consumers interact with products and services is changing too. This is largely due to the utilisation of digital objects, which are becoming increasingly relevant as AR and VR technologies continue to grow. A key marketing aspect that the thesis experiment investigated was to what extent attachment and psychological ownership grows over time and digital co",
+  "url": "https://www.sbe-dexlab.com/post/attachment-and-psychological-ownership-of-digital-objects",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/9aa9b6_ee564cef16924232801034ef71d023de~mv2.png/v1/fill/w_1000,h_358,al_c,lg_1,q_85/9aa9b6_ee564cef16924232801034ef71d023de~mv2.png",
+   "width": "904",
+   "height": "324"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [
+  "https://www.sbe-dexlab.com/blog/categories/experiments",
+  "https://www.sbe-dexlab.com/blog/categories/research"
+ ],
+ "og": "https://static.wixstatic.com/media/9aa9b6_ee564cef16924232801034ef71d023de~mv2.png/v1/fill/w_1000,h_358,al_c,lg_1,q_85/9aa9b6_ee564cef16924232801034ef71d023de~mv2.png",
+ "body": [
+  {
+   "_type": "block",
+   "_key": "k0",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1",
+     "text": "A Thesis Experiment by Floris Westerbeek and Lea Schmickler",
+     "marks": [
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k2",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_ee564cef16924232801034ef71d023de~mv2.png",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k3",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k4",
+     "text": "As the marketing environment is fundamentally changing due to digitalisation, how consumers interact with products and services is changing too. This is largely due to the utilisation of digital objects, which are becoming increasingly relevant as AR and VR technologies continue to grow.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k5",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k6",
+     "text": "A key marketing aspect that the thesis experiment investigated was to what extent attachment and psychological ownership grows over time and digital complexity level to digital objects in AR and VR. To gain insights into this, a custom application was developed for the Microsoft Hololens 2 and the Meta Quest 2 called the Floating Islands. Participants interacted with the Floating Islands every week for a 4-week period, exploring them and interacting with the digital objects found within.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k7",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k8",
+     "text": "Based on survey results, attachment and psychological ownership of digital objects in AR and VR does increase over time and complexity level, but only once consumers can customise and self-identify with the objects. Additional research by Floris Westerbeek indicated that an increase in the perceived scarcity of a digital object significantly strengthens feelings of attachment and psychological ownership.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k9",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ka",
+     "text": "These findings will help companies better understand how to position and create their digital offerings withing AR and VR, especially with exciting developments such as Apple’s upcoming Vision Pro. Ultimately, the research made possible by the DEXLab provided many valuable insights. Not only are the insights value-adding in nature, but they also provided an enjoyable experience for everyone involved.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kb",
+   "style": "normal",
+   "markDefs": [
+    {
+     "_type": "link",
+     "_key": "kd",
+     "href": "mailto:sbe-dexlab@maastrichtuniversity.nl"
+    }
+   ],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kc",
+     "text": "If you are also interested in conducting research with DEXLab, please don't hesitate to contact us! We offer a wide range of topics, whether for a Bachelor's or Master's thesis. You can contact us via ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "ke",
+     "text": "sbe-dexlab@maastrichtuniversity.nl",
+     "marks": [
+      "kd"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kf",
+     "text": "!",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "embeds": []
+}

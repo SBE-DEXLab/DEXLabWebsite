@@ -1,0 +1,15 @@
+---
+import BlogIndex from '../../../components/BlogIndex.astro'
+import {getPosts, getCategories} from '../../../lib/queries'
+
+export async function getStaticPaths() {
+  const categories = await getCategories()
+  return categories.map((c) => ({params: {slug: c.slug}}))
+}
+
+const categories = await getCategories()
+const active = categories.find((c) => c.slug === Astro.params.slug)!
+const posts = await getPosts(1000, active.slug)
+---
+
+<BlogIndex posts={posts} categories={categories} active={active} page={1} pages={1} baseUrl={`/blog/categories/${active.slug}`} />

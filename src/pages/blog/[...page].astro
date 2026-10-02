@@ -1,0 +1,18 @@
+---
+import BlogIndex from '../../components/BlogIndex.astro'
+import {getPosts, getCategories} from '../../lib/queries'
+
+export const PER_PAGE = 12
+
+// /blog, /blog/page/2, /blog/page/3, ...
+export async function getStaticPaths() {
+  const posts = await getPosts()
+  const pages = Math.max(1, Math.ceil(posts.length / PER_PAGE))
+  return Array.from({length: pages}, (_, i) => ({params: {page: i === 0 ? undefined : `page/${i + 1}`}, props: {n: i + 1, pages}}))
+}
+
+const {n, pages} = Astro.props
+const [posts, categories] = await Promise.all([getPosts(), getCategories()])
+---
+
+<BlogIndex posts={posts.slice((n - 1) * PER_PAGE, n * PER_PAGE)} categories={categories} page={n} pages={pages} baseUrl="/blog" />

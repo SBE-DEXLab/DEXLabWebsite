@@ -1,0 +1,221 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/mind-machine-interactions-insights-from-alex-kies-dexlab-researcher",
+ "slug": "mind-machine-interactions-insights-from-alex-kies-dexlab-researcher",
+ "title": "Mind-machine interactions: Insights from Alex Kies, DEXLab researcher",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "sbe-dexlab"
+  },
+  "dateModified": "2024-05-23T13:15:48.249Z",
+  "datePublished": "2024-03-01T12:19:46.081Z",
+  "headline": "Mind-machine interactions: Insights from Alex Kies, DEXLab researcher",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/mind-machine-interactions-insights-from-alex-kies-dexlab-researcher",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/mind-machine-interactions-insights-from-alex-kies-dexlab-researcher"
+  },
+  "description": "Hi! I'm Alex, and I'm a visiting researcher at Maastricht University. I am very close to finishing my PhD on the impact of biometric technologies on service marketing.    What reasons were behind your recent academic decisions?  One main reason behind my academic decision to focus my research on biometric technologies, especially Brain-Computer Interfaces (BCI), is my fascination with cutting-edge technologies. How amazing is it that you can control all your devices with your thoughts alone? Thi",
+  "url": "https://www.sbe-dexlab.com/post/mind-machine-interactions-insights-from-alex-kies-dexlab-researcher",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/9aa9b6_5b7c2bad3df84100ab51d2d013558770~mv2.jpg/v1/fill/w_806,h_1000,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_5b7c2bad3df84100ab51d2d013558770~mv2.jpg",
+   "width": "863",
+   "height": "1071"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [],
+ "og": "https://static.wixstatic.com/media/9aa9b6_5b7c2bad3df84100ab51d2d013558770~mv2.jpg/v1/fill/w_806,h_1000,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_5b7c2bad3df84100ab51d2d013558770~mv2.jpg",
+ "body": [
+  {
+   "_type": "block",
+   "_key": "k0",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1",
+     "text": "Hi! I'm Alex, and I'm a visiting researcher at Maastricht University. I am very close to finishing my PhD on the impact of biometric technologies on service marketing.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k4",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_5b7c2bad3df84100ab51d2d013558770~mv2.jpg",
+   "alt": "Alex Kies DEXLab researcher Maastricht"
+  },
+  {
+   "_type": "block",
+   "_key": "k5",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k6",
+     "text": "What reasons were behind your recent academic decisions?",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k7",
+     "text": "",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k8",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k9",
+     "text": "One main reason behind my academic decision to focus my research on biometric technologies, especially Brain-Computer Interfaces (BCI), is my fascination with cutting-edge technologies. How amazing is it that you can control all your devices with your thoughts alone? This technology transcends traditional interfaces we have. been using for decades, offering a glimpse into a future where our interaction with the digital world is seamless and intuitive. It's truly amazing that my job revolves around researching the impact of BCIs on service marketing and exploring the intersection of advanced technology and consumer behavior.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kc",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kd",
+     "text": "What are some of the highlights/key learnings of your academic journey?",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ke",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kf",
+     "text": "Collaborating with researchers around the world has been a game-changer in my research. It's not just about pooling skills for better results; it's fun and incredibly rewarding. I always learn something new from these collaborations, making every project a great mix of professional growth and personal enjoyment. Attending conferences has also been a standout highlight in my research journey. It's the perfect blend of professional development and personal enjoyment. Networking with top experts in the field, who are invariably kind and hospitable, enhances both the work and the experience. Plus, taking a few extra days to explore cities for research purposes is a great perk.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ki",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kj",
+     "text": "How does the DEXLab provide value to you?",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kk",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kl",
+     "text": "The DEXLab is invaluable to me as it's a melting pot of ideas and state-of-the-art resources. It's where I get to bring my concepts to life, experiment with immersive technologies, and connect with experts in the field. This interaction not only fuels my research but also sparks innovative ideas, making it an essential part of my academic and professional journey.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ko",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kp",
+     "text": "What are your hobbies outside of work?",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kq",
+     "text": "",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kr",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ks",
+     "text": "When I'm not trying to change the color of my smart home lights with the help of my BCI that I store in my home office, I love to travel around the world (so far, only countries in South America are missing to have seen all 5 continents), meeting friends and family and working on absolutely amazing music tracks. My German rap song, \"Raupenbagger\", is a hit among insiders and exclusively available as a WhatsApp Audio message. Some electronic ambient music is also available on Spotify. So, should I fail to succeed in my academic career, I will be the guy handing out CDs to all of you.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kv",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kw",
+     "text": "If you could have any superpower, what would it be?",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kx",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ky",
+     "text": "That one is easy! Of course, I would have the ability to teleport. Imagine you could visit every place on earth at a moment's notice, sneak into concerts of your favorite musicians, and beat all your friends in a game of tag.",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "embeds": []
+}

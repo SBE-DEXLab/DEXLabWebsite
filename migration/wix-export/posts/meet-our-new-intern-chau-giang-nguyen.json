@@ -1,0 +1,145 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/meet-our-new-intern-chau-giang-nguyen",
+ "slug": "meet-our-new-intern-chau-giang-nguyen",
+ "title": "Meet our new intern: Chau Giang Nguyen",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "augmented-research"
+  },
+  "dateModified": "2024-03-01T15:06:20.276Z",
+  "datePublished": "2023-09-27T08:00:05.512Z",
+  "headline": "Meet our new intern: Chau Giang Nguyen",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/meet-our-new-intern-chau-giang-nguyen",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/meet-our-new-intern-chau-giang-nguyen"
+  },
+  "description": "Hey there,I'm Chau Giang Nguyen, coming all the way from Vietnam. Currently, I'm absolutely thrilled to introduce myself as an intern for the DEXLab at Maastricht University. It's an incredible opportunity that I'm eagerly looking forward to.As a dedicated student in Business Analytics at Maastricht University, I'm passionate about exploring the world of data and its strategic implications. My academic journey has been guided by this passion, and I'm excited to bring my skills to a dynamic envir",
+  "url": "https://www.sbe-dexlab.com/post/meet-our-new-intern-chau-giang-nguyen",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/9aa9b6_17d99b9d949647b49dacaf92aadc99e5~mv2.jpeg/v1/fill/w_739,h_1000,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_17d99b9d949647b49dacaf92aadc99e5~mv2.jpeg",
+   "width": "2649",
+   "height": "3583"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [
+  "https://www.sbe-dexlab.com/blog/categories/meet-the-team"
+ ],
+ "og": "https://static.wixstatic.com/media/9aa9b6_17d99b9d949647b49dacaf92aadc99e5~mv2.jpeg/v1/fill/w_739,h_1000,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_17d99b9d949647b49dacaf92aadc99e5~mv2.jpeg",
+ "body": [
+  {
+   "_type": "image",
+   "_key": "k0",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_17d99b9d949647b49dacaf92aadc99e5~mv2.jpeg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k1",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k2",
+     "text": "Hey there,",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k3",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k4",
+     "text": "I'm Chau Giang Nguyen, coming all the way from Vietnam. Currently, I'm absolutely thrilled to introduce myself as an intern for the DEXLab at Maastricht University. It's an incredible opportunity that I'm eagerly looking forward to.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k5",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k6",
+     "text": "As a dedicated student in Business Analytics at Maastricht University, I'm passionate about exploring the world of data and its strategic implications. My academic journey has been guided by this passion, and I'm excited to bring my skills to a dynamic environment like DEXLab.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k7",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k8",
+     "text": "But let me rewind a bit. After wrapping up high school, I took a leap of faith and embarked on a gap year to truly discover my passions. It was a time of growth and self-discovery that paved the way for my decision to pursue further studies abroad.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k9",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ka",
+     "text": "When I'm not immersed in data analytics, I have a couple of passions that keep me engaged. I really love reading and cooking. Books open up new worlds for me, and cooking allows me to experiment with flavors and creativity.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kd",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ke",
+     "text": "My diverse background has taught me the importance of adaptability and cultural exchange. Studying in a multicultural environment has honed my teamwork and collaboration skills, which I believe are essential for any professional setting.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kf",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kg",
+     "text": "I can't help but feel excited about the opportunity to contribute my skills and learn from the talented individuals at DEXLab.",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "embeds": []
+}

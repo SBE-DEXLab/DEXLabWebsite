@@ -1,0 +1,223 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/augmented-reality-smart-glasses-warehouse-experiment",
+ "slug": "augmented-reality-smart-glasses-warehouse-experiment",
+ "title": "Augmented Reality Smart Glasses - Warehouse Experiment",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "augmented-research"
+  },
+  "dateModified": "2022-09-26T07:57:59.720Z",
+  "datePublished": "2022-09-26T07:57:59.720Z",
+  "headline": "Augmented Reality Smart Glasses - Warehouse Experiment  ",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/augmented-reality-smart-glasses-warehouse-experiment",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/augmented-reality-smart-glasses-warehouse-experiment"
+  },
+  "description": "A Thesis Experiment by Anne WindhausenIn modern warehouse environments, managers are constantly striving to increase picking efficiency and reduce the occurrence of picking errors to meet complex market conditions and decrease warehousing costs. Augmented Reality Smart Glasses (ARSG) are considered an ideal technology to achieve the aforementioned objectives and support pickers by displaying all information directly in their vision field. To gain more insights into the well-being of ARSG users, ",
+  "url": "https://www.sbe-dexlab.com/post/augmented-reality-smart-glasses-warehouse-experiment",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/9aa9b6_6f5cd7f91e0d4c329a304d731e441160~mv2.jpeg/v1/fill/w_1000,h_566,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_6f5cd7f91e0d4c329a304d731e441160~mv2.jpeg",
+   "width": "1908",
+   "height": "1080"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [
+  "https://www.sbe-dexlab.com/blog/categories/experiments"
+ ],
+ "og": "https://static.wixstatic.com/media/9aa9b6_6f5cd7f91e0d4c329a304d731e441160~mv2.jpeg/v1/fill/w_1000,h_566,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_6f5cd7f91e0d4c329a304d731e441160~mv2.jpeg",
+ "body": [
+  {
+   "_type": "block",
+   "_key": "k0",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1",
+     "text": "A Thesis Experiment by Anne Windhausen",
+     "marks": [
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k2",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k3",
+     "text": "In modern warehouse environments, managers are constantly striving to increase picking efficiency and reduce the occurrence of picking errors to meet complex market conditions and decrease warehousing costs. Augmented Reality Smart Glasses (ARSG) are considered an ideal technology to achieve the aforementioned objectives and support pickers by",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k4",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k5",
+     "text": "displaying all information directly in their vision field.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k6",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_6f5cd7f91e0d4c329a304d731e441160~mv2.jpeg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k7",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k8",
+     "text": "To gain more insights into the well-being of ARSG users, an order picking experiment was designed for which a warehouse setting was set up at DEXLab. The order picking task was conducted by two groups, one equipped with a traditional paper picking list and the other with a Microsoft HoloLens2. The results indicated that participants in the AR-condition experienced significantly higher well-being than participants in the non-AR condition. As higher levels of well-being lead to more productive employees, this finding strengthens the potential of ARSG in the picking process. In addition, it was figured out that a user's level of technical savviness, is crucial to consider when implementing ARSG. Concretely, the findings indicate that only high levels of technical savviness among users lead to more satisfied workers as well as an increase in their perceived productivity. To enable successful implementation, companies should therefore be aware of their employees’ level of technical savviness and provide appropriate support, such as adequate training.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k9",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_1e91a8b915a54a58bdebd324959f539a~mv2.jpeg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "ka",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kb",
+     "text": "The research at DEXLab was very exciting and provided valuable insights. By trying out the HoloLens during the development of the experiment and observing participants’ interaction with the HoloLens, we were able to develop a much better understanding of this cutting-edge technology. These insights were not only very exciting and fun, but also provided a more holistic perspective for the thesis.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kc",
+   "style": "normal",
+   "markDefs": [
+    {
+     "_type": "link",
+     "_key": "kd",
+     "href": "https://www.sbe-dexlab.com/blog/hashtags/technology"
+    },
+    {
+     "_type": "link",
+     "_key": "kg",
+     "href": "https://www.sbe-dexlab.com/blog/hashtags/augmentedreality"
+    },
+    {
+     "_type": "link",
+     "_key": "kj",
+     "href": "https://www.sbe-dexlab.com/blog/hashtags/experiment"
+    },
+    {
+     "_type": "link",
+     "_key": "km",
+     "href": "https://www.sbe-dexlab.com/blog/hashtags/thesis"
+    },
+    {
+     "_type": "link",
+     "_key": "kp",
+     "href": "https://www.sbe-dexlab.com/blog/hashtags/DEXlab"
+    }
+   ],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ke",
+     "text": "#technology",
+     "marks": [
+      "kd"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kf",
+     "text": " ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kh",
+     "text": "#augmentedreality",
+     "marks": [
+      "kg"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "ki",
+     "text": " ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kk",
+     "text": "#experiment",
+     "marks": [
+      "kj"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kl",
+     "text": " ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kn",
+     "text": "#thesis",
+     "marks": [
+      "km"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "ko",
+     "text": " ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kq",
+     "text": "#DEXlab",
+     "marks": [
+      "kp"
+     ]
+    }
+   ]
+  }
+ ],
+ "embeds": []
+}

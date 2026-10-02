@@ -1,0 +1,38 @@
+---
+import Base from '../layouts/Base.astro'
+import Sections from '../components/Sections.astro'
+import {getPage, getPageSlugs, getFaqs} from '../lib/queries'
+import {toPlainText} from '../lib/utils'
+
+export async function getStaticPaths() {
+  const slugs = await getPageSlugs()
+  return slugs.map((slug) => ({params: {slug}}))
+}
+
+const page = await getPage(Astro.params.slug!)
+if (!page) return Astro.redirect('/404')
+
+// FAQ pages get structured data so Google can show the answers directly.
+const hasFaq = page.sections?.some((s) => s._type === 'sectionCollection' && s.source === 'faq')
+const faqLd = hasFaq
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: (await getFaqs()).map((f) => ({
+        '@type': 'Question',
+        name: f.question,
+        acceptedAnswer: {'@type': 'Answer', text: toPlainText(f.answer)},
+      })),
+    }
+  : undefined
+const hero = page.sections?.find((s) => s._type === 'sectionHero')
+---
+
+<Base
+  title={page.seo?.title || page.title}
+  description={page.seo?.description || hero?.subheading}
+  image={page.seo?.image || hero?.image}
+  jsonLd={faqLd}
+>
+  <Sections sections={page.sections} />
+</Base>

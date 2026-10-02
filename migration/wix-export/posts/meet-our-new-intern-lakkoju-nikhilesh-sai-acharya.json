@@ -1,0 +1,117 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/meet-our-new-intern-lakkoju-nikhilesh-sai-acharya",
+ "slug": "meet-our-new-intern-lakkoju-nikhilesh-sai-acharya",
+ "title": "Meet our new intern: Lakkoju Nikhilesh Sai Acharya",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "augmented-research"
+  },
+  "dateModified": "2024-03-01T15:06:05.794Z",
+  "datePublished": "2023-09-20T09:00:27.014Z",
+  "headline": "Meet our new intern: Lakkoju Nikhilesh Sai Acharya",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/meet-our-new-intern-lakkoju-nikhilesh-sai-acharya",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/meet-our-new-intern-lakkoju-nikhilesh-sai-acharya"
+  },
+  "description": "Hello everyone,My name is Nikhil, and I am thrilled to join the DEXlab team as an intern. I am currently in my second year of bachelor’s in business Analytics (BA) at university of Maastricht. I took this opportunity as I am intrigued by technology productisation and innovation. The idea of getting hands-on with this kind of technology and contributing to educational projects and research at DEXLab sounds interesting. As well as allows to gain some experience in a working environment.I found the",
+  "url": "https://www.sbe-dexlab.com/post/meet-our-new-intern-lakkoju-nikhilesh-sai-acharya",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/9aa9b6_3a8e8544aa3c4dd097b804212809655f~mv2.jpeg/v1/fill/w_801,h_1000,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_3a8e8544aa3c4dd097b804212809655f~mv2.jpeg",
+   "width": "3024",
+   "height": "3775"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [
+  "https://www.sbe-dexlab.com/blog/categories/meet-the-team"
+ ],
+ "og": "https://static.wixstatic.com/media/9aa9b6_3a8e8544aa3c4dd097b804212809655f~mv2.jpeg/v1/fill/w_801,h_1000,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_3a8e8544aa3c4dd097b804212809655f~mv2.jpeg",
+ "body": [
+  {
+   "_type": "image",
+   "_key": "k0",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_3a8e8544aa3c4dd097b804212809655f~mv2.jpeg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k1",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k2",
+     "text": "Hello everyone,",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k3",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k4",
+     "text": "My name is Nikhil, and I am thrilled to join the DEXlab team as an intern. I am currently in my second year of bachelor’s in business Analytics (BA) at university of Maastricht. I took this opportunity as I am intrigued by technology productisation and innovation. The idea of getting hands-on with this kind of technology and contributing to educational projects and research at DEXLab sounds interesting. As well as allows to gain some experience in a working environment.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k5",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k6",
+     "text": "I found the business analytics program in Maastricht university, which is a relatively new program, and this was exactly what I wanted to study as it gives a good balance between business, data analysis and data science.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k7",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k8",
+     "text": "I was born in Hyderabad, India and did my schooling in Switzerland. In 2018, I went to a NASA camp in Huntsville, Alabama. There I got to experience the moon gravity, G-force simulator, and a simulation of the Orion Spacecraft. During this week we performed multiple tasks as a team and learnt how to collaborate and coordinate with each other. In 2019, I took part in the Google Code-in where I performed multiple tasks in R which helped me develop a keen interest in the coding world.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k9",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ka",
+     "text": "My other hobbies are playing football and cricket, in football I used to play in a local club as a defender. In cricket I represented Switzerland in U15 & U17 teams and played various tournaments in Switzerland and UK where we got the opportunity to play against different countries and local teams. I have a keen interest to explore different cuisines and I love to cook.",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "embeds": []
+}

@@ -1,0 +1,215 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/walking-their-path-stefan-bos-s-vision-of-empathy-through-vr",
+ "slug": "walking-their-path-stefan-bos-s-vision-of-empathy-through-vr",
+ "title": "Walking Their Path: Stefan Bos’s Vision of Empathy through VR",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "sbe-dexlab"
+  },
+  "dateModified": "2024-05-06T12:58:44.103Z",
+  "datePublished": "2024-05-06T12:55:32.122Z",
+  "headline": "Walking Their Path: Stefan Bos’s Vision of Empathy through VR",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/walking-their-path-stefan-bos-s-vision-of-empathy-through-vr",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/walking-their-path-stefan-bos-s-vision-of-empathy-through-vr"
+  },
+  "description": "Stefan Bos’s Vision of Empathy through Virtual Reality. Interview with a DEXLab researcher. ",
+  "url": "https://www.sbe-dexlab.com/post/walking-their-path-stefan-bos-s-vision-of-empathy-through-vr",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/9aa9b6_5fac330107054dbb94419d6254158dd2~mv2.jpg/v1/fill/w_800,h_547,al_c,q_85/9aa9b6_5fac330107054dbb94419d6254158dd2~mv2.jpg",
+   "width": "800",
+   "height": "547"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [
+  "https://www.sbe-dexlab.com/blog/categories/meet-the-team",
+  "https://www.sbe-dexlab.com/blog/categories/interviews",
+  "https://www.sbe-dexlab.com/blog/categories/research"
+ ],
+ "og": "https://static.wixstatic.com/media/9aa9b6_5fac330107054dbb94419d6254158dd2~mv2.jpg/v1/fill/w_800,h_547,al_c,q_85/9aa9b6_5fac330107054dbb94419d6254158dd2~mv2.jpg",
+ "body": [
+  {
+   "_type": "image",
+   "_key": "k0",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_ed4463295fb949e9825fc42cd7211b85~mv2.jpg",
+   "alt": "Stefan Bos a DEXLab researcher experiments on empathy in virtual reality (VR)"
+  },
+  {
+   "_type": "block",
+   "_key": "k1",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k2",
+     "text": "My name is Stefan Bos and I am a PhD candidate here at SBE. My research focuses on emotional and behavioral change using Virtual Reality. More specifically, I am interested in how Virtual Reality can be used to increase empathy and understanding towards stigmatized groups of people, or situations. I come from a background in behavioral science and psychology, and I draw inspiration from these fields for all my projects and research.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k5",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k6",
+     "text": "What reasons were behind your recent academic decisions? ",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k7",
+     "text": "During my master's in legal psychology, I worked as a research intern at the clinical forensic psychology department on a project that used Virtual Reality as a medium to study behavior. This sparked my interest in using immersive and innovative technology in a psychological research context.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k8",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k9",
+     "text": "Throughout my studies, I have always enjoyed exploring and understanding the reasons behind behaviors considered abnormal, aiming to shed light on these often misunderstood situations. Especially in a world where it is easy to judge others based on our point of view, I think being able to see others’ situations from a different perspective would help, both in order of how to act to one another, but also simply to be more kind.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ka",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kb",
+     "text": "The current project focuses on empathy towards people living in poverty, and it ties in perfectly with this goal. In Western European countries, poverty tends to get brushed aside or blamed on the individuals themselves. I am hoping that this project can help us understand those facing tough situations, not just in poverty but in general.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ke",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kf",
+     "text": "What are some of the highlights/key learnings of your academic journey? ",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kg",
+     "text": "During my studies, my favorite moments have always been my bigger projects such as master theses or internships. I enjoyed the social and practical nature of this, designing and implementing an experiment, spending long days in the laboratory collecting data, and meeting so many people. I also liked becoming a little expert in the niche that I did my research at the time. One of my highlights from my master's definitely was spending every day in the library with my friends, and then spending every evening in the park, enjoying the summer sunsets and talking about our recent findings and “expertise”.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kh",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ki",
+     "text": "With this mindset, I was also enthusiastic about starting a job as an academic researcher. One interesting learning I made here is how Virtual Reality is already used to help people better understand each other, in contexts such as social exclusion, societal issues, or living with mental disorders. I feel very passionate to be able to contribute to this field too.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kl",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "km",
+     "text": "How does the DEXLab provide value to you?",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kn",
+     "text": " I really appreciate the resources and support offered by the DEXlab for immersive technology research. It is fantastic that the DEXlab has a wide range of hardware available, which adds immense value to the university. Additionally, the supportive environment fostered by the people at the DEXlab is invaluable, especially when it comes to designing and carrying out experiments.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kq",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kr",
+     "text": "What are your hobbies outside of work? ",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "ks",
+     "text": "Outside of work, I enjoy spending time with friends or being active in the gym. Recently I have also started to enjoy arts again, something I used to do a lot when I was growing up. The moments when I am not out with friends, or in the gym, I like to discover new music, read poetry, or get lost in drawings.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kv",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kw",
+     "text": "If you could have any superpower, what would it be?",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kx",
+     "text": " Shapeshifting 😁",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "embeds": []
+}

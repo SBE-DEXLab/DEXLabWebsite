@@ -1,0 +1,266 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/virtual-reality-in-problem-based-learning-a-case-in-management-information-systems",
+ "slug": "virtual-reality-in-problem-based-learning-a-case-in-management-information-systems",
+ "title": "Virtual Reality in Problem Based Learning: A Case in Management Information Systems",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "augmented-research"
+  },
+  "dateModified": "2024-12-13T10:46:32.464Z",
+  "datePublished": "2024-12-13T10:46:32.464Z",
+  "headline": "Virtual Reality in Problem Based Learning: A Case in Management Information Systems",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/virtual-reality-in-problem-based-learning-a-case-in-management-information-systems",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/virtual-reality-in-problem-based-learning-a-case-in-management-information-systems"
+  },
+  "description": "Last month, our intern Andrea Ferruzza, along with his teammates Christian Jansen and Lukas Bussing, took a significant step forward in integrating VR technology into education. For their course ‘Cases in Management Information Systems,’ they used VR to present a company’s case study, engage with their classmates in discussions, and propose an action plan for the company. The team utilized three Meta Quest 2 headsets: Andrea used one from his location in Italy, while Christian and Lukas worked w",
+  "url": "https://www.sbe-dexlab.com/post/virtual-reality-in-problem-based-learning-a-case-in-management-information-systems",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/9aa9b6_c08d702e936b4dd09f1214c453c32257~mv2.jpg/v1/fill/w_750,h_1000,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_c08d702e936b4dd09f1214c453c32257~mv2.jpg",
+   "width": "2448",
+   "height": "3264"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [],
+ "og": "https://static.wixstatic.com/media/9aa9b6_c08d702e936b4dd09f1214c453c32257~mv2.jpg/v1/fill/w_750,h_1000,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_c08d702e936b4dd09f1214c453c32257~mv2.jpg",
+ "body": [
+  {
+   "_type": "block",
+   "_key": "k0",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1",
+     "text": "Last month, our intern Andrea Ferruzza, along with his teammates Christian Jansen and Lukas Bussing, took a significant step forward in integrating VR technology into education. For their course ‘Cases in Management Information Systems,’ they used VR to present a company’s case study, engage with their classmates in discussions, and propose an action plan for the company.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k2",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_40a3458af71e449e8adf2ba9f5a470c0~mv2.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k5",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k6",
+     "text": "The team utilized three Meta Quest 2 headsets: Andrea used one from his location in Italy, while Christian and Lukas worked with the other two in the classroom. They relied on an app called MeetingVR, which allowed them to communicate in a shared virtual room and present slides on a virtual screen. The app also supported desktop access, enabling classmates without headsets to follow along from the classroom computers.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k9",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ka",
+     "text": "Here’s how it worked: Andrea, presenting remotely from Italy, led specific parts of the presentation—such as the introduction, the action plan, and the conclusion—where direct interaction wasn’t required. Meanwhile, Christian and Lukas managed the interactive discussions with classmates in Maastricht. This division of tasks addressed a key challenge: the limited number of headsets available in the classroom meant not everyone could access the virtual room at the same time.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kd",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ke",
+     "text": "Of course, there were some hurdles. Technical issues such as occasional Wi-Fi disruptions and software glitches required adaptability and teamwork. Additionally, the limited availability of headsets posed constraints on group interactions. Despite these challenges, Andrea, Christian, and Lukas demonstrated how VR can overcome geographical barriers, enhance collaboration, and create engaging, interactive learning experiences in ways traditional tools cannot.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "kf",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_c08d702e936b4dd09f1214c453c32257~mv2.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "ki",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kj",
+     "text": "Their initiative transformed what could have been a disadvantage—Andrea’s absence in person—into a powerful opportunity to explore how VR can reshape education. 🎓✨",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "km",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kn",
+     "text": "At DexLab, we believe in the potential of emerging technologies like VR to reimagine how we learn, work, and connect. This is another step toward realizing the full possibilities of immersive tech in education. 🚀",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kq",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kr",
+     "text": "Have you tried integrating VR into your work or studies? Share your experiences—we’d love to hear your stories and ideas! 💡",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ku",
+   "style": "normal",
+   "markDefs": [
+    {
+     "_type": "link",
+     "_key": "kv",
+     "href": "https://www.sbe-dexlab.com/blog/hashtags/VirtualReality"
+    },
+    {
+     "_type": "link",
+     "_key": "ky",
+     "href": "https://www.sbe-dexlab.com/blog/hashtags/EducationInnovation"
+    },
+    {
+     "_type": "link",
+     "_key": "k11",
+     "href": "https://www.sbe-dexlab.com/blog/hashtags/DexLab"
+    },
+    {
+     "_type": "link",
+     "_key": "k14",
+     "href": "https://www.sbe-dexlab.com/blog/hashtags/EmergingTechnologies"
+    },
+    {
+     "_type": "link",
+     "_key": "k17",
+     "href": "https://www.sbe-dexlab.com/blog/hashtags/FutureOfEducation"
+    },
+    {
+     "_type": "link",
+     "_key": "k1a",
+     "href": "https://www.sbe-dexlab.com/blog/hashtags/MaastrichtUniversity"
+    }
+   ],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kw",
+     "text": "#VirtualReality",
+     "marks": [
+      "kv"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kx",
+     "text": " ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kz",
+     "text": "#EducationInnovation",
+     "marks": [
+      "ky"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k10",
+     "text": " ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k12",
+     "text": "#DexLab",
+     "marks": [
+      "k11"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k13",
+     "text": " ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k15",
+     "text": "#EmergingTechnologies",
+     "marks": [
+      "k14"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k16",
+     "text": " ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k18",
+     "text": "#FutureOfEducation",
+     "marks": [
+      "k17"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k19",
+     "text": " ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k1b",
+     "text": "#MaastrichtUniversity",
+     "marks": [
+      "k1a"
+     ]
+    }
+   ]
+  }
+ ],
+ "embeds": []
+}

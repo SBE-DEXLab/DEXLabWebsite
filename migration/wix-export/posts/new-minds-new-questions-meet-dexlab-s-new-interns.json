@@ -1,0 +1,442 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/new-minds-new-questions-meet-dexlab-s-new-interns",
+ "slug": "new-minds-new-questions-meet-dexlab-s-new-interns",
+ "title": "New Minds, New Questions: Meet DEXLab’s New Interns",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "augmented-research"
+  },
+  "dateModified": "2026-09-22T10:03:18.300Z",
+  "datePublished": "2026-09-22T10:03:18.300Z",
+  "headline": "New Minds, New Questions: Meet DEXLab’s New Interns",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/new-minds-new-questions-meet-dexlab-s-new-interns",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/new-minds-new-questions-meet-dexlab-s-new-interns"
+  },
+  "description": "Three new faces, plenty of curiosity, and a shared excitement to learn! We’re delighted to welcome three new interns to DEXLab for the next five months. Each brings their own interests and fresh perspectives, taking on different roles within the team.Get to know the people behind the new ideas below!Yosune UribeHello! I’m Yosu, part marketer, part creative, and probably overdressed for the occasion :). I’m currently pursuing a Master’s in Strategic Marketing, after completing my Bachelor’s in Di",
+  "url": "https://www.sbe-dexlab.com/post/new-minds-new-questions-meet-dexlab-s-new-interns",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/9aa9b6_6c91e094eda14787966f9d7d5a951ff3~mv2.jpg/v1/fill/w_750,h_1000,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_6c91e094eda14787966f9d7d5a951ff3~mv2.jpg",
+   "width": "2671",
+   "height": "3562"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [],
+ "og": "https://static.wixstatic.com/media/9aa9b6_6c91e094eda14787966f9d7d5a951ff3~mv2.jpg/v1/fill/w_750,h_1000,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_6c91e094eda14787966f9d7d5a951ff3~mv2.jpg",
+ "body": [
+  {
+   "_type": "block",
+   "_key": "k2",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k3",
+     "text": "Three new faces, plenty of curiosity, and a shared excitement to learn! We’re delighted to welcome three new interns to DEXLab for the next five months. Each brings their own interests and fresh perspectives, taking on different roles within the team.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k4",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k5",
+     "text": "Get to know the people behind the new ideas below!",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k6",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_e95948dfc38a48bfad709102f5dc3cb6~mv2.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "image",
+   "_key": "k7",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_6c91e094eda14787966f9d7d5a951ff3~mv2.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k8",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k9",
+     "text": "Yosune Uribe",
+     "marks": [
+      "underline"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ka",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kb",
+     "text": "Hello! I’m Yosu, part marketer, part creative, and probably overdressed for the occasion :). I’m currently pursuing a Master’s in Strategic Marketing, after completing my Bachelor’s in Digital Society and a minor in Psychology. Bringing all of these interests together has led me to become especially curious about consumer behaviour, AI, fashion, and beauty, and particularly about the psychological impact that artificial intelligence can have on the way we perceive, express, and make",
+     "marks": [
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kc",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kd",
+     "text": "decisions within these industries.",
+     "marks": [
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ke",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kf",
+     "text": "🎬",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kg",
+     "text": "After hours: ",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kh",
+     "text": "Probably watching a  psychological thriller",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ki",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kj",
+     "text": "🎨 ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kk",
+     "text": "Creative side",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kl",
+     "text": ": A little Picasso with a soft spot for painting",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "km",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kn",
+     "text": "💭",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "ko",
+     "text": "Currently dreaming of:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kp",
+     "text": " Bringing my curiosity and love for learning to an international marketing team",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kq",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kr",
+     "text": "Ilias Massignan",
+     "marks": [
+      "underline"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ks",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kt",
+     "text": "Hello! I’m Ilias, a tech enthusiastcalways curious about how people interact with new technologies. I’m currently pursuing a Master’s in Strategic Marketing, after completing my Bachelor’s in International Business. I’m especially curious about consumer behaviour, immersive technologies, and innovation, particularly how technologies such as AR and VR can influence people’s perceptions, engagement, and behaviour in areas such as marketing and education",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "ku",
+     "text": ".",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kv",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kw",
+     "text": "🏊 ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kx",
+     "text": "In free time",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "ky",
+     "text": " Enjoys swimming and would love to become a coach",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kz",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k10",
+     "text": "👨‍🍳",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k11",
+     "text": "In the kitchen:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k12",
+     "text": " A passionate home cook with a love for international dishes",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k13",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k14",
+     "text": "🦁",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k15",
+     "text": "On his mind: ",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k16",
+     "text": "Learning about natural sciences such as zoology!",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k17",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_0afef63ea2b643a6b93afb94b8fd02ac~mv2.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "image",
+   "_key": "k18",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_087e4e61290940be93a3e29958446b78~mv2.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k19",
+   "style": "h2",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1a",
+     "text": "Wojciech Mandrysch",
+     "marks": [
+      "strong",
+      "underline"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1b",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1c",
+     "text": "Hello! I’m Wojciech, and I’m curious about how AI can change the way we learn and do business. After completing my Bachelor’s in Business Administration at Bamberg University, I’m now pursuing a Master’s in International Business, specialising in Supply Chain Management. My interests lie in supply chains, procurement, and AI. At DEXLab, I’m especially interested in exploring how agentic AI can support negotiations and how large language models can open up new possibilities in education and business.",
+     "marks": [
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1d",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1e",
+     "text": "💼In free time",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k1f",
+     "text": ": Director at Legmon, a nonprofit supporting young people from less privileged backgrounds through free mentoring and educational opportunities",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1g",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1h",
+     "text": "🏸 ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k1i",
+     "text": "On the court:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k1j",
+     "text": " Playing squash with friends🏃",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k1k",
+     "text": "Staying active:",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k1l",
+     "text": " Pretty much any other sport",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "embeds": []
+}

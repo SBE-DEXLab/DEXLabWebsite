@@ -1,0 +1,452 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/embracing-virtual-reality-in-higher-education-learnings-from-aim",
+ "slug": "embracing-virtual-reality-in-higher-education-learnings-from-aim",
+ "title": "Embracing Virtual Reality in Higher Education: Learnings from AIM",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "augmented-research"
+  },
+  "dateModified": "2024-12-02T14:01:45.259Z",
+  "datePublished": "2024-12-02T13:50:08.869Z",
+  "headline": "Embracing Virtual Reality in Higher Education: Learnings from AIM",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/embracing-virtual-reality-in-higher-education-learnings-from-aim",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/embracing-virtual-reality-in-higher-education-learnings-from-aim"
+  },
+  "description": "The integration of Virtual Reality (VR) into university courses marks a pivotal moment in educational innovation at the School of Business and Economics (SBE). This blog covers the experience implementing VR technology in the Management Information Systems (Department of Accounting and Information Management) course offers valuable insights into how immersive technologies can enhance our distinctive Problem-Based Learning (PBL) approach while preparing for the future of business education. Ingo ",
+  "url": "https://www.sbe-dexlab.com/post/embracing-virtual-reality-in-higher-education-learnings-from-aim",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/9aa9b6_b465b541583f4a11ad41e9c0137e79af~mv2.jpg/v1/fill/w_1000,h_349,al_c,q_80,usm_0.66_1.00_0.01/9aa9b6_b465b541583f4a11ad41e9c0137e79af~mv2.jpg",
+   "width": "3290",
+   "height": "1148"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [],
+ "og": "https://static.wixstatic.com/media/9aa9b6_b465b541583f4a11ad41e9c0137e79af~mv2.jpg/v1/fill/w_1000,h_349,al_c,q_80,usm_0.66_1.00_0.01/9aa9b6_b465b541583f4a11ad41e9c0137e79af~mv2.jpg",
+ "body": [
+  {
+   "_type": "image",
+   "_key": "k0",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_b465b541583f4a11ad41e9c0137e79af~mv2.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k1",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k2",
+     "text": "The integration of Virtual Reality (VR) into university courses marks a pivotal moment in educational innovation at the School of Business and Economics (SBE).",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k3",
+     "text": " This blog covers the experience implementing VR technology in the ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k4",
+     "text": "Management Information Systems",
+     "marks": [
+      "strong",
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k5",
+     "text": " (",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k6",
+     "text": "Department of Accounting and Information Management",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k7",
+     "text": ") course offers valuable insights into how immersive technologies can enhance our distinctive Problem-Based Learning (PBL) approach while preparing for the future of business education. ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k8",
+     "text": "Ingo Verhulst, Mark Vluggen, & Daria Wijler",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k9",
+     "text": " reflect.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kc",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kd",
+     "text": "The Promise of VR in Education",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ke",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kf",
+     "text": "VR transforms traditional learning environments into immersive experiences where students can engage with concepts in unprecedented ways. Rather than simply reading about technological innovations, students can actively experience them, developing a deeper, experiential understanding of both the potential and limitations of emerging technologies. This hands-on approach proves particularly valuable in technology-focused courses, where understanding real-world applications is crucial.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ki",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kj",
+     "text": "Navigating Implementation Challenges",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kk",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kl",
+     "text": "While incorporating VR into your course curriculum may seem daunting, support from dedicated technology labs like DEXLab can significantly smooth the transition. Their approach includes essential elements such as:",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "km",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kn",
+     "text": "Training and preparation: Instructors receive hands-on experience with VR equipment before classroom implementation, allowing them to familiarize themselves with the technology and anticipate student questions. This preparation phase proves invaluable for building confidence and ensuring smooth delivery.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ko",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kp",
+     "text": "Educational & technical support: Having dedicated technical expertise available for equipment setup and troubleshooting provides a crucial safety net for instructors new to VR technology. This support helps maintain focus on educational objectives rather than technical challenges.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "image",
+   "_key": "ks",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_ea7d61db43c64700bd3ee24ea9db8cfd~mv2.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "kt",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ku",
+     "text": "Learning from Experience",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kv",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kw",
+     "text": "Our implementation revealed several insights valuable for course coordinators considering VR integration:",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kx",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ky",
+     "text": "Start Early: The process of integrating VR requires more preparation time than traditional teaching methods. Allow ample time for testing applications, creating detailed instructions, and addressing potential technical issues.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "kz",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k10",
+     "text": "Expect the Unexpected: Technology evolves rapidly, and features (or apps) you plan to use might change. Building flexibility into your lesson plans helps accommodate unexpected updates or technical challenges. Our experience with Meta Workrooms' whiteboard feature removal taught us the importance of having backup plans.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "k11",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k12",
+     "text": "Practice Makes Perfect: Initial sessions might face some hurdles, but subsequent implementations typically run much more smoothly as both instructors and students become more comfortable with the technology.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "k13",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k14",
+     "text": "One of the students in the course provided their perspective of experiencing VR in the course:",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k15",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k16",
+     "text": "\"",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k17",
+     "text": "From a student's perspective, adding VR to our course is an exciting innovation that boosts motivation and helps us stay ahead in the fast-changing tech world. It’s a great chance to explore tools that shape the future job market. However, it’s essential to have a clear, structured program to ensure VR aligns with our studies and enhances our learning experience effectively.",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k18",
+     "text": "\"",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k19",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1a",
+     "text": "For course coordinators considering VR integration, we recommend:",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1d",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1e",
+     "text": "Begin with learning objectives: Ensure VR technology serves your educational goals rather than becoming a distraction.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "k1f",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1g",
+     "text": "Develop guides: Create comprehensive guides for both instructors and students, covering technical setup and troubleshooting.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "k1h",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1i",
+     "text": "Build in buffer time: Allow extra time in initial sessions for setup and addressing unexpected challenges.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "k1j",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1k",
+     "text": "Maintain Open Communication: Regular dialogue with the DEXLab team helps address challenges proactively and ensures alignment of expectations.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "k1n",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1o",
+     "text": "Looking Ahead",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1p",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1q",
+     "text": "Despite initial challenges, the integration of VR technology into university courses represents a valuable step forward in educational innovation of PBL. The engagement and unique learning opportunities it offers students make the investment in time and resources worthwhile. Working with dedicated innovation labs like the DEXLab provides crucial expertise and resources for successful implementation. Their experience and support can help transform what might seem like a daunting technological challenge into an enriching educational experience for both instructors and students.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1t",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1u",
+     "text": "For course coordinators considering this step, remember that the journey toward VR integration is itself a learning experience. Each implementation builds institutional knowledge and paves the way for smoother future adoptions. The key lies in maintaining open communication, staying flexible, and focusing on the educational value this technology can bring to your students!",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "embeds": []
+}

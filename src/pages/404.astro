@@ -1,0 +1,16 @@
+---
+import Base from '../layouts/Base.astro'
+import Hero from '../components/sections/Hero.astro'
+---
+
+<Base title="Page not found" noindex>
+  <Hero
+    heading="This page went into VR and never came back"
+    eyebrow="404"
+    subheading="The page you are looking for does not exist (anymore). Some pages moved when we rebuilt the site."
+    buttons={[
+      {label: 'Go to the home page', href: '/'},
+      {label: 'Read the blog', href: '/blog', style: 'secondary'},
+    ]}
+  />
+</Base>

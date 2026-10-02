@@ -1,0 +1,83 @@
+---
+import {brandify, youtubeId} from '../../lib/utils'
+
+interface Props {
+  anchor?: string
+  heading?: string
+  intro?: string
+  items?: {_key: string; title: string; url: string}[]
+  tone?: string
+}
+const {anchor, heading, intro, items = [], tone = 'default'} = Astro.props
+const videos = items.map((v) => ({...v, id: youtubeId(v.url)})).filter((v) => v.id)
+const [featured, ...rest] = videos
+---
+
+<section id={anchor} class:list={['section', `tone-${tone}`]}>
+  <div class="container">
+    {
+      (heading || intro) && (
+        <div class="section-head">
+          {heading && <h2 set:html={brandify(heading)} />}
+          {intro && <p>{intro}</p>}
+        </div>
+      )
+    }
+    {
+      featured && (
+        <div class="featured">
+          <div class="video-frame">
+            <iframe
+              src={`https://www.youtube-nocookie.com/embed/${featured.id}`}
+              title={featured.title}
+              allow="accelerometer; encrypted-media; picture-in-picture; fullscreen"
+              allowfullscreen
+              loading="lazy"
+            />
+          </div>
+          <h3>{featured.title}</h3>
+        </div>
+      )
+    }
+    {
+      rest.length > 0 && (
+        <div class="grid" style="--cols: 3">
+          {rest.map((v) => (
+            <figure class="v">
+              <div class="video-frame">
+                <iframe
+                  src={`https://www.youtube-nocookie.com/embed/${v.id}`}
+                  title={v.title}
+                  allow="accelerometer; encrypted-media; picture-in-picture; fullscreen"
+                  allowfullscreen
+                  loading="lazy"
+                />
+              </div>
+              <figcaption>{v.title}</figcaption>
+            </figure>
+          ))}
+        </div>
+      )
+    }
+  </div>
+</section>
+
+<style>
+  .featured {
+    max-width: 960px;
+    margin: 0 auto 56px;
+  }
+  .featured h3 {
+    margin-top: 18px;
+    text-align: center;
+  }
+  .v {
+    margin: 0;
+  }
+  figcaption {
+    margin-top: 12px;
+    font-weight: 600;
+    color: var(--navy);
+    line-height: 1.4;
+  }
+</style>

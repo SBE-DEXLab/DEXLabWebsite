@@ -1,0 +1,292 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/immersive-tech-week-2023-the-latest-frontiers-of-immersive-tech-in-rotterdam",
+ "slug": "immersive-tech-week-2023-the-latest-frontiers-of-immersive-tech-in-rotterdam",
+ "title": "Immersive Tech Week 2023. The Latest Frontiers of Immersive Tech in Rotterdam",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "augmented-research"
+  },
+  "dateModified": "2024-03-01T15:04:30.191Z",
+  "datePublished": "2023-12-11T17:23:37.367Z",
+  "headline": "Immersive Tech Week 2023.  The Latest Frontiers of Immersive Tech in Rotterdam",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/immersive-tech-week-2023-the-latest-frontiers-of-immersive-tech-in-rotterdam",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/immersive-tech-week-2023-the-latest-frontiers-of-immersive-tech-in-rotterdam"
+  },
+  "description": "The Immersive Tech Week 2023 (previously named VRdays Europe) on November 29th in Rotterdam was an exciting experience for the DEXLab team. Known as the largest and most important immersive technology event in Europe, this event delivered a four-day get-together filled with a variety of experiences, insightful talks, interactive round tables, and hands-on workshops. It gave an excellent platform for us to be inspired and enhance our perspective the world of immersive technology. With over 50 lea",
+  "url": "https://www.sbe-dexlab.com/post/immersive-tech-week-2023-the-latest-frontiers-of-immersive-tech-in-rotterdam",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/9aa9b6_31c96855d64242698530c416e42fad0a~mv2.jpeg/v1/fill/w_1000,h_563,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_31c96855d64242698530c416e42fad0a~mv2.jpeg",
+   "width": "4032",
+   "height": "2268"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [
+  "https://www.sbe-dexlab.com/blog/categories/research"
+ ],
+ "og": "https://static.wixstatic.com/media/9aa9b6_31c96855d64242698530c416e42fad0a~mv2.jpeg/v1/fill/w_1000,h_563,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_31c96855d64242698530c416e42fad0a~mv2.jpeg",
+ "body": [
+  {
+   "_type": "block",
+   "_key": "k0",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1",
+     "text": "The ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k2",
+     "text": "Immersive Tech Week 2023",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k3",
+     "text": " (previously named VRdays Europe) on November 29th in Rotterdam was an exciting experience for the DEXLab team. Known as the largest and most important immersive technology event in Europe, this event delivered a four-day get-together filled with a variety of experiences, insightful talks, interactive round tables, and hands-on workshops. It gave an excellent platform for us to be inspired and enhance our perspective the world of immersive technology.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k4",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_31c96855d64242698530c416e42fad0a~mv2.jpeg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k5",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k6",
+     "text": "With over 50 leading speakers, including thought-leaders, global visionaries, and industry experts, the event was a treasure trove of ideas and insights. Covering more than 10 tracks, it addressed today's most relevant topics in the immersive technology industry. The blend of conferences, workshops, and roundtable discussions provided not just inspiration but also opportunities for networking.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k9",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ka",
+     "text": "The event fit in perfectly with our DEXLab ethos of making advanced immersive technology and resources widely available and cultivating a culture deeply rooted in innovation and responsible science. This collaborative spirit was evident in the diverse range of sessions and workshops that spanned across various industry verticals, including enterprise, healthcare, education, creative industries, media, and art. Moreover, the program addressed crucial societal topics such as policy, ethics, diversity, and inclusion, making it a holistic and enriching experience.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kb",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kc",
+     "text": "We attended some truly fascinating keynotes. First up was \"",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kd",
+     "text": "Entering the Era of Spatial Computing",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "ke",
+     "text": "\" by Tom Emrich from Niantic. His insights into the transition from 2D to 3D digital experiences were eye-opening. It was intriguing to see how spatial computing could revolutionize not just how we interact with digital content, but also how we conduct business and explore the world around us.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kf",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kg",
+     "text": "“",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kh",
+     "text": "The idea that the next hero-technology, which in 2023 was clearly generative AI, in 2024 will be ",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "ki",
+     "text": "spatial computing",
+     "marks": [
+      "strong",
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kj",
+     "text": " is thought provoking and offers interesting avenues for future research",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kk",
+     "text": "”, concludes Jonas Heller.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "kl",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_7bca019aeed640c5b1d97fecdf9185a3~mv2.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "ko",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kp",
+     "text": "Another highlight was the panel on Europe’s competitive advantage in the ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kq",
+     "text": "metaverse",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kr",
+     "text": ". Speakers like Michael Barngrover and Amin Abbasi offered a comprehensive view of the economic potential of the metaverse for European companies. The discussion was a blend of policy, innovation, and strategy, providing us with valuable perspectives.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ks",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kt",
+     "text": "The session \"",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "ku",
+     "text": "I like your avatar! Collaborative learning in XR",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kv",
+     "text": ",\" curated by Carl Boel, highlighted the transformative power of XR in education, a field we are deeply invested in.",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kw",
+     "text": " ",
+     "marks": [
+      "underline"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kx",
+     "text": "Carl Boel, a renowned researcher at Thomas More and Ghent Universities who specialises in training and learning within XR, was essential in illuminating the enormous influence of XR in education. Boel led the Learning Network on XR in education in Flanders and was the main writer of the advisory policy report for the Ministry of Education in Flanders on XR in education. He provided information about the four main pillars of Flanders' extensive XR implementation program—hardware, software, professional development, and research—during the session.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "ky",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_0222f02e68b84d20a0afc0fd4fe1a8d2~mv2.jpeg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k11",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k12",
+     "text": "But our experience at Immersive Tech Week 2023 wasn't confined to serious tech talk and learning. In a delightful twist, some of our teammates took the opportunity to engage in what we fondly termed 'practical research' into the latest VR technologies. Their field of choice? However, Immersive Tech Week 2023 offered us more than just educational tech talks and learning. Interestingly, a few of our colleagues seized the chance to conduct what we affectionately called \"practical research\" on the newest virtual reality technologies. Virtual soccer games!",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k13",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_7bae2ca24f1c464baca06ff67391c18a~mv2.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k16",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k17",
+     "text": "This playful interlude at Immersive Tech Week 2023 served as an energetic reminder of technology's fun and limitless possibilities. We returned not only with new insights and inspiration, but also with a renewed drive to innovate and a better understanding of the potential of virtual reality in creating enjoyable, immersive experiences. This lighthearted moment during Immersive Tech Week 2023 was an energetic reminder of the fun and endless possibilities that come with technology. We came back not only with fresh perspectives and ideas, but also with a revitalised enthusiasm for innovation and a deeper comprehension of the possibilities of virtual reality in producing entertaining, immersive experiences.",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "embeds": []
+}

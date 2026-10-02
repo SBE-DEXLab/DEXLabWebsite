@@ -1,0 +1,267 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/decoding-consumer-choices-with-sammy-wals-dexlab-researcher",
+ "slug": "decoding-consumer-choices-with-sammy-wals-dexlab-researcher",
+ "title": "Decoding Consumer Choices with Sammy Wals, DEXLab Researcher",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "sbe-dexlab"
+  },
+  "dateModified": "2024-05-23T13:14:37.149Z",
+  "datePublished": "2024-04-23T12:40:51.358Z",
+  "headline": "Decoding Consumer Choices with Sammy Wals, DEXLab Researcher",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/decoding-consumer-choices-with-sammy-wals-dexlab-researcher",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/decoding-consumer-choices-with-sammy-wals-dexlab-researcher"
+  },
+  "description": "I’m Sammy Wals; I am a PhD candidate at SBE and I research audiovisual storytelling. My research explores both the power of narratives in shaping consumer perceptions and the role of subconscious processes in consumer decision-making. In my research, I use a variety of innovative methods such as computer vision, eye-tracking, and time series analysis methods.For example, my recent paper used eye-tracking to study website usability in collaboration with Bidfood NL. We measured increases in pupil ",
+  "url": "https://www.sbe-dexlab.com/post/decoding-consumer-choices-with-sammy-wals-dexlab-researcher",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/9aa9b6_cfcdc05219974c569e1553e2bb20e6c6~mv2.jpg/v1/fill/w_1000,h_909,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_cfcdc05219974c569e1553e2bb20e6c6~mv2.jpg",
+   "width": "1621",
+   "height": "1474"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [
+  "https://www.sbe-dexlab.com/blog/categories/meet-the-team",
+  "https://www.sbe-dexlab.com/blog/categories/interviews",
+  "https://www.sbe-dexlab.com/blog/categories/research"
+ ],
+ "og": "https://static.wixstatic.com/media/9aa9b6_cfcdc05219974c569e1553e2bb20e6c6~mv2.jpg/v1/fill/w_1000,h_909,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_cfcdc05219974c569e1553e2bb20e6c6~mv2.jpg",
+ "body": [
+  {
+   "_type": "image",
+   "_key": "k0",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_1c93a7c10bea4fe38a6eeb13b7a6e6ae~mv2.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k1",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k2",
+     "text": "I’m Sammy Wals; I am a PhD candidate at SBE and I research audiovisual storytelling. My research explores both the power of narratives in shaping consumer perceptions and the role of subconscious processes in consumer decision-making. In my research, I use a variety of innovative methods such as computer vision, eye-tracking, and time series analysis methods.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k3",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k4",
+     "text": "For example, my recent paper used eye-tracking to study website usability in collaboration with Bidfood NL. We measured increases in pupil size that are related to stress signals to identify parts of the website that are difficult to use. This information was used to improve parts of the website that were difficult to use and thereby improve the user experience. The large potential of these kinds of innovative biometric methods for marketing research is something that I want to explore further in my academic research.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k5",
+   "style": "normal",
+   "markDefs": [
+    {
+     "_type": "link",
+     "_key": "k7",
+     "href": "https://www.tandfonline.com/doi/full/10.1080/10447318.2022.2098576"
+    }
+   ],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k6",
+     "text": "Wals, S. F., & Wichary, S. (2023). Under pressure: ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k8",
+     "text": "Cognitive effort during website-based task performance is associated with pupil size, visual exploration, and users’ intention to",
+     "marks": [
+      "k7",
+      "underline"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k9",
+   "style": "normal",
+   "markDefs": [
+    {
+     "_type": "link",
+     "_key": "ka",
+     "href": "https://www.tandfonline.com/doi/full/10.1080/10447318.2022.2098576"
+    }
+   ],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kb",
+     "text": "recommend",
+     "marks": [
+      "ka",
+      "underline"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kc",
+     "text": ". International Journal of Human–Computer Interaction, 39 ",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kd",
+     "text": "(18), 3504-3515.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ke",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kf",
+     "text": "What reasons were behind your recent academic decisions? ",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kg",
+     "text": "I am driven primarily by my own interests in the field that I operate in. My goal is to understand how these processes operate and the decisions I make with my research aim to get at these processes. My academic background in psychology and neuroscience probably drives these decisions as well.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kh",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ki",
+     "text": "What are some of the highlights/key learnings of your academic journey? ",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kj",
+     "text": "I started my academic journey as a student of psychology and neuroscience at Leiden University. Some learnings that I made along the way pertain to the differences between psychology and marketing. It might seem obvious, but marketing research should be much more business-related than psychology research. I like the applied nature of marketing research, but this took some getting used to and the expectations for how and what type of academic research should be done are quite different. Marketing is not just “applied psychology” as some people believe it is.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kk",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kl",
+     "text": "Another interesting learning relates to new innovative methods; many developments are going on in academic research (as should be the case). Therefore, the field is constantly changing and evolving. I think it is important to be aware of these changes and adapt. More generally, the further you get into academic research the more you realize that many things are not yet known so I think that it is important to keep an open mind and adapt to new developments in the field.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "km",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kn",
+     "text": "How does the DEXLab provide value to you? ",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "ko",
+     "text": "The DEXLab provides a space to do innovative research on digital experiences and related topics. The lab has a wide variety of research equipment ranging from laptops and VR goggles. Moreover, I recently set up the “biometrics corner” in the DEXLab that offers eye-tracking, GSR, and facial expression analysis. All of this fancy equipment and lab space provides a lot of value for academic researchers like me. One of the things that I find great about the DEXLab is its openness to new ideas, so you can get started and make something happen if you have a good idea.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kp",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kq",
+     "text": "What are your hobbies outside of work? ",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kr",
+     "text": "I like to exercise and try to read a lot.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ks",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kt",
+     "text": "If you could have any superpower, what would it be? ",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "ku",
+     "text": "Writing high-impact scientific papers 😊",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "embeds": []
+}

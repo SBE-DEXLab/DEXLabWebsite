@@ -1,0 +1,520 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/interview-with-mark-steins-from-maastricht-center-for-robots-mcr",
+ "slug": "interview-with-mark-steins-from-maastricht-center-for-robots-mcr",
+ "title": "Interview with Mark Steins from Maastricht Center for Robots (MCR)",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "augmented-research"
+  },
+  "dateModified": "2023-08-23T22:00:00.000Z",
+  "datePublished": "2023-08-23T22:00:00.000Z",
+  "headline": "Interview with Mark Steins from Maastricht Center for Robots (MCR)",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/interview-with-mark-steins-from-maastricht-center-for-robots-mcr",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/interview-with-mark-steins-from-maastricht-center-for-robots-mcr"
+  },
+  "description": "1. What is the main research focus of MCR? The Maastricht Center for Robots (MCR) is a research center part of SBE and dedicated to exploring the opportunities and addressing the challenges associated with the rapid development of service and social robots. The primary objective of the center is to facilitate the adoption and implementation of robotic technology while comprehending its impact on various stakeholders such as customers, employees, businesses, and society at large. The MCR operates",
+  "url": "https://www.sbe-dexlab.com/post/interview-with-mark-steins-from-maastricht-center-for-robots-mcr",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/9aa9b6_367b88e7c1ab4dd496b28b5f66cf5477~mv2.jpg/v1/fill/w_1000,h_667,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_367b88e7c1ab4dd496b28b5f66cf5477~mv2.jpg",
+   "width": "1650",
+   "height": "1100"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [
+  "https://www.sbe-dexlab.com/blog/categories/interviews"
+ ],
+ "og": "https://static.wixstatic.com/media/9aa9b6_367b88e7c1ab4dd496b28b5f66cf5477~mv2.jpg/v1/fill/w_1000,h_667,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_367b88e7c1ab4dd496b28b5f66cf5477~mv2.jpg",
+ "body": [
+  {
+   "_type": "image",
+   "_key": "k0",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_367b88e7c1ab4dd496b28b5f66cf5477~mv2.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k1",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k2",
+     "text": "1. What is the main research focus of MCR?",
+     "marks": [
+      "strong",
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k3",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k4",
+     "text": "The Maastricht Center for Robots (MCR) is a research center part of SBE and dedicated to exploring the opportunities and addressing the challenges associated with the rapid development of service and social robots. The primary objective of the center is to facilitate the adoption and implementation of robotic technology while comprehending its impact on various stakeholders such as customers, employees, businesses, and society at large. The MCR operates through extensive collaboration with a diverse network of academic and industry partners, both nationally and internationally.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k5",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_2c532d3480874b2992693a40a767c606~mv2.jpeg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k6",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k7",
+     "text": "2. What makes the team of Neuro-DM / MCR so special? Why was a specific research group / center needed and established and who is part of it?",
+     "marks": [
+      "strong",
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k8",
+   "style": "normal",
+   "markDefs": [
+    {
+     "_type": "link",
+     "_key": "ka",
+     "href": "https://www.maastrichtuniversity.nl/research/maastricht-center-robots"
+    },
+    {
+     "_type": "link",
+     "_key": "kd",
+     "href": "https://www.linkedin.com/company/maastricht-centre-for-robots/"
+    }
+   ],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k9",
+     "text": "Grounding the Center made it easier to reach out to others ourselves, but from experience we learn that also our partners (inside and outside academia) found their way to us more easily through our ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kb",
+     "text": "website",
+     "marks": [
+      "ka"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kc",
+     "text": " and ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "ke",
+     "text": "LinkedIn page",
+     "marks": [
+      "kd"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kf",
+     "text": ". By partnering with experts and organizations from a wide range of fields and industries, the MCR ensures a interdisciplinary approach to studying service robots. This collaboration allows the center to tackle the complex questions and issues surrounding the use of robots in service-oriented contexts. The involvement of academic institutions and industry players brings together diverse perspectives, expertise, and resources necessary to explore the potential of robots in various domains, such as healthcare, education, hospitality, transportation, and more.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kg",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kh",
+     "text": "3. Can you tell us more about the mission of your initiative / center? How will your research shape the world to be a better place?",
+     "marks": [
+      "strong",
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ki",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kj",
+     "text": "Through research initiatives, the MCR aims to advance the understanding of how robots can effectively contribute to different sectors and address societal needs. This involves investigating areas like human-robot interaction, robot ethics, safety and security, legal and regulatory aspects, economic implications, and social acceptance. By examining these aspects, the MCR seeks to inform the development, deployment, and regulation of service robots, ultimately fostering responsible and beneficial integration of this technology into our daily lives. Additionally, the MCR serves as a platform for knowledge exchange and collaboration among researchers, industry practitioners, policymakers, and other stakeholders interested in the field of service robotics. By facilitating dialogue and fostering partnerships, the center contributes to the collective efforts in shaping the future of robotic technology and its impact on society.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kk",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kl",
+     "text": "4. What are the biggest accomplishments of your group so far?",
+     "marks": [
+      "strong",
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "km",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kn",
+     "text": "Below a list of some accomplishments by MCR:",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ko",
+   "style": "normal",
+   "markDefs": [
+    {
+     "_type": "link",
+     "_key": "kq",
+     "href": "https://www.maastrichtuniversity.nl/research/mcr/insights-resources"
+    }
+   ],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kp",
+     "text": "The center has made significant contributions to the field of service robotics through its research projects and subsequent publications and presentations: ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kr",
+     "text": "https://www.maastrichtuniversity.nl/research/mcr/insights-resources",
+     "marks": [
+      "kq"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "ks",
+     "text": "",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "kt",
+   "style": "normal",
+   "markDefs": [
+    {
+     "_type": "link",
+     "_key": "kv",
+     "href": "https://www.linkedin.com/feed/update/urn:li:activity:7045330982257729536/"
+    }
+   ],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ku",
+     "text": "MCR's collaborations with academic and industry partners have led to successful joint research projects. A recent project is within a long-term care setting, where we will study the impact of robots on clients and their formal and informal caregivers across six different Dutch care providers. In this project we are collaborating with a consortium of organizations including CZ zorgkantoor, Lectoraat Ondersteunende Technologie in de Zorg (Zuyd Hogeschool | Zuyd University of Applied Sciences), Robot Ctrl., Lunet, Kempenhaeghe, Koraal, Stichting Pergamijn, Stichting Radar and WonenPlus to bring regional implementation of social robotics to fruition. See this post for further info: ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "kw",
+     "text": "https://www.linkedin.com/feed/update/urn:li:activity:7045330982257729536/",
+     "marks": [
+      "kv"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kx",
+     "text": "",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ky",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kz",
+     "text": "As the center is collaborating with industry partners, who often also provide us with field research opportunities, the center plays an important role in transferring research outcomes and knowledge to industry partners, facilitating the practical implementation of robotics technology in various sectors.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "k10",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k11",
+     "text": "MCR also focuses on impact and outreach. The has organized workshops and contributes to conferences, educational events and programs to raise awareness about service robotics, technology enhanced learning and to promote interdisciplinary dialogue among students, professionals, and the general public.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "k12",
+   "style": "normal",
+   "markDefs": [
+    {
+     "_type": "link",
+     "_key": "k14",
+     "href": "https://www.linkedin.com/company/data-insights-network/"
+    },
+    {
+     "_type": "link",
+     "_key": "k17",
+     "href": "https://www.linkedin.com/company/moa/"
+    },
+    {
+     "_type": "link",
+     "_key": "k1a",
+     "href": "https://www.linkedin.com/posts/maastricht-centre-for-robots_data-insights-awards-activity-7052226496299442176-Ybit?utm_source=share&utm_medium=member_desktop"
+    }
+   ],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k13",
+     "text": "MCR’s great work does not go unnoticed. Professors Gaby Odekerken-Schröder and Dominik Mahr’s have been nominated by ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k15",
+     "text": "Data & Insights Network",
+     "marks": [
+      "k14"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k16",
+     "text": " / ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k18",
+     "text": "MOA",
+     "marks": [
+      "k17"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k19",
+     "text": " for the Insights Scientist of the Year Award! Nominees are invited to give a presentation at a symposium on the topic 'Robots: key to marketing data and insights!' on Thursday, June 1st, 2023 in Amsterdam. A jury will choose the ultimate winner after the symposium, based in part on the presentation. See this post for further info: ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k1b",
+     "text": "https://www.linkedin.com/posts/maastricht-centre-for-robots_data-insights-awards-activity-7052226496299442176-Ybit?utm_source=share&utm_medium=member_desktop",
+     "marks": [
+      "k1a"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k1c",
+     "text": "",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "image",
+   "_key": "k1d",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_0cf52aacbbf746dc9708aa4cf5a81f54~mv2.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k1e",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1f",
+     "text": "5. Can you tell us about the key learnings from your work?",
+     "marks": [
+      "strong",
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1g",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1h",
+     "text": "I personally and professionally very much developed by collaborating with a diverse network of academic and industry partners, which allows for the integration of knowledge and expertise from various fields. This cross-disciplinary approach with focus on real-world application has led to unique research opportunities allowing for a better understanding of the multifaceted challenges associated with service robotics. Conducting research at MCR also greatly develops skills in stakeholder management and teamwork.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1i",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1j",
+     "text": "6. Where do you see your research group in five years?",
+     "marks": [
+      "strong",
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1k",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1l",
+     "text": "Tackling the complex challenges surrounding service robots requires knowledge and expertise from a wide range of fields. The strength of MCR lies in combining such insights and skills through our global network of academic and industry partners. By growing our MCR community, MCR seeks to further unite research, education and businesses to have an even stronger positive societal impact.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k1m",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_ce923aec0fce4643a721a7b9e7a2b6c6~mv2.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k1n",
+   "style": "normal",
+   "markDefs": [
+    {
+     "_type": "link",
+     "_key": "k1p",
+     "href": "https://www.linkedin.com/company/maastricht-centre-for-robots/"
+    },
+    {
+     "_type": "link",
+     "_key": "k1r",
+     "href": "https://www.linkedin.com/company/maastricht-centre-for-robots/"
+    }
+   ],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1o",
+     "text": "A big thank you to Mark Steins for sharing such a deep dive into what MCR is all about. It's genuinely exciting to have the Maastricht Center for Robots as part of the DEXLab community. Their exploration into service robotics pairs seamlessly with DEXLab's mission of advancing digital experiences. Keen to stay updated on MCR's latest ventures and the broader happenings at DEXLab? Don’t hesitate to follow MCR on LinkedIn ",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k1q",
+     "text": "(",
+     "marks": [
+      "k1p",
+      "em",
+      "underline"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k1s",
+     "text": "https://www.linkedin.com/company/maastricht-centre-for-robots/",
+     "marks": [
+      "k1r",
+      "underline"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k1t",
+     "text": ").",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "embeds": []
+}

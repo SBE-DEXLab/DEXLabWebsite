@@ -1,0 +1,11 @@
+---
+import Base from '../layouts/Base.astro'
+import Sections from '../components/Sections.astro'
+import {getPage} from '../lib/queries'
+
+const page = await getPage('home')
+---
+
+<Base description={page?.seo?.description} image={page?.seo?.image} title={page?.seo?.title}>
+  <Sections sections={page?.sections} />
+</Base>

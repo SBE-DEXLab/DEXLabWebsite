@@ -1,0 +1,214 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/empowering-communication-through-tech-an-interview-with-anna-krispin",
+ "slug": "empowering-communication-through-tech-an-interview-with-anna-krispin",
+ "title": "Empowering Communication Through Tech: An Interview with Anna Krispin",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "sbe-dexlab"
+  },
+  "dateModified": "2024-06-24T07:27:25.208Z",
+  "datePublished": "2024-06-24T07:27:25.208Z",
+  "headline": "Empowering Communication Through Tech: An Interview with Anna Krispin",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/empowering-communication-through-tech-an-interview-with-anna-krispin",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/empowering-communication-through-tech-an-interview-with-anna-krispin"
+  },
+  "description": "Hi, everyone! I'm Anna Krispin, an external PhD Researcher at SBE and a lecturer-researcher at Zuyd University’s Research Centre of Professional Communication in a Digitalizing Society. With my background in Speech and Language Therapy and Linguistics, I’ve always been passionate about using technology to help vulnerable groups improve communication and boost their self-efficacy. In my PhD research, I continue this passion by investigating how immersive technologies can be used to train communic",
+  "url": "https://www.sbe-dexlab.com/post/empowering-communication-through-tech-an-interview-with-anna-krispin",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/9aa9b6_4332c3ef162047b2b2179e0cb5ba9c8f~mv2.jpg/v1/fill/w_1000,h_843,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_4332c3ef162047b2b2179e0cb5ba9c8f~mv2.jpg",
+   "width": "1746",
+   "height": "1472"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [
+  "https://www.sbe-dexlab.com/blog/categories/meet-the-team",
+  "https://www.sbe-dexlab.com/blog/categories/interviews"
+ ],
+ "og": "https://static.wixstatic.com/media/9aa9b6_4332c3ef162047b2b2179e0cb5ba9c8f~mv2.jpg/v1/fill/w_1000,h_843,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_4332c3ef162047b2b2179e0cb5ba9c8f~mv2.jpg",
+ "body": [
+  {
+   "_type": "image",
+   "_key": "k0",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_1578896e8ae14c3abf9c61c3d1f05caf~mv2.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k1",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k2",
+     "text": "Hi, everyone! I'm Anna Krispin, an external PhD Researcher at SBE and a lecturer-researcher at Zuyd University’s Research Centre of Professional Communication in a Digitalizing Society. With my background in Speech and Language Therapy and Linguistics, I’ve always been passionate about using technology to help vulnerable groups improve communication and boost their self-efficacy. In my PhD research, I continue this passion by investigating how immersive technologies can be used to train communication skills.",
+     "marks": [
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k5",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k6",
+     "text": "What reasons were behind your recent academic decisions?",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k7",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k8",
+     "text": "My main motivation is my passion for research into communication and technology. I get a lot of energy from reading articles and sharing interesting discoveries with others. Additionally, I’m driven to have an impact on social changes through my work, especially in the areas of digitalization and inclusion. By conducting practice-oriented research, I aim for my findings to reach a wide audience; including scientists, fellow lecturers, and professionals.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kb",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kc",
+     "text": "What are some of the highlights/key learnings of your academic journey?",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kd",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ke",
+     "text": "One of the first learnings during my PhD is the importance of a network and engaged mentors. I’m very fortunate to have the guidance and support of my supervisors, Dominik Mahr and Mark Pluymaekers. They encouraged me to apply for two remarkable conferences in my first year, which have been the highlights of my academic journey so far: ‘Let’s Talk About Services’ in Namur, Belgium, and the International XR-Metaverse Conference in Busan, South Korea. I’m very grateful for these experiences, which allowed me to exchange ideas with international academics and professionals and become a member of these communities.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kh",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ki",
+     "text": "How does the DEXLab provide value to you?",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kj",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kk",
+     "text": "I’m very fortunate to have access to the DEXLab, as it provides high-quality equipment for conducting experiments. Additionally, the lab connects me with students, professionals, and other PhD candidates, offering opportunities for collaboration. This exchange is very valuable and enhances the diversity and scope of my research.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kn",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ko",
+     "text": "What are your hobbies outside of work?",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kp",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kq",
+     "text": "Although my workdays are filled with researching cutting-edge technology, I enjoy disconnecting from the digital world during my free time. I love traveling through Europe in my van, Fritz, and doing outdoor activities like hiking and stand-up paddling. Furthermore, music has always been a passion of mine; I take singing lessons and play the guitar.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kr",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ks",
+     "text": "If you could have any superpower, what would it be?",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kt",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ku",
+     "text": "As a linguistics enthusiast, I would love to have the ability to speak every language in the world.",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "embeds": []
+}

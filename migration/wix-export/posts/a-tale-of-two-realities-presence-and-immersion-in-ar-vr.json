@@ -1,0 +1,487 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/a-tale-of-two-realities-presence-and-immersion-in-ar-vr",
+ "slug": "a-tale-of-two-realities-presence-and-immersion-in-ar-vr",
+ "title": "A Tale of Two Realities: Presence and Immersion in AR/VR",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "sbe-dexlab"
+  },
+  "dateModified": "2024-11-27T11:06:46.358Z",
+  "datePublished": "2024-11-27T11:06:46.358Z",
+  "headline": "A Tale of Two Realities: Presence and Immersion in AR/VR",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/a-tale-of-two-realities-presence-and-immersion-in-ar-vr",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/a-tale-of-two-realities-presence-and-immersion-in-ar-vr"
+  },
+  "description": "As augmented reality (AR) and virtual reality (VR) continue to evolve, the terms presence and immersion frequently surface in discussions about user experience. While often conflated, these concepts describe distinct aspects of how we interact with immersive technologies. Understanding their differences is key to appreciating the potential of AR and VR systems.Immersion: The Foundation of the ExperienceImmersion refers to the technological quality of AR and VR systems that engage our senses and ",
+  "url": "https://www.sbe-dexlab.com/post/a-tale-of-two-realities-presence-and-immersion-in-ar-vr",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/9aa9b6_928eaca25626476ca8b905e73c0c66d5~mv2.jpg/v1/fill/w_1000,h_1000,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_928eaca25626476ca8b905e73c0c66d5~mv2.jpg",
+   "width": "1024",
+   "height": "1024"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [],
+ "og": "https://static.wixstatic.com/media/9aa9b6_928eaca25626476ca8b905e73c0c66d5~mv2.jpg/v1/fill/w_1000,h_1000,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_928eaca25626476ca8b905e73c0c66d5~mv2.jpg",
+ "body": [
+  {
+   "_type": "block",
+   "_key": "k0",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1",
+     "text": "As augmented reality (AR) and virtual reality (VR) continue to evolve, the terms presence and immersion frequently surface in discussions about user experience. While often conflated, these concepts describe distinct aspects of how we interact with immersive technologies. Understanding their differences is key to appreciating the potential of AR and VR systems.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k2",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k3",
+     "text": "Immersion: The Foundation of the Experience",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k4",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_928eaca25626476ca8b905e73c0c66d5~mv2.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k5",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k6",
+     "text": "Immersion refers to the technological quality of AR and VR systems that engage our senses and isolate us from the outside world. It is the quality of a medium that allows users to feel enveloped in a digital or augmented environment. Key immersive characteristics include:",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k7",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k8",
+     "text": "Sensory fidelity: High-resolution visuals, spatial audio, and realistic haptics.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "k9",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ka",
+     "text": "Interactivity: Seamless and immediate responses to user actions.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "kb",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kc",
+     "text": "Contextual integration: The ability to convincingly merge virtual elements with physical surroundings (in AR).",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "kd",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ke",
+     "text": "Field of view and responsiveness: The extent to which the system maps and adapts to user movements.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "kf",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kg",
+     "text": "Immersion is measurable through the technical capabilities of a system, such as frame rates, field of view, and stereoscopy. As research demonstrates, enhancements in immersive qualities often lead to heightened feelings of presence, but immersion alone does not guarantee this psychological state.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kh",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ki",
+     "text": "Presence: The Psychological Experience",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kj",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kk",
+     "text": "Presence is the subjective, psychological reaction users experience when they feel as though they are \"there\" in a virtual environment (VR) or that \"it is here\" in augmented reality (AR). It arises when the user perceives the mediated environment as real, regardless of knowing it is an illusion. Presence depends on:",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kl",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "km",
+     "text": "Self-location: The feeling of being situated in a virtual space or that virtual objects are located in your physical space.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "kn",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ko",
+     "text": "Action possibilities: The perception that one can interact with the virtual or augmented environment naturally and meaningfully.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "kp",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kq",
+     "text": "The distinction between AR and VR is crucial here:",
+     "marks": [
+      "underline"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kr",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ks",
+     "text": "In VR: Presence manifests as the sensation of being \"transported\" into the virtual world, creating an \"I am there\" experience.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "kt",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ku",
+     "text": "In AR: Presence arises from the seamless integration of virtual elements into the real world, leading to an \"It is here\" sensation.",
+     "marks": []
+    }
+   ],
+   "listItem": "bullet",
+   "level": 1
+  },
+  {
+   "_type": "image",
+   "_key": "kv",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_ca24effc13b54ae394cfa2bd03236bde~mv2.jpg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "kw",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kx",
+     "text": "Future Trends in Immersion and Presence",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "ky",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kz",
+     "text": "The emergence of advanced devices like the Apple Vision Pro and Meta Quest 3 signals exciting possibilities for both immersion and presence. These innovations may transform the way users engage with immersive technologies in two key ways:",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k10",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k11",
+     "text": "From Suspension of Disbelief to Convincing Realness: ",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k12",
+     "text": "As immersive systems improve, users may no longer need to \"suspend disbelief\" to feel presence. Instead, they might need to remind themselves that the experience is not real—a reversal of the typical cognitive process. This phenomenon could redefine how presence is studied and applied.",
+     "marks": []
+    }
+   ],
+   "listItem": "number",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "k13",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k14",
+     "text": "Seamless AR-VR Transitions:",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k15",
+     "text": " Future devices aim to allow smooth transitions between AR and VR. This creates a challenge for understanding presence, as users shift between the \"I am there\" and \"It is here\" states. Developing a unified theory that accommodates these blended realities will be essential.",
+     "marks": []
+    }
+   ],
+   "listItem": "number",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "k16",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k17",
+     "text": "Sources:",
+     "marks": [
+      "strong"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k18",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k19",
+     "text": "1. Cummings, J., & Bailenson, J. (2015). ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k1a",
+     "text": "How immersive is enough? A meta-analysis of the effect of immersive technology on user presence.",
+     "marks": [
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1b",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1c",
+     "text": "2. Hartmann, T., et al. (2015). ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k1d",
+     "text": "Spatial Presence Theory: State of the Art and Challenges Ahead.",
+     "marks": [
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1e",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1f",
+     "text": "3. Wirth, W., et al. (2007). ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k1g",
+     "text": "A process model of the formation of spatial presence experiences.",
+     "marks": [
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1h",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1i",
+     "text": "4. Hilken, T., et al. (2017). ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k1j",
+     "text": "Augmenting the eye of the beholder: exploring the strategic potential of augmented reality to enhance online service experiences.",
+     "marks": [
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k1k",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1l",
+     "text": "5. Kowalczuk, P., et al. (2020). ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k1m",
+     "text": "Cognitive, affective, and behavioral consumer responses to augmented reality in e-commerce: A comparative study",
+     "marks": [
+      "em"
+     ]
+    }
+   ]
+  }
+ ],
+ "embeds": []
+}

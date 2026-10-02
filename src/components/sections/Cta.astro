@@ -1,0 +1,45 @@
+---
+import Buttons from '../Buttons.astro'
+import {brandify} from '../../lib/utils'
+import type {Link} from '../../lib/types'
+
+interface Props {
+  heading?: string
+  intro?: string
+  buttons?: Link[]
+  tone?: string
+}
+const {heading, intro, buttons, tone = 'peach'} = Astro.props
+// Turn a bare email address in the intro into a link.
+const introHtml = (intro || '')
+  .replace(/[&<>]/g, (c) => ({'&': '&amp;', '<': '&lt;', '>': '&gt;'})[c]!)
+  .replace(/([\w.+-]+@[\w-]+\.[\w.]+)/g, '<a href="mailto:$1">$1</a>')
+---
+
+<section class:list={['section cta', `tone-${tone}`]}>
+  <div class="container">
+    <div class="box">
+      {heading && <h2 set:html={brandify(heading)} />}
+      {intro && <p set:html={introHtml} />}
+      <Buttons buttons={buttons} center />
+    </div>
+  </div>
+</section>
+
+<style>
+  .cta {
+    padding-block: clamp(48px, 7vw, 88px);
+  }
+  .box {
+    max-width: 820px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  h2 {
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+  }
+  p {
+    font-size: 1.1rem;
+    margin: 0;
+  }
+</style>

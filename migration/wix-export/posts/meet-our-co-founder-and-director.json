@@ -1,0 +1,292 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/meet-our-co-founder-and-director",
+ "slug": "meet-our-co-founder-and-director",
+ "title": "Meet our co-founder and director!",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "augmented-research"
+  },
+  "dateModified": "2023-09-20T07:11:44.248Z",
+  "datePublished": "2023-04-19T20:52:01.796Z",
+  "headline": "Meet our co-founder and director!",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/meet-our-co-founder-and-director",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/meet-our-co-founder-and-director"
+  },
+  "description": "Please tell us a bit about your background! Hi, I am Jonas Heller, co-founder and director of the DEXLab, as well as an Assistant Professor in the Department of Marketing and Supply Chain Management. In this post, you will learn a bit more about me, my motivation to work for MSCM and academia in general, as well as providing some personal information about myself.I was born in Germany and spent all my time there until I graduated from high school. I ended up studying for a BSc. in International ",
+  "url": "https://www.sbe-dexlab.com/post/meet-our-co-founder-and-director",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/9aa9b6_254f12bc8acb443fab52329c240d83d5~mv2.jpeg/v1/fill/w_800,h_1000,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_254f12bc8acb443fab52329c240d83d5~mv2.jpeg",
+   "width": "1638",
+   "height": "2048"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [
+  "https://www.sbe-dexlab.com/blog/categories/meet-the-team"
+ ],
+ "og": "https://static.wixstatic.com/media/9aa9b6_254f12bc8acb443fab52329c240d83d5~mv2.jpeg/v1/fill/w_800,h_1000,al_c,q_85,usm_0.66_1.00_0.01/9aa9b6_254f12bc8acb443fab52329c240d83d5~mv2.jpeg",
+ "body": [
+  {
+   "_type": "block",
+   "_key": "k0",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1",
+     "text": "Please tell us a bit about your background!",
+     "marks": [
+      "strong",
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "image",
+   "_key": "k2",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_254f12bc8acb443fab52329c240d83d5~mv2.jpeg",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k3",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k4",
+     "text": "Hi, I am Jonas Heller, co-founder and director of the DEXLab, as well as an Assistant Professor in the Department of Marketing and Supply Chain Management. In this post, you will learn a bit more about me, my motivation to work for MSCM and academia in general, as well as providing some personal information about myself.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k5",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k6",
+     "text": "I was born in Germany and spent all my time there until I graduated from high school. I ended up studying for a BSc. in International Business at SBE driven by the inner feeling of wanting to go abroad, and while the Netherlands were not exactly a completely different world, the promise of an international student community and the PBL system convinced me to give it a try. I could say I loved it from the start, but I almost quit my studies in the first year, thinking it was all too theoretical and too much to read. Only later would I realize that we learned so much more than the content in the books and articles that we had to read. After spending a semester abroad in Barcelona, I decided to look for a job after my BSc. and worked at the headquarters of the online fashion retailer Zalando in Berlin for almost 2 years before finding my way back to SBE (finding my way back to SBE is a recurring theme) for my MSc. in Supply Chain Management. During my MSc., I discovered my passion for teaching and got into contact with faculty, which led to the decision to pursue a PhD. I had the opportunity to apply for a scholarship in Australia to pursue a PhD in Marketing, and given that my previous stays in Berlin and Barcelona had sparked my interest in cultural melting pots, I moved to Sydney for my PhD on Augmented Reality in marketing, retailing, and services. After 3.5 years in Australia, I found my way back to the Netherlands and eventually back to the MSCM department in 2020, where I have since worked as an Assistant Professor. One of the main reasons to come back was the reason I initially thought-out UM: The people and the PBL system.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k7",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k8",
+     "text": "Why did you decide to work for MSCM / your department and to work in academia?",
+     "marks": [
+      "strong",
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k9",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ka",
+     "text": "MSCM especially, but the SBE and UM as a whole, have a unique combination of people with diverse backgrounds, ideas, and opinions, which make MSCM a fast-paced, challenging, and open-minded environment. The PBL system constantly requires us as educators to innovate our educational offerings, and MSCM is a unique department that combines various disciplines and research interests which lead to plentiful opportunities. The freedom that we have as academics to research what we perceive to be value-adding, is amplified in the MSCM department. We allow for a broad array of mindsets from fully applied to completely theoretical research, and the department sets an atmosphere in which everyone is allowed to experiment, try out new ways, and go at their own pace.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kb",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kc",
+     "text": "What are some of the highlights/key learnings of your research career?",
+     "marks": [
+      "strong",
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kd",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ke",
+     "text": "For now, I would count two highlights of my research career: The biggest one is certainly what the DEXLab has achieved from the moment when we started envisioning such a project. The teamwork, despite the sweat, long meetings, discarded drafts, and overall effort that everyone has put into this project since it was founded, is extraordinary to meet and something I will never take for granted. The \"(...) we have never done this before but let us find a way (…)\" approach that we had from the start and that still guides us today is something that I personally strive for a lot but that is not common in an academic environment. The team that we have grown since founding the DEXLab, and the research groups that are the fundamental pillars to keep the DEXLab moving forward, are a group of wonderful diverse individuals that united through their curiosity and passion to investigate how digital technologies can innovate education, improve customer well-being, or promote better service experiences.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kf",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kg",
+     "text": "My second highlight and also learning is being awarded a Marie Skłodowska-Curie Fellowship during my time as an Assistant Professor, and my biggest learning from the fellowship is to not be afraid to fail, to take a leap of faith, and apply for the funding opportunities that are out there for young academics. You most certainly will not always be successful, but no one will keep counting the failed applications, and you can only have a chance if you try.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kh",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ki",
+     "text": "How does the DEXLab provide value and for whom?",
+     "marks": [
+      "strong",
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kj",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kk",
+     "text": "The DEXLab is unique in its way, as it is not a pure research laboratory that only allows researchers to experiment and develop digital treatments for their studies, but it also offers the opportunity for educators to innovate their education. In that sense, the DEXLab drives the digital research and education community at SBE and provides a space for research, learning, and knowledge exchange around users' digital experiences in business environments. We value the principles of open science and open education to widen access and participation for everyone by removing barriers and making learning accessible, abundant, and customizable.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kl",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "km",
+     "text": "What are you doing when you are not working/what are your hobbies?",
+     "marks": [
+      "strong",
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kn",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ko",
+     "text": "Beyond academia, I am keeping busy chasing my 1.5-year-old twins around the house. They are doing a wonderful job highlighting that life happens beyond AR or VR devices. Next to family life, I love to do sports, both in a team and individually. I play and coach lacrosse, a full-contact sport that helps me let off some steam. I also like to run in the countryside around Maastricht to have some time for myself to simply enjoy nature or listen to an audiobook. Besides sports, I love cooking and anything that relates to it, such as BBQing, experimenting with food like fermenting, pickling, or growing your own vegetables in the garden. I also had a short career in brewing my own beer during my PhD in Australia but given that I am back in the Drielandenpunt between wonderfully crafted Belgian Triples, German Pilseners brewed after the Reinheits-Gebot, and, well, \"Heineken,\" I am currently not actively pursuing this hobby anymore.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kp",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kq",
+     "text": "If you could have any superpower, what would it be?",
+     "marks": [
+      "strong",
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kr",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ks",
+     "text": "This is always a difficult one. I would love to enjoy the adrenaline-burst of flying, but I am also always seeking efficiencies so \"teleporting\" would be amazing as well. Imagine living on an Australian or Portuguese beach but being able to commute to Maastricht every morning in a few seconds?",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kt",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ku",
+     "text": "It is Saturday evening, so you...?",
+     "marks": [
+      "strong",
+      "em"
+     ]
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kv",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kw",
+     "text": "Depending on what happened during the day, I might be dead on the couch with ice packs on the bruises collected during a lacrosse match or have friends over for dinner.",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "embeds": []
+}

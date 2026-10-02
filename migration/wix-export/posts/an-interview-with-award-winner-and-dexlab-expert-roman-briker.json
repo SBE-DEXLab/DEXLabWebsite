@@ -1,0 +1,219 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/an-interview-with-award-winner-and-dexlab-expert-roman-briker",
+ "slug": "an-interview-with-award-winner-and-dexlab-expert-roman-briker",
+ "title": "An interview with award winner and DEXLab expert - Roman Briker",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "augmented-research"
+  },
+  "dateModified": "2025-10-03T10:38:46.945Z",
+  "datePublished": "2025-10-03T10:38:12.512Z",
+  "headline": "An interview with award winner and DEXLab expert - Roman Briker",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/an-interview-with-award-winner-and-dexlab-expert-roman-briker",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/an-interview-with-award-winner-and-dexlab-expert-roman-briker"
+  },
+  "description": "1. Tell us a bit about yourself and your recent project or award.   “I’m an Assistant Professor of Organizational Behavior &amp; HRM at SBE. My current research interests are social influences processes between humans and humans and humans and machines as well as open science methods. Recently, I received the Hustinx Award for Science for my research.”1. How did DEXLab support or influence this journey?   The DEXLab is a very flexible, useful, environment, and community where and with whom to conduc",
+  "url": "https://www.sbe-dexlab.com/post/an-interview-with-award-winner-and-dexlab-expert-roman-briker",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/9aa9b6_80eecdb9fe214ea7a52e19aa70ab05dd~mv2.png/v1/fill/w_796,h_524,al_c,q_90/9aa9b6_80eecdb9fe214ea7a52e19aa70ab05dd~mv2.png",
+   "width": "796",
+   "height": "524"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [],
+ "og": "https://static.wixstatic.com/media/9aa9b6_80eecdb9fe214ea7a52e19aa70ab05dd~mv2.png/v1/fill/w_796,h_524,al_c,q_90/9aa9b6_80eecdb9fe214ea7a52e19aa70ab05dd~mv2.png",
+ "body": [
+  {
+   "_type": "block",
+   "_key": "k0",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k1",
+     "text": "Tell us a bit about yourself and your recent project or award.",
+     "marks": [
+      "strong"
+     ]
+    }
+   ],
+   "listItem": "number",
+   "level": 1
+  },
+  {
+   "_type": "image",
+   "_key": "k2",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_80eecdb9fe214ea7a52e19aa70ab05dd~mv2.png",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k3",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k4",
+     "text": "“I’m an Assistant Professor of Organizational Behavior & HRM at SBE. My current research interests are social influences processes between humans and humans and humans and machines as well as open science methods. Recently, I received the ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k5",
+     "text": "Hustinx Award for Science",
+     "marks": [
+      "em"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k6",
+     "text": " for my research.”",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k7",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k8",
+     "text": "How did DEXLab support or influence this journey?",
+     "marks": [
+      "strong"
+     ]
+    }
+   ],
+   "listItem": "number",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "k9",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ka",
+     "text": "The DEXLab is a very flexible, useful, environment, and community where and with whom to conduct cutting-edge research. Being part of the lab also gave me opportunities to collaborate with experts from other disciplines that I previously did not imagine working with.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kb",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kc",
+     "text": "Why does this project/achievement matter, for the university or beyond?",
+     "marks": [
+      "strong"
+     ]
+    }
+   ],
+   "listItem": "number",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "kd",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ke",
+     "text": "It shows the psychological, management, and social side of AI. Its findings can help inspire and guide organizations and policy to more human-centered AI adoption and implementation.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kf",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kg",
+     "text": "Where do you see digital technologies, especially AI, heading at Maastricht University in the next few years?",
+     "marks": [
+      "strong"
+     ]
+    }
+   ],
+   "listItem": "number",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "kh",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ki",
+     "text": "I see AI becoming an everyday tool and partner that we need to understand not only from the technical side but mostly from a psychological and organizational side. What does AI do to our social relationships, leadership, group dynamics, and more. I see the DEXLab as a powerful partner for a better understanding of this side of AI, which can help bridge the gap between the technical and the psychological and managerial sides of AI.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "kj",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kk",
+     "text": "What advice or inspiration would you share with other students/researchers interested in digital tech?",
+     "marks": [
+      "strong"
+     ]
+    }
+   ],
+   "listItem": "number",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "kl",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "km",
+     "text": "I try to adopt the Ikigai mindset for my research. What do you like to do? What matters for the world? What are you good at? What can “earn” you something (impact, publications, career, etc.)? Finding a sweet spot of this in the AI world is not easy but needed to produce scientific insights that matter to you and others.",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "embeds": []
+}

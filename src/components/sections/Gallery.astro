@@ -1,0 +1,58 @@
+---
+import Img from '../Img.astro'
+import {brandify} from '../../lib/utils'
+import type {Img as ImgT} from '../../lib/types'
+
+interface Props {
+  heading?: string
+  images?: ImgT[]
+}
+const {heading, images = []} = Astro.props
+const single = images.length === 1
+---
+
+<section class:list={['gallery', {single}]}>
+  {heading && <div class="container"><h2 set:html={brandify(heading)} /></div>}
+  {
+    single ? (
+      <Img image={images[0]} width={1600} height={600} />
+    ) : (
+      <div class="container strip">
+        {images.map((img, i) => (
+          <Img image={img} width={i === 0 ? 760 : 480} height={i === 0 ? 420 : 420} sizes="(min-width: 860px) 50vw, 100vw" />
+        ))}
+      </div>
+    )
+  }
+</section>
+
+<style>
+  .gallery.single :global(img) {
+    width: 100%;
+    height: clamp(220px, 36vw, 520px);
+    object-fit: cover;
+  }
+  .strip {
+    display: grid;
+    grid-template-columns: 2fr 1.2fr 1fr;
+    gap: 16px;
+    padding-block: 8px;
+  }
+  .strip :global(img) {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: auto;
+    min-height: 220px;
+    max-height: 340px;
+    object-fit: cover;
+    border-radius: var(--radius);
+  }
+  @media (max-width: 760px) {
+    .strip {
+      grid-template-columns: 1fr 1fr;
+    }
+    .strip :global(img:first-child) {
+      grid-column: 1 / -1;
+    }
+  }
+</style>

@@ -1,0 +1,117 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/meet-our-new-intern-claudia-fasano",
+ "slug": "meet-our-new-intern-claudia-fasano",
+ "title": "Meet our new intern: Claudia Fasano",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "augmented-research"
+  },
+  "dateModified": "2023-09-20T07:10:48.689Z",
+  "datePublished": "2023-09-06T08:00:54.999Z",
+  "headline": "Meet our new intern: Claudia Fasano",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/meet-our-new-intern-claudia-fasano",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/meet-our-new-intern-claudia-fasano"
+  },
+  "description": "I'm Claudia, an Italian with a strong interest in the arts and media. My academic journey has been a blend of creativity and analysis, with a bachelor's degree in Performance and Communication Studies and a master's degree in Performing Arts Studies.&#010;My professional journey has been equally eclectic. As a Community Manager and Social Media Manager, I've worked with theatres, theatre companies, museums, and other cultural institutions. This experience shaped my understanding of the relationship b",
+  "url": "https://www.sbe-dexlab.com/post/meet-our-new-intern-claudia-fasano",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/9aa9b6_2af159f058b94766a7ccc4c97e52e94b~mv2.png/v1/fill/w_686,h_706,al_c,q_90/9aa9b6_2af159f058b94766a7ccc4c97e52e94b~mv2.png",
+   "width": "686",
+   "height": "706"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [
+  "https://www.sbe-dexlab.com/blog/categories/meet-the-team"
+ ],
+ "og": "https://static.wixstatic.com/media/9aa9b6_2af159f058b94766a7ccc4c97e52e94b~mv2.png/v1/fill/w_686,h_706,al_c,q_90/9aa9b6_2af159f058b94766a7ccc4c97e52e94b~mv2.png",
+ "body": [
+  {
+   "_type": "image",
+   "_key": "k0",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_2af159f058b94766a7ccc4c97e52e94b~mv2.png",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k1",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k2",
+     "text": "I'm Claudia, an Italian with a strong interest in the arts and media. My academic journey has been a blend of creativity and analysis, with a bachelor's degree in Performance and Communication Studies and a master's degree in Performing Arts Studies.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k3",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k4",
+     "text": "My professional journey has been equally eclectic. As a Community Manager and Social Media Manager, I've worked with theatres, theatre companies, museums, and other cultural institutions. This experience shaped my understanding of the relationship between art, culture, and digital platforms, prompting me to relocate to the Netherlands.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k5",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k6",
+     "text": "In order to gain a better understanding of our digital landscape, I enrolled in a Master's programme in Media Studies: Digital Cultures at Maastricht University. The programme adds to my background by delving into the profound effects of modern media and technology on our societal dynamics. This interest arose during my time as a Community Manager and Social Media Manager.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k7",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k8",
+     "text": "I am also a writer. In 2021, I proudly released my first novel, marking a significant milestone in my creative journey.",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k9",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ka",
+     "text": "In a nutshell, I am Claudia—a person driven by an insatiable curiosity about art, creativity, media, technology, and social sciences. My academic accomplishments, professional experiences, and personal interests all come together to form a holistic perspective that I eagerly apply to every aspect of my life.",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "embeds": []
+}

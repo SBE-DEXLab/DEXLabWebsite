@@ -1,0 +1,28 @@
+# Netlify builds the website and the Sanity Studio (served at /admin) together.
+# Set these in Netlify > Site configuration > Environment variables:
+#   PUBLIC_SANITY_PROJECT_ID, PUBLIC_SANITY_DATASET (production),
+#   SANITY_STUDIO_PROJECT_ID, SANITY_STUDIO_DATASET (same values)
+[build]
+  command = "npm run build:all"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "SAMEORIGIN"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+[[headers]]
+  for = "/_astro/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/admin/*"
+  [headers.values]
+    X-Robots-Tag = "noindex"

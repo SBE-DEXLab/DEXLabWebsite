@@ -1,0 +1,233 @@
+{
+ "url": "https://www.sbe-dexlab.com/post/dexlab-s-top-5-technology-trends-of-2024",
+ "slug": "dexlab-s-top-5-technology-trends-of-2024",
+ "title": "DEXLab's Top 5 Technology Trends of 2024",
+ "ld": {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "author": {
+   "@type": "Person",
+   "name": "sbe-dexlab"
+  },
+  "dateModified": "2024-07-08T08:37:05.834Z",
+  "datePublished": "2024-07-08T08:37:05.834Z",
+  "headline": "DEXLab's Top 5 Technology Trends of 2024",
+  "mainEntityOfPage": {
+   "@id": "https://www.sbe-dexlab.com/post/dexlab-s-top-5-technology-trends-of-2024",
+   "@type": "itemPage",
+   "url": "https://www.sbe-dexlab.com/post/dexlab-s-top-5-technology-trends-of-2024"
+  },
+  "description": "What is the future of technology? Check out DEXLab's prediction for the future.",
+  "url": "https://www.sbe-dexlab.com/post/dexlab-s-top-5-technology-trends-of-2024",
+  "image": {
+   "@type": "ImageObject",
+   "url": "https://static.wixstatic.com/media/nsplsh_91ce2099a7224d43b1f890f88d86450d~mv2.jpg/v1/fill/w_1000,h_667,al_c,q_85,usm_0.66_1.00_0.01/nsplsh_91ce2099a7224d43b1f890f88d86450d~mv2.jpg",
+   "width": "8192",
+   "height": "5464"
+  },
+  "publisher": {
+   "@type": "Organization",
+   "name": "DEXLab",
+   "url": "https://www.sbe-dexlab.com"
+  }
+ },
+ "cats": [],
+ "og": "https://static.wixstatic.com/media/nsplsh_91ce2099a7224d43b1f890f88d86450d~mv2.jpg/v1/fill/w_1000,h_667,al_c,q_85,usm_0.66_1.00_0.01/nsplsh_91ce2099a7224d43b1f890f88d86450d~mv2.jpg",
+ "body": [
+  {
+   "_type": "image",
+   "_key": "k0",
+   "_sanityAsset": "image@https://static.wixstatic.com/media/9aa9b6_1edc0362a4464e10bb5d02aad069f975~mv2.png",
+   "alt": ""
+  },
+  {
+   "_type": "block",
+   "_key": "k1",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k2",
+     "text": "The year 2024 is a whirlwind of technological advancements. From AI conjuring entirely new realities to electric vehicles buzzing down the street, innovation is reshaping our world at an unprecedented pace. Let’s explore 5 of these trends in 2024:",
+     "marks": []
+    }
+   ]
+  },
+  {
+   "_type": "block",
+   "_key": "k3",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k4",
+     "text": "The ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "k5",
+     "text": "Rise of Generative AI",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k6",
+     "text": " (Gen-AI):  With a booming start in 2023, things don’t look like they are going to slow down any time soon. As the big players, OpenAI, Microsoft and Google, are advancing their models, we are finding more and more gains in productivity and content generation. But it’s not all rainbows and sunshine, businesses must navigate data management, ethical considerations, and copyright issues to unlock Gen-AI's true potential. Industry-specific AI models are on the horizon, offering a tailored approach that will revolutionize various sectors. Gen-AI isn't just a trend; it's a seismic shift, promising to redefine entire industries.",
+     "marks": []
+    }
+   ],
+   "listItem": "number",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "k7",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "k8",
+     "text": "ARM Takes the Chip Throne",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "k9",
+     "text": ":  Move over x86, ARM processors are taking center stage. These power-efficient chips, once dominant in mobile devices, are now muscling their way into laptops and even servers. Their lower power consumption translates to longer battery life and cooler devices, making them ideal for a mobile-first world. After Apple’s introduction of their M-series chips, Qualcomm has finally brought an answer in the form of the Snapdragon Elite X chips, powering Copilot + PC’s.",
+     "marks": []
+    }
+   ],
+   "listItem": "number",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "ka",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kb",
+     "text": "Immersive Tech",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kc",
+     "text": ": With the arrival of the Apple Vision Pro, the Immersive Tech Trend has gotten a new wave of media and consumer attention. This was expected; however, Apple’s headset is not considered a massive success in terms of sales as of now. But as some tech critics have smartly pointed out: “Apple joining the market just increases the size of the pie. Which is beneficial for all.” -The Vergecast. So, it is still a massive welcome to the market.",
+     "marks": []
+    }
+   ],
+   "listItem": "number",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "kd",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "ke",
+     "text": "Electric Vehicles ",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kf",
+     "text": "Charge Forward:  The electric revolution is in full swing! Electric cars are no longer a niche product. With increasing range, faster charging times, and a growing number of models to choose from, EVs are becoming a viable option for everyone. Government incentives and a growing focus on sustainability are further accelerating the shift towards electric mobility. Cars like the updated Tesla Model 3 or the Hyundai Ioniq 6 are swarming the streets, and rightfully so!",
+     "marks": []
+    }
+   ],
+   "listItem": "number",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "kg",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kh",
+     "text": "The ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "ki",
+     "text": "Internet of Things",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kj",
+     "text": " (IoT) gets \"Smart\", our homes are getting smarter, and it's not just about fancy gadgets anymore. The Internet of Things (IoT) is connecting everything from your fridge to your car, creating a network of intelligent devices that can automate tasks and improve our lives. Additionally, a new category in this branch has appeared since the rise of GenAI: AI Wearables like the Rabbit R1 and the Humane AI pin.",
+     "marks": []
+    }
+   ],
+   "listItem": "number",
+   "level": 1
+  },
+  {
+   "_type": "block",
+   "_key": "kk",
+   "style": "normal",
+   "markDefs": [],
+   "children": [
+    {
+     "_type": "span",
+     "_key": "kl",
+     "text": "Tech is in a really interesting spot right now and ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "km",
+     "text": "competition",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kn",
+     "text": " is constantly ",
+     "marks": []
+    },
+    {
+     "_type": "span",
+     "_key": "ko",
+     "text": "driving new innovation",
+     "marks": [
+      "strong"
+     ]
+    },
+    {
+     "_type": "span",
+     "_key": "kp",
+     "text": " forward. Bring on the second half of 2024!",
+     "marks": []
+    }
+   ]
+  }
+ ],
+ "embeds": []
+}

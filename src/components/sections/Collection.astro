@@ -1,0 +1,58 @@
+---
+import {brandify} from '../../lib/utils'
+import type {Link} from '../../lib/types'
+import PostGrid from '../collections/PostGrid.astro'
+import TeamGrid from '../collections/TeamGrid.astro'
+import WorkshopGrid from '../collections/WorkshopGrid.astro'
+import PublicationList from '../collections/PublicationList.astro'
+import EquipmentGrid from '../collections/EquipmentGrid.astro'
+import FaqList from '../collections/FaqList.astro'
+
+interface Props {
+  anchor?: string
+  heading?: string
+  intro?: string
+  source: 'posts' | 'team' | 'workshops' | 'publications' | 'equipment' | 'faq'
+  limit?: number
+  categorySlug?: string
+  groups?: string[]
+  link?: Link
+  tone?: string
+}
+const {anchor, heading, intro, source, limit, categorySlug, groups, link, tone = 'default'} = Astro.props
+---
+
+<section id={anchor} class:list={['section', `tone-${tone}`]}>
+  <div class="container">
+    {
+      (heading || intro) && (
+        <div class="section-head">
+          {heading && <h2 set:html={brandify(heading)} />}
+          {intro && <p>{intro}</p>}
+        </div>
+      )
+    }
+    {source === 'posts' && <PostGrid limit={limit || 3} category={categorySlug} />}
+    {source === 'team' && <TeamGrid groups={groups?.length ? groups : ['core', 'intern', 'associate']} />}
+    {source === 'workshops' && <WorkshopGrid limit={limit} />}
+    {source === 'publications' && <PublicationList />}
+    {source === 'equipment' && <EquipmentGrid />}
+    {source === 'faq' && <FaqList limit={limit} />}
+    {
+      link?.href && (
+        <p class="more">
+          <a class:list={['btn', {secondary: link.style === 'secondary'}]} href={link.href}>
+            {link.label} <span class="arrow" aria-hidden="true">→</span>
+          </a>
+        </p>
+      )
+    }
+  </div>
+</section>
+
+<style>
+  .more {
+    text-align: center;
+    margin: 40px 0 0;
+  }
+</style>

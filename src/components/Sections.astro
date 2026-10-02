@@ -1,0 +1,43 @@
+---
+import type {Section} from '../lib/types'
+import Hero from './sections/Hero.astro'
+import Text from './sections/Text.astro'
+import Cards from './sections/Cards.astro'
+import Stats from './sections/Stats.astro'
+import Pills from './sections/Pills.astro'
+import Quotes from './sections/Quotes.astro'
+import Gallery from './sections/Gallery.astro'
+import Videos from './sections/Videos.astro'
+import Cta from './sections/Cta.astro'
+import Collection from './sections/Collection.astro'
+import Contact from './sections/Contact.astro'
+import Location from './sections/Location.astro'
+
+interface Props {
+  sections?: Section[]
+}
+const {sections = []} = Astro.props
+
+// One component per section type in studio/schemas/sections.
+const components: Record<string, any> = {
+  sectionHero: Hero,
+  sectionText: Text,
+  sectionCards: Cards,
+  sectionStats: Stats,
+  sectionPills: Pills,
+  sectionQuotes: Quotes,
+  sectionGallery: Gallery,
+  sectionVideos: Videos,
+  sectionCta: Cta,
+  sectionCollection: Collection,
+  sectionContact: Contact,
+  sectionLocation: Location,
+}
+---
+
+{
+  sections.map((section, i) => {
+    const Component = components[section._type]
+    return Component ? <Component {...section} first={i === 0} /> : null
+  })
+}
