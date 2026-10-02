@@ -86,7 +86,8 @@ export const people = [
   person('tim-hilken', 'Tim Hilken', 'DEXLab Director', 'core', 20, '9aa9b6_d3c982bb3abe4881ad3cdf6660ecdee5~mv2.png', 'https://www.linkedin.com/in/timhilken/'),
   person('dominik-mahr', 'Dominik Mahr', 'DEXLab Director', 'core', 30, '9aa9b6_405e0be02ffa4ddb80dd1e113b45a1d7~mv2.jpeg', 'https://www.linkedin.com/in/dominik-mahr-5820083/'),
   {
-    ...person('nea', 'Nea', 'DEXLab Manager', 'core', 35, '9aa9b6_d296bb4552c14e4f9cc7ace706447deb~mv2.jpg'),
+    ...person('nea-saarreharju', 'Nea Saarreharju', 'DEXLab Manager', 'core', 35, '9aa9b6_d296bb4552c14e4f9cc7ace706447deb~mv2.jpg'),
+    email: 'nea.saarreharju@maastrichtuniversity.nl',
     bio: 'First full-time DEXLab Manager, for all things research, education and management of our technologies.',
   },
   person('roberta-di-palma', 'Roberta Di Palma', 'DEXLab Coordinator and Manager', 'core', 40, '9aa9b6_f1d5a18fd9b94aedaa3e0d2566b3e8b1~mv2.jpeg', 'https://www.linkedin.com/in/roberta-di-palma/'),
@@ -654,7 +655,7 @@ export const publicationsSource = 'migration/wix-export/publications.txt'
 // Map of Wix blog author names to team members.
 // Posts written by a team member but published under a generic Wix account.
 export const postAuthors = {
-  'meet-our-new-dexlab-manager-nea': 'person-nea',
+  'meet-our-new-dexlab-manager-nea': 'person-nea-saarreharju',
 }
 
 export const authorMap = {
