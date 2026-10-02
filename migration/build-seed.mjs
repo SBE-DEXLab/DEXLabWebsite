@@ -66,7 +66,7 @@ for (const f of fs.readdirSync(postDir).sort()) {
   const body = cleanBody(p.body)
   const cover = p.og?.match(/^(https:\/\/static\.wixstatic\.com\/media\/[^/]+)/)?.[1]
   const authorName = p.ld?.author?.name
-  const authorRef = content.authorMap[authorName]
+  const authorRef = content.postAuthors[p.slug] || content.authorMap[authorName]
   docs.push({
     _id: `post-${p.slug}`.slice(0, 120),
     _type: 'post',
