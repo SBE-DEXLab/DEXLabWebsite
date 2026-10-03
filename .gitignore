@@ -8,3 +8,4 @@ studio/.sanity/
 !.env.example
 .netlify/
 .DS_Store
+content/sync.ndjson
