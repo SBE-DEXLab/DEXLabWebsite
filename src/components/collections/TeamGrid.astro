@@ -8,8 +8,9 @@ interface Props {
 }
 const {groups} = Astro.props
 const people = await getPeople(groups)
-const titles: Record<string, string> = {core: 'Our Core Team', intern: 'The Interns', associate: 'The Associates', alumni: 'Alumni'}
-// Every card shows the same three things: portrait, name and role. The portrait links to LinkedIn.
+const titles: Record<string, string> = {core: 'Our Core Team', intern: 'The Interns', associate: 'Affiliated Researchers', alumni: 'Alumni'}
+// Every card shows the same three things: portrait, name and role. Hovering over (or tapping) a
+// portrait shows the bio on top of it; without a bio the portrait links to LinkedIn.
 // Up to five cards per row; bigger groups are split into balanced rows (7 becomes 4 + 3).
 const perRow = (n: number) => (n <= 5 ? n : Math.ceil(n / Math.ceil(n / 5)))
 ---
@@ -30,7 +31,19 @@ const perRow = (n: number) => (n <= 5 ? n : Math.ceil(n / Math.ceil(n / 5)))
             )
             return (
               <li class="person">
-                {p.linkedin ? (
+                {p.bio ? (
+                  <div class="photo has-bio" tabindex="0" aria-label={`About ${p.name}`}>
+                    {photo}
+                    <div class:list={['bio', {long: p.bio.length > 260}]}>
+                      <p>{p.bio}</p>
+                      {p.linkedin && (
+                        <a href={p.linkedin} target="_blank" rel="noopener">
+                          LinkedIn
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                ) : p.linkedin ? (
                   <a class="photo" href={p.linkedin} target="_blank" rel="noopener" title={`${p.name} on LinkedIn`}>
                     {photo}
                   </a>
@@ -79,6 +92,7 @@ const perRow = (n: number) => (n <= 5 ? n : Math.ceil(n / Math.ceil(n / 5)))
     text-align: center;
   }
   .photo {
+    position: relative;
     display: block;
     aspect-ratio: 20 / 27;
     border-radius: var(--radius);
@@ -87,6 +101,50 @@ const perRow = (n: number) => (n <= 5 ? n : Math.ceil(n / Math.ceil(n / 5)))
     box-shadow: var(--shadow);
     transition: transform 0.25s, box-shadow 0.25s;
   }
+  .bio {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: safe center;
+    gap: 12px;
+    padding: 18px;
+    background: rgb(0 28 61 / 0.9);
+    color: #fff;
+    text-align: left;
+    overflow-y: auto;
+    opacity: 0;
+    transition: opacity 0.25s;
+  }
+  .bio p {
+    margin: 0;
+    font-size: 0.78rem;
+    line-height: 1.5;
+  }
+  .bio.long {
+    padding: 14px 15px;
+    gap: 8px;
+  }
+  .bio.long p {
+    font-size: 0.68rem;
+    line-height: 1.45;
+  }
+  .bio a {
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.8rem;
+  }
+  .bio a:hover {
+    color: var(--blue);
+  }
+  .has-bio {
+    cursor: default;
+  }
+  .has-bio:hover .bio,
+  .has-bio:focus-within .bio {
+    opacity: 1;
+  }
+  .has-bio:hover,
   a.photo:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-hover);

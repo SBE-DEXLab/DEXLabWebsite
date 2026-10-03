@@ -12,7 +12,7 @@ Changes are saved as drafts automatically. Nothing is public until you press **P
 | **Pages** | About, Equipment, FAQ, Contact, Visit us, Research, and so on |
 | **Blog posts** | News, interviews, experiments |
 | **Blog categories** | The filters on the blog page |
-| **Team** | Core team, interns, associates, alumni |
+| **Team** | Core team, interns, affiliated researchers, alumni |
 | **Workshops** | Each workshop has a card on /workshops and its own page |
 | **Publications** | The list on /publications, newest first |
 | **Equipment** | The inventory on /equipment |

@@ -79,13 +79,28 @@ const person = (id, name, role, group, order, photo, linkedin) => ({
   ...(linkedin && {linkedin}),
 })
 
+// Bios as on the old Wix team page, shown when hovering over (or tapping) a portrait.
+const bios = {
+  "jonas-heller": "Director of the DEXLab and Assistant Professor at Maastricht University. My research explores how AI, AR/VR, and emerging technologies like brain-computer interfaces reshape consumer behaviour and business landscapes.",
+  "tim-hilken": "Director of the DEXLab and Assistant Professor at Maastricht University. I focus on digital marketing and developments in industry 4.0, particularly the role of new technologies such as Augmented and Virtual Reality and Artificial Intelligence.",
+  "dominik-mahr": "Director of the DEXLab and Assistant Professor at Maastricht University. His work integrates research, education and business practice of marketing, innovation, digitisation, strategy, services and design thinking.",
+  "roberta-di-palma": "Roberta is an Assistant Professor in Educational Research and Development at SBE, researching technology-enabled services in education and business, with a focus on Virtual Reality. As co-founder of DEXLab, she leads projects on digital and immersive technologies. She holds a Bachelor's in International Business and a Master's in Strategic Marketing, both from Maastricht University.",
+  "stefan-bos": "PhD candidate at SBE. His research focuses on emotional and behavioral change using Virtual Reality, in particular how Virtual Reality can be used to increase empathy and understanding towards stigmatized groups of people or situations.",
+  "nea-saarreharju": "First full-time DEXLab Manager, for all things research, education and management of our technologies.",
+  "ilias-massignan": "Intern of the DEXLab and a Master student at Maastricht University. He is currently pursuing a Master’s in Strategic Marketing and writing his thesis on how immersive technologies can be connected to real-world applications in marketing and education.",
+  "yosune-uribe": "Intern at the DEXLab and a Master’s student at Maastricht University. She is currently following the Strategic Marketing programme and exploring how AI-generated fashion recommendations can influence consumers’ sense of self-expression and purchase intentions.",
+  "wojciech-mandrysch": "Intern at the DEXLab and a Master’s student at Maastricht University. He is currently following the Supply Chain programme and writing his thesis on how agentic AI can be used in procurement negotiations, while also contributing to projects investigating LLM use cases in education.",
+  "corinna-rott": "PhD candidate in psychology at Maastricht University and the University of Antwerp, specializing in stress regulation and team performance. Her research combines wearable technology, psychophysiological assessment, and immersive environments. At DEXLab, she co-hosted the (De)Stress VR study, exploring how virtual reality can induce and reduce stress through tailored interventions.",
+  "anna-krispin": "Researcher focusing on VR- and AI-based training for oral communication skills. Examining how immersive environments and generative AI can support learners in practicing public speaking and workplace interactions with realistic feedback. She investigates how these technologies can enhance communication skills, build confidence, and improve training outcomes in both educational and professional contexts."
+}
+
 export const people = [
   person('jonas-heller', 'Jonas Heller', 'Co-Founder & DEXLab Director', 'core', 10, '9aa9b6_e62b00529193489098998e434efd57dc~mv2.png', 'https://www.linkedin.com/in/hellerjonas/'),
   person('tim-hilken', 'Tim Hilken', 'Co-Founder & DEXLab Director', 'core', 20, '9aa9b6_d3c982bb3abe4881ad3cdf6660ecdee5~mv2.png', 'https://www.linkedin.com/in/timhilken/'),
   person('dominik-mahr', 'Dominik Mahr', 'Co-Founder & DEXLab Director', 'core', 30, '9aa9b6_405e0be02ffa4ddb80dd1e113b45a1d7~mv2.jpeg', 'https://www.linkedin.com/in/dominik-mahr-5820083/'),
-  person('roberta-di-palma', 'Roberta Di Palma', 'Co-Founder & DEXLab Coordinator', 'core', 40, '9aa9b6_f1d5a18fd9b94aedaa3e0d2566b3e8b1~mv2.jpeg', 'https://www.linkedin.com/in/roberta-di-palma/'),
+  {...person('roberta-di-palma', 'Roberta Di Palma', 'Co-Founder & DEXLab Coordinator', 'core', 40, '9aa9b6_f1d5a18fd9b94aedaa3e0d2566b3e8b1~mv2.jpeg', 'https://www.linkedin.com/in/roberta-di-palma/'), email: 'r.dipalma@maastrichtuniversity.nl'},
   {
-    ...person('nea-saarreharju', 'Nea Saarreharju', 'DEXLab Manager', 'core', 50, '9aa9b6_d296bb4552c14e4f9cc7ace706447deb~mv2.jpg'),
+    ...person('nea-saarreharju', 'Nea Saarreharju', 'DEXLab Manager', 'core', 5, '9aa9b6_d296bb4552c14e4f9cc7ace706447deb~mv2.jpg'),
     email: 'nea.saarreharju@maastrichtuniversity.nl',
   },
   person('ilias-massignan', 'Ilias Massignan', 'DEXLab Intern', 'intern', 10, '9aa9b6_0afef63ea2b643a6b93afb94b8fd02ac~mv2.jpg', 'https://www.linkedin.com/in/ilias-massignan-5a49b2241/'),
@@ -98,7 +113,8 @@ export const people = [
   person('mark-becker', 'Mark Becker', 'Assistant Professor', 'associate', 50, '9aa9b6_8b5891cd9a5942a8a312a378c2509c07~mv2.png'),
   person('alexandru-maris', 'Alexandru Maris', 'PhD Candidate', 'associate', 60, '9aa9b6_dc03a800f9834a63b9695e61a938baac~mv2.png'),
   person('ibrahim-humdi', 'Ibrahim Humdi', 'PhD Candidate', 'associate', 70, '9aa9b6_d35e0e1598b34fd7bdcc6d2f58db022f~mv2.png'),
-]
+  {...person('stefan-bos', 'Stefan Bos', 'PhD Candidate', 'associate', 80), photo: img('9aa9b6_ed4463295fb949e9825fc42cd7211b85~mv2.jpg', 'Portrait of Stefan Bos', 'imageWithAlt', 0.3)},
+].map((p) => (bios[p._id.slice(7)] ? {...p, bio: bios[p._id.slice(7)]} : p))
 
 // ---------------------------------------------------------------- equipment
 const eq = (name, category, quantity, image, order) => ({

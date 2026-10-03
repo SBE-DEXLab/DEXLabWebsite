@@ -136,7 +136,7 @@ export const person = defineType({
         list: [
           {title: 'Core team', value: 'core'},
           {title: 'Intern', value: 'intern'},
-          {title: 'Associate', value: 'associate'},
+          {title: 'Affiliated Researcher', value: 'associate'},
           {title: 'Alumni (hidden unless a page lists alumni)', value: 'alumni'},
         ],
         layout: 'radio',
