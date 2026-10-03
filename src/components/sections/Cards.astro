@@ -14,17 +14,23 @@ interface Props {
   anchor?: string
   heading?: string
   intro?: string
-  style?: 'icon' | 'photo' | 'steps'
+  style?: 'icon' | 'photo' | 'steps' | 'rows' | 'tiles'
   columns?: number
   items?: Card[]
   tone?: string
 }
+// Three layouts from the old site:
+//  icon  = centred icon, title, text and a navy button ("What DEXLab does")
+//  photo = grey card with a photo on top and a button (workshops, research groups)
+//  steps = rows with an icon tile on the left and text on the right ("Our core activities", services)
+//  rows  = grey text panel on the left, photo on the right, one per row (research groups)
+//  tiles = small grey tiles with an icon and a label (sectors on Build & Implement)
 const {anchor, heading, intro, style = 'icon', columns = 3, items = [], tone = 'default'} = Astro.props
 const ext = (href?: string) => (isExternal(href) ? {target: '_blank', rel: 'noopener'} : {})
 ---
 
 <section id={anchor} class:list={['section', `tone-${tone}`]}>
-  <div class="container">
+  <div class:list={['container', {wide: style === 'icon' || style === 'photo'}]}>
     {
       (heading || intro) && (
         <div class="section-head">
@@ -33,73 +39,230 @@ const ext = (href?: string) => (isExternal(href) ? {target: '_blank', rel: 'noop
         </div>
       )
     }
-    <div class:list={['grid', `style-${style}`]} style={`--cols: ${columns}`}>
-      {
-        items.map((item, i) => (
-          <article class="card lift">
-            {style === 'photo' && item.image?.url && (
-              <div class="card-media">
-                <Img image={item.image} width={560} height={380} sizes="(min-width: 1000px) 380px, (min-width: 640px) 50vw, 100vw" />
+
+    {
+      style === 'steps' ? (
+        <ul class="rows">
+          {items.map((item, i) => (
+            <li class="row">
+              <div class="tile">
+                {item.image?.url ? <Img image={item.image} width={120} fit="max" alt="" /> : <span class="num">{i + 1}</span>}
               </div>
-            )}
-            <div class="card-body">
-              {style === 'icon' && item.image?.url && (
-                <div class="icon">
-                  <Img image={item.image} width={160} fit="max" alt="" />
+              <div>
+                <h3 set:html={brandify(item.title)} />
+                {item.text && <p>{item.text}</p>}
+                {item.link?.href && (
+                  <a class="text-link" href={item.link.href} {...ext(item.link.href)}>
+                    {item.link.label}
+                  </a>
+                )}
+              </div>
+            </li>
+          ))}
+        </ul>
+      ) : style === 'rows' ? (
+        <ul class="split-rows">
+          {items.map((item) => (
+            <li class="split">
+              <div class="panel split-text">
+                <h3 set:html={brandify(item.title)} />
+                {item.text && <p set:html={brandify(item.text)} />}
+                {item.link?.href && (
+                  <a class="text-link" href={item.link.href} {...ext(item.link.href)}>
+                    {item.link.label}
+                  </a>
+                )}
+              </div>
+              {item.image?.url && <Img image={item.image} width={440} height={240} sizes="(min-width: 760px) 440px, 100vw" />}
+            </li>
+          ))}
+        </ul>
+      ) : style === 'tiles' ? (
+        <ul class="tiles" style={`--cols: ${columns}`}>
+          {items.map((item) => (
+            <li>
+              {item.image?.url && <Img image={item.image} width={80} fit="max" alt="" />}
+              <span set:html={brandify(item.title)} />
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <div class:list={['grid', `style-${style}`]} style={`--cols: ${columns}`}>
+          {items.map((item) => (
+            <article class:list={['card', {panel: style === 'photo'}]}>
+              {style === 'photo' && item.image?.url && (
+                <div class="card-media">
+                  <Img image={item.image} width={600} height={480} sizes="(min-width: 980px) 400px, (min-width: 600px) 50vw, 100vw" />
                 </div>
               )}
-              {style === 'steps' && <span class="step">{String(i + 1).padStart(2, '0')}</span>}
-              <h3 set:html={brandify(item.title)} />
-              {item.text && <p>{item.text}</p>}
-              {item.link?.href && (
-                <a class="text-link" href={item.link.href} {...ext(item.link.href)}>
-                  {item.link.label} <span aria-hidden="true">→</span>
-                </a>
-              )}
-            </div>
-          </article>
-        ))
-      }
-    </div>
+              <div class="card-body">
+                {style === 'icon' && item.image?.url && (
+                  <div class="icon">
+                    <Img image={item.image} width={140} fit="max" alt="" />
+                  </div>
+                )}
+                <h3 set:html={brandify(item.title)} />
+                {item.text && <p set:html={brandify(item.text)} />}
+                {item.link?.href && (
+                  <a class:list={['btn', {blue: style === 'photo'}]} href={item.link.href} {...ext(item.link.href)}>
+                    {item.link.label}
+                  </a>
+                )}
+              </div>
+            </article>
+          ))}
+        </div>
+      )
+    }
   </div>
 </section>
 
 <style>
-  .icon {
-    width: 76px;
-    height: 76px;
-    border-radius: 20px;
-    background: var(--peach-2);
-    display: grid;
-    place-items: center;
-    margin-bottom: 6px;
+  .style-icon .card-body {
+    align-items: center;
+    text-align: center;
+    padding-inline: 12px;
+  }
+  .style-icon .card-body .btn {
+    align-self: center;
+    margin-top: 16px;
   }
   .icon :global(img) {
-    width: 52px;
-    height: 52px;
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    margin: 0 auto 8px;
+  }
+  .rows {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 760px;
+    display: grid;
+    gap: 22px;
+  }
+  .row {
+    display: grid;
+    grid-template-columns: 96px 1fr;
+    gap: 22px;
+    align-items: center;
+  }
+  .tone-muted .row {
+    background: #fff;
+    padding: 18px 22px;
+    box-shadow: var(--shadow);
+  }
+  .tile {
+    width: 96px;
+    height: 96px;
+    border-radius: 18px;
+    background: var(--grey);
+    display: grid;
+    place-items: center;
+  }
+  .tone-muted .tile {
+    background: #fff;
+  }
+  .tile :global(img) {
+    width: 68px;
+    height: 68px;
     object-fit: contain;
   }
-  .style-icon .card {
-    border-top: 4px solid transparent;
-    background:
-      linear-gradient(#fff, #fff) padding-box,
-      linear-gradient(90deg, var(--blue), var(--orange)) border-box;
+  .num {
+    font: 700 2rem var(--font-head);
+    color: var(--blue);
   }
-  .step {
-    font-family: var(--font-head);
-    font-weight: 800;
-    font-size: 2.6rem;
-    line-height: 1;
-    background: linear-gradient(135deg, var(--blue), var(--orange));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+  .row h3 {
+    margin: 0 0 4px;
+    font-size: 1.25rem;
   }
-  .style-photo .card-media {
-    aspect-ratio: 3 / 2;
+  .row p {
+    margin: 0 0 4px;
+    font-size: 0.95rem;
   }
-  .tone-blue .card :global(h3),
-  .tone-navy .card :global(h3) {
+  .split-rows {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 840px;
+    display: grid;
+    gap: 22px;
+  }
+  .split {
+    display: grid;
+    grid-template-columns: 1.15fr 1fr;
+    gap: 14px;
+    align-items: stretch;
+  }
+  .split-text {
+    padding: 22px 26px;
+  }
+  .split-text h3 {
+    font-size: 1.05rem;
+    margin: 0 0 8px;
+  }
+  .split-text p {
+    font-size: 0.92rem;
+    margin: 0 0 10px;
+  }
+  .split-text .text-link {
+    display: block;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--ink);
+  }
+  .split :global(img) {
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    object-fit: cover;
+  }
+  .tiles {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 840px;
+    display: grid;
+    grid-template-columns: repeat(var(--cols, 6), 1fr);
+    gap: 16px;
+  }
+  .tiles li {
+    aspect-ratio: 1;
+    background: var(--grey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 8px;
+    text-align: center;
+    font: 700 0.78rem/1.2 var(--font-head);
     color: var(--navy);
+  }
+  .tiles :global(img) {
+    width: 56%;
+    height: auto;
+  }
+  @media (max-width: 760px) {
+    .split {
+      grid-template-columns: 1fr;
+    }
+    .tiles {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media (max-width: 560px) {
+    .row {
+      grid-template-columns: 64px 1fr;
+      gap: 14px;
+    }
+    .tile {
+      width: 64px;
+      height: 64px;
+    }
+    .tile :global(img) {
+      width: 44px;
+      height: 44px;
+    }
   }
 </style>

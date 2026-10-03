@@ -10,7 +10,7 @@ const WIX = 'https://static.wixstatic.com/media/'
 export const img = (id, alt = '', type = 'imageWithAlt', focusY) => ({
   _type: type,
   alt,
-  _sanityAsset: `image@${id.startsWith('http') ? id : WIX + id}`,
+  _sanityAsset: `image@${/^(https?:)?\//.test(id) ? id : WIX + id}`,
   // Focal point, so banners crop around faces (editable in the Studio)
   ...(focusY !== undefined && {hotspot: {_type: 'sanity.imageHotspot', x: 0.5, y: focusY, width: 1, height: 1}}),
 })

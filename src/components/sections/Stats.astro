@@ -88,18 +88,12 @@ const {heading, caption, items = [], tone = 'muted'} = Astro.props
     font-weight: 800;
     font-size: clamp(2.6rem, 6vw, 4.2rem);
     line-height: 1;
-    letter-spacing: -0.03em;
+    letter-spacing: 0;
     color: var(--navy);
     font-variant-numeric: tabular-nums;
   }
   .tone-navy dd {
     color: #fff;
-  }
-  .stat:nth-child(even) dd {
-    color: var(--blue);
-  }
-  .tone-navy .stat:nth-child(even) dd {
-    color: #4cc6f0;
   }
   dt {
     margin-top: 10px;

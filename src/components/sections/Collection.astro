@@ -23,7 +23,7 @@ const {anchor, heading, intro, source, limit, categorySlug, groups, link, tone =
 ---
 
 <section id={anchor} class:list={['section', `tone-${tone}`]}>
-  <div class="container">
+  <div class:list={['container', {wide: ['team', 'workshops', 'equipment'].includes(source)}]}>
     {
       (heading || intro) && (
         <div class="section-head">

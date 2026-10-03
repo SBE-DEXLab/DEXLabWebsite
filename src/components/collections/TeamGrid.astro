@@ -1,14 +1,18 @@
 ---
 import Img from '../Img.astro'
-import SocialIcon from '../SocialIcon.astro'
 import {getPeople} from '../../lib/queries'
+import {brandify} from '../../lib/utils'
 
 interface Props {
   groups: string[]
 }
 const {groups} = Astro.props
 const people = await getPeople(groups)
-const titles: Record<string, string> = {core: 'Our core team', intern: 'The interns', associate: 'The associates', alumni: 'Alumni'}
+const titles: Record<string, string> = {core: 'Our Core Team', intern: 'The Interns', associate: 'The Associates', alumni: 'Alumni'}
+// Cards as on the old site: portrait with rounded corners and a white pill at the bottom holding
+// a navy name tag and the role. Every card shows the same three things: photo, name, role.
+// Up to five cards per row; bigger groups are split into balanced rows (7 becomes 4 + 3).
+const perRow = (n: number) => (n <= 5 ? n : Math.ceil(n / Math.ceil(n / 5)))
 ---
 
 {
@@ -17,38 +21,34 @@ const titles: Record<string, string> = {core: 'Our core team', intern: 'The inte
     if (!members.length) return null
     return (
       <div class:list={['group', `group-${g}`]}>
-        <h2 class="group-title">{titles[g]}</h2>
-        <ul class="team">
-          {members.map((p) => (
-            <li class="person">
-              <div class="photo">
+        <h2 class="rule">{titles[g]}</h2>
+        <ul class="team" style={`--cols: ${perRow(members.length)}`}>
+          {members.map((p) => {
+            const card = (
+              <>
                 {p.photo?.url ? (
-                  <Img image={p.photo} width={360} height={480} sizes="(min-width: 1000px) 270px, 45vw" alt={`Portrait of ${p.name}`} />
+                  <Img image={p.photo} width={340} height={496} sizes="(min-width: 980px) 210px, 45vw" alt={`Portrait of ${p.name}`} />
                 ) : (
                   <span class="initials" aria-hidden="true">{p.name.split(' ').map((n) => n[0]).slice(0, 2).join('')}</span>
                 )}
-                {(p.linkedin || p.website) && (
-                  <div class="links">
-                    {p.linkedin && (
-                      <a href={p.linkedin} target="_blank" rel="noopener" aria-label={`${p.name} on LinkedIn`}>
-                        <SocialIcon platform="linkedin" size={16} />
-                      </a>
-                    )}
-                    {p.website && (
-                      <a href={p.website} target="_blank" rel="noopener" aria-label={`${p.name}, profile page`}>
-                        <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm6.9 6h-3a15.6 15.6 0 0 0-1.4-4A8 8 0 0 1 18.9 8zM12 4c.8 1.2 1.5 2.5 1.9 4h-3.8c.4-1.5 1.1-2.8 1.9-4zM4.3 14a8.2 8.2 0 0 1 0-4h3.4a16.5 16.5 0 0 0 0 4H4.3zm.8 2h3a15.6 15.6 0 0 0 1.4 4A8 8 0 0 1 5.1 16zm3-8h-3a8 8 0 0 1 4.3-4A15.6 15.6 0 0 0 8.1 8zM12 20c-.8-1.2-1.5-2.5-1.9-4h3.8c-.4 1.5-1.1 2.8-1.9 4zm2.3-6H9.7a14.7 14.7 0 0 1 0-4h4.6a14.7 14.7 0 0 1 0 4zm.3 6a15.6 15.6 0 0 0 1.4-4h3a8 8 0 0 1-4.4 4zm1.7-6a16.5 16.5 0 0 0 0-4h3.4a8.2 8.2 0 0 1 0 4h-3.4z"/></svg>
-                      </a>
-                    )}
-                  </div>
+                <span class="pill">
+                  <span class="name">{p.name}</span>
+                  {p.role && <span class="role" set:html={brandify(p.role)} />}
+                </span>
+              </>
+            )
+            return (
+              <li class="person">
+                {p.linkedin ? (
+                  <a class="photo" href={p.linkedin} target="_blank" rel="noopener" title={`${p.name} on LinkedIn`}>
+                    {card}
+                  </a>
+                ) : (
+                  <div class="photo">{card}</div>
                 )}
-              </div>
-              <div class="info">
-                <h3>{p.name}</h3>
-                {p.role && <p class="role">{p.role}</p>}
-                {p.bio && <p class="bio">{p.bio}</p>}
-              </div>
-            </li>
-          ))}
+              </li>
+            )
+          })}
         </ul>
       </div>
     )
@@ -57,20 +57,11 @@ const titles: Record<string, string> = {core: 'Our core team', intern: 'The inte
 
 <style>
   .group + .group {
-    margin-top: clamp(56px, 8vw, 96px);
+    margin-top: clamp(48px, 7vw, 80px);
   }
-  .group-title {
+  .group h2 {
     text-align: center;
-    margin-bottom: 36px;
-  }
-  .group-title::after {
-    content: '';
-    display: block;
-    width: 56px;
-    height: 4px;
-    border-radius: 4px;
-    margin: 16px auto 0;
-    background: linear-gradient(90deg, var(--blue) 0 50%, var(--orange) 50% 100%);
+    margin-bottom: 32px;
   }
   .team {
     list-style: none;
@@ -79,85 +70,82 @@ const titles: Record<string, string> = {core: 'Our core team', intern: 'The inte
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 28px;
-  }
-  .team > li {
-    flex: 0 1 250px;
+    gap: 16px;
+    max-width: calc(var(--cols) * 204px + (var(--cols) - 1) * 16px);
+    margin-inline: auto;
   }
   .person {
-    text-align: center;
+    flex: 0 1 204px;
   }
   .photo {
     position: relative;
-    aspect-ratio: 3 / 4;
+    display: block;
+    aspect-ratio: 312 / 455;
     border-radius: var(--radius);
     overflow: hidden;
-    background: linear-gradient(135deg, var(--peach), #dbeef7);
+    background: var(--grey);
     box-shadow: var(--shadow);
+    text-decoration: none;
   }
   .photo :global(img) {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.5s;
-  }
-  .person:hover .photo :global(img) {
-    transform: scale(1.04);
   }
   .initials {
     display: grid;
     place-items: center;
     height: 100%;
-    font: 800 3rem var(--font-head);
+    font: 700 2.6rem var(--font-head);
     color: var(--navy);
   }
-  .links {
+  .pill {
     position: absolute;
-    right: 12px;
-    bottom: 12px;
+    left: 8px;
+    right: 8px;
+    bottom: 10px;
     display: flex;
+    align-items: center;
     gap: 8px;
-  }
-  .links a {
-    display: grid;
-    place-items: center;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
+    min-height: 34px;
+    padding: 4px 10px 4px 4px;
     background: #fff;
-    color: var(--navy);
-    box-shadow: var(--shadow);
-    transition: background 0.2s, color 0.2s;
+    border-radius: 999px;
   }
-  .links a:hover {
-    background: var(--blue);
+  .name {
+    flex: none;
+    white-space: nowrap;
+    background: var(--navy);
     color: #fff;
-  }
-  .info {
-    padding: 16px 8px 0;
-  }
-  .info h3 {
-    margin: 0 0 4px;
-    font-size: 1.2rem;
+    border-radius: 999px;
+    padding: 5px 10px;
+    font: 700 0.7rem/1.2 var(--font-head);
   }
   .role {
-    margin: 0;
-    color: var(--orange);
-    font-weight: 600;
-    font-size: 0.95rem;
+    flex: 1;
+    min-width: 0;
+    font-size: 0.62rem;
+    line-height: 1.25;
+    color: var(--navy);
   }
-  .bio {
-    margin: 8px 0 0;
-    font-size: 0.92rem;
-    color: var(--muted);
-  }
-  .group-associate .team > li {
-    flex-basis: 200px;
-  }
-  @media (max-width: 560px) {
-    .team > li,
-    .group-associate .team > li {
-      flex-basis: calc(50% - 14px);
+  @media (max-width: 520px) {
+    .person {
+      flex-basis: calc(50% - 8px);
+    }
+    .pill {
+      flex-direction: column;
+      align-items: stretch;
+      border-radius: 14px;
+      padding: 4px;
+      gap: 3px;
+    }
+    .name {
+      white-space: normal;
+      text-align: center;
+    }
+    .role {
+      text-align: center;
+      padding-bottom: 2px;
     }
   }
 </style>
