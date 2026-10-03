@@ -120,12 +120,14 @@ export const sectionCards = defineType({
         list: [
           {title: 'Icon cards', value: 'icon'},
           {title: 'Photo cards', value: 'photo'},
-          {title: 'Numbered steps', value: 'steps'},
+          {title: 'Icon rows (icon left, text right)', value: 'steps'},
+          {title: 'Text panel with photo, one per row', value: 'rows'},
+          {title: 'Small icon tiles (e.g. sectors)', value: 'tiles'},
         ],
       },
       initialValue: 'icon',
     }),
-    defineField({name: 'columns', type: 'number', options: {list: [2, 3, 4]}, initialValue: 3}),
+    defineField({name: 'columns', type: 'number', options: {list: [2, 3, 4, 6]}, initialValue: 3}),
     defineField({
       name: 'items',
       type: 'array',
@@ -241,7 +243,13 @@ export const sectionCta = defineType({
   title: 'Call to action',
   type: 'object',
   icon: BulbOutlineIcon,
-  fields: [heading, intro, defineField({name: 'buttons', type: 'array', of: [{type: 'link'}]}), tone],
+  fields: [
+    defineField({name: 'icon', type: 'imageWithAlt', description: 'Optional small icon above the heading'}),
+    heading,
+    intro,
+    defineField({name: 'buttons', type: 'array', of: [{type: 'link'}]}),
+    tone,
+  ],
   preview: {select: {title: 'heading'}, prepare: ({title}) => ({title: title || 'Call to action', subtitle: 'Call to action'})},
 })
 

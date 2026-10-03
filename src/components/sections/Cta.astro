@@ -1,15 +1,17 @@
 ---
 import Buttons from '../Buttons.astro'
+import Img from '../Img.astro'
 import {brandify} from '../../lib/utils'
-import type {Link} from '../../lib/types'
+import type {Img as Image, Link} from '../../lib/types'
 
 interface Props {
+  icon?: Image
   heading?: string
   intro?: string
   buttons?: Link[]
   tone?: string
 }
-const {heading, intro, buttons, tone = 'peach'} = Astro.props
+const {icon, heading, intro, buttons, tone = 'peach'} = Astro.props
 // Turn a bare email address in the intro into a link.
 const introHtml = (intro || '')
   .replace(/[&<>]/g, (c) => ({'&': '&amp;', '<': '&lt;', '>': '&gt;'})[c]!)
@@ -19,6 +21,7 @@ const introHtml = (intro || '')
 <section class:list={['section cta', `tone-${tone}`]}>
   <div class="container">
     <div class="box">
+      {icon?.url && <Img image={icon} width={170} class="icon" />}
       {heading && <h2 set:html={brandify(heading)} />}
       {intro && <p set:html={introHtml} />}
       <Buttons buttons={buttons} center />
@@ -30,16 +33,22 @@ const introHtml = (intro || '')
   .cta {
     padding-block: clamp(48px, 7vw, 88px);
   }
+  .box :global(.icon) {
+    display: block;
+    width: 150px;
+    height: auto;
+    margin: 0 auto 18px;
+  }
   .box {
     max-width: 820px;
     margin: 0 auto;
     text-align: center;
   }
   h2 {
-    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    font-size: clamp(1.1rem, 2vw, 1.35rem);
+    margin-bottom: 10px;
   }
   p {
-    font-size: 1.1rem;
     margin: 0;
   }
 </style>

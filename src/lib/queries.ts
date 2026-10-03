@@ -18,7 +18,7 @@ const sections = `sections[]{
   _type == "sectionText" => {..., image${image}, body${richText}, buttons[]${link}},
   _type == "sectionCards" => {..., items[]{..., image${image}, link${link}}},
   _type == "sectionGallery" => {..., images[]${image}},
-  _type == "sectionCta" => {..., buttons[]${link}},
+  _type == "sectionCta" => {..., icon${image}, buttons[]${link}},
   _type == "sectionCollection" => {..., link${link}, "categorySlug": category->slug.current},
   _type == "sectionLocation" => {..., "videoUrl": video.asset->url, directions${richText}, directionsImage${image}}
 }`

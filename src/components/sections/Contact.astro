@@ -13,48 +13,34 @@ const settings = await getSettings()
 ---
 
 <section class="section">
-  <div class="container contact">
-    <aside class="details">
-      <h2>Reach us directly</h2>
+  <div class="container">
+    <div class="details">
       {
         settings?.email && (
-          <p>
-            <span class="label">Email</span>
-            <a href={`mailto:${settings.email}`}>{settings.email}</a>
-          </p>
+          <>
+            <h3>Email us:</h3>
+            <p><a href={`mailto:${settings.email}`}>{settings.email}</a></p>
+          </>
         )
       }
-      {
-        settings?.address && (
-          <p>
-            <span class="label">Address</span>
-            {settings.address.split('\n').map((l) => (<>{l}<br /></>))}
-            <a class="text-link" href="/visit-us">Directions <span aria-hidden="true">→</span></a>
-          </p>
-        )
-      }
-      <p>
-        <span class="label">Follow us</span>
-        <span class="socials">
-          {
-            settings?.socials?.map((s) => (
-              <a href={s.url} target="_blank" rel="noopener" aria-label={s.platform}>
-                <SocialIcon platform={s.platform} />
-              </a>
-            ))
-          }
-        </span>
+      <h3>Social Media</h3>
+      <p class="socials">
+        {
+          settings?.socials?.map((s) => (
+            <a href={s.url} target="_blank" rel="noopener" aria-label={s.platform}>
+              <SocialIcon platform={s.platform} />
+            </a>
+          ))
+        }
       </p>
-      <p>
-        <span class="label">Booking the lab or equipment?</span>
-        Check availability in the <a href="https://resourcebooker.maastrichtuniversity.nl/" target="_blank" rel="noopener">Resource Booker</a> and read the <a href="/faq">FAQ</a>.
-      </p>
-    </aside>
-
-    <form class="form" name="contact" method="POST" action="/thanks/?form=contact" data-netlify="true" netlify-honeypot="company">
-      {heading && <h2 set:html={brandify(heading)} />}
-      {intro && <p class="intro">{intro}</p>}
-      <input type="hidden" name="form-name" value="contact" />
+      <a class="btn" href="/visit-us">Visit Us</a>
+    </div>
+    <hr />
+    {heading && <h2 class="form-title" set:html={brandify(heading)} />}
+    {intro && <p class="intro">{intro}</p>}
+    <div class="panel form-panel">
+      <form class="form" name="contact" method="POST" action="/thanks/?form=contact" data-netlify="true" netlify-honeypot="company">
+                  <input type="hidden" name="form-name" value="contact" />
       <p class="hp"><label>Leave this empty <input name="company" tabindex="-1" autocomplete="off" /></label></p>
       <div class="row">
         <div class="field"><label for="c-first">First name</label><input id="c-first" name="first-name" autocomplete="given-name" /></div>
@@ -89,80 +75,76 @@ const settings = await getSettings()
         <input type="checkbox" name="consent" value="yes" required />
         <span>I agree that DEXLab uses my details to answer my message, as described in the <a href="/privacy">privacy statement</a>.</span>
       </label>
-      <button class="btn" type="submit">Send message <span class="arrow" aria-hidden="true">→</span></button>
+      <button class="btn submit" type="submit">Submit</button>
     </form>
+    </div>
   </div>
 </section>
 
 <style>
-  .contact {
-    display: grid;
-    grid-template-columns: 1fr 1.6fr;
-    gap: clamp(32px, 6vw, 72px);
-    align-items: start;
-  }
   .details {
-    background: var(--peach-2);
-    border-radius: var(--radius);
-    padding: 32px;
+    text-align: center;
   }
-  .details h2 {
-    font-size: 1.4rem;
+  .details h3 {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 1.05rem;
+    margin: 18px 0 4px;
   }
   .details p {
-    margin: 0 0 20px;
-  }
-  .label {
-    display: block;
-    font-size: 0.78rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--orange);
-    margin-bottom: 4px;
+    margin: 0;
   }
   .socials {
     display: flex;
-    gap: 10px;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 20px !important;
   }
   .socials a {
     display: grid;
     place-items: center;
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
     background: var(--navy);
     color: #fff;
   }
-  .socials a:hover {
-    background: var(--orange);
+  .details .btn {
+    margin-top: 14px;
   }
-  .form {
-    display: grid;
-    gap: 18px;
+  hr {
+    border: 0;
+    border-top: 1px solid var(--navy);
+    margin: 40px 0 28px;
   }
-  .form h2 {
-    margin: 0;
+  .form-title {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 1.15rem;
+    text-align: center;
+    margin: 0 0 6px;
   }
   .intro {
-    margin: 0;
-    color: var(--muted);
+    text-align: center;
+    margin: 0 auto 20px;
+    max-width: 420px;
+  }
+  .form-panel {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: clamp(20px, 4vw, 40px) clamp(20px, 6vw, 64px);
+  }
+  form {
+    display: grid;
+    gap: 16px;
   }
   .row {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 18px;
   }
-  .form .btn {
-    justify-self: start;
-  }
-  @media (max-width: 860px) {
-    .contact {
-      grid-template-columns: 1fr;
-    }
-    .details {
-      order: 2;
-    }
+  .submit {
+    justify-self: center;
   }
   @media (max-width: 560px) {
     .row {

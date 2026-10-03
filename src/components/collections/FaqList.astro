@@ -1,87 +1,41 @@
 ---
 import {getFaqs} from '../../lib/queries'
 import {renderRichText} from '../../lib/portableText'
+import {brandify} from '../../lib/utils'
 
 interface Props {
   limit?: number
 }
 const all = await getFaqs()
 const faqs = Astro.props.limit ? all.slice(0, Astro.props.limit) : all
+// As on the old site: every question with its answer in a grey box, two columns on wide screens.
 ---
 
 <div class="faq">
   {
-    faqs.map((f, i) => (
-      <details name="faq" open={i === 0}>
-        <summary>
-          <span>{f.question}</span>
-          <span class="icon" aria-hidden="true" />
-        </summary>
-        <div class="answer prose" set:html={renderRichText(f.answer)} />
-      </details>
+    faqs.map((f) => (
+      <article class="item panel">
+        <h3 set:html={brandify(f.question)} />
+        <div class="prose" set:html={renderRichText(f.answer)} />
+      </article>
     ))
   }
 </div>
 
 <style>
   .faq {
-    max-width: 860px;
-    margin: 0 auto;
-    display: grid;
-    gap: 14px;
+    columns: 2 380px;
+    column-gap: 28px;
   }
-  details {
-    background: #fff;
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-    border-left: 4px solid transparent;
-    transition: border-color 0.2s;
+  .item {
+    break-inside: avoid;
+    padding: 22px 24px;
+    margin-bottom: 28px;
   }
-  details[open] {
-    border-left-color: var(--blue);
+  .item h3 {
+    font-size: 1.25rem;
   }
-  summary {
-    list-style: none;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 16px;
-    padding: 20px 24px;
-    font: 700 1.1rem/1.35 var(--font-head);
-    color: var(--navy);
-  }
-  summary::-webkit-details-marker {
-    display: none;
-  }
-  summary:hover {
-    color: var(--blue-dark);
-  }
-  .icon {
-    flex: none;
-    position: relative;
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    background: var(--peach);
-  }
-  .icon::before,
-  .icon::after {
-    content: '';
-    position: absolute;
-    inset: 13px 8px;
-    background: var(--orange);
-    border-radius: 2px;
-    transition: transform 0.25s;
-  }
-  .icon::after {
-    transform: rotate(90deg);
-  }
-  details[open] .icon::after {
-    transform: rotate(0);
-  }
-  .answer {
-    padding: 0 24px 22px;
-    font-size: 1rem;
+  .item :global(.prose) {
+    font-size: 0.92rem;
   }
 </style>

@@ -59,7 +59,7 @@ const categories = Object.keys(labels).filter((c) => items.some((i) => i.categor
   .tabs button {
     font: 600 0.95rem var(--font-body);
     padding: 9px 18px;
-    border-radius: 999px;
+    border-radius: 0;
     border: 1.5px solid var(--line);
     background: #fff;
     color: var(--navy);
@@ -80,14 +80,11 @@ const categories = Object.keys(labels).filter((c) => items.some((i) => i.categor
   }
   .item {
     background: #fff;
-    border-radius: var(--radius);
+    border-radius: 0;
     padding: 22px 16px 18px;
     text-align: center;
-    box-shadow: var(--shadow);
+    box-shadow: none;
     transition: transform 0.25s;
-  }
-  .item:hover {
-    transform: translateY(-3px);
   }
   .img {
     height: 110px;
@@ -107,11 +104,8 @@ const categories = Object.keys(labels).filter((c) => items.some((i) => i.categor
   .qty {
     display: inline-block;
     margin: 8px 0 0;
-    font-weight: 700;
-    color: var(--orange);
-    background: var(--peach-2);
-    border-radius: 999px;
-    padding: 2px 12px;
+    font-weight: 400;
+    color: var(--navy);
     font-size: 0.9rem;
   }
   .desc {
