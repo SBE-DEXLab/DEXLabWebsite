@@ -80,10 +80,10 @@ const person = (id, name, role, group, order, photo, linkedin) => ({
 })
 
 export const people = [
-  person('jonas-heller', 'Jonas Heller', 'DEXLab Director', 'core', 10, '9aa9b6_e62b00529193489098998e434efd57dc~mv2.png', 'https://www.linkedin.com/in/hellerjonas/'),
-  person('tim-hilken', 'Tim Hilken', 'DEXLab Director', 'core', 20, '9aa9b6_d3c982bb3abe4881ad3cdf6660ecdee5~mv2.png', 'https://www.linkedin.com/in/timhilken/'),
-  person('dominik-mahr', 'Dominik Mahr', 'DEXLab Director', 'core', 30, '9aa9b6_405e0be02ffa4ddb80dd1e113b45a1d7~mv2.jpeg', 'https://www.linkedin.com/in/dominik-mahr-5820083/'),
-  person('roberta-di-palma', 'Roberta Di Palma', 'DEXLab Coordinator', 'core', 40, '9aa9b6_f1d5a18fd9b94aedaa3e0d2566b3e8b1~mv2.jpeg', 'https://www.linkedin.com/in/roberta-di-palma/'),
+  person('jonas-heller', 'Jonas Heller', 'Co-Founder & DEXLab Director', 'core', 10, '9aa9b6_e62b00529193489098998e434efd57dc~mv2.png', 'https://www.linkedin.com/in/hellerjonas/'),
+  person('tim-hilken', 'Tim Hilken', 'Co-Founder & DEXLab Director', 'core', 20, '9aa9b6_d3c982bb3abe4881ad3cdf6660ecdee5~mv2.png', 'https://www.linkedin.com/in/timhilken/'),
+  person('dominik-mahr', 'Dominik Mahr', 'Co-Founder & DEXLab Director', 'core', 30, '9aa9b6_405e0be02ffa4ddb80dd1e113b45a1d7~mv2.jpeg', 'https://www.linkedin.com/in/dominik-mahr-5820083/'),
+  person('roberta-di-palma', 'Roberta Di Palma', 'Co-Founder & DEXLab Coordinator', 'core', 40, '9aa9b6_f1d5a18fd9b94aedaa3e0d2566b3e8b1~mv2.jpeg', 'https://www.linkedin.com/in/roberta-di-palma/'),
   {
     ...person('nea-saarreharju', 'Nea Saarreharju', 'DEXLab Manager', 'core', 50, '9aa9b6_d296bb4552c14e4f9cc7ace706447deb~mv2.jpg'),
     email: 'nea.saarreharju@maastrichtuniversity.nl',
