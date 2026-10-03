@@ -66,17 +66,24 @@ const perRow = (n: number) => (n <= 5 ? n : Math.ceil(n / Math.ceil(n / 5)))
             return (
               <li class="person">
                 {p.bio ? (
-                  <div class="photo has-bio" tabindex="0" aria-label={`About ${p.name}`}>
-                    {photo}
-                    <div class:list={['bio', {long: p.bio.length > 260}]}>
+                  <>
+                    <button type="button" class="photo has-bio" aria-label={`About ${p.name}`} aria-expanded="false" data-bio-toggle>
+                      {photo}
+                      <span class="bio-hint" aria-hidden="true">Bio</span>
+                    </button>
+                    <div class="bio" role="dialog" aria-label={`About ${p.name}`}>
+                      <button type="button" class="bio-close" aria-label="Close" data-bio-close>
+                        ×
+                      </button>
+                      <p class="bio-name">{p.name}</p>
                       <p>{p.bio}</p>
                       {p.linkedin && (
                         <a href={p.linkedin} target="_blank" rel="noopener">
-                          LinkedIn
+                          LinkedIn ↗
                         </a>
                       )}
                     </div>
-                  </div>
+                  </>
                 ) : p.linkedin ? (
                   <a class="photo" href={p.linkedin} target="_blank" rel="noopener" title={`${p.name} on LinkedIn`}>
                     {photo}
@@ -102,6 +109,33 @@ const perRow = (n: number) => (n <= 5 ? n : Math.ceil(n / Math.ceil(n / 5)))
     )
   })
 }
+
+<script>
+  // Tap (touch) or Enter/Space opens a bio; tapping elsewhere, the close button or Escape closes it.
+  const people = document.querySelectorAll<HTMLElement>('.person')
+  const closeAll = () =>
+    people.forEach((p) => {
+      p.classList.remove('open')
+      p.querySelector('[data-bio-toggle]')?.setAttribute('aria-expanded', 'false')
+    })
+  document.querySelectorAll<HTMLButtonElement>('[data-bio-toggle]').forEach((b) =>
+    b.addEventListener('click', (e) => {
+      e.stopPropagation()
+      const person = b.closest('.person')!
+      const wasOpen = person.classList.contains('open')
+      closeAll()
+      if (!wasOpen) {
+        person.classList.add('open')
+        b.setAttribute('aria-expanded', 'true')
+      }
+    }),
+  )
+  document.querySelectorAll('[data-bio-close]').forEach((b) => b.addEventListener('click', closeAll))
+  document.addEventListener('click', (e) => {
+    if (!(e.target as HTMLElement).closest('.bio')) closeAll()
+  })
+  document.addEventListener('keydown', (e) => e.key === 'Escape' && closeAll())
+</script>
 
 <style>
   .group + .group {
@@ -135,50 +169,113 @@ const perRow = (n: number) => (n <= 5 ? n : Math.ceil(n / Math.ceil(n / 5)))
     box-shadow: var(--shadow);
     transition: transform 0.25s, box-shadow 0.25s;
   }
+  /* Bio card: opens over the portrait on hover or focus (desktop), slightly wider than the
+     card so the text is comfortable to read; on phones it slides up from the bottom on tap. */
+  .person {
+    position: relative;
+  }
+  button.photo {
+    width: 100%;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+    font: inherit;
+  }
+  .bio-hint {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    z-index: 1;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: rgb(255 255 255 / 0.92);
+    color: var(--navy);
+    font: 700 0.72rem var(--font-head);
+    letter-spacing: 0.04em;
+  }
   .bio {
     position: absolute;
-    inset: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: safe center;
-    gap: 12px;
-    padding: 18px;
-    background: rgb(0 28 61 / 0.9);
+    z-index: 20;
+    top: -12px;
+    left: calc(50% - min(170px, 46vw));
+    width: min(340px, 92vw);
+    padding: 26px 26px 22px;
+    border-radius: var(--radius);
+    background: var(--navy);
     color: #fff;
     text-align: left;
-    overflow-y: auto;
+    box-shadow: 0 24px 60px rgb(0 28 61 / 0.35);
     opacity: 0;
-    transition: opacity 0.25s;
+    visibility: hidden;
+    transform: translateY(8px) scale(0.98);
+    transition:
+      opacity 0.2s,
+      transform 0.2s,
+      visibility 0.2s;
   }
   .bio p {
-    margin: 0;
-    font-size: 0.78rem;
-    line-height: 1.5;
+    margin: 0 0 14px;
+    font-size: 0.9rem;
+    line-height: 1.6;
   }
-  .bio.long {
-    padding: 14px 15px;
-    gap: 8px;
-  }
-  .bio.long p {
-    font-size: 0.68rem;
-    line-height: 1.45;
+  .bio .bio-name {
+    font: 700 1.05rem var(--font-head);
+    margin-bottom: 8px;
   }
   .bio a {
     color: #fff;
     font-weight: 700;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   .bio a:hover {
     color: var(--blue);
   }
-  .has-bio {
-    cursor: default;
+  .bio-close {
+    display: none;
   }
-  .has-bio:hover .bio,
-  .has-bio:focus-within .bio {
+  @media (hover: hover) {
+    .person:hover .bio,
+    .person:focus-within .bio {
+      opacity: 1;
+      visibility: visible;
+      transform: none;
+    }
+  }
+  .person.open .bio {
     opacity: 1;
+    visibility: visible;
+    transform: none;
   }
-  .has-bio:hover,
+  @media (hover: none), (max-width: 560px) {
+    .bio {
+      position: fixed;
+      top: auto;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      max-height: 75vh;
+      overflow-y: auto;
+      border-radius: 20px 20px 0 0;
+      padding: 28px 24px 32px;
+      transform: translateY(100%);
+    }
+    .person.open .bio {
+      transform: none;
+    }
+    .bio-close {
+      display: block;
+      position: absolute;
+      top: 10px;
+      right: 14px;
+      border: 0;
+      background: none;
+      color: #fff;
+      font-size: 1.8rem;
+      line-height: 1;
+      cursor: pointer;
+    }
+  }
+  .person:hover .has-bio,
   a.photo:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-hover);
