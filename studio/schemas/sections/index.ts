@@ -61,6 +61,7 @@ export const sectionHero = defineType({
       type: 'string',
       options: {
         list: [
+          {title: 'Text left, photo right (landing page)', value: 'split'},
           {title: 'Photo with text overlay', value: 'overlay'},
           {title: 'Photo banner, text below', value: 'banner'},
           {title: 'Text only', value: 'plain'},

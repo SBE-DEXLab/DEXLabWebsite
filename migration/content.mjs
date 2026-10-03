@@ -115,8 +115,9 @@ export const people = [
   {...person('stefan-bos', 'Stefan Bos', 'PhD Candidate', 'associate', 80), photo: img('9aa9b6_ed4463295fb949e9825fc42cd7211b85~mv2.jpg', 'Portrait of Stefan Bos', 'imageWithAlt', 0.3)},
 ].map((p) => (bios[p._id.slice(7)] ? {...p, bio: bios[p._id.slice(7)]} : p))
 
-// Former managers and interns, from their "Meet our new ..." blog posts. Periods follow the post dates.
-const alum = (id, name, role, period, post, order) => ({
+// Former managers and interns, from their "Meet our new ..." blog posts (photos from the same posts).
+// period = the academic year they started (September to August); order sorts within the year.
+const alum = (id, name, role, period, post, photo, order) => ({
   _id: `person-${id}`,
   _type: 'person',
   name,
@@ -124,27 +125,35 @@ const alum = (id, name, role, period, post, order) => ({
   group: 'alumni',
   period,
   introPost: ref(`post-${post}`),
+  photo: {
+    ...img(`9aa9b6_${photo}`, `Portrait of ${name}`, 'imageWithAlt', 0.3),
+    // Group-post photos are full-length: crop to head and shoulders for the round thumbnails
+    ...(FULL_LENGTH.some((f) => photo.startsWith(f)) && {crop: {_type: 'sanity.imageCrop', top: 0.06, bottom: 0.5, left: 0.14, right: 0.14}}),
+  },
   order,
 })
+const FULL_LENGTH = ['91f31ebc', '0fa2d5d6', 'a322986d', '3c67a926', 'b1eddc90', '4451e7d3', '5ca45d54', '766d9179', '07baaa19']
 people.push(
-  alum('noah-moonen', 'Noah Moonen', 'DEXLab Manager', '2022 to 2024', 'meet-the-new-dexlab-manager', 10),
-  alum('david-grigorjan', 'David Grigorjan', 'DEXLab Manager', '2024 to 2025', 'meet-our-new-dexlab-manager-starting-in-february', 20),
-  alum('brian-arets', 'Brian Arets', 'DEXLab Manager', '2025 to 2026', 'meet-our-new-dexlab-manager', 30),
-  alum('moritz-wigger', 'Moritz Wigger', 'Thesis Intern', '2023', 'meet-our-first-international-intern', 110),
-  alum('claudia-fasano', 'Claudia Fasano', 'DEXLab Intern', '2023 to 2024', 'meet-our-new-intern-claudia-fasano', 120),
-  alum('thies-verbraak', 'Thies Verbraak', 'DEXLab Intern', '2023 to 2024', 'meet-our-new-intern-thies-verbraak', 130),
-  alum('lakkoju-nikhilesh-sai-acharya', 'Lakkoju Nikhilesh Sai Acharya', 'DEXLab Intern', '2023 to 2024', 'meet-our-new-intern-lakkoju-nikhilesh-sai-acharya', 140),
-  alum('chau-giang-nguyen', 'Chau Giang Nguyen', 'DEXLab Intern', '2023 to 2024', 'meet-our-new-intern-chau-giang-nguyen', 150),
-  alum('steve-biewer', 'Steve Biewer', 'DEXLab Intern', '2023 to 2024', 'meet-our-new-intern-steve-biewer', 160),
-  alum('adam-knaus', 'Adam Knaus', 'Thesis Intern', '2024', 'our-team-is-expanding-introducing-our-new-interns', 170),
-  alum('angela-fasana-vacca', 'Angela Fasana Vacca', 'Thesis Intern', '2024', 'our-team-is-expanding-introducing-our-new-interns', 180),
-  alum('botond-kovacs', 'Botond Kovács', 'Thesis Intern', '2024', 'our-team-is-expanding-introducing-our-new-interns', 190),
-  alum('malina-alizei', 'Malina Alizei', 'Thesis Intern', '2024', 'our-team-is-expanding-introducing-our-new-interns', 200),
-  alum('mariska-geerts', 'Mariska Geerts', 'Thesis Intern', '2024', 'our-team-is-expanding-introducing-our-new-interns', 210),
-  alum('martina-pagano', 'Martina Pagano', 'Thesis Intern', '2025', 'welcome-new-thesis-internship-students', 220),
-  alum('ayat-azzimani', 'Ayat Azzimani', 'Thesis Intern', '2025', 'welcome-new-thesis-internship-students', 230),
-  alum('lara-grunschel', 'Lara Grunschel', 'Thesis Intern', '2025', 'welcome-new-thesis-internship-students', 240),
-  alum('laura-grisi-chavarria', 'Laura Grisi Chavarria', 'Thesis Intern', '2025', 'welcome-new-thesis-internship-students', 250),
+  alum('noah-moonen', 'Noah Moonen', 'DEXLab Manager', '2022/23', 'meet-the-new-dexlab-manager', '5b180593bf02408ea83aa1d283b2d8d6~mv2.jpg', 10),
+  alum('philipp', 'Philipp', 'DEXLab Intern', '2022/23', 'meet-the-new-dexlab-intern', '9a0c8b59cb4a4a9181417a2c9919befa~mv2.png', 20),
+  alum('moritz-wigger', 'Moritz Wigger', 'Thesis Intern', '2022/23', 'meet-our-first-international-intern', '2a93fd3d22634d9d8bdfb72ba38b50a2~mv2.png', 30),
+  alum('david-grigorjan', 'David Grigorjan', 'DEXLab Manager', '2023/24', 'meet-our-new-dexlab-manager-starting-in-february', 'be17fc3a748f47fab3c9c1784032dd43~mv2.jpg', 110),
+  alum('claudia-fasano', 'Claudia Fasano', 'DEXLab Intern', '2023/24', 'meet-our-new-intern-claudia-fasano', '2af159f058b94766a7ccc4c97e52e94b~mv2.png', 120),
+  alum('thies-verbraak', 'Thies Verbraak', 'DEXLab Intern', '2023/24', 'meet-our-new-intern-thies-verbraak', 'cb8631cf58494307ad60961ca5390354~mv2.jpeg', 130),
+  alum('lakkoju-nikhilesh-sai-acharya', 'Lakkoju Nikhilesh Sai Acharya', 'DEXLab Intern', '2023/24', 'meet-our-new-intern-lakkoju-nikhilesh-sai-acharya', '3a8e8544aa3c4dd097b804212809655f~mv2.jpeg', 140),
+  alum('chau-giang-nguyen', 'Chau Giang Nguyen', 'DEXLab Intern', '2023/24', 'meet-our-new-intern-chau-giang-nguyen', '17d99b9d949647b49dacaf92aadc99e5~mv2.jpeg', 150),
+  alum('steve-biewer', 'Steve Biewer', 'DEXLab Intern', '2023/24', 'meet-our-new-intern-steve-biewer', '04a8cd24c3bc43feb91bfb42c49e25bd~mv2.png', 160),
+  alum('adam-knaus', 'Adam Knaus', 'Thesis Intern', '2023/24', 'our-team-is-expanding-introducing-our-new-interns', '91f31ebc94b44c10978472586f8e94db~mv2.png', 170),
+  alum('angela-fasana-vacca', 'Angela Fasana Vacca', 'Thesis Intern', '2023/24', 'our-team-is-expanding-introducing-our-new-interns', '0fa2d5d6d73d47fcbdcaa3b314448059~mv2.png', 180),
+  alum('botond-kovacs', 'Botond Kovács', 'Thesis Intern', '2023/24', 'our-team-is-expanding-introducing-our-new-interns', 'a322986d62ca4be4b984ee59c808f95f~mv2.png', 190),
+  alum('michael-kallas', 'Michael Kallas', 'Thesis Intern', '2023/24', 'our-team-is-expanding-introducing-our-new-interns', '3c67a926426349a29403853678d7f505~mv2.png', 200),
+  alum('malina-alizei', 'Malina Alizei', 'Thesis Intern', '2023/24', 'our-team-is-expanding-introducing-our-new-interns', 'b1eddc90351f41909fea89ceaef12a10~mv2.jpg', 210),
+  alum('mariska-geerts', 'Mariska Geerts', 'Thesis Intern', '2023/24', 'our-team-is-expanding-introducing-our-new-interns', '4451e7d3ff8649e5ad81138ef9982807~mv2.png', 220),
+  alum('brian-arets', 'Brian Arets', 'DEXLab Manager', '2024/25', 'meet-our-new-dexlab-manager', 'c1287cbce02643899445fec2b0505635~mv2.jpg', 310),
+  alum('martina-pagano', 'Martina Pagano', 'Thesis Intern', '2024/25', 'welcome-new-thesis-internship-students', '5ca45d540f364b6d8831013380b2bfec~mv2.jpeg', 320),
+  alum('ayat-azzimani', 'Ayat Azzimani', 'Thesis Intern', '2024/25', 'welcome-new-thesis-internship-students', '766d917953c745bda3cecef7ea864bdf~mv2.jpeg', 330),
+  alum('lara-grunschel', 'Lara Grunschel', 'Thesis Intern', '2024/25', 'welcome-new-thesis-internship-students', '07baaa19d6e24689933a6d6f8be6c705~mv2.jpeg', 340),
+  alum('laura-grisi-chavarria', 'Laura Grisi Chavarria', 'Thesis Intern', '2024/25', 'welcome-new-thesis-internship-students', 'e49bc722bc864c689e979faa19c1be64~mv2.jpg', 350),
 )
 
 // ---------------------------------------------------------------- equipment
@@ -398,10 +407,10 @@ export const pages = [
   page('home', 'Home', [
     section('sectionHero', {
       heading: 'DEXLab the Digital Experience Lab',
-      image: img('9aa9b6_086d3e6d6f7947c0bec07e2c8437c2ea~mv2.jpg', 'Participants trying VR headsets in a DEXLab workshop', 'imageWithAlt', 0.45),
+      image: img('9aa9b6_622b7a14b9c941688d04edf7c37f7ccc~mv2.jpg', 'The DEXLab team holding VR headsets', 'imageWithAlt', 0.35),
       subheading:
         'We investigate how digital technologies transform human experience. Our work brings together immersive experiences, service robots, biometric tools, and artificial intelligence. Through cross-disciplinary collaboration, research, and hands-on workshops, we help students, researchers, and industry partners explore how technology can improve education, services, and society.',
-      layout: 'banner',
+      layout: 'split',
       buttons: [link('Read More', '/about')],
     }),
     section('sectionCards', {

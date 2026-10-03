@@ -146,7 +146,7 @@ export const person = defineType({
     defineField({
       name: 'period',
       type: 'string',
-      description: 'For alumni: when they were at DEXLab, e.g. 2023 or 2023 to 2024',
+      description: 'For alumni: the academic year they started, e.g. 2023/24. The list is grouped by it, newest first.',
       hidden: ({document}) => document?.group !== 'alumni',
     }),
     defineField({

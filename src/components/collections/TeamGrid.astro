@@ -19,30 +19,37 @@ const perRow = (n: number) => (n <= 5 ? n : Math.ceil(n / Math.ceil(n / 5)))
   groups.map((g) => {
     const members = people.filter((p) => p.group === g)
     if (!members.length) return null
-    // Alumni: a compact list, each name linking to their introduction post.
+    // Alumni: smaller photo cards grouped by the academic year they started, newest first.
     if (g === 'alumni') {
-      const lists = [
-        {title: 'Former DEXLab Managers', items: members.filter((p) => /manager/i.test(p.role || ''))},
-        {title: 'Former Interns', items: members.filter((p) => !/manager/i.test(p.role || ''))},
-      ].filter((l) => l.items.length)
+      const years = [...new Set(members.map((p) => p.period || 'Earlier'))].sort().reverse()
       return (
         <div class="group group-alumni">
           <h2 class="rule">{titles[g]}</h2>
-          <div class="alumni">
-            {lists.map((l) => (
-              <div class:list={['alumni-list', {wide: l.items.length > 6}]}>
-                <h3>{l.title}</h3>
-                <ul>
-                  {l.items.map((p) => (
-                    <li>
-                      {p.introPost ? <a href={`/post/${p.introPost}`}>{p.name}</a> : <strong>{p.name}</strong>}
-                      <span>{[p.role, p.period].filter(Boolean).join(', ')}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
+          {years.map((y) => (
+            <div class="alumni-year">
+              <h3>{y}</h3>
+              <ul class="alumni">
+                {members
+                  .filter((p) => (p.period || 'Earlier') === y)
+                  .map((p) => {
+                    const inner = (
+                      <>
+                        <span class="alum-photo">
+                          {p.photo?.url ? (
+                            <Img image={p.photo} width={240} height={240} sizes="120px" alt={`Portrait of ${p.name}`} />
+                          ) : (
+                            <span class="initials small" aria-hidden="true">{p.name.split(' ').map((n) => n[0]).slice(0, 2).join('')}</span>
+                          )}
+                        </span>
+                        <span class="alum-name">{p.name}</span>
+                        {p.role && <span class="alum-role">{p.role}</span>}
+                      </>
+                    )
+                    return <li>{p.introPost ? <a href={`/post/${p.introPost}`}>{inner}</a> : <div>{inner}</div>}</li>
+                  })}
+              </ul>
+            </div>
+          ))}
         </div>
       )
     }
@@ -205,58 +212,70 @@ const perRow = (n: number) => (n <= 5 ? n : Math.ceil(n / Math.ceil(n / 5)))
     line-height: 1.45;
     color: var(--muted);
   }
+  .alumni-year {
+    max-width: 1100px;
+    margin: 0 auto 40px;
+  }
+  .alumni-year h3 {
+    font-size: 1.05rem;
+    color: var(--blue-dark);
+    letter-spacing: 0.04em;
+    text-align: center;
+    margin-bottom: 20px;
+  }
   .alumni {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 24px;
-    align-items: start;
-    max-width: 1040px;
-    margin: 0 auto;
-  }
-  .alumni-list {
-    background: var(--grey);
-    border-radius: var(--radius);
-    padding: clamp(24px, 3vw, 36px);
-  }
-  .alumni-list h3 {
-    font-size: 1.1rem;
-    margin-bottom: 18px;
-  }
-  .alumni-list ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 28px 20px;
   }
-  .alumni-list.wide ul {
-    columns: 2 220px;
-    column-gap: 32px;
+  .alumni li {
+    width: 140px;
+    text-align: center;
   }
-  .alumni-list li {
-    break-inside: avoid;
-    padding: 8px 0;
-    border-bottom: 1px solid rgb(0 28 61 / 0.1);
+  .alumni a,
+  .alumni li > div {
     display: flex;
     flex-direction: column;
-  }
-  .alumni-list li a,
-  .alumni-list li strong {
-    font-family: var(--font-head);
-    font-weight: 700;
-    color: var(--navy);
+    align-items: center;
+    color: inherit;
     text-decoration: none;
   }
-  .alumni-list li a:hover {
-    color: var(--blue);
-    text-decoration: underline;
+  .alum-photo {
+    display: block;
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: var(--grey);
+    box-shadow: var(--shadow);
+    margin-bottom: 12px;
+    transition: transform 0.25s;
   }
-  .alumni-list li span {
-    font-size: 0.85rem;
+  .alumni a:hover .alum-photo {
+    transform: translateY(-3px);
+  }
+  .alum-photo :global(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .initials.small {
+    font-size: 1.6rem;
+  }
+  .alum-name {
+    font: 700 0.92rem/1.3 var(--font-head);
+    color: var(--navy);
+  }
+  .alumni a:hover .alum-name {
+    color: var(--blue-dark);
+  }
+  .alum-role {
+    font-size: 0.8rem;
     color: var(--muted);
-  }
-  @media (max-width: 760px) {
-    .alumni {
-      grid-template-columns: 1fr;
-    }
   }
   @media (max-width: 560px) {
     .team {
