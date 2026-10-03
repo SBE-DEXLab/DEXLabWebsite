@@ -66,6 +66,8 @@ iframe {
 }
 img {
   height: auto;
+  /* when a photo is cropped with object-fit, keep faces (upper third) rather than the middle */
+  object-position: 50% 33%;
 }
 strong,
 b {

@@ -15,7 +15,9 @@ interface Opts {
 export function imageUrl(img: Img | undefined, {width, height, fit = 'crop'}: Opts): string | undefined {
   if (!img?.url) return undefined
   if (builder && img.ref && img.url.includes('cdn.sanity.io')) {
-    let b = builder.image({asset: {_ref: img.ref}, crop: img.crop, hotspot: img.hotspot}).width(width).auto('format').quality(80)
+    // Without an editor-set focal point, crops keep the upper third, where faces usually are.
+    const hotspot = img.hotspot ?? {x: 0.5, y: 0.33, width: 1, height: 1}
+    let b = builder.image({asset: {_ref: img.ref}, crop: img.crop, hotspot}).width(width).auto('format').quality(80)
     if (height) b = b.height(height).fit(fit === 'crop' ? 'crop' : 'max')
     return b.url()
   }

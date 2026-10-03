@@ -1,8 +1,10 @@
 // Hand-migrated content from www.sbe-dexlab.com (Wix), October 2026.
 // Structure follows the Sanity schemas in studio/schemas. Copy is kept as on the
 // old site, with typos fixed and Wix placeholder text removed.
+import fs from 'node:fs'
 import {img, arrImg, file, ref, arrRef, slug, link, pt, section, card, kv, key} from './lib.mjs'
 
+const focus = JSON.parse(fs.readFileSync(new URL('./photo-focus.json', import.meta.url), 'utf8'))
 const EMAIL = 'sbe-dexlab@maastrichtuniversity.nl'
 const mailto = (subject) => `mailto:${EMAIL}${subject ? `?subject=${encodeURIComponent(subject)}` : ''}`
 const SBE = 'https://www.maastrichtuniversity.nl/about-um/faculties/school-business-and-economics'
@@ -80,12 +82,12 @@ const person = (id, name, role, group, order, photo, linkedin) => ({
 
 // Bios as on the old Wix team page, shown when hovering over (or tapping) a portrait.
 const bios = {
-  "jonas-heller": "Director of the DEXLab and Assistant Professor at Maastricht University. My research explores how AI, AR/VR, and emerging technologies like brain-computer interfaces reshape consumer behaviour and business landscapes.",
-  "tim-hilken": "Director of the DEXLab and Assistant Professor at Maastricht University. I focus on digital marketing and developments in industry 4.0, particularly the role of new technologies such as Augmented and Virtual Reality and Artificial Intelligence.",
-  "dominik-mahr": "Director of the DEXLab and Assistant Professor at Maastricht University. His work integrates research, education and business practice of marketing, innovation, digitisation, strategy, services and design thinking.",
-  "roberta-di-palma": "Roberta is an Assistant Professor in Educational Research and Development at SBE, researching technology-enabled services in education and business, with a focus on Virtual Reality. As co-founder of DEXLab, she leads projects on digital and immersive technologies. She holds a Bachelor's in International Business and a Master's in Strategic Marketing, both from Maastricht University.",
+  "jonas-heller": "Jonas Heller is a tenured Assistant Professor of Marketing at Maastricht University School of Business and Economics and co-founder and Scientific Director of DEXLab. His research examines how artificial intelligence, augmented and virtual reality, and other emerging technologies such as brain-computer interfaces shape consumer decision-making, service experiences, and well-being. He holds a PhD in Marketing from the University of New South Wales and has published more than 30 peer-reviewed articles.",
+  "tim-hilken": "Tim Hilken is an Associate Professor in the Department of Marketing and Supply Chain Management at Maastricht University School of Business and Economics and a co-founder of DEXLab. His research focuses on the user experience of augmented reality in consumer and business markets, in particular the psychological mechanisms through which AR creates experiential value and improves decision-making. He also studies digital marketing and the role of virtual reality and artificial intelligence, and collaborates with technology providers and firms on lab and field studies.",
+  "dominik-mahr": "Dominik Mahr is Professor of Digital Innovation and Marketing at Maastricht University School of Business and Economics, Scientific Director of the Service Science Factory, and a co-founder of DEXLab. His work integrates research, education and business practice in marketing, innovation, digitization, strategy, services and design thinking. His research covers customer co-creation, service innovation and emerging technologies such as service robots, the Internet of Things and augmented reality.",
+  "roberta-di-palma": "Roberta Di Palma is an Assistant Professor in Educational Research and Development at Maastricht University School of Business and Economics and a co-founder of DEXLab, where she leads projects on digital and immersive technologies. Her research examines technology-enabled services in education and business, with a focus on virtual reality, including the role of feedback in VR-based presentation skills training. She holds a Bachelor's in International Business and a Master's in Strategic Marketing, both from Maastricht University.",
   "stefan-bos": "PhD candidate at SBE. His research focuses on emotional and behavioral change using Virtual Reality, in particular how Virtual Reality can be used to increase empathy and understanding towards stigmatized groups of people or situations.",
-  "nea-saarreharju": "First full-time DEXLab Manager, for all things research, education and management of our technologies.",
+  "nea-saarreharju": "Nea Saarreharju is the DEXLab Manager and supports the lab's research, education and the management of its technologies. She holds a Bachelor's in Educational Science from a German university and a Master's in Educational Science and Technology from the University of Twente. Her research interests center on how technology and games can support learning, in particular speaking and communication skills in foreign languages.",
   "ilias-massignan": "Intern of the DEXLab and a Master student at Maastricht University. He is currently pursuing a Master’s in Strategic Marketing and writing his thesis on how immersive technologies can be connected to real-world applications in marketing and education.",
   "yosune-uribe": "Intern at the DEXLab and a Master’s student at Maastricht University. She is currently following the Strategic Marketing programme and exploring how AI-generated fashion recommendations can influence consumers’ sense of self-expression and purchase intentions.",
   "wojciech-mandrysch": "Intern at the DEXLab and a Master’s student at Maastricht University. He is currently following the Supply Chain programme and writing his thesis on how agentic AI can be used in procurement negotiations, while also contributing to projects investigating LLM use cases in education.",
@@ -107,12 +109,12 @@ export const people = [
   person('wojciech-mandrysch', 'Wojciech Mandrysch', 'DEXLab Intern', 'intern', 30, '9aa9b6_087e4e61290940be93a3e29958446b78~mv2.jpg', 'https://www.linkedin.com/in/wojciech-mandrysch/'),
   person('corinna-rott', 'Corinna Rott', 'PhD Candidate', 'associate', 10, '9aa9b6_94e13b3fad2d494e88b0fc42a679c124~mv2.jpg'),
   person('anna-krispin', 'Anna Krispin', 'PhD Candidate', 'associate', 20, '9aa9b6_d59ed18501f14dc1a79f350945c57e75~mv2.png'),
-  person('roman-briker', 'Roman Briker', 'Assistant Professor', 'associate', 30, '9aa9b6_c7c5b392528b49ddbc7581c8a0d03c8a~mv2.png'),
-  person('joana-duhamel', 'Joana Duhamel', 'PhD Candidate', 'associate', 40, '9aa9b6_2a0beea703d04005ad39265cd9c8fac5~mv2.png'),
+  person('roman-briker', 'Roman Briker', 'Assistant Professor', 'associate', 30, '9aa9b6_c7c5b392528b49ddbc7581c8a0d03c8a~mv2.png', 'https://www.linkedin.com/in/roman-briker-607265a1'),
+  person('joana-duhamel', 'Joana Duhamel', 'PhD Candidate', 'associate', 40, '9aa9b6_2a0beea703d04005ad39265cd9c8fac5~mv2.png', 'https://www.linkedin.com/in/joanaduhamel/'),
   person('mark-becker', 'Mark Becker', 'Assistant Professor', 'associate', 50, '9aa9b6_8b5891cd9a5942a8a312a378c2509c07~mv2.png'),
-  person('alexandru-maris', 'Alexandru Maris', 'PhD Candidate', 'associate', 60, '9aa9b6_dc03a800f9834a63b9695e61a938baac~mv2.png'),
+  person('alexandru-maris', 'Alexandru Maris', 'PhD Candidate', 'associate', 60, '9aa9b6_dc03a800f9834a63b9695e61a938baac~mv2.png', 'https://www.linkedin.com/in/marisalexandru/'),
   person('ibrahim-humdi', 'Ibrahim Humdi', 'PhD Candidate', 'associate', 70, '9aa9b6_d35e0e1598b34fd7bdcc6d2f58db022f~mv2.png'),
-  {...person('stefan-bos', 'Stefan Bos', 'PhD Candidate', 'associate', 80), photo: img('9aa9b6_ed4463295fb949e9825fc42cd7211b85~mv2.jpg', 'Portrait of Stefan Bos', 'imageWithAlt', 0.3)},
+  {...person('stefan-bos', 'Stefan Bos', 'PhD Candidate', 'associate', 80), linkedin: 'https://www.linkedin.com/in/stefan-bos97/', photo: img('9aa9b6_ed4463295fb949e9825fc42cd7211b85~mv2.jpg', 'Portrait of Stefan Bos', 'imageWithAlt', 0.3)},
 ].map((p) => (bios[p._id.slice(7)] ? {...p, bio: bios[p._id.slice(7)]} : p))
 
 // Former managers and interns, from their "Meet our new ..." blog posts (photos from the same posts).
@@ -125,14 +127,9 @@ const alum = (id, name, role, period, post, photo, order) => ({
   group: 'alumni',
   period,
   introPost: ref(`post-${post}`),
-  photo: {
-    ...img(`9aa9b6_${photo}`, `Portrait of ${name}`, 'imageWithAlt', 0.3),
-    // Group-post photos are full-length: crop to head and shoulders for the round thumbnails
-    ...(FULL_LENGTH.some((f) => photo.startsWith(f)) && {crop: {_type: 'sanity.imageCrop', top: 0.06, bottom: 0.5, left: 0.14, right: 0.14}}),
-  },
+  photo: img(`9aa9b6_${photo}`, `Portrait of ${name}`),
   order,
 })
-const FULL_LENGTH = ['91f31ebc', '0fa2d5d6', 'a322986d', '3c67a926', 'b1eddc90', '4451e7d3', '5ca45d54', '766d9179', '07baaa19']
 people.push(
   alum('noah-moonen', 'Noah Moonen', 'DEXLab Manager', '2022/23', 'meet-the-new-dexlab-manager', '5b180593bf02408ea83aa1d283b2d8d6~mv2.jpg', 10),
   alum('philipp', 'Philipp', 'DEXLab Intern', '2022/23', 'meet-the-new-dexlab-intern', '9a0c8b59cb4a4a9181417a2c9919befa~mv2.png', 20),
@@ -155,6 +152,10 @@ people.push(
   alum('lara-grunschel', 'Lara Grunschel', 'Thesis Intern', '2024/25', 'welcome-new-thesis-internship-students', '07baaa19d6e24689933a6d6f8be6c705~mv2.jpeg', 340),
   alum('laura-grisi-chavarria', 'Laura Grisi Chavarria', 'Thesis Intern', '2024/25', 'welcome-new-thesis-internship-students', 'e49bc722bc864c689e979faa19c1be64~mv2.jpg', 350),
 )
+
+// Face-centred focal points (and, for alumni, a square head-and-shoulders crop), detected from
+// the photos with OpenCV and checked by eye. See migration/photo-focus.json.
+for (const p of people) if (p.photo && focus[p._id]) Object.assign(p.photo, focus[p._id])
 
 // ---------------------------------------------------------------- equipment
 const eq = (name, category, quantity, image, order) => ({
@@ -654,7 +655,8 @@ export const pages = [
   ]),
 
   page('visit-us', 'Visit Us', [
-    hero('Visit the DEXLab', 'The DEXLab is located in the beautiful Tapijnkazerne 11 building.', '9aa9b6_abde939f4755455ba16b3f6e11f71954~mv2.jpeg'),
+    // The building photo is only 800px wide: shown beside the text rather than as a full-width banner
+    hero('Visit the DEXLab', 'The DEXLab is located in the beautiful Tapijnkazerne 11 building.', '9aa9b6_abde939f4755455ba16b3f6e11f71954~mv2.jpeg', {layout: 'split'}),
     section('sectionLocation', {
       intro: 'The DEXLab is in room I1.017 of Tapijnkazerne 11. The video shows the route inside the building.',
       video: file('https://video.wixstatic.com/video/9aa9b6_d4db8fb24874439297eb0f82a8653f4a/720p/mp4/file.mp4'),

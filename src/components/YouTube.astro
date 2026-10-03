@@ -1,19 +1,26 @@
 ---
-// Click-to-play YouTube video. The thumbnail is fetched once at build time and inlined, so a visitor's
-// browser contacts YouTube (privacy-enhanced youtube-nocookie.com) only after they press play.
+import {getImage} from 'astro:assets'
+// Click-to-play YouTube video.
 interface Props {
   id: string
   title?: string
 }
 const {id, title = 'Video'} = Astro.props
 
+// Thumbnail fetched once at build time and served from our own domain as an optimised file, so a
+// visitor's browser contacts YouTube (privacy-enhanced youtube-nocookie.com) only after pressing play.
 const cache = ((globalThis as any).__ytThumbs ??= new Map<string, Promise<string | undefined>>())
 if (!cache.has(id)) {
   cache.set(
     id,
-    fetch(`https://i.ytimg.com/vi/${id}/hqdefault.jpg`)
-      .then(async (r) => (r.ok ? `data:image/jpeg;base64,${Buffer.from(await r.arrayBuffer()).toString('base64')}` : undefined))
-      .catch(() => undefined),
+    (async () => {
+      for (const size of ['maxresdefault', 'sddefault', 'hqdefault']) {
+        const src = `https://i.ytimg.com/vi/${id}/${size}.jpg`
+        const ok = await fetch(src, {method: 'HEAD'}).then((r) => r.ok).catch(() => false)
+        if (ok) return (await getImage({src, inferSize: true, width: 1280, format: 'webp'})).src
+      }
+      return undefined
+    })(),
   )
 }
 const thumb: string | undefined = await cache.get(id)
