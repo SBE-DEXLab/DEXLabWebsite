@@ -128,8 +128,8 @@ const ext = (href?: string) => (isExternal(href) ? {target: '_blank', rel: 'noop
     margin-top: 16px;
   }
   .icon :global(img) {
-    width: 64px;
-    height: 64px;
+    width: 84px;
+    height: 84px;
     object-fit: contain;
     margin: 0 auto 8px;
   }
@@ -137,25 +137,26 @@ const ext = (href?: string) => (isExternal(href) ? {target: '_blank', rel: 'noop
     list-style: none;
     margin: 0 auto;
     padding: 0;
-    max-width: 760px;
+    max-width: 900px;
     display: grid;
-    gap: 22px;
+    gap: 24px;
   }
   .row {
     display: grid;
-    grid-template-columns: 96px 1fr;
-    gap: 22px;
+    grid-template-columns: 112px 1fr;
+    gap: 32px;
     align-items: center;
   }
   .tone-muted .row {
     background: #fff;
-    padding: 18px 22px;
+    padding: 28px 32px;
+    border-radius: var(--radius);
     box-shadow: var(--shadow);
   }
   .tile {
-    width: 96px;
-    height: 96px;
-    border-radius: 18px;
+    width: 112px;
+    height: 112px;
+    border-radius: 22px;
     background: var(--grey);
     display: grid;
     place-items: center;
@@ -164,8 +165,8 @@ const ext = (href?: string) => (isExternal(href) ? {target: '_blank', rel: 'noop
     background: #fff;
   }
   .tile :global(img) {
-    width: 68px;
-    height: 68px;
+    width: 78px;
+    height: 78px;
     object-fit: contain;
   }
   .num {
@@ -173,58 +174,62 @@ const ext = (href?: string) => (isExternal(href) ? {target: '_blank', rel: 'noop
     color: var(--blue);
   }
   .row h3 {
-    margin: 0 0 4px;
-    font-size: 1.25rem;
+    margin: 0 0 6px;
+    font-size: 1.3rem;
   }
   .row p {
     margin: 0 0 4px;
-    font-size: 0.95rem;
+    color: var(--muted);
   }
   .split-rows {
     list-style: none;
     margin: 0 auto;
     padding: 0;
-    max-width: 840px;
+    max-width: 1040px;
     display: grid;
-    gap: 22px;
+    gap: 32px;
   }
   .split {
     display: grid;
-    grid-template-columns: 1.15fr 1fr;
-    gap: 14px;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 0;
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
     align-items: stretch;
   }
   .split-text {
-    padding: 22px 26px;
+    padding: clamp(28px, 4vw, 44px);
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .split-text h3 {
-    font-size: 1.05rem;
-    margin: 0 0 8px;
+    font-size: 1.3rem;
+    margin: 0 0 12px;
   }
   .split-text p {
-    font-size: 0.92rem;
-    margin: 0 0 10px;
+    margin: 0 0 16px;
+    color: var(--muted);
   }
   .split-text .text-link {
-    display: block;
-    text-align: center;
-    font-size: 0.9rem;
-    color: var(--ink);
+    align-self: flex-start;
   }
   .split :global(img) {
     width: 100%;
     height: 100%;
-    min-height: 200px;
+    min-height: 260px;
     object-fit: cover;
   }
   .tiles {
     list-style: none;
     margin: 0 auto;
     padding: 0;
-    max-width: 840px;
+    max-width: 1040px;
     display: grid;
     grid-template-columns: repeat(var(--cols, 6), 1fr);
-    gap: 16px;
+    gap: 20px;
   }
   .tiles li {
     aspect-ratio: 1;
@@ -234,13 +239,14 @@ const ext = (href?: string) => (isExternal(href) ? {target: '_blank', rel: 'noop
     align-items: center;
     justify-content: center;
     gap: 6px;
-    padding: 8px;
+    padding: 12px;
+    border-radius: var(--radius);
     text-align: center;
-    font: 700 0.78rem/1.2 var(--font-head);
+    font: 700 0.85rem/1.25 var(--font-head);
     color: var(--navy);
   }
   .tiles :global(img) {
-    width: 56%;
+    width: 50%;
     height: auto;
   }
   @media (max-width: 760px) {

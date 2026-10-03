@@ -69,22 +69,21 @@ const panel = tone === 'muted' && hasMedia
   }
   .panel {
     background: var(--grey);
-    padding: clamp(24px, 4vw, 40px);
+    padding: clamp(32px, 5vw, 56px);
     align-self: stretch;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-family: var(--font-head);
-    font-weight: 600;
   }
   .panel :global(p) {
-    font-size: 0.98rem;
+    font-size: 1.05rem;
   }
   .media :global(img) {
     width: 100%;
+    border-radius: var(--radius);
   }
   .split:has(.panel) {
-    gap: 12px;
+    gap: 24px;
     align-items: stretch;
   }
   .split:has(.panel) .media :global(img) {

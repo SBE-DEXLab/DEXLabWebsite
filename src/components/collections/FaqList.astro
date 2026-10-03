@@ -8,34 +8,83 @@ interface Props {
 }
 const all = await getFaqs()
 const faqs = Astro.props.limit ? all.slice(0, Astro.props.limit) : all
-// As on the old site: every question with its answer in a grey box, two columns on wide screens.
+// One question per row; the answer opens on click (plain <details>, works without JavaScript).
 ---
 
 <div class="faq">
   {
-    faqs.map((f) => (
-      <article class="item panel">
-        <h3 set:html={brandify(f.question)} />
-        <div class="prose" set:html={renderRichText(f.answer)} />
-      </article>
+    faqs.map((f, i) => (
+      <details class="item" open={i === 0}>
+        <summary>
+          <span set:html={brandify(f.question)} />
+          <span class="sign" aria-hidden="true" />
+        </summary>
+        <div class="prose answer" set:html={renderRichText(f.answer)} />
+      </details>
     ))
   }
 </div>
 
 <style>
   .faq {
-    columns: 2 380px;
-    column-gap: 28px;
+    max-width: 860px;
+    margin: 0 auto;
+    display: grid;
+    gap: 14px;
   }
   .item {
-    break-inside: avoid;
-    padding: 22px 24px;
-    margin-bottom: 28px;
+    background: var(--grey);
+    border-radius: var(--radius);
+    transition: background 0.2s;
   }
-  .item h3 {
-    font-size: 1.25rem;
+  .item[open] {
+    background: #fff;
+    box-shadow: var(--shadow);
   }
-  .item :global(.prose) {
-    font-size: 0.92rem;
+  summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 22px 28px;
+    cursor: pointer;
+    list-style: none;
+    font: 700 1.12rem/1.35 var(--font-head);
+    color: var(--navy);
+  }
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  summary:hover {
+    color: var(--blue);
+  }
+  .sign {
+    position: relative;
+    flex: none;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--navy);
+  }
+  .sign::before,
+  .sign::after {
+    content: '';
+    position: absolute;
+    left: 8px;
+    right: 8px;
+    top: 13px;
+    height: 2px;
+    background: #fff;
+    transition: transform 0.2s;
+  }
+  .sign::after {
+    transform: rotate(90deg);
+  }
+  .item[open] .sign::after {
+    transform: rotate(0);
+  }
+  .answer {
+    padding: 0 28px 26px;
+    color: var(--muted);
   }
 </style>
