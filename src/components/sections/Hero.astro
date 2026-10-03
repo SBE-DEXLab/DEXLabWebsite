@@ -61,10 +61,51 @@ const focus = image?.hotspot ? `${image.hotspot.x * 100}% ${image.hotspot.y * 10
   }
   /* Landing page: text left, photo right, on a soft peach fade that continues the header */
   .hero.split {
+    position: relative;
+    isolation: isolate;
     text-align: left;
     background: linear-gradient(var(--peach), #fff 85%);
     padding-block: clamp(40px, 6vw, 88px) clamp(24px, 3vw, 40px);
     overflow: hidden;
+  }
+  /* soft brand-coloured glows drifting behind the headline */
+  .hero.split::before,
+  .hero.split::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+    filter: blur(70px);
+    opacity: 0.35;
+    animation: drift 18s ease-in-out infinite alternate;
+  }
+  .hero.split::before {
+    width: 520px;
+    height: 520px;
+    left: -160px;
+    top: -120px;
+    background: var(--blue);
+  }
+  .hero.split::after {
+    width: 380px;
+    height: 380px;
+    left: 30%;
+    bottom: -180px;
+    background: var(--orange);
+    opacity: 0.22;
+    animation-duration: 22s;
+    animation-direction: alternate-reverse;
+  }
+  @keyframes drift {
+    to {
+      transform: translate(80px, 50px) scale(1.12);
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .hero.split::before,
+    .hero.split::after {
+      animation: none;
+    }
   }
   .split-grid {
     display: grid;
@@ -125,10 +166,16 @@ const focus = image?.hotspot ? `${image.hotspot.x * 100}% ${image.hotspot.y * 10
       margin: 0 12px 12px;
     }
   }
+  /* banner photos sit inset with rounded corners rather than edge to edge */
   .banner-img {
-    height: clamp(200px, 33vw, 470px);
+    height: clamp(220px, 32vw, 460px);
+    max-width: var(--max-wide);
+    margin: clamp(16px, 2.5vw, 32px) auto 0;
+    width: calc(100% - 2 * var(--gutter));
+    border-radius: 24px;
     overflow: hidden;
     background: var(--grey);
+    box-shadow: var(--shadow);
   }
   .banner-img :global(img) {
     width: 100%;
