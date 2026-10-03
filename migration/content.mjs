@@ -408,10 +408,10 @@ export const pages = [
   page('home', 'Home', [
     section('sectionHero', {
       heading: 'DEXLab the Digital Experience Lab',
-      image: img('9aa9b6_622b7a14b9c941688d04edf7c37f7ccc~mv2.jpg', 'The DEXLab team holding VR headsets', 'imageWithAlt', 0.35),
+      image: img('/images/dexlab-team-2026.jpg', 'The DEXLab team in front of the Tapijnkazerne, Maastricht University', 'imageWithAlt', 0.6),
       subheading:
         'We investigate how digital technologies transform human experience. Our work brings together immersive experiences, service robots, biometric tools, and artificial intelligence. Through cross-disciplinary collaboration, research, and hands-on workshops, we help students, researchers, and industry partners explore how technology can improve education, services, and society.',
-      layout: 'split',
+      layout: 'stacked',
       buttons: [link('Read More', '/about')],
     }),
     section('sectionCards', {

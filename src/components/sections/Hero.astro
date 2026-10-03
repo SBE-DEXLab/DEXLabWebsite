@@ -9,7 +9,7 @@ interface Props {
   eyebrow?: string
   subheading?: string
   image?: ImgT
-  layout?: 'overlay' | 'banner' | 'plain' | 'split'
+  layout?: 'overlay' | 'banner' | 'plain' | 'split' | 'stacked'
   buttons?: Link[]
   first?: boolean
 }
@@ -22,7 +22,21 @@ const focus = image?.hotspot ? `${image.hotspot.x * 100}% ${image.hotspot.y * 10
 ---
 
 {
-  layout === 'split' ? (
+  layout === 'stacked' ? (
+    <section class="hero split stacked">
+      <div class="container wide">
+        <div class="stacked-text">
+          {eyebrow && <span class="eyebrow">{eyebrow}</span>}
+          <H set:html={brandify(heading)} />
+          {subheading && <p class="split-lead">{subheading}</p>}
+          <Buttons buttons={buttons} center />
+        </div>
+        <figure class="split-photo stacked-photo">
+          <Img image={image} width={1400} height={640} sizes="(min-width: 1320px) 1240px, 100vw" eager={first} style={`object-position: ${focus}`} />
+        </figure>
+      </div>
+    </section>
+  ) : layout === 'split' ? (
     <section class="hero split">
       <div class="container wide split-grid">
         <div class="split-text">
@@ -156,6 +170,36 @@ const focus = image?.hotspot ? `${image.hotspot.x * 100}% ${image.hotspot.y * 10
     object-fit: cover;
     border-radius: 24px;
     box-shadow: var(--shadow-hover);
+  }
+  /* stacked: centred text, then a wide group photo (everyone visible) */
+  .stacked-text {
+    max-width: 800px;
+    margin: 0 auto clamp(32px, 4vw, 56px);
+    text-align: center;
+  }
+  .stacked-text :global(h1) {
+    font-size: clamp(2.4rem, 5.4vw, 4rem);
+    line-height: 1.08;
+    margin-bottom: 22px;
+  }
+  .stacked .split-lead {
+    margin: 0 auto;
+    max-width: 680px;
+  }
+  .stacked-photo {
+    max-width: 1240px;
+    margin: 0 auto;
+  }
+  .stacked-photo :global(img) {
+    aspect-ratio: 1400 / 640;
+  }
+  .stacked-photo::before {
+    inset: -16px 60px 60px -16px;
+  }
+  @media (max-width: 900px) {
+    .stacked-photo :global(img) {
+      aspect-ratio: 4 / 3;
+    }
   }
   @media (max-width: 900px) {
     .split-grid {
