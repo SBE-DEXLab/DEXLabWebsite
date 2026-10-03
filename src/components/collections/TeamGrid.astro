@@ -19,6 +19,33 @@ const perRow = (n: number) => (n <= 5 ? n : Math.ceil(n / Math.ceil(n / 5)))
   groups.map((g) => {
     const members = people.filter((p) => p.group === g)
     if (!members.length) return null
+    // Alumni: a compact list, each name linking to their introduction post.
+    if (g === 'alumni') {
+      const lists = [
+        {title: 'Former DEXLab Managers', items: members.filter((p) => /manager/i.test(p.role || ''))},
+        {title: 'Former Interns', items: members.filter((p) => !/manager/i.test(p.role || ''))},
+      ].filter((l) => l.items.length)
+      return (
+        <div class="group group-alumni">
+          <h2 class="rule">{titles[g]}</h2>
+          <div class="alumni">
+            {lists.map((l) => (
+              <div class:list={['alumni-list', {wide: l.items.length > 6}]}>
+                <h3>{l.title}</h3>
+                <ul>
+                  {l.items.map((p) => (
+                    <li>
+                      {p.introPost ? <a href={`/post/${p.introPost}`}>{p.name}</a> : <strong>{p.name}</strong>}
+                      <span>{[p.role, p.period].filter(Boolean).join(', ')}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      )
+    }
     return (
       <div class:list={['group', `group-${g}`]}>
         <h2 class="rule">{titles[g]}</h2>
@@ -177,6 +204,59 @@ const perRow = (n: number) => (n <= 5 ? n : Math.ceil(n / Math.ceil(n / 5)))
     font-size: 0.9rem;
     line-height: 1.45;
     color: var(--muted);
+  }
+  .alumni {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 24px;
+    align-items: start;
+    max-width: 1040px;
+    margin: 0 auto;
+  }
+  .alumni-list {
+    background: var(--grey);
+    border-radius: var(--radius);
+    padding: clamp(24px, 3vw, 36px);
+  }
+  .alumni-list h3 {
+    font-size: 1.1rem;
+    margin-bottom: 18px;
+  }
+  .alumni-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .alumni-list.wide ul {
+    columns: 2 220px;
+    column-gap: 32px;
+  }
+  .alumni-list li {
+    break-inside: avoid;
+    padding: 8px 0;
+    border-bottom: 1px solid rgb(0 28 61 / 0.1);
+    display: flex;
+    flex-direction: column;
+  }
+  .alumni-list li a,
+  .alumni-list li strong {
+    font-family: var(--font-head);
+    font-weight: 700;
+    color: var(--navy);
+    text-decoration: none;
+  }
+  .alumni-list li a:hover {
+    color: var(--blue);
+    text-decoration: underline;
+  }
+  .alumni-list li span {
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+  @media (max-width: 760px) {
+    .alumni {
+      grid-template-columns: 1fr;
+    }
   }
   @media (max-width: 560px) {
     .team {

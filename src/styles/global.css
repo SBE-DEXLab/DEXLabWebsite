@@ -2,10 +2,11 @@
 :root {
   --navy: #001c3d; /* headings, text, buttons */
   --blue: #00a2db; /* "DEX", links, workshop buttons */
-  --blue-dark: #0085b4;
+  --blue-dark: #0077a8; /* white text on it passes WCAG AA (5:1); use for buttons and blue bands */
   --orange: #e84e10; /* "Lab" */
   --peach: #fce8e0; /* header band */
   --grey: #e6e7e8; /* panels, footer */
+  --blue-tint: #e8f5fb; /* very light DEX blue, for quotes */
   --line: #c9ccd1;
   --ink: #001c3d;
   --muted: #33475e;
@@ -164,7 +165,7 @@ p {
   background: var(--peach);
 }
 .tone-blue {
-  background: var(--blue);
+  background: var(--blue-dark);
   color: #fff;
 }
 .tone-navy {
@@ -192,6 +193,9 @@ p {
 .section-head p {
   font-size: 1.12rem;
   color: var(--muted);
+}
+.section-head p.long {
+  text-align: left;
 }
 /* the short rule under some headings on the old site */
 .rule::after {
@@ -241,8 +245,8 @@ p {
 }
 .btn:hover {
   transform: translateY(-1px);
-  background: var(--blue);
-  border-color: var(--blue);
+  background: var(--blue-dark);
+  border-color: var(--blue-dark);
   color: #fff;
 }
 .btn.secondary {
@@ -254,10 +258,8 @@ p {
   color: #fff;
 }
 .btn.blue {
-  background: var(--blue);
-  border-color: var(--blue);
-  font-family: var(--font-body);
-  font-weight: 400;
+  background: var(--blue-dark);
+  border-color: var(--blue-dark);
 }
 .btn.blue:hover {
   background: var(--navy);

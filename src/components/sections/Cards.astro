@@ -35,7 +35,7 @@ const ext = (href?: string) => (isExternal(href) ? {target: '_blank', rel: 'noop
       (heading || intro) && (
         <div class="section-head">
           {heading && <h2 set:html={brandify(heading)} />}
-          {intro && <p>{intro}</p>}
+          {intro && <p class:list={{long: intro.length > 220}}>{intro}</p>}
         </div>
       )
     }
@@ -125,7 +125,10 @@ const ext = (href?: string) => (isExternal(href) ? {target: '_blank', rel: 'noop
   }
   .style-icon .card-body .btn {
     align-self: center;
-    margin-top: 16px;
+    margin-top: auto;
+  }
+  .style-icon .card-body p {
+    margin-bottom: 20px;
   }
   .icon :global(img) {
     width: 84px;

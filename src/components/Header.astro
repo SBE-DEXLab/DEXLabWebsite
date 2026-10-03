@@ -67,6 +67,10 @@ const announcement = settings?.announcement
 <script>
   const header = document.querySelector<HTMLElement>('[data-header]')!
   const toggle = header.querySelector<HTMLButtonElement>('[data-menu-toggle]')!
+  // Slightly smaller header once the page is scrolled
+  const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 40)
+  onScroll()
+  window.addEventListener('scroll', onScroll, {passive: true})
   const setOpen = (open: boolean) => {
     toggle.setAttribute('aria-expanded', String(open))
     header.classList.toggle('open', open)
@@ -107,15 +111,29 @@ const announcement = settings?.announcement
     z-index: 50;
     background: var(--peach);
   }
+  .site-header {
+    transition: box-shadow 0.25s;
+  }
+  .site-header.scrolled {
+    box-shadow: 0 4px 18px rgb(0 28 61 / 0.08);
+  }
   .bar {
     display: flex;
     align-items: center;
     gap: 28px;
     height: var(--header-h);
+    transition: height 0.25s;
+  }
+  .scrolled .bar {
+    height: 74px;
   }
   .logo img {
     height: 64px;
     width: auto;
+    transition: height 0.25s;
+  }
+  .scrolled .logo img {
+    height: 50px;
   }
   .nav {
     margin-left: auto;
@@ -234,6 +252,9 @@ const announcement = settings?.announcement
     }
     .open .nav {
       display: block;
+    }
+    .scrolled .nav {
+      top: 74px;
     }
     .nav-list {
       flex-direction: column;

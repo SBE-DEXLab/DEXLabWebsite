@@ -5,7 +5,7 @@ interface Props {
 const {items = []} = Astro.props
 ---
 
-<section class="section tone-blue quotes" data-quotes>
+<section class="section quotes" data-quotes>
   <div class="container">
     <svg class="mark" width="56" height="44" viewBox="0 0 56 44" aria-hidden="true">
       <path fill="currentColor" d="M0 44V27C0 12 7 3 21 0l3 6c-8 3-12 8-12 15h10v23H0zm32 0V27c0-15 7-24 21-27l3 6c-8 3-12 8-12 15h10v23H32z" />
@@ -53,25 +53,25 @@ const {items = []} = Astro.props
 <style>
   .quotes {
     text-align: center;
-    background: var(--blue);
+    background: var(--blue-tint);
   }
   .mark {
     margin: 0 auto 20px;
-    color: rgb(255 255 255 / 0.5);
+    color: var(--blue);
   }
   blockquote {
     margin: 0 auto;
     max-width: 860px;
     font-family: var(--font-head);
-    font-size: clamp(1.25rem, 2.6vw, 1.85rem);
-    font-weight: 700;
-    line-height: 1.4;
-    color: #fff;
+    font-size: clamp(1.15rem, 2.2vw, 1.5rem);
+    font-weight: 600;
+    line-height: 1.55;
+    color: var(--navy);
   }
   figcaption {
     margin-top: 22px;
     font-weight: 600;
-    opacity: 0.9;
+    color: var(--muted);
   }
   figcaption::before {
     content: '';
@@ -93,12 +93,12 @@ const {items = []} = Astro.props
     height: 10px;
     border-radius: 50%;
     border: 0;
-    background: rgb(255 255 255 / 0.45);
+    background: var(--line);
     cursor: pointer;
     padding: 0;
   }
   .dots button[aria-selected='true'] {
-    background: #fff;
+    background: var(--navy);
     width: 26px;
     border-radius: 6px;
   }

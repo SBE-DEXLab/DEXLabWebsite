@@ -38,7 +38,7 @@ const ld = {
 
   {
     w.facts?.length ? (
-      <section class="section">
+      <section class="section tone-muted">
         <div class="container">
           <h2 class="center-h">Highlights</h2>
           <ul class="facts">
@@ -62,7 +62,8 @@ const ld = {
           <ul class="tech">
             {w.technologies.map((t) => (
               <li>
-                <Img image={t.image} width={300} height={300} alt={`${t.short}: ${t.name}`} />
+                <Img image={t.image} width={300} height={300} alt="" />
+                <span>{t.name}</span>
               </li>
             ))}
           </ul>
@@ -121,35 +122,55 @@ const ld = {
     padding: 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 24px;
+    gap: 20px;
     text-align: center;
+  }
+  .facts li {
+    display: grid;
+    align-content: center;
+    background: #fff;
+    border-radius: var(--radius);
+    padding: 28px 22px;
+    box-shadow: var(--shadow);
   }
   .facts strong {
     display: block;
-    font: 700 1.15rem var(--font-head);
-    margin-bottom: 6px;
+    font: 700 1.25rem var(--font-head);
+    color: var(--navy);
+    margin-bottom: 8px;
   }
   .facts span {
-    font-size: 0.92rem;
+    font-size: 0.95rem;
+    color: var(--muted);
   }
   .tech {
     list-style: none;
     margin: 0 auto;
     padding: 0;
-    max-width: 560px;
+    max-width: 1000px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 28px 40px;
   }
   .tech li {
-    width: 220px;
+    width: 200px;
+  }
+  .tech li {
+    text-align: center;
   }
   .tech :global(img) {
     width: 100%;
     aspect-ratio: 1;
     object-fit: cover;
     border-radius: 50%;
+    box-shadow: var(--shadow);
+  }
+  .tech span {
+    display: block;
+    margin-top: 14px;
+    font: 700 1rem var(--font-head);
+    color: var(--navy);
   }
   .details .container {
     max-width: 780px;

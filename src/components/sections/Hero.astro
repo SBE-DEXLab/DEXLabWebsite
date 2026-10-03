@@ -32,7 +32,7 @@ const focus = image?.hotspot ? `${image.hotspot.x * 100}% ${image.hotspot.y * 10
   <div class="container text">
     {eyebrow && <span class="eyebrow">{eyebrow}</span>}
     <H set:html={brandify(heading)} />
-    {subheading && <p class="lead">{subheading}</p>}
+    {subheading && <p class:list={['lead', {long: subheading.length > 220}]}>{subheading}</p>}
     <Buttons buttons={buttons} center />
   </div>
 </section>
@@ -68,5 +68,10 @@ const focus = image?.hotspot ? `${image.hotspot.x * 100}% ${image.hotspot.y * 10
     color: var(--muted);
     margin: 0 auto;
     max-width: 780px;
+  }
+  /* Long intros read better left-aligned; short ones stay centred under the heading. */
+  .lead.long {
+    text-align: left;
+    max-width: 720px;
   }
 </style>

@@ -17,7 +17,6 @@ export const siteSettings = {
     'The Digital Experience Lab (DEXLab) at Maastricht University School of Business and Economics investigates how digital technologies transform human experience.',
   announcement: {enabled: false},
   navigation: [
-    {_key: key(), _type: 'navItem', label: 'Home', href: '/'},
     {_key: key(), _type: 'navItem', label: 'About', href: '/about', children: [
       {_key: key(), _type: 'navChild', label: 'Equipment', href: '/equipment'},
       {_key: key(), _type: 'navChild', label: 'Media', href: '/media'},
@@ -115,6 +114,38 @@ export const people = [
   person('ibrahim-humdi', 'Ibrahim Humdi', 'PhD Candidate', 'associate', 70, '9aa9b6_d35e0e1598b34fd7bdcc6d2f58db022f~mv2.png'),
   {...person('stefan-bos', 'Stefan Bos', 'PhD Candidate', 'associate', 80), photo: img('9aa9b6_ed4463295fb949e9825fc42cd7211b85~mv2.jpg', 'Portrait of Stefan Bos', 'imageWithAlt', 0.3)},
 ].map((p) => (bios[p._id.slice(7)] ? {...p, bio: bios[p._id.slice(7)]} : p))
+
+// Former managers and interns, from their "Meet our new ..." blog posts. Periods follow the post dates.
+const alum = (id, name, role, period, post, order) => ({
+  _id: `person-${id}`,
+  _type: 'person',
+  name,
+  role,
+  group: 'alumni',
+  period,
+  introPost: ref(`post-${post}`),
+  order,
+})
+people.push(
+  alum('noah-moonen', 'Noah Moonen', 'DEXLab Manager', '2022 to 2024', 'meet-the-new-dexlab-manager', 10),
+  alum('david-grigorjan', 'David Grigorjan', 'DEXLab Manager', '2024 to 2025', 'meet-our-new-dexlab-manager-starting-in-february', 20),
+  alum('brian-arets', 'Brian Arets', 'DEXLab Manager', '2025 to 2026', 'meet-our-new-dexlab-manager', 30),
+  alum('moritz-wigger', 'Moritz Wigger', 'Thesis Intern', '2023', 'meet-our-first-international-intern', 110),
+  alum('claudia-fasano', 'Claudia Fasano', 'DEXLab Intern', '2023 to 2024', 'meet-our-new-intern-claudia-fasano', 120),
+  alum('thies-verbraak', 'Thies Verbraak', 'DEXLab Intern', '2023 to 2024', 'meet-our-new-intern-thies-verbraak', 130),
+  alum('lakkoju-nikhilesh-sai-acharya', 'Lakkoju Nikhilesh Sai Acharya', 'DEXLab Intern', '2023 to 2024', 'meet-our-new-intern-lakkoju-nikhilesh-sai-acharya', 140),
+  alum('chau-giang-nguyen', 'Chau Giang Nguyen', 'DEXLab Intern', '2023 to 2024', 'meet-our-new-intern-chau-giang-nguyen', 150),
+  alum('steve-biewer', 'Steve Biewer', 'DEXLab Intern', '2023 to 2024', 'meet-our-new-intern-steve-biewer', 160),
+  alum('adam-knaus', 'Adam Knaus', 'Thesis Intern', '2024', 'our-team-is-expanding-introducing-our-new-interns', 170),
+  alum('angela-fasana-vacca', 'Angela Fasana Vacca', 'Thesis Intern', '2024', 'our-team-is-expanding-introducing-our-new-interns', 180),
+  alum('botond-kovacs', 'Botond Kovács', 'Thesis Intern', '2024', 'our-team-is-expanding-introducing-our-new-interns', 190),
+  alum('malina-alizei', 'Malina Alizei', 'Thesis Intern', '2024', 'our-team-is-expanding-introducing-our-new-interns', 200),
+  alum('mariska-geerts', 'Mariska Geerts', 'Thesis Intern', '2024', 'our-team-is-expanding-introducing-our-new-interns', 210),
+  alum('martina-pagano', 'Martina Pagano', 'Thesis Intern', '2025', 'welcome-new-thesis-internship-students', 220),
+  alum('ayat-azzimani', 'Ayat Azzimani', 'Thesis Intern', '2025', 'welcome-new-thesis-internship-students', 230),
+  alum('lara-grunschel', 'Lara Grunschel', 'Thesis Intern', '2025', 'welcome-new-thesis-internship-students', 240),
+  alum('laura-grisi-chavarria', 'Laura Grisi Chavarria', 'Thesis Intern', '2025', 'welcome-new-thesis-internship-students', 250),
+)
 
 // ---------------------------------------------------------------- equipment
 const eq = (name, category, quantity, image, order) => ({
@@ -367,9 +398,10 @@ export const pages = [
   page('home', 'Home', [
     section('sectionHero', {
       heading: 'DEXLab the Digital Experience Lab',
+      image: img('9aa9b6_086d3e6d6f7947c0bec07e2c8437c2ea~mv2.jpg', 'Participants trying VR headsets in a DEXLab workshop', 'imageWithAlt', 0.45),
       subheading:
         'We investigate how digital technologies transform human experience. Our work brings together immersive experiences, service robots, biometric tools, and artificial intelligence. Through cross-disciplinary collaboration, research, and hands-on workshops, we help students, researchers, and industry partners explore how technology can improve education, services, and society.',
-      layout: 'plain',
+      layout: 'banner',
       buttons: [link('Read More', '/about')],
     }),
     section('sectionCards', {
@@ -603,7 +635,7 @@ export const pages = [
 
   page('meet-the-team', 'Meet the Team', [
     hero('Meet the DEXLab Team', 'Get to know the brilliant minds behind DEXLab. Each member brings unique expertise and passion to our research center.'),
-    section('sectionCollection', {source: 'team', groups: ['core', 'intern', 'associate']}),
+    section('sectionCollection', {source: 'team', groups: ['core', 'intern', 'associate', 'alumni']}),
   ]),
 
   page('publications', 'Publications', [

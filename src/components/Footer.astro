@@ -9,18 +9,51 @@ interface Props {
 const {settings} = Astro.props
 const nl = settings?.newsletter
 const year = new Date().getFullYear()
-const address = (settings?.address || '').split('\n').filter((l) => l && l !== 'The Netherlands').join(', ')
+const address = (settings?.address || '').split('\n').filter((l) => l && l !== 'The Netherlands')
 ---
 
 <footer class="site-footer">
-  <div class="container wide top">
-    <div class="logos">
-      <a href="/" aria-label="DEXLab home"><img src="/brand/dexlab-logo-full.png" alt="DEXLab, Digital Experience Laboratory" width="120" height="92" loading="lazy" /></a>
-      <a href="https://www.maastrichtuniversity.nl/about-um/faculties/school-business-and-economics" target="_blank" rel="noopener">
-        <img src="/brand/um-sbe-logo.png" alt="Maastricht University School of Business and Economics" width="220" height="55" loading="lazy" />
-      </a>
+  <div class="container wide cols">
+    <div class="col about">
+      <div class="logos">
+        <a href="/" aria-label="DEXLab home"><img src="/brand/dexlab-logo-full.png" alt="DEXLab, Digital Experience Laboratory" width="120" height="92" loading="lazy" /></a>
+        <a href="https://www.maastrichtuniversity.nl/about-um/faculties/school-business-and-economics" target="_blank" rel="noopener">
+          <img src="/brand/um-sbe-logo.png" alt="Maastricht University School of Business and Economics" width="220" height="55" loading="lazy" />
+        </a>
+      </div>
+      <address>
+        <span class="brand-dex">DEX</span><span class="brand-lab">Lab</span><br />
+        {address.map((l) => <>{l}<br /></>)}
+        {settings?.email && <a href={`mailto:${settings.email}`}>{settings.email}</a>}
+      </address>
     </div>
-    <div class="follow">
+
+    {
+      nl?.enabled !== false && (
+        <form class="col newsletter" name="newsletter" method="POST" action="/thanks/?form=newsletter" data-netlify="true" netlify-honeypot="company">
+          <h2 set:html={brandify(nl?.heading || 'Join DEXLab mailing list')} />
+          <input type="hidden" name="form-name" value="newsletter" />
+          <p class="hp">
+            <label>
+              Leave this empty <input name="company" tabindex="-1" autocomplete="off" />
+            </label>
+          </p>
+          <div class="nl-row">
+            <div class="field">
+              <label for="nl-email">Email *</label>
+              <input id="nl-email" type="email" name="email" autocomplete="email" required />
+            </div>
+            <button class="btn" type="submit">Subscribe</button>
+          </div>
+          <label class="check">
+            <input type="checkbox" name="consent" value="yes" required />
+            <span>I agree that DEXLab stores my email address to send me news (see the <a href="/privacy">privacy statement</a>).</span>
+          </label>
+        </form>
+      )
+    }
+
+    <div class="col follow">
       <p class="follow-title">Follow us:</p>
       <ul class="socials">
         {
@@ -36,39 +69,8 @@ const address = (settings?.address || '').split('\n').filter((l) => l && l !== '
     </div>
   </div>
 
-  {
-    nl?.enabled !== false && (
-      <form class="container newsletter" name="newsletter" method="POST" action="/thanks/?form=newsletter" data-netlify="true" netlify-honeypot="company">
-        <h2 set:html={brandify(nl?.heading || 'Join DEXLab mailing list')} />
-        <input type="hidden" name="form-name" value="newsletter" />
-        <p class="hp">
-          <label>
-            Leave this empty <input name="company" tabindex="-1" autocomplete="off" />
-          </label>
-        </p>
-        <div class="nl-row">
-          <div class="field">
-            <label for="nl-email">Email *</label>
-            <input id="nl-email" type="email" name="email" autocomplete="email" required />
-          </div>
-          <button class="btn" type="submit">Subscribe</button>
-        </div>
-        <label class="check">
-          <input type="checkbox" name="consent" value="yes" required />
-          <span>I agree that DEXLab stores my email address to send me news (see the <a href="/privacy">privacy statement</a>).</span>
-        </label>
-      </form>
-    )
-  }
-
-  <div class="container bottom">
-    <p>
-      <span class="brand-dex">DEX</span><span class="brand-lab">Lab</span> - {address}<br />
-      {settings?.email && <a href={`mailto:${settings.email}`}>{settings.email}</a>}
-    </p>
-    <p class="copy">
-      © {year} DEXLab{settings?.footerNote && <> | {settings.footerNote}</>} | <a href="/privacy">Privacy</a> | <a href="/admin" rel="nofollow">Admin</a>
-    </p>
+  <div class="container wide copy">
+    <p>© {year} DEXLab{settings?.footerNote && <> | {settings.footerNote}</>} | <a href="/privacy">Privacy</a></p>
   </div>
 </footer>
 
@@ -77,64 +79,44 @@ const address = (settings?.address || '').split('\n').filter((l) => l && l !== '
     background: var(--grey);
     padding-top: clamp(48px, 6vw, 72px);
     font-size: 0.92rem;
-    margin-top: 0;
   }
-  .top {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 24px;
+  .cols {
+    display: grid;
+    grid-template-columns: 1.1fr 1.4fr 0.6fr;
+    gap: clamp(32px, 5vw, 72px);
+    padding-bottom: clamp(36px, 5vw, 56px);
   }
   .logos {
     display: flex;
     align-items: center;
-    gap: 28px;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-bottom: 22px;
   }
   .logos a:first-child img {
-    width: 128px;
+    width: 110px;
     height: auto;
   }
   .logos a:last-child img {
-    width: 220px;
+    width: 200px;
     height: auto;
   }
-  .follow-title {
-    font-family: var(--font-head);
-    font-weight: 700;
-    margin: 0 0 8px;
+  address {
+    font-style: normal;
+    line-height: 1.7;
+    color: var(--muted);
   }
-  .socials {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 8px;
-  }
-  .socials a {
-    display: grid;
-    place-items: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 8px;
-    transition: background 0.15s;
-    background: var(--navy);
-    color: #fff;
-  }
-  .socials a:hover {
-    background: var(--blue);
-  }
-  .newsletter {
-    max-width: 620px;
-    padding-block: clamp(32px, 4vw, 48px);
+  address a {
+    color: var(--navy);
   }
   .newsletter h2 {
-    font-size: 1.35rem;
+    font-size: 1.3rem;
     margin: 0 0 16px;
   }
   .nl-row {
     display: flex;
     align-items: flex-end;
-    gap: 16px;
+    gap: 14px;
     margin-bottom: 14px;
   }
   .nl-row .field {
@@ -146,27 +128,55 @@ const address = (settings?.address || '').split('\n').filter((l) => l && l !== '
   .nl-row .btn {
     min-width: 120px;
   }
-  .bottom {
-    text-align: center;
-    padding-bottom: 28px;
+  .follow-title {
+    font-family: var(--font-head);
+    font-weight: 700;
+    margin: 0 0 12px;
   }
-  .bottom p {
-    margin: 0 0 16px;
+  .socials {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
   }
-  .bottom a {
-    color: var(--navy);
+  .socials a {
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: var(--navy);
+    color: #fff;
+    transition: background 0.15s;
+  }
+  .socials a:hover {
+    background: var(--blue-dark);
   }
   .copy {
     border-top: 1px solid var(--line);
-    padding-top: 18px;
+    padding-block: 18px 24px;
     color: var(--muted);
+    text-align: center;
   }
-  @media (max-width: 640px) {
-    .top {
-      flex-direction: column;
+  .copy p {
+    margin: 0;
+  }
+  .copy a {
+    color: var(--navy);
+  }
+  @media (max-width: 900px) {
+    .cols {
+      grid-template-columns: 1fr 1fr;
     }
-    .logos {
-      flex-wrap: wrap;
+    .newsletter {
+      grid-column: 1 / -1;
+      order: 3;
+    }
+  }
+  @media (max-width: 560px) {
+    .cols {
+      grid-template-columns: 1fr;
     }
     .nl-row {
       flex-direction: column;
