@@ -15,11 +15,14 @@ interface Props {
 const {heading, intro, videoUrl, directions, directionsImage, mapQuery = 'Tapijnkazerne 11, Maastricht'} = Astro.props
 // OpenStreetMap: no cookies, no tracking, no API key.
 // Tapijnkazerne 11 (OpenStreetMap node 12787193084)
-const bbox = '5.6821,50.8407,5.6902,50.8447'
-const marker = '50.84271,5.68616'
-const mapSrc = `https://www.openstreetmap.org/export/embed.html?bbox=${bbox}&layer=mapnik&marker=${marker}`
-const routeHref = `https://www.openstreetmap.org/directions?to=${encodeURIComponent(mapQuery)}`
-const googleHref = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(mapQuery)}`
+// DEXLab's business location (as registered for the old site): room I1.017, Tapijnkazerne 11.
+// The embedded map is OpenStreetMap (no cookies); the buttons open the DEXLab listing in Google Maps.
+const [lat, lon] = [50.8425, 5.68669]
+const bbox = [lon - 0.004, lat - 0.002, lon + 0.004, lat + 0.002].join(',')
+const mapSrc = `https://www.openstreetmap.org/export/embed.html?bbox=${bbox}&layer=mapnik&marker=${lat},${lon}`
+const place = encodeURIComponent(`DEXLab, ${mapQuery}`)
+const googleHref = `https://www.google.com/maps/search/?api=1&query=${place}`
+const routeHref = `https://www.google.com/maps/dir/?api=1&destination=${place}`
 ---
 
 <section class="section">
