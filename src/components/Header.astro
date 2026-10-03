@@ -114,7 +114,7 @@ const announcement = settings?.announcement
     height: var(--header-h);
   }
   .logo img {
-    height: 58px;
+    height: 64px;
     width: auto;
   }
   .nav {
@@ -134,13 +134,14 @@ const announcement = settings?.announcement
   }
   .nav-link {
     display: block;
-    padding: 8px 12px;
-    font-family: var(--font-body);
-    font-weight: 400;
-    font-size: 0.74rem;
-    letter-spacing: 0.02em;
+    padding: 10px 13px;
+    font-family: var(--font-head);
+    font-weight: 600;
+    font-size: 0.76rem;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #000;
+    color: var(--navy);
+    transition: color 0.15s;
     text-decoration: none;
     white-space: nowrap;
   }
@@ -159,30 +160,31 @@ const announcement = settings?.announcement
   .sub {
     list-style: none;
     margin: 0;
-    padding: 6px 0;
+    padding: 10px 0;
     position: absolute;
     top: 100%;
     left: 0;
-    min-width: 230px;
-    background: var(--peach);
-    box-shadow: 0 6px 16px rgb(0 0 0 / 0.08);
+    min-width: 270px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.15s, visibility 0.15s;
+    transform: translateY(6px);
+    transition: opacity 0.18s, visibility 0.18s, transform 0.18s;
   }
   .has-sub:hover .sub,
   .has-sub:focus-within .sub {
     opacity: 1;
     visibility: visible;
+    transform: none;
   }
   .sub a {
     display: block;
-    padding: 8px 14px;
-    color: #000;
+    padding: 10px 20px;
+    color: var(--navy);
     text-decoration: none;
-    font-size: 0.74rem;
-    text-transform: uppercase;
-    letter-spacing: 0.02em;
+    font-size: 0.92rem;
   }
   .sub a:hover,
   .sub a[aria-current='page'] {
@@ -217,7 +219,7 @@ const announcement = settings?.announcement
     transform: translateY(-7px) rotate(-45deg);
   }
 
-  @media (max-width: 1060px) {
+  @media (max-width: 1240px) {
     .menu-toggle {
       display: block;
     }
@@ -253,6 +255,9 @@ const announcement = settings?.announcement
       position: static;
       width: 100%;
       box-shadow: none;
+      background: transparent;
+      border-radius: 0;
+      transform: none;
       padding: 0 0 10px 14px;
       display: none;
       opacity: 1;
