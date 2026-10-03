@@ -56,7 +56,7 @@ export const getCategories = () =>
   query<Category[]>(`*[_type == "category"] | order(order asc){title, "slug": slug.current, description, "count": count(*[_type == "post" && references(^._id)])}`)
 
 export const getPeople = (groups: string[]) =>
-  query<Person[]>(`*[_type == "person" && group in $groups] | order(order asc, name asc){_id, name, role, group, bio, linkedin, website, email, "photo": photo${image}}`, {groups})
+  query<Person[]>(`*[_type == "person" && group in $groups] | order(order asc, name asc){_id, name, role, group, bio, period, "introPost": introPost->slug.current, linkedin, website, email, "photo": photo${image}}`, {groups})
 
 export const getWorkshops = () =>
   query<Workshop[]>(`*[_type == "workshop"] | order(order asc){..., "slug": slug.current, "cardImage": cardImage${image}}`)

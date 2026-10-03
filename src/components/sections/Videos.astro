@@ -1,4 +1,5 @@
 ---
+import YouTube from '../YouTube.astro'
 import {brandify, youtubeId} from '../../lib/utils'
 
 interface Props {
@@ -26,15 +27,7 @@ const [featured, ...rest] = videos
     {
       featured && (
         <div class="featured">
-          <div class="video-frame">
-            <iframe
-              src={`https://www.youtube-nocookie.com/embed/${featured.id}`}
-              title={featured.title}
-              allow="accelerometer; encrypted-media; picture-in-picture; fullscreen"
-              allowfullscreen
-              loading="lazy"
-            />
-          </div>
+          <YouTube id={featured.id!} title={featured.title} />
           <h3>{featured.title}</h3>
         </div>
       )
@@ -44,15 +37,7 @@ const [featured, ...rest] = videos
         <div class="grid" style="--cols: 3">
           {rest.map((v) => (
             <figure class="v">
-              <div class="video-frame">
-                <iframe
-                  src={`https://www.youtube-nocookie.com/embed/${v.id}`}
-                  title={v.title}
-                  allow="accelerometer; encrypted-media; picture-in-picture; fullscreen"
-                  allowfullscreen
-                  loading="lazy"
-                />
-              </div>
+              <YouTube id={v.id!} title={v.title} />
               <figcaption>{v.title}</figcaption>
             </figure>
           ))}

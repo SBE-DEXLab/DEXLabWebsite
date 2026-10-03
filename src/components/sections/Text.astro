@@ -1,4 +1,5 @@
 ---
+import YouTube from '../YouTube.astro'
 import Img from '../Img.astro'
 import Buttons from '../Buttons.astro'
 import {brandify, youtubeId} from '../../lib/utils'
@@ -25,19 +26,17 @@ const panel = tone === 'muted' && hasMedia
 ---
 
 <section id={anchor} class:list={['section', panel ? 'tone-default' : `tone-${tone}`]}>
-  <div class:list={['container', {split: hasMedia, reverse: imagePosition === 'left', solo: !hasMedia, center: centered || panel}]}>
+  <div class:list={['container', {split: hasMedia, reverse: imagePosition === 'left', solo: !hasMedia, center: centered}]}>
     <div class:list={['copy', {panel}]}>
       {heading && <h2 set:html={brandify(heading)} />}
       <div class="prose" set:html={renderRichText(body)} />
-      <Buttons buttons={buttons} center={centered || panel} />
+      <Buttons buttons={buttons} center={centered} />
     </div>
     {
       hasMedia && (
         <div class="media">
           {yt ? (
-            <div class="video-frame">
-              <iframe src={`https://www.youtube-nocookie.com/embed/${yt}`} title={heading || 'Video'} loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture; fullscreen" allowfullscreen />
-            </div>
+            <YouTube id={yt} title={heading} />
           ) : (
             <Img image={image} width={640} sizes="(min-width: 980px) 480px, 100vw" fit="max" />
           )}
@@ -77,6 +76,10 @@ const panel = tone === 'muted' && hasMedia
   }
   .panel :global(p) {
     font-size: 1.05rem;
+  }
+  /* Bold everywhere means nothing stands out: only the opening paragraph keeps its emphasis. */
+  .panel :global(p + p strong) {
+    font-weight: inherit;
   }
   .media :global(img) {
     width: 100%;

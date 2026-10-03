@@ -17,7 +17,6 @@ export const siteSettings = {
     'The Digital Experience Lab (DEXLab) at Maastricht University School of Business and Economics investigates how digital technologies transform human experience.',
   announcement: {enabled: false},
   navigation: [
-    {_key: key(), _type: 'navItem', label: 'Home', href: '/'},
     {_key: key(), _type: 'navItem', label: 'About', href: '/about', children: [
       {_key: key(), _type: 'navChild', label: 'Equipment', href: '/equipment'},
       {_key: key(), _type: 'navChild', label: 'Media', href: '/media'},
@@ -79,13 +78,28 @@ const person = (id, name, role, group, order, photo, linkedin) => ({
   ...(linkedin && {linkedin}),
 })
 
+// Bios as on the old Wix team page, shown when hovering over (or tapping) a portrait.
+const bios = {
+  "jonas-heller": "Director of the DEXLab and Assistant Professor at Maastricht University. My research explores how AI, AR/VR, and emerging technologies like brain-computer interfaces reshape consumer behaviour and business landscapes.",
+  "tim-hilken": "Director of the DEXLab and Assistant Professor at Maastricht University. I focus on digital marketing and developments in industry 4.0, particularly the role of new technologies such as Augmented and Virtual Reality and Artificial Intelligence.",
+  "dominik-mahr": "Director of the DEXLab and Assistant Professor at Maastricht University. His work integrates research, education and business practice of marketing, innovation, digitisation, strategy, services and design thinking.",
+  "roberta-di-palma": "Roberta is an Assistant Professor in Educational Research and Development at SBE, researching technology-enabled services in education and business, with a focus on Virtual Reality. As co-founder of DEXLab, she leads projects on digital and immersive technologies. She holds a Bachelor's in International Business and a Master's in Strategic Marketing, both from Maastricht University.",
+  "stefan-bos": "PhD candidate at SBE. His research focuses on emotional and behavioral change using Virtual Reality, in particular how Virtual Reality can be used to increase empathy and understanding towards stigmatized groups of people or situations.",
+  "nea-saarreharju": "First full-time DEXLab Manager, for all things research, education and management of our technologies.",
+  "ilias-massignan": "Intern of the DEXLab and a Master student at Maastricht University. He is currently pursuing a Master’s in Strategic Marketing and writing his thesis on how immersive technologies can be connected to real-world applications in marketing and education.",
+  "yosune-uribe": "Intern at the DEXLab and a Master’s student at Maastricht University. She is currently following the Strategic Marketing programme and exploring how AI-generated fashion recommendations can influence consumers’ sense of self-expression and purchase intentions.",
+  "wojciech-mandrysch": "Intern at the DEXLab and a Master’s student at Maastricht University. He is currently following the Supply Chain programme and writing his thesis on how agentic AI can be used in procurement negotiations, while also contributing to projects investigating LLM use cases in education.",
+  "corinna-rott": "PhD candidate in psychology at Maastricht University and the University of Antwerp, specializing in stress regulation and team performance. Her research combines wearable technology, psychophysiological assessment, and immersive environments. At DEXLab, she co-hosted the (De)Stress VR study, exploring how virtual reality can induce and reduce stress through tailored interventions.",
+  "anna-krispin": "Researcher focusing on VR- and AI-based training for oral communication skills. Examining how immersive environments and generative AI can support learners in practicing public speaking and workplace interactions with realistic feedback. She investigates how these technologies can enhance communication skills, build confidence, and improve training outcomes in both educational and professional contexts."
+}
+
 export const people = [
   person('jonas-heller', 'Jonas Heller', 'Co-Founder & DEXLab Director', 'core', 10, '9aa9b6_e62b00529193489098998e434efd57dc~mv2.png', 'https://www.linkedin.com/in/hellerjonas/'),
   person('tim-hilken', 'Tim Hilken', 'Co-Founder & DEXLab Director', 'core', 20, '9aa9b6_d3c982bb3abe4881ad3cdf6660ecdee5~mv2.png', 'https://www.linkedin.com/in/timhilken/'),
   person('dominik-mahr', 'Dominik Mahr', 'Co-Founder & DEXLab Director', 'core', 30, '9aa9b6_405e0be02ffa4ddb80dd1e113b45a1d7~mv2.jpeg', 'https://www.linkedin.com/in/dominik-mahr-5820083/'),
-  person('roberta-di-palma', 'Roberta Di Palma', 'Co-Founder & DEXLab Coordinator', 'core', 40, '9aa9b6_f1d5a18fd9b94aedaa3e0d2566b3e8b1~mv2.jpeg', 'https://www.linkedin.com/in/roberta-di-palma/'),
+  {...person('roberta-di-palma', 'Roberta Di Palma', 'Co-Founder & DEXLab Coordinator', 'core', 40, '9aa9b6_f1d5a18fd9b94aedaa3e0d2566b3e8b1~mv2.jpeg', 'https://www.linkedin.com/in/roberta-di-palma/'), email: 'r.dipalma@maastrichtuniversity.nl'},
   {
-    ...person('nea-saarreharju', 'Nea Saarreharju', 'DEXLab Manager', 'core', 50, '9aa9b6_d296bb4552c14e4f9cc7ace706447deb~mv2.jpg'),
+    ...person('nea-saarreharju', 'Nea Saarreharju', 'DEXLab Manager', 'core', 5, '9aa9b6_d296bb4552c14e4f9cc7ace706447deb~mv2.jpg'),
     email: 'nea.saarreharju@maastrichtuniversity.nl',
   },
   person('ilias-massignan', 'Ilias Massignan', 'DEXLab Intern', 'intern', 10, '9aa9b6_0afef63ea2b643a6b93afb94b8fd02ac~mv2.jpg', 'https://www.linkedin.com/in/ilias-massignan-5a49b2241/'),
@@ -98,7 +112,49 @@ export const people = [
   person('mark-becker', 'Mark Becker', 'Assistant Professor', 'associate', 50, '9aa9b6_8b5891cd9a5942a8a312a378c2509c07~mv2.png'),
   person('alexandru-maris', 'Alexandru Maris', 'PhD Candidate', 'associate', 60, '9aa9b6_dc03a800f9834a63b9695e61a938baac~mv2.png'),
   person('ibrahim-humdi', 'Ibrahim Humdi', 'PhD Candidate', 'associate', 70, '9aa9b6_d35e0e1598b34fd7bdcc6d2f58db022f~mv2.png'),
-]
+  {...person('stefan-bos', 'Stefan Bos', 'PhD Candidate', 'associate', 80), photo: img('9aa9b6_ed4463295fb949e9825fc42cd7211b85~mv2.jpg', 'Portrait of Stefan Bos', 'imageWithAlt', 0.3)},
+].map((p) => (bios[p._id.slice(7)] ? {...p, bio: bios[p._id.slice(7)]} : p))
+
+// Former managers and interns, from their "Meet our new ..." blog posts (photos from the same posts).
+// period = the academic year they started (September to August); order sorts within the year.
+const alum = (id, name, role, period, post, photo, order) => ({
+  _id: `person-${id}`,
+  _type: 'person',
+  name,
+  role,
+  group: 'alumni',
+  period,
+  introPost: ref(`post-${post}`),
+  photo: {
+    ...img(`9aa9b6_${photo}`, `Portrait of ${name}`, 'imageWithAlt', 0.3),
+    // Group-post photos are full-length: crop to head and shoulders for the round thumbnails
+    ...(FULL_LENGTH.some((f) => photo.startsWith(f)) && {crop: {_type: 'sanity.imageCrop', top: 0.06, bottom: 0.5, left: 0.14, right: 0.14}}),
+  },
+  order,
+})
+const FULL_LENGTH = ['91f31ebc', '0fa2d5d6', 'a322986d', '3c67a926', 'b1eddc90', '4451e7d3', '5ca45d54', '766d9179', '07baaa19']
+people.push(
+  alum('noah-moonen', 'Noah Moonen', 'DEXLab Manager', '2022/23', 'meet-the-new-dexlab-manager', '5b180593bf02408ea83aa1d283b2d8d6~mv2.jpg', 10),
+  alum('philipp', 'Philipp', 'DEXLab Intern', '2022/23', 'meet-the-new-dexlab-intern', '9a0c8b59cb4a4a9181417a2c9919befa~mv2.png', 20),
+  alum('moritz-wigger', 'Moritz Wigger', 'Thesis Intern', '2022/23', 'meet-our-first-international-intern', '2a93fd3d22634d9d8bdfb72ba38b50a2~mv2.png', 30),
+  alum('david-grigorjan', 'David Grigorjan', 'DEXLab Manager', '2023/24', 'meet-our-new-dexlab-manager-starting-in-february', 'be17fc3a748f47fab3c9c1784032dd43~mv2.jpg', 110),
+  alum('claudia-fasano', 'Claudia Fasano', 'DEXLab Intern', '2023/24', 'meet-our-new-intern-claudia-fasano', '2af159f058b94766a7ccc4c97e52e94b~mv2.png', 120),
+  alum('thies-verbraak', 'Thies Verbraak', 'DEXLab Intern', '2023/24', 'meet-our-new-intern-thies-verbraak', 'cb8631cf58494307ad60961ca5390354~mv2.jpeg', 130),
+  alum('lakkoju-nikhilesh-sai-acharya', 'Lakkoju Nikhilesh Sai Acharya', 'DEXLab Intern', '2023/24', 'meet-our-new-intern-lakkoju-nikhilesh-sai-acharya', '3a8e8544aa3c4dd097b804212809655f~mv2.jpeg', 140),
+  alum('chau-giang-nguyen', 'Chau Giang Nguyen', 'DEXLab Intern', '2023/24', 'meet-our-new-intern-chau-giang-nguyen', '17d99b9d949647b49dacaf92aadc99e5~mv2.jpeg', 150),
+  alum('steve-biewer', 'Steve Biewer', 'DEXLab Intern', '2023/24', 'meet-our-new-intern-steve-biewer', '04a8cd24c3bc43feb91bfb42c49e25bd~mv2.png', 160),
+  alum('adam-knaus', 'Adam Knaus', 'Thesis Intern', '2023/24', 'our-team-is-expanding-introducing-our-new-interns', '91f31ebc94b44c10978472586f8e94db~mv2.png', 170),
+  alum('angela-fasana-vacca', 'Angela Fasana Vacca', 'Thesis Intern', '2023/24', 'our-team-is-expanding-introducing-our-new-interns', '0fa2d5d6d73d47fcbdcaa3b314448059~mv2.png', 180),
+  alum('botond-kovacs', 'Botond Kovács', 'Thesis Intern', '2023/24', 'our-team-is-expanding-introducing-our-new-interns', 'a322986d62ca4be4b984ee59c808f95f~mv2.png', 190),
+  alum('michael-kallas', 'Michael Kallas', 'Thesis Intern', '2023/24', 'our-team-is-expanding-introducing-our-new-interns', '3c67a926426349a29403853678d7f505~mv2.png', 200),
+  alum('malina-alizei', 'Malina Alizei', 'Thesis Intern', '2023/24', 'our-team-is-expanding-introducing-our-new-interns', 'b1eddc90351f41909fea89ceaef12a10~mv2.jpg', 210),
+  alum('mariska-geerts', 'Mariska Geerts', 'Thesis Intern', '2023/24', 'our-team-is-expanding-introducing-our-new-interns', '4451e7d3ff8649e5ad81138ef9982807~mv2.png', 220),
+  alum('brian-arets', 'Brian Arets', 'DEXLab Manager', '2024/25', 'meet-our-new-dexlab-manager', 'c1287cbce02643899445fec2b0505635~mv2.jpg', 310),
+  alum('martina-pagano', 'Martina Pagano', 'Thesis Intern', '2024/25', 'welcome-new-thesis-internship-students', '5ca45d540f364b6d8831013380b2bfec~mv2.jpeg', 320),
+  alum('ayat-azzimani', 'Ayat Azzimani', 'Thesis Intern', '2024/25', 'welcome-new-thesis-internship-students', '766d917953c745bda3cecef7ea864bdf~mv2.jpeg', 330),
+  alum('lara-grunschel', 'Lara Grunschel', 'Thesis Intern', '2024/25', 'welcome-new-thesis-internship-students', '07baaa19d6e24689933a6d6f8be6c705~mv2.jpeg', 340),
+  alum('laura-grisi-chavarria', 'Laura Grisi Chavarria', 'Thesis Intern', '2024/25', 'welcome-new-thesis-internship-students', 'e49bc722bc864c689e979faa19c1be64~mv2.jpg', 350),
+)
 
 // ---------------------------------------------------------------- equipment
 const eq = (name, category, quantity, image, order) => ({
@@ -351,9 +407,10 @@ export const pages = [
   page('home', 'Home', [
     section('sectionHero', {
       heading: 'DEXLab the Digital Experience Lab',
+      image: img('9aa9b6_622b7a14b9c941688d04edf7c37f7ccc~mv2.jpg', 'The DEXLab team holding VR headsets', 'imageWithAlt', 0.35),
       subheading:
         'We investigate how digital technologies transform human experience. Our work brings together immersive experiences, service robots, biometric tools, and artificial intelligence. Through cross-disciplinary collaboration, research, and hands-on workshops, we help students, researchers, and industry partners explore how technology can improve education, services, and society.',
-      layout: 'plain',
+      layout: 'split',
       buttons: [link('Read More', '/about')],
     }),
     section('sectionCards', {
@@ -587,7 +644,7 @@ export const pages = [
 
   page('meet-the-team', 'Meet the Team', [
     hero('Meet the DEXLab Team', 'Get to know the brilliant minds behind DEXLab. Each member brings unique expertise and passion to our research center.'),
-    section('sectionCollection', {source: 'team', groups: ['core', 'intern', 'associate']}),
+    section('sectionCollection', {source: 'team', groups: ['core', 'intern', 'associate', 'alumni']}),
   ]),
 
   page('publications', 'Publications', [

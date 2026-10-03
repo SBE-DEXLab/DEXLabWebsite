@@ -78,6 +78,8 @@ export interface Person {
   role?: string
   group: 'core' | 'intern' | 'associate' | 'alumni'
   bio?: string
+  period?: string
+  introPost?: string
   linkedin?: string
   website?: string
   email?: string

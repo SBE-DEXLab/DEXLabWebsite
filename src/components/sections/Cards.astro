@@ -35,7 +35,7 @@ const ext = (href?: string) => (isExternal(href) ? {target: '_blank', rel: 'noop
       (heading || intro) && (
         <div class="section-head">
           {heading && <h2 set:html={brandify(heading)} />}
-          {intro && <p>{intro}</p>}
+          {intro && <p class:list={{long: intro.length > 220}}>{intro}</p>}
         </div>
       )
     }
@@ -118,20 +118,41 @@ const ext = (href?: string) => (isExternal(href) ? {target: '_blank', rel: 'noop
 </section>
 
 <style>
+  .style-icon .card {
+    background: #fff;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    transition: transform 0.25s, box-shadow 0.25s;
+  }
+  .style-icon .card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
+  }
   .style-icon .card-body {
     align-items: center;
     text-align: center;
-    padding-inline: 12px;
+    padding: 36px 28px 32px;
   }
   .style-icon .card-body .btn {
     align-self: center;
-    margin-top: 16px;
+    margin-top: auto;
+  }
+  .style-icon .card-body p {
+    margin-bottom: 20px;
+  }
+  .icon {
+    display: grid;
+    place-items: center;
+    width: 112px;
+    height: 112px;
+    margin: 0 auto 8px;
+    border-radius: 50%;
+    background: var(--blue-tint);
   }
   .icon :global(img) {
-    width: 84px;
-    height: 84px;
+    width: 68px;
+    height: 68px;
     object-fit: contain;
-    margin: 0 auto 8px;
   }
   .rows {
     list-style: none;
