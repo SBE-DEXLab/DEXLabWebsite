@@ -79,7 +79,7 @@ Every document has a full history. Click the clock icon (top right of the docume
 
 ## Forms and the mailing list
 
-Contact form messages are emailed to sbe-dexlab@maastrichtuniversity.nl. Newsletter sign-ups are collected in Netlify (Forms → newsletter) and can be downloaded as CSV. Ask a technical admin for access.
+Contact form messages are emailed to sbe-dexlab@maastrichtuniversity.nl. Every contact message and newsletter sign-up is also stored in the website's own database on Cloudflare (EU). Ask a technical admin, or Claude, for an export.
 
 ## Need something the editor cannot do?
 

@@ -1,0 +1,16 @@
+# Cloudflare Pages: the website (dist/) plus the form handler in functions/.
+# Deploy: npm run build:all && npx wrangler pages deploy
+name = "sbe-dexlab"
+pages_build_output_dir = "dist"
+compatibility_date = "2026-10-01"
+
+# Form submissions (contact form, newsletter sign-ups), stored in the EU (Western Europe)
+[[d1_databases]]
+binding = "FORMS"
+database_name = "dexlab-forms"
+database_id = "0fa307bb-af2d-4805-b8e7-407cff1adff0"
+
+[vars]
+NOTIFY_TO = "sbe-dexlab@maastrichtuniversity.nl"
+# Set RESEND_API_KEY as a secret (Cloudflare > Workers & Pages > sbe-dexlab > Settings > Variables and secrets)
+# to email every submission to NOTIFY_TO. Without it, submissions are only stored.

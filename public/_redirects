@@ -11,5 +11,5 @@
 /blog/page/1                         /blog                                    301
 
 # Sanity Studio is a single-page app served from /admin
-/admin/*                             /admin/index.html                        200
+/admin/*                             /admin/                                  200
 /static/*                            /admin/static/:splat                     200

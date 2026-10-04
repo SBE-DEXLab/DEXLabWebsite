@@ -39,7 +39,7 @@ const settings = await getSettings()
     {heading && <h2 class="form-title" set:html={brandify(heading)} />}
     {intro && <p class="intro">{intro}</p>}
     <div class="panel form-panel">
-      <form class="form" name="contact" method="POST" action="/thanks/?form=contact" data-netlify="true" netlify-honeypot="company">
+      <form class="form" name="contact" method="POST" action="/api/form">
                   <input type="hidden" name="form-name" value="contact" />
       <p class="hp"><label>Leave this empty <input name="company" tabindex="-1" autocomplete="off" /></label></p>
       <div class="row">

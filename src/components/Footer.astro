@@ -30,7 +30,7 @@ const address = (settings?.address || '').split('\n').filter((l) => l && l !== '
 
     {
       nl?.enabled !== false && (
-        <form class="col newsletter" name="newsletter" method="POST" action="/thanks/?form=newsletter" data-netlify="true" netlify-honeypot="company">
+        <form class="col newsletter" name="newsletter" method="POST" action="/api/form">
           <h2 set:html={brandify(nl?.heading || 'Join DEXLab mailing list')} />
           <input type="hidden" name="form-name" value="newsletter" />
           <p class="hp">
