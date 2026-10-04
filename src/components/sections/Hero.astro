@@ -9,7 +9,7 @@ interface Props {
   eyebrow?: string
   subheading?: string
   image?: ImgT
-  layout?: 'overlay' | 'banner' | 'plain' | 'split'
+  layout?: 'overlay' | 'banner' | 'plain' | 'split' | 'stacked'
   buttons?: Link[]
   first?: boolean
 }
@@ -22,7 +22,21 @@ const focus = image?.hotspot ? `${image.hotspot.x * 100}% ${image.hotspot.y * 10
 ---
 
 {
-  layout === 'split' ? (
+  layout === 'stacked' ? (
+    <section class="hero split stacked">
+      <div class="container wide">
+        <div class="stacked-text">
+          {eyebrow && <span class="eyebrow">{eyebrow}</span>}
+          <H set:html={brandify(heading)} />
+          {subheading && <p class="split-lead">{subheading}</p>}
+          <Buttons buttons={buttons} center />
+        </div>
+        <figure class="split-photo stacked-photo">
+          <Img image={image} width={1400} height={640} sizes="(min-width: 1320px) 1240px, 100vw" eager={first} style={`object-position: ${focus}`} />
+        </figure>
+      </div>
+    </section>
+  ) : layout === 'split' ? (
     <section class="hero split">
       <div class="container wide split-grid">
         <div class="split-text">
@@ -61,10 +75,51 @@ const focus = image?.hotspot ? `${image.hotspot.x * 100}% ${image.hotspot.y * 10
   }
   /* Landing page: text left, photo right, on a soft peach fade that continues the header */
   .hero.split {
+    position: relative;
+    isolation: isolate;
     text-align: left;
     background: linear-gradient(var(--peach), #fff 85%);
     padding-block: clamp(40px, 6vw, 88px) clamp(24px, 3vw, 40px);
     overflow: hidden;
+  }
+  /* soft brand-coloured glows drifting behind the headline */
+  .hero.split::before,
+  .hero.split::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+    filter: blur(70px);
+    opacity: 0.35;
+    animation: drift 18s ease-in-out infinite alternate;
+  }
+  .hero.split::before {
+    width: 520px;
+    height: 520px;
+    left: -160px;
+    top: -120px;
+    background: var(--blue);
+  }
+  .hero.split::after {
+    width: 380px;
+    height: 380px;
+    left: 30%;
+    bottom: -180px;
+    background: var(--orange);
+    opacity: 0.22;
+    animation-duration: 22s;
+    animation-direction: alternate-reverse;
+  }
+  @keyframes drift {
+    to {
+      transform: translate(80px, 50px) scale(1.12);
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .hero.split::before,
+    .hero.split::after {
+      animation: none;
+    }
   }
   .split-grid {
     display: grid;
@@ -116,6 +171,36 @@ const focus = image?.hotspot ? `${image.hotspot.x * 100}% ${image.hotspot.y * 10
     border-radius: 24px;
     box-shadow: var(--shadow-hover);
   }
+  /* stacked: centred text, then a wide group photo (everyone visible) */
+  .stacked-text {
+    max-width: 800px;
+    margin: 0 auto clamp(32px, 4vw, 56px);
+    text-align: center;
+  }
+  .stacked-text :global(h1) {
+    font-size: clamp(2.4rem, 5.4vw, 4rem);
+    line-height: 1.08;
+    margin-bottom: 22px;
+  }
+  .stacked .split-lead {
+    margin: 0 auto;
+    max-width: 680px;
+  }
+  .stacked-photo {
+    max-width: 1240px;
+    margin: 0 auto;
+  }
+  .stacked-photo :global(img) {
+    aspect-ratio: 1400 / 640;
+  }
+  .stacked-photo::before {
+    inset: -16px 60px 60px -16px;
+  }
+  @media (max-width: 900px) {
+    .stacked-photo :global(img) {
+      aspect-ratio: 4 / 3;
+    }
+  }
   @media (max-width: 900px) {
     .split-grid {
       grid-template-columns: 1fr;
@@ -125,10 +210,16 @@ const focus = image?.hotspot ? `${image.hotspot.x * 100}% ${image.hotspot.y * 10
       margin: 0 12px 12px;
     }
   }
+  /* banner photos sit inset with rounded corners rather than edge to edge */
   .banner-img {
-    height: clamp(200px, 33vw, 470px);
+    height: clamp(220px, 32vw, 460px);
+    max-width: var(--max-wide);
+    margin: clamp(16px, 2.5vw, 32px) auto 0;
+    width: calc(100% - 2 * var(--gutter));
+    border-radius: 24px;
     overflow: hidden;
     background: var(--grey);
+    box-shadow: var(--shadow);
   }
   .banner-img :global(img) {
     width: 100%;

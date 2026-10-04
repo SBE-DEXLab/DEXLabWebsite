@@ -1,0 +1,466 @@
+{
+ "person-adam-knaus": {
+  "crop": {
+   "_type": "sanity.imageCrop",
+   "bottom": 0.5138,
+   "left": 0.147,
+   "right": 0.217,
+   "top": 0.0092
+  },
+  "hotspot": {
+   "_type": "sanity.imageHotspot",
+   "height": 0.35,
+   "width": 0.466,
+   "x": 0.465,
+   "y": 0.2
+  }
+ },
+ "person-alexandru-maris": {
+  "hotspot": {
+   "_type": "sanity.imageHotspot",
+   "height": 0.792,
+   "width": 1,
+   "x": 0.5,
+   "y": 0.42
+  }
+ },
+ "person-angela-fasana-vacca": {
+  "crop": {
+   "_type": "sanity.imageCrop",
+   "bottom": 0.518,
+   "left": 0.242,
+   "right": 0.302,
+   "top": 0.077
+  },
+  "hotspot": {
+   "_type": "sanity.imageHotspot",
+   "height": 0.297,
+   "width": 0.334,
+   "x": 0.47,
+   "y": 0.239
+  }
+ },
+ "person-anna-krispin": {
+  "hotspot": {
+   "_type": "sanity.imageHotspot",
+   "height": 0.462,
+   "width": 0.686,
+   "x": 0.432,
+   "y": 0.241
+  }
+ },
+ "person-ayat-azzimani": {
+  "crop": {
+   "_type": "sanity.imageCrop",
+   "bottom": 0.3564,
+   "left": 0.2595,
+   "right": 0.2035,
+   "top": 0.2408
+  },
+  "hotspot": {
+   "_type": "sanity.imageHotspot",
+   "height": 0.295,
+   "width": 0.394,
+   "x": 0.528,
+   "y": 0.402
+  }
+ },
+ "person-botond-kovacs": {
+  "crop": {
+   "_type": "sanity.imageCrop",
+   "bottom": 0.5018,
+   "left": 0.2205,
+   "right": 0.2185,
+   "top": 0.0
+  },
+  "hotspot": {
+   "_type": "sanity.imageHotspot",
+   "height": 0.365,
+   "width": 0.411,
+   "x": 0.501,
+   "y": 0.188
+  }
+ },
+ "person-brian-arets": {
+  "crop": {
+   "_type": "sanity.imageCrop",
+   "bottom": 0.281,
+   "left": 0.0914,
+   "right": 0.1274,
+   "top": 0.089
+  },
+  "hotspot": {
+   "_type": "sanity.imageHotspot",
+   "height": 0.462,
+   "width": 0.572,
+   "x": 0.482,
+   "y": 0.341
+  }
+ },
+ "person-chau-giang-nguyen": {
+  "crop": {
+   "_type": "sanity.imageCrop",
+   "bottom": 0.1903,
+   "left": 0.226,
+   "right": 0.204,
+   "top": 0.3883
+  },
+  "hotspot": {
+   "_type": "sanity.imageHotspot",
+   "height": 0.308,
+   "width": 0.418,
+   "x": 0.511,
+   "y": 0.557
+  }
+ },
+ "person-claudia-fasano": {
+  "crop": {
+   "_type": "sanity.imageCrop",
+   "bottom": 0.0,
+   "left": 0.0,
+   "right": 0.0,
+   "top": 0.0283
+  },
+  "hotspot": {
+   "_type": "sanity.imageHotspot",
+   "height": 1,
+   "width": 1,
+   "x": 0.507,
+   "y": 0.465
+  }
+ },
+ "person-corinna-rott": {
+  "hotspot": {
+   "_type": "sanity.imageHotspot",
+   "height": 0.521,
+   "width": 0.521,
+   "x": 0.554,
+   "y": 0.511
+  }
+ },
+ "person-david-grigorjan": {
+  "crop": {
+   "_type": "sanity.imageCrop",
+   "bottom": 0.2576,
+   "left": 0.1041,
+   "right": 0.1081,
+   "top": 0.1484
+  },
+  "hotspot": {
+   "_type": "sanity.imageHotspot",
+   "height": 0.436,
+   "width": 0.576,
+   "x": 0.498,
+   "y": 0.386
+  }
+ },
+ "person-dominik-mahr": {
+  "hotspot": {
+   "_type": "sanity.imageHotspot",
+   "height": 0.469,
+   "width": 0.585,
+   "x": 0.489,
+   "y": 0.275
+  }
+ },
+ "person-ibrahim-humdi": {
+  "hotspot": {
+   "_type": "sanity.imageHotspot",
+   "height": 0.803,
+   "width": 0.957,
+   "x": 0.77,
+   "y": 0.273
+  }
+ },
+ "person-ilias-massignan": {
+  "hotspot": {
+   "_type": "sanity.imageHotspot",
+   "height": 0.504,
+   "width": 0.671,
+   "x": 0.474,
+   "y": 0.309
+  }
+ },
+ "person-joana-duhamel": {
+  "hotspot": {
+   "_type": "sanity.imageHotspot",
+   "height": 0.66,
+   "width": 0.997,
+   "x": 0.481,
+   "y": 0.427
+  }
+ },
+ "person-jonas-heller": {
+  "hotspot": {
+   "_type": "sanity.imageHotspot",
+   "height": 0.431,
+   "width": 0.649,
+   "x": 0.553,
+   "y": 0.286
+  }
+ },
+ "person-lakkoju-nikhilesh-sai-acharya": {
+  "crop": {
+   "_type": "sanity.imageCrop",
+   "bottom": 0.1146,
+   "left": 0.0,
+   "right": 0.0,
+   "top": 0.0844
+  },
+  "hotspot": {
+   "_type": "sanity.imageHotspot",
+   "height": 0.601,
+   "width": 0.75,
+   "x": 0.552,
+   "y": 0.403
+  }
+ },
+ "person-lara-grunschel": {
+  "crop": {
+   "_type": "sanity.imageCrop",
+   "bottom": 0.3802,
+   "left": 0.202,
+   "right": 0.254,
+   "top": 0.2118
+  },
+  "hotspot": {
+   "_type": "sanity.imageHotspot",
+   "height": 0.299,
+   "width": 0.398,
+   "x": 0.474,
+   "y": 0.375
+  }
+ },
+ "person-laura-grisi-chavarria": {
+  "crop": {
+   "_type": "sanity.imageCrop",
+   "bottom": 0.1132,
+   "left": 0.0,
+   "right": 0.0,
+   "top": 0.0514
+  },
+  "hotspot": {
+   "_type": "sanity.imageHotspot",
+   "height": 0.697,
+   "width": 0.836,
+   "x": 0.505,
+   "y": 0.374
+  }
+ },
+ "person-malina-alizei": {
+  "crop": {
+   "_type": "sanity.imageCrop",
+   "bottom": 0.4952,
+   "left": 0.222,
+   "right": 0.264,
+   "top": 0.0518
+  },
+  "hotspot": {
+   "_type": "sanity.imageHotspot",
+   "height": 0.332,
+   "width": 0.376,
+   "x": 0.479,
+   "y": 0.233
+  }
+ },
+ "person-mariska-geerts": {
+  "crop": {
+   "_type": "sanity.imageCrop",
+   "bottom": 0.488,
+   "left": 0.2299,
+   "right": 0.2299,
+   "top": 0.032
+  },
+  "hotspot": {
+   "_type": "sanity.imageHotspot",
+   "height": 0.352,
+   "width": 0.396,
+   "x": 0.5,
+   "y": 0.224
+  }
+ },
+ "person-mark-becker": {
+  "hotspot": {
+   "_type": "sanity.imageHotspot",
+   "height": 0.902,
+   "width": 1,
+   "x": 0.469,
+   "y": 0.422
+  }
+ },
+ "person-martina-pagano": {
+  "crop": {
+   "_type": "sanity.imageCrop",
+   "bottom": 0.3092,
+   "left": 0.195,
+   "right": 0.341,
+   "top": 0.3428
+  },
+  "hotspot": {
+   "_type": "sanity.imageHotspot",
+   "height": 0.255,
+   "width": 0.339,
+   "x": 0.427,
+   "y": 0.482
+  }
+ },
+ "person-michael-kallas": {
+  "crop": {
+   "_type": "sanity.imageCrop",
+   "bottom": 0.536,
+   "left": 0.136,
+   "right": 0.264,
+   "top": 0.014
+  },
+  "hotspot": {
+   "_type": "sanity.imageHotspot",
+   "height": 0.33,
+   "width": 0.44,
+   "x": 0.436,
+   "y": 0.194
+  }
+ },
+ "person-moritz-wigger": {
+  "crop": {
+   "_type": "sanity.imageCrop",
+   "bottom": 0.4232,
+   "left": 0.1335,
+   "right": 0.1935,
+   "top": 0.0338
+  },
+  "hotspot": {
+   "_type": "sanity.imageHotspot",
+   "height": 0.398,
+   "width": 0.493,
+   "x": 0.47,
+   "y": 0.251
+  }
+ },
+ "person-nea-saarreharju": {
+  "hotspot": {
+   "_type": "sanity.imageHotspot",
+   "height": 0.625,
+   "width": 0.832,
+   "x": 0.525,
+   "y": 0.335
+  }
+ },
+ "person-noah-moonen": {
+  "crop": {
+   "_type": "sanity.imageCrop",
+   "bottom": 0.1898,
+   "left": 0.111,
+   "right": 0.205,
+   "top": 0.1014
+  },
+  "hotspot": {
+   "_type": "sanity.imageHotspot",
+   "height": 0.519,
+   "width": 0.502,
+   "x": 0.453,
+   "y": 0.385
+  }
+ },
+ "person-philipp": {
+  "crop": {
+   "_type": "sanity.imageCrop",
+   "bottom": 0.01,
+   "left": 0.1,
+   "right": 0.0,
+   "top": 0.09
+  },
+  "hotspot": {
+   "_type": "sanity.imageHotspot",
+   "height": 0.66,
+   "width": 0.66,
+   "x": 0.55,
+   "y": 0.45
+  }
+ },
+ "person-roberta-di-palma": {
+  "hotspot": {
+   "_type": "sanity.imageHotspot",
+   "height": 0.438,
+   "width": 0.548,
+   "x": 0.488,
+   "y": 0.284
+  }
+ },
+ "person-roman-briker": {
+  "hotspot": {
+   "_type": "sanity.imageHotspot",
+   "height": 0.601,
+   "width": 0.911,
+   "x": 0.685,
+   "y": 0.221
+  }
+ },
+ "person-stefan-bos": {
+  "hotspot": {
+   "_type": "sanity.imageHotspot",
+   "height": 0.717,
+   "width": 0.717,
+   "x": 0.492,
+   "y": 0.334
+  }
+ },
+ "person-steve-biewer": {
+  "crop": {
+   "_type": "sanity.imageCrop",
+   "bottom": 0.156,
+   "left": 0.19,
+   "right": 0.09,
+   "top": 0.304
+  },
+  "hotspot": {
+   "_type": "sanity.imageHotspot",
+   "height": 0.396,
+   "width": 0.528,
+   "x": 0.55,
+   "y": 0.52
+  }
+ },
+ "person-thies-verbraak": {
+  "crop": {
+   "_type": "sanity.imageCrop",
+   "bottom": 0.0,
+   "left": 0.0,
+   "right": 0.0,
+   "top": 0.0
+  },
+  "hotspot": {
+   "_type": "sanity.imageHotspot",
+   "height": 1,
+   "width": 1,
+   "x": 0.528,
+   "y": 0.546
+  }
+ },
+ "person-tim-hilken": {
+  "hotspot": {
+   "_type": "sanity.imageHotspot",
+   "height": 0.453,
+   "width": 0.572,
+   "x": 0.492,
+   "y": 0.291
+  }
+ },
+ "person-wojciech-mandrysch": {
+  "hotspot": {
+   "_type": "sanity.imageHotspot",
+   "height": 0.33,
+   "width": 0.44,
+   "x": 0.54,
+   "y": 0.31
+  }
+ },
+ "person-yosune-uribe": {
+  "hotspot": {
+   "_type": "sanity.imageHotspot",
+   "height": 0.493,
+   "width": 0.658,
+   "x": 0.458,
+   "y": 0.325
+  }
+ }
+}

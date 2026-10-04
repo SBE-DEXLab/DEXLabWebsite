@@ -1,6 +1,20 @@
+2026
+Becker, M., de Jong, D., Briker, R., Mennens, K., Heller, J., Mahr, D., & Grewal, D. (2026). Using customized, conversational AI agents in leadership and management research: Benefits, practical illustrations, and best practices. The Leadership Quarterly, 37(3), 101952.
+Chong, T., Yu, T., Keeling, D. I., de Ruyter, K., & Hilken, T. (2026). The voice in the machine: designing embodied conversational agents for rapport in complex online service delivery. European Journal of Marketing, 60(5), 1142-1175.
+Glebova, E., & Heller, J. (2026). Immersive Environments. In International Encyclopedia of Business Management (pp. 567-575). Elsevier.
+Golf-Papez, M., Keeling, D. I., de Ruyter, K., & Hilken, T. (2026). Breaking barriers, building wellbeing: an inclusive metaverse framework. Journal of Business Research, 213, 116234.
+Goosse, F., Hammedi, W., & Mahr, D. (2026). Empowering the visually impaired through smart voice assistants: a strengths-based approach to resilience. Journal of Business Research, 216, 116383.
+Henkens, B., Schultz, C. D., De Keyser, A., & Mahr, D. (2026). The sound of progress: AI voice agents in service. Journal of Service Management, 37(1), 1-32.
+Krispin, A., Pluymaekers, M., & Mahr, D. (2026). Enhancing Oral Communication Skills Using VR? A Conceptual Model and Research Agenda. Business and Professional Communication Quarterly, 23294906261424400.
+Sanders, T., Mahr, D., & Krispin, A. (2026). From Complex Tasks to Collaborative Success: Communication and Performance in Virtual Reality Teams. XR and Metaverse (Springer Proceedings in Business and Economics, pp. 281-293). Springer Nature Switzerland.
+Schaap, E., Mahr, D., Wilms, I., Klingwort, J., & Grewal, D. (2026). Why more isn’t always better: Examining the effects of network density on firms’ likelihood of new product innovation. Journal of Business Research, 212, 116192.
+Steins, M., Mennens, K., Beausaert, S., Mahr, D., Odekerken-Schröder, G., Mariş, A., & Mathmann, F. (2026). The impact of a telepresence robot on group conditions and student engagement: A mixed-method study in higher education. The Internet and Higher Education, 68, 101055.
+Wals, S., Grewal, D., Wilms, I., Hilken, T., Briassouli, A., & Wetzels, M. (2026). The dynamic effects of visual complexity and scene cuts on viewer attention. Journal of the Academy of Marketing Science, 54(2), 596-617.
 2025
 Chong, T., Yu, T., Keeling, D. I., de Ruyter, K., & Hilken, T. (2025). Value-by-Proxy: Engaging Stakeholders in AI Service Interactions. JOURNAL OF PRODUCT INNOVATION MANAGEMENT, 1-50.
+Di Palma, R., Beausaert, S., Mahr, D., Heller, J., & Hilken, T. (2025). Does Using Virtual Reality to Enhance Students' Presentation Skills Work? The Role of Feedback and Presence. Journal of Computer Assisted Learning, 41(5), e70097.
 Dong, X., Hu, C., Heller, J., & Deng, N. (2025). Does using augmented reality in online shopping affect post-purchase product perceptions? A mixed design using machine-learning based sentiment analysis, lab experiments, and focus groups. International Journal of Information Management, 82, 102872.
+Guan, L., Vanpoucke, E., & Hilken, T. (2025). Dynamic Attribution in Chain Liability: Managing Recovery From Environmental Supply Chain Incidents. Journal of Supply Chain Management, 61(4), 25-53.
 Herold, S., Heller, J., Rozemeijer, F., & Mahr, D. (2025). Brave New Procurement Deals: An Experimental Study of how Generative Artificial Intelligence Reshapes Buyer–Supplier Negotiations. Journal of Purchasing and Supply Management, 101012.
 Mahr, D., Odekerken-Schröder, G., & van Doorn, J. (2025). Evolution of service robots in marketing: A relational framework and future research agenda. Journal of Business Research, 192, 115204.
 Peusen, B., Mennens, K., & Mahr, D. (2025). Partner, master, or servant? How older adults experience their relationship with socially assistive robots. In Handbook of Service Experience(pp. 162-175). Edward Elgar Publishing.

@@ -68,5 +68,26 @@ const ld = [orgLd, ...(Array.isArray(jsonLd) ? jsonLd : jsonLd ? [jsonLd] : [])]
       <slot />
     </main>
     <Footer settings={settings} />
+    <script>
+      // Fade content up as it scrolls into view; siblings are staggered slightly.
+      if (!matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window) {
+        const targets = document.querySelectorAll<HTMLElement>(
+          'main .section-head, main .card, main .person, main .alumni li, main .split-rows > li, main .rows > li, main .tiles > li, main .split > *, main .faq > *, main .facts > li, main .tech > li, main .stat',
+        )
+        const io = new IntersectionObserver(
+          (entries) => {
+            for (const e of entries) if (e.isIntersecting) (e.target.classList.add('in'), io.unobserve(e.target))
+          },
+          {rootMargin: '0px 0px -8% 0px'},
+        )
+        targets.forEach((el) => {
+          if (el.getBoundingClientRect().top < innerHeight) return // already on screen: leave as is
+          const siblings = el.parentElement ? [...el.parentElement.children] : []
+          el.style.setProperty('--i', String(Math.min(siblings.indexOf(el), 6)))
+          el.classList.add('reveal')
+          io.observe(el)
+        })
+      }
+    </script>
   </body>
 </html>

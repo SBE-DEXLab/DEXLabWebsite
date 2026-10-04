@@ -48,3 +48,11 @@ Schema in `studio/schemas/documents/`, register in `studio/schemas/index.ts`, ad
 - Forms are Netlify Forms (`data-netlify="true"`, honeypot field `company`, consent checkbox).
 - Moved URLs get a 301 in `public/_redirects`.
 - Content changes belong in Sanity, not in code. Only edit `migration/` to re-run the Wix migration.
+
+## Working on the live site
+
+- Sanity is the source of truth for content. Before changing a Sanity document, check `_updatedAt` so you never overwrite an editor's Studio change; prefer patching fields over `dataset import --replace`. `migration/sync-pages.mjs` writes `content/sync.ndjson` for bulk syncs of pages and people; import only the documents you changed.
+- Portrait focal points (and alumni crops) live in `migration/photo-focus.json`, detected with OpenCV and checked by eye. Give new portraits an entry and patch `photo.hotspot` / `photo.crop` in Sanity too.
+- New images from the team: upload with the Sanity client (`npx sanity exec <script> --with-user-token`), set alt text and a hotspot, then check the page rendered against live data (`PUBLIC_SANITY_PROJECT_ID=56vhiq14 npx astro build`).
+- Run website work from Claude Cowork or the desktop app when images are involved: a cloud session cannot receive files pasted into chat.
+- Every code change: branch, `npx astro check`, `npm run build:all`, pull request on `SBE-DEXLab/DEXLabWebsite`, merge only when the lab says go, then check www.sbe-dexlab.com.

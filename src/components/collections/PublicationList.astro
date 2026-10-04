@@ -11,7 +11,7 @@ const kinds: Record<string, string> = {
   other: 'Other',
 }
 // Lab members are highlighted in author lists.
-const members = ['Heller, J.', 'Hilken, T.', 'Mahr, D.', 'Di Palma, R.', 'Becker, M.', 'Briker, R.', 'Steins, M.', 'Mennens, K.']
+const members = ['Heller, J.', 'Hilken, T.', 'Mahr, D.', 'Di Palma, R.', 'Becker, M.', 'Briker, R.', 'Steins, M.', 'Mennens, K.', 'Krispin, A.', 'Mariş, A.']
 const highlight = (authors: string) => {
   let html = authors.replace(/[&<>]/g, (c) => ({'&': '&amp;', '<': '&lt;', '>': '&gt;'})[c]!)
   for (const m of members) html = html.split(m).join(`<strong>${m}</strong>`)

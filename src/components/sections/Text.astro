@@ -85,13 +85,10 @@ const panel = tone === 'muted' && hasMedia
     width: 100%;
     border-radius: var(--radius);
   }
+  /* pictures beside a grey panel keep their own proportions (no cropping of graphics) */
   .split:has(.panel) {
     gap: 24px;
-    align-items: stretch;
-  }
-  .split:has(.panel) .media :global(img) {
-    height: 100%;
-    object-fit: cover;
+    align-items: center;
   }
   @media (max-width: 820px) {
     .split {
