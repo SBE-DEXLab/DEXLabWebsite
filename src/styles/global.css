@@ -8,6 +8,8 @@
   --grey: #e6e7e8; /* panels, footer */
   --blue-tint: #e8f5fb; /* very light DEX blue, for quotes */
   --line: #c9ccd1;
+  --line-light: #d5d9dc; /* brand Light Grey, for card borders and dividers */
+  --azure: #2d85c6; /* brand Dark Azure, for colour blocks behind white text */
   --ink: #001c3d;
   --muted: #33475e;
   --white: #fff;

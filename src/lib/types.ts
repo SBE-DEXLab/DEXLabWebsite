@@ -126,3 +126,17 @@ export interface Faq {
   question: string
   answer?: RichText
 }
+export interface Project {
+  _id: string
+  title: string
+  category: 'research' | 'phd' | 'education' | 'network'
+  status: 'current' | 'completed'
+  period?: string
+  partners?: string
+  description?: string
+  tags?: string[]
+  team?: string[]
+  link?: string
+  cover?: Img
+  coverColor?: 'navy' | 'azure'
+}

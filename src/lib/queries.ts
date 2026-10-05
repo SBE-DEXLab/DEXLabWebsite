@@ -1,5 +1,5 @@
-import {query} from './sanity'
-import type {Settings, Page, Post, PostCard, Category, Person, Workshop, Publication, Equipment, Faq} from './types'
+import {query, previewPages} from './sanity'
+import type {Settings, Page, Post, PostCard, Category, Person, Workshop, Publication, Equipment, Faq, Project} from './types'
 
 // Shared projections. `image` resolves the asset URL so both Sanity and the local seed work.
 const image = `{alt, caption, crop, hotspot, "url": asset->url, "ref": asset._ref, "dims": asset->metadata.dimensions}`
@@ -27,10 +27,16 @@ export const getSettings = () =>
   query<Settings>(`*[_id == "siteSettings"][0]{..., "ogImage": ogImage${image}}`)
 
 export const getPage = (slug: string) =>
-  query<Page | null>(`*[_type == "page" && slug.current == $slug][0]{_id, title, "slug": slug.current, seo{..., "image": image${image}}, ${sections}}`, {slug})
+  query<Page | null>(
+    `*[_type == "page" && slug.current == $slug][0]{_id, title, "slug": slug.current, seo{..., "image": image${image}}, ${sections}}`,
+    {slug},
+    {drafts: previewPages.includes(slug)},
+  )
 
-export const getPageSlugs = () =>
-  query<string[]>(`*[_type == "page" && defined(slug.current) && slug.current != "home"].slug.current`)
+export const getPageSlugs = async () => {
+  const slugs = await query<string[]>(`*[_type == "page" && defined(slug.current) && slug.current != "home"].slug.current`)
+  return [...new Set([...slugs, ...previewPages])]
+}
 
 export const getPosts = (limit = 1000, category?: string) =>
   query<PostCard[]>(
@@ -78,3 +84,12 @@ export const getEquipment = () =>
   query<Equipment[]>(`*[_type == "equipment"] | order(order asc){_id, name, category, quantity, description, "image": image${image}}`)
 
 export const getFaqs = () => query<Faq[]>(`*[_type == "faq"] | order(order asc){_id, question, answer${richText}}`)
+
+export const getProjects = () =>
+  query<Project[]>(
+    `*[_type == "project" && hidden != true] | order(order asc, title asc){
+      _id, title, category, status, period, partners, description, tags, team, link, coverColor, "cover": cover${image}
+    }`,
+    {},
+    {drafts: true},
+  )

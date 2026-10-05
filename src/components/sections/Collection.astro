@@ -7,12 +7,13 @@ import WorkshopGrid from '../collections/WorkshopGrid.astro'
 import PublicationList from '../collections/PublicationList.astro'
 import EquipmentGrid from '../collections/EquipmentGrid.astro'
 import FaqList from '../collections/FaqList.astro'
+import ProjectGrid from '../collections/ProjectGrid.astro'
 
 interface Props {
   anchor?: string
   heading?: string
   intro?: string
-  source: 'posts' | 'team' | 'workshops' | 'publications' | 'equipment' | 'faq'
+  source: 'posts' | 'team' | 'workshops' | 'projects' | 'publications' | 'equipment' | 'faq'
   limit?: number
   categorySlug?: string
   groups?: string[]
@@ -23,7 +24,7 @@ const {anchor, heading, intro, source, limit, categorySlug, groups, link, tone =
 ---
 
 <section id={anchor} class:list={['section', `tone-${tone}`]}>
-  <div class:list={['container', {wide: ['team', 'workshops', 'equipment'].includes(source)}]}>
+  <div class:list={['container', {wide: ['team', 'workshops', 'projects', 'equipment'].includes(source)}]}>
     {
       (heading || intro) && (
         <div class="section-head">
@@ -35,6 +36,7 @@ const {anchor, heading, intro, source, limit, categorySlug, groups, link, tone =
     {source === 'posts' && <PostGrid limit={limit || 3} category={categorySlug} />}
     {source === 'team' && <TeamGrid groups={groups?.length ? groups : ['core', 'intern', 'associate']} />}
     {source === 'workshops' && <WorkshopGrid limit={limit} />}
+    {source === 'projects' && <ProjectGrid />}
     {source === 'publications' && <PublicationList />}
     {source === 'equipment' && <EquipmentGrid />}
     {source === 'faq' && <FaqList limit={limit} />}

@@ -9,6 +9,7 @@ import {PresentationIcon} from '@sanity/icons/Presentation'
 import {BookIcon} from '@sanity/icons/Book'
 import {RocketIcon} from '@sanity/icons/Rocket'
 import {HelpCircleIcon} from '@sanity/icons/HelpCircle'
+import {ProjectsIcon} from '@sanity/icons/Projects'
 
 export const structure: StructureResolver = (S) =>
   S.list()
@@ -71,6 +72,9 @@ export const structure: StructureResolver = (S) =>
         ),
       S.listItem().title('Workshops').icon(PresentationIcon).child(
         S.documentTypeList('workshop').title('Workshops').defaultOrdering([{field: 'order', direction: 'asc'}]),
+      ),
+      S.listItem().title('Projects').icon(ProjectsIcon).child(
+        S.documentTypeList('project').title('Projects').defaultOrdering([{field: 'order', direction: 'asc'}]),
       ),
       S.listItem().title('Publications').icon(BookIcon).child(
         S.documentTypeList('publication').title('Publications').defaultOrdering([{field: 'year', direction: 'desc'}]),

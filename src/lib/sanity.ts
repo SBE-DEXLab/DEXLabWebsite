@@ -2,6 +2,10 @@
  * Content loading. With PUBLIC_SANITY_PROJECT_ID set, content comes from Sanity
  * at build time. Without it, the same GROQ queries run against content/seed.ndjson,
  * so the site builds and previews before Sanity is set up.
+ *
+ * Draft preview: with SANITY_PREVIEW_TOKEN (a read token, never committed) the build also
+ * shows unpublished drafts, but only where a query asks for them (projects, and the pages
+ * listed in SANITY_PREVIEW_PAGES), so other half-finished drafts stay out of the preview.
  */
 import fs from 'node:fs'
 import path from 'node:path'
@@ -20,6 +24,15 @@ const client = usingSanity
       useCdn: false, // builds should always see freshly published content
       token: import.meta.env.SANITY_API_READ_TOKEN, // only needed for a private dataset
     })
+  : null
+
+const previewToken = import.meta.env.SANITY_PREVIEW_TOKEN as string | undefined
+export const previewing = Boolean(client && previewToken)
+export const previewPages = previewing
+  ? ((import.meta.env.SANITY_PREVIEW_PAGES as string | undefined) || '').split(',').map((s) => s.trim()).filter(Boolean)
+  : []
+const previewClient = previewing
+  ? createClient({projectId, dataset, apiVersion: '2025-02-19', useCdn: false, token: previewToken, perspective: 'drafts'})
   : null
 
 let localDataset: unknown[] | null = null
@@ -55,7 +68,8 @@ function loadLocal(): unknown[] {
   return localDataset
 }
 
-export async function query<T>(groq: string, params: Record<string, unknown> = {}): Promise<T> {
+export async function query<T>(groq: string, params: Record<string, unknown> = {}, opts: {drafts?: boolean} = {}): Promise<T> {
+  if (opts.drafts && previewClient) return previewClient.fetch<T>(groq, params)
   if (client) return client.fetch<T>(groq, params)
   const tree = parse(groq, {params})
   const value = await evaluate(tree, {dataset: loadLocal(), params})
