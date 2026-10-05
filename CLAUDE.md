@@ -4,14 +4,15 @@ Guidance for Claude (and humans) working on the DEXLab website.
 
 ## What this is
 
-Astro static site (`src/`) + Sanity Studio (`studio/`, served at `/admin`) + Netlify hosting. Content lives in Sanity; the site fetches it at build time. Without `PUBLIC_SANITY_PROJECT_ID`, `src/lib/sanity.ts` runs the same GROQ queries against `content/seed.ndjson` with `groq-js`. Keep both paths working.
+Astro static site (`src/`) + Sanity Studio (`studio/`, served at `/admin`) + Cloudflare Pages hosting (`wrangler.toml`; the form handler is `functions/api/form.ts`). Content lives in Sanity; the site fetches it at build time. Without `PUBLIC_SANITY_PROJECT_ID`, `src/lib/sanity.ts` runs the same GROQ queries against `content/seed.ndjson` with `groq-js`. Keep both paths working.
 
 ## Commands
 
 ```bash
 npm run dev            # site at localhost:4321 (seed data unless .env is set)
 npm run build          # site only
-npm run build:all      # site + Studio into dist/ (what Netlify runs)
+npm run build:all      # site + Studio into dist/
+npx wrangler pages deploy --branch main   # publish dist/ + functions/ to www.sbe-dexlab.com
 npx astro check        # type check, must report 0 errors
 cd studio && npx sanity schema validate
 npm run seed                    # regenerate content/seed.ndjson from migration/
@@ -45,7 +46,7 @@ Schema in `studio/schemas/documents/`, register in `studio/schemas/index.ts`, ad
 - Images: use `<Img>` (`src/components/Img.astro`), always with width (and height when cropping).
 - Rich text: `renderRichText()` in `src/lib/portableText.ts`.
 - No tracking, no third-party cookies: YouTube via youtube-nocookie.com, maps via OpenStreetMap, fonts self-hosted via Fontsource.
-- Forms are Netlify Forms (`data-netlify="true"`, honeypot field `company`, consent checkbox).
+- Forms POST to `/api/form` (Cloudflare Pages Function): hidden `form-name`, honeypot field `company`, consent checkbox. Submissions are stored in the D1 database `dexlab-forms` (EU) and emailed when the `RESEND_API_KEY` secret is set. Read them with `npx wrangler d1 execute dexlab-forms --remote --command "SELECT * FROM submissions ORDER BY id DESC LIMIT 20"`.
 - Moved URLs get a 301 in `public/_redirects`.
 - Content changes belong in Sanity, not in code. Only edit `migration/` to re-run the Wix migration.
 
@@ -54,5 +55,6 @@ Schema in `studio/schemas/documents/`, register in `studio/schemas/index.ts`, ad
 - Sanity is the source of truth for content. Before changing a Sanity document, check `_updatedAt` so you never overwrite an editor's Studio change; prefer patching fields over `dataset import --replace`. `migration/sync-pages.mjs` writes `content/sync.ndjson` for bulk syncs of pages and people; import only the documents you changed.
 - Portrait focal points (and alumni crops) live in `migration/photo-focus.json`, detected with OpenCV and checked by eye. Give new portraits an entry and patch `photo.hotspot` / `photo.crop` in Sanity too.
 - New images from the team: upload with the Sanity client (`npx sanity exec <script> --with-user-token`), set alt text and a hotspot, then check the page rendered against live data (`PUBLIC_SANITY_PROJECT_ID=56vhiq14 npx astro build`).
+- Draft previews: save new content as Sanity drafts, then build with `SANITY_PREVIEW_TOKEN=<read token> SANITY_PREVIEW_PAGES=<slug>` and deploy with `npx wrangler pages deploy dist --project-name sbe-dexlab --branch <name>-draft`. The preview shows project drafts and the listed pages' drafts only, carries `noindex`, and leaves www.sbe-dexlab.com untouched. Never commit the token.
 - Run website work from Claude Cowork or the desktop app when images are involved: a cloud session cannot receive files pasted into chat.
 - Every code change: branch, `npx astro check`, `npm run build:all`, pull request on `SBE-DEXLab/DEXLabWebsite`, merge only when the lab says go, then check www.sbe-dexlab.com.

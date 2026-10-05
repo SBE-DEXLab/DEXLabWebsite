@@ -4,9 +4,9 @@ The website of the Digital Experience Lab (DEXLab), Maastricht University School
 
 - **Website:** [Astro](https://astro.build), a static site that is fast, secure and cheap to host.
 - **Content editing:** [Sanity](https://www.sanity.io). Admins log in at **`/admin`** and edit everything there: pages, blog posts, team, workshops, publications, equipment, FAQ and site settings.
-- **Hosting:** [Netlify](https://www.netlify.com), which also handles the contact and newsletter forms.
+- **Hosting:** [Cloudflare Pages](https://pages.cloudflare.com) (free). A small Cloudflare function (`functions/api/form.ts`) handles the contact and newsletter forms and stores submissions in a Cloudflare D1 database in the EU. The site moved here from Netlify in October 2026, after Netlify's free build allowance ran out.
 
-When an admin publishes in Sanity, a webhook triggers a Netlify rebuild, and the change is live about a minute later.
+Publishing: `npm run build:all && npx wrangler pages deploy --branch main` builds with the current Sanity content and puts it live. (The setup notes below describe the original Netlify setup and are kept for reference.)
 
 Editors: read **[docs/ADMIN-GUIDE.md](docs/ADMIN-GUIDE.md)**. You never need to touch the code.
 

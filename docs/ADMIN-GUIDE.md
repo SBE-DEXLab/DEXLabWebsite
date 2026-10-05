@@ -14,6 +14,7 @@ Changes are saved as drafts automatically. Nothing is public until you press **P
 | **Blog categories** | The filters on the blog page |
 | **Team** | Core team, interns, affiliated researchers, alumni |
 | **Workshops** | Each workshop has a card on /workshops and its own page |
+| **Projects** | Cards on /projects with category, status, partners, team and an optional link. Tick "Hide from the website" for projects that are not confirmed yet; "Internal notes" are never shown |
 | **Publications** | The list on /publications, newest first |
 | **Equipment** | The inventory on /equipment |
 | **FAQ** | The questions on /faq |
@@ -57,7 +58,7 @@ Available sections:
 | Photo strip | One wide photo, or three photos side by side |
 | Videos | YouTube videos |
 | Call to action | A short line with buttons on a coloured background |
-| List from the database | Automatically shows blog posts, team, workshops, publications, equipment or FAQ |
+| List from the database | Automatically shows blog posts, team, workshops, projects (with filter buttons), publications, equipment or FAQ |
 | Contact form | The contact form |
 | Location & directions | Map, route video and directions |
 
@@ -79,7 +80,7 @@ Every document has a full history. Click the clock icon (top right of the docume
 
 ## Forms and the mailing list
 
-Contact form messages are emailed to sbe-dexlab@maastrichtuniversity.nl. Newsletter sign-ups are collected in Netlify (Forms → newsletter) and can be downloaded as CSV. Ask a technical admin for access.
+Contact form messages are emailed to sbe-dexlab@maastrichtuniversity.nl. Every contact message and newsletter sign-up is also stored in the website's own database on Cloudflare (EU). Ask a technical admin, or Claude, for an export.
 
 ## Need something the editor cannot do?
 

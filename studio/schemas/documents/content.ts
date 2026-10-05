@@ -7,6 +7,7 @@ import {PresentationIcon} from '@sanity/icons/Presentation'
 import {BookIcon} from '@sanity/icons/Book'
 import {RocketIcon} from '@sanity/icons/Rocket'
 import {HelpCircleIcon} from '@sanity/icons/HelpCircle'
+import {ProjectsIcon} from '@sanity/icons/Projects'
 import {sectionsField} from '../sections'
 
 const slugField = (source = 'title') =>
@@ -313,4 +314,96 @@ export const faq = defineType({
   ],
   orderings: [{title: 'Order', name: 'order', by: [{field: 'order', direction: 'asc'}]}],
   preview: {select: {title: 'question'}},
+})
+
+const projectCategories = [
+  {title: 'Research', value: 'research'},
+  {title: 'PhD project', value: 'phd'},
+  {title: 'Education', value: 'education'},
+  {title: 'Network', value: 'network'},
+]
+
+export const project = defineType({
+  name: 'project',
+  title: 'Project',
+  type: 'document',
+  icon: ProjectsIcon,
+  fields: [
+    defineField({name: 'title', type: 'string', validation: (r) => r.required()}),
+    defineField({
+      name: 'category',
+      type: 'string',
+      options: {list: projectCategories, layout: 'radio', direction: 'horizontal'},
+      validation: (r) => r.required(),
+    }),
+    defineField({
+      name: 'status',
+      type: 'string',
+      options: {
+        list: [
+          {title: 'Current', value: 'current'},
+          {title: 'Completed', value: 'completed'},
+        ],
+        layout: 'radio',
+        direction: 'horizontal',
+      },
+      initialValue: 'current',
+      validation: (r) => r.required(),
+    }),
+    defineField({
+      name: 'period',
+      type: 'string',
+      description: 'Shown after the status, e.g. "2025-2028" or "since 2024". Leave empty when unsure.',
+    }),
+    defineField({name: 'partners', type: 'string', description: 'Partner line on the card. Leave empty when there are none.'}),
+    defineField({
+      name: 'description',
+      type: 'text',
+      rows: 4,
+      description: '2 to 3 sentences, ideally opening with the question or problem.',
+    }),
+    defineField({name: 'tags', type: 'array', of: [{type: 'string'}], options: {layout: 'tags'}, description: '2 to 4 short topics.'}),
+    defineField({name: 'team', type: 'array', of: [{type: 'string'}], description: 'Names, in the order they should appear.'}),
+    defineField({name: 'link', type: 'url', title: 'Learn more link', description: 'The project page. Without a link the card has no button.'}),
+    defineField({name: 'cover', type: 'imageWithAlt', description: 'Landscape photo. No identifiable experiment participants.'}),
+    defineField({
+      name: 'coverColor',
+      type: 'string',
+      title: 'Colour block (without a photo)',
+      options: {
+        list: [
+          {title: 'Deep Blue', value: 'navy'},
+          {title: 'Dark Azure', value: 'azure'},
+        ],
+        layout: 'radio',
+        direction: 'horizontal',
+      },
+      initialValue: 'navy',
+      hidden: ({document}) => Boolean((document?.cover as {asset?: unknown} | undefined)?.asset),
+    }),
+    defineField({
+      name: 'hidden',
+      type: 'boolean',
+      title: 'Hide from the website',
+      description: 'For projects whose details are not confirmed yet.',
+      initialValue: false,
+    }),
+    defineField({
+      name: 'notes',
+      type: 'text',
+      rows: 3,
+      title: 'Internal notes',
+      description: 'For editors only, never shown on the website. E.g. what still needs checking.',
+    }),
+    orderField,
+  ],
+  orderings: [{title: 'Order', name: 'order', by: [{field: 'order', direction: 'asc'}]}],
+  preview: {
+    select: {title: 'title', category: 'category', status: 'status', hidden: 'hidden', media: 'cover'},
+    prepare: ({title, category, status, hidden, media}) => ({
+      title,
+      subtitle: [projectCategories.find((c) => c.value === category)?.title, status, hidden && 'hidden'].filter(Boolean).join(' · '),
+      media,
+    }),
+  },
 })

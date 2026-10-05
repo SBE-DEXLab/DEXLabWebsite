@@ -680,7 +680,7 @@ export const pages = [
   ]),
 ]
 
-// Draft privacy statement: to be checked by the UM privacy team before launch.
+// Privacy statement (the live text in Sanity was edited by the lab: Umami, Cloudflare): to be checked by the UM privacy team before launch.
 pages.push(
   page('privacy', 'Privacy statement', [
     hero('Privacy statement', 'How the DEXLab website handles your personal data.'),
@@ -692,7 +692,7 @@ pages.push(
         '- **Mailing list:** your email address, used only to send you DEXLab news. You can unsubscribe at any time via the link in every email or by emailing us.',
         'We process this data based on your consent, which you give by ticking the box on the form. You can withdraw it at any time.',
         '## Who processes your data',
-        'Form submissions are stored by our hosting provider Netlify, which acts as a processor on our behalf. We do not sell or share your data with anyone else.',
+        'Form submissions are stored in the EU by our hosting provider Cloudflare, which acts as a processor on our behalf. We do not sell or share your data with anyone else.',
         '## How long we keep it',
         'Contact messages are deleted once your request has been handled, and at the latest after one year. Mailing list addresses are kept until you unsubscribe.',
         '## Cookies and tracking',

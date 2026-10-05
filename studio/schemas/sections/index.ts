@@ -258,7 +258,7 @@ export const sectionCta = defineType({
 export const sectionCollection = defineType({
   name: 'sectionCollection',
   title: 'List from the database',
-  description: 'Shows team members, blog posts, workshops, publications, equipment or FAQs.',
+  description: 'Shows team members, blog posts, workshops, projects, publications, equipment or FAQs.',
   type: 'object',
   icon: DatabaseIcon,
   fields: [
@@ -274,6 +274,7 @@ export const sectionCollection = defineType({
           {title: 'Team members', value: 'team'},
           {title: 'Workshops', value: 'workshops'},
           {title: 'Publications', value: 'publications'},
+          {title: 'Projects', value: 'projects'},
           {title: 'Equipment', value: 'equipment'},
           {title: 'FAQ', value: 'faq'},
         ],
