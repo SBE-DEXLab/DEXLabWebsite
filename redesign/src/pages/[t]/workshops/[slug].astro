@@ -1,0 +1,84 @@
+---
+import Site from '../../../layouts/Site.astro'
+import Hero from '../../../components/sec/Hero.astro'
+import Wrap from '../../../components/sec/Wrap.astro'
+import H from '../../../components/site/H.astro'
+import Img from '../../../components/site/Img.astro'
+import {getWorkshops, getWorkshop, getSettings} from '../../../lib/site/queries'
+import {renderRichText} from '../../../lib/site/portableText'
+import {look, rewriteLinks, THEMES, type Theme} from '../../../lib/theme'
+
+export async function getStaticPaths() {
+  const ws = (await getWorkshops()).filter((w: any) => !w.externalOnly)
+  return THEMES.flatMap((t) => ws.map((w: any) => ({params: {t, slug: w.slug}})))
+}
+const t = Astro.params.t as Theme
+const [w, settings]: any[] = await Promise.all([getWorkshop(Astro.params.slug!), getSettings()])
+const k = look(t)
+const ka = look(t, 'alt')
+const email = settings?.email || 'sbe-dexlab@maastrichtuniversity.nl'
+const contact = {label: 'Contact us', href: `mailto:${email}?subject=${encodeURIComponent(w.contactSubject || w.title)}`}
+---
+
+<Site t={t} title={w.title} description={w.summary} path={`/workshops/${w.slug}`}>
+  <Hero t={t} heading={w.title} subheading={w.intro} image={w.heroImage} buttons={[contact]} slug={`workshops/${w.slug}`} />
+  {w.facts?.length ? (
+    <Wrap t={t} tight>
+      <ul class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        {w.facts.map((f: any) => (
+          <li class:list={['reveal p-7', k.card]}>
+            <p class:list={['text-3xl', k.heading, 'text-dex']}>{f.value}</p>
+            {f.label && <p class="mt-2 font-bold">{f.label}</p>}
+            {f.text && <p class:list={['mt-2 text-sm leading-6', k.muted]}>{f.text}</p>}
+          </li>
+        ))}
+      </ul>
+    </Wrap>
+  ) : null}
+  {w.technologies?.length ? (
+    <Wrap t={t} tone="muted" tight>
+      <ul class="flex flex-wrap justify-center gap-6">
+        {w.technologies.map((x: any) => (
+          <li class="reveal w-36 text-center">
+            <span class:list={['mx-auto mb-3 grid h-24 w-24 place-items-center overflow-hidden', t === 'c' ? 'rounded-md ring-1 ring-dex/30' : 'rounded-full bg-white ring-1 ring-line']}><Img image={x.image} width={200} height={200} sizes="96px" class="h-full w-full object-cover" /></span>
+            {x.short && <p class:list={['text-xl', ka.heading]}>{x.short}</p>}
+            {x.name && <p class:list={['text-sm', ka.muted]}>{x.name}</p>}
+          </li>
+        ))}
+      </ul>
+    </Wrap>
+  ) : null}
+  <Wrap t={t}>
+    <div class="grid gap-14 lg:grid-cols-[1fr_1.2fr]">
+      {w.outcomes?.length ? (
+        <div class="reveal">
+          <H t={t} text={w.outcomesHeading} size="md" class="mb-6" />
+          <ul class="space-y-3">
+            {w.outcomes.map((o: string) => (
+              <li class:list={['flex gap-3 leading-7', k.muted]}><span class="mt-2 h-2.5 w-2.5 shrink-0 rounded-full bg-lab" aria-hidden="true" />{o}</li>
+            ))}
+          </ul>
+        </div>
+      ) : <div />}
+      <div class:list={['reveal rt', k.prose]} set:html={rewriteLinks(t, renderRichText(w.body))} />
+    </div>
+    {w.gallery?.length ? (
+      <div class="mt-16 grid grid-cols-2 gap-4 md:grid-cols-3">
+        {w.gallery.map((g: any) => <Img image={g} width={600} height={450} sizes="(min-width: 768px) 400px, 50vw" class:list={['reveal aspect-[4/3] w-full object-cover', k.radiusImg, t === 'c' ? 'duotone' : '']} />)}
+      </div>
+    ) : null}
+  </Wrap>
+  {w.others?.length ? (
+    <Wrap t={t} tone="muted">
+      <H t={t} s="alt" text="Other workshops" class="reveal mb-10" />
+      <div class="grid gap-6 md:grid-cols-3">
+        {w.others.map((o: any) => (
+          <a href={`/${t}/workshops/${o.slug}`} class:list={['reveal group overflow-hidden', ka.card, ka.cardHover]}>
+            <Img image={o.cardImage} width={600} height={420} sizes="400px" class="aspect-[10/7] w-full object-cover" />
+            <div class="p-6"><h3 class:list={['text-xl', ka.heading]}>{o.title}</h3></div>
+          </a>
+        ))}
+      </div>
+    </Wrap>
+  ) : null}
+</Site>

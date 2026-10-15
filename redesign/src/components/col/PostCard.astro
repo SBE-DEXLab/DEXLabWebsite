@@ -1,0 +1,17 @@
+---
+import Img from '../site/Img.astro'
+import {brandify, formatDate} from '../../lib/site/utils'
+import {look, type Theme, type Surface} from '../../lib/theme'
+const {t, s = 'base', p} = Astro.props as {t: Theme; s?: Surface; p: any}
+const k = look(t, s)
+---
+
+<a href={`/${t}/post/${p.slug}`} class:list={['reveal group flex flex-col overflow-hidden', t === 'a' ? '' : k.card, t === 'a' ? '' : k.cardHover]}>
+  <div class:list={['overflow-hidden', t === 'a' ? `${k.radiusImg} ring-1 ring-white/10` : '']}>
+    <Img image={p.coverImage} width={800} height={560} sizes="(min-width: 1024px) 400px, 100vw" class:list={['aspect-[10/7] w-full object-cover transition duration-700 group-hover:scale-105', t === 'c' ? 'duotone' : '']} />
+  </div>
+  <div class:list={[t === 'a' ? 'pt-5' : 'flex flex-1 flex-col p-6']}>
+    <p class:list={['text-xs font-bold uppercase tracking-wider', k.faint, t === 'c' ? 'font-mono normal-case tracking-normal' : '']}>{t === 'c' ? `[${p.publishedAt?.slice(0, 10)}]` : formatDate(p.publishedAt)}</p>
+    <h3 class:list={['mt-2 text-lg leading-snug font-bold transition', k.font, t === 'b' ? 'group-hover:text-dex-dark' : 'group-hover:text-dex']} set:html={brandify(p.title)} />
+  </div>
+</a>

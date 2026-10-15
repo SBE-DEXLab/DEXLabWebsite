@@ -1,0 +1,33 @@
+---
+import Hero from './sec/Hero.astro'
+import Text from './sec/Text.astro'
+import Cards from './sec/Cards.astro'
+import Small from './sec/Small.astro'
+import Collection from './sec/Collection.astro'
+import Contact from './sec/Contact.astro'
+import Location from './sec/Location.astro'
+import type {Theme} from '../lib/theme'
+
+const {t, sections = [], slug = 'home'} = Astro.props as {t: Theme; sections?: any[]; slug?: string}
+const small = ['sectionStats', 'sectionPills', 'sectionQuotes', 'sectionGallery', 'sectionVideos', 'sectionCta']
+---
+
+{
+  sections.map((s, i) =>
+    s._type === 'sectionHero' ? (
+      <Hero t={t} heading={s.heading} eyebrow={s.eyebrow} subheading={s.subheading} image={s.image} buttons={s.buttons} home={slug === 'home'} slug={slug} first={i === 0} />
+    ) : s._type === 'sectionText' ? (
+      <Text t={t} data={s} />
+    ) : s._type === 'sectionCards' ? (
+      <Cards t={t} data={s} />
+    ) : small.includes(s._type) ? (
+      <Small t={t} data={s} />
+    ) : s._type === 'sectionCollection' ? (
+      <Collection t={t} data={s} />
+    ) : s._type === 'sectionContact' ? (
+      <Contact t={t} data={s} />
+    ) : s._type === 'sectionLocation' ? (
+      <Location t={t} data={s} />
+    ) : null,
+  )
+}

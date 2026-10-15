@@ -1,0 +1,48 @@
+---
+import Site from '../../../layouts/Site.astro'
+import Img from '../../../components/site/Img.astro'
+import PostCard from '../../../components/col/PostCard.astro'
+import {getPost, getPosts} from '../../../lib/site/queries'
+import {renderRichText} from '../../../lib/site/portableText'
+import {brandify, formatDate, readingTime} from '../../../lib/site/utils'
+import {look, rewriteLinks, THEMES, type Theme} from '../../../lib/theme'
+
+export async function getStaticPaths() {
+  const posts = await getPosts()
+  return THEMES.flatMap((t) => posts.map((p: any) => ({params: {t, slug: p.slug}})))
+}
+const t = Astro.params.t as Theme
+const post: any = await getPost(Astro.params.slug!)
+const k = look(t)
+const html = rewriteLinks(t, renderRichText(post?.body))
+const author = post?.authors?.map((a: any) => a.name).join(', ') || post?.authorName
+---
+
+<Site t={t} title={post?.title} description={post?.excerpt} path={`/post/${post?.slug}`} solid>
+  <article class:list={['pt-36 pb-20', t === 'c' ? 'term-grid' : '']}>
+    <header class="mx-auto max-w-4xl px-5 md:px-8">
+      <a href={`/${t}/blog`} class:list={['text-sm font-bold', k.font, k.link]}>{t === 'c' ? '$ cd ../blog' : '← Blog'}</a>
+      {post?.categories?.length ? (
+        <p class="mt-8 flex flex-wrap gap-2">{post.categories.map((c: any) => <span class={k.chip}>{c.title}</span>)}</p>
+      ) : null}
+      <h1 class:list={['mt-6 text-[clamp(2.2rem,5vw,4rem)]', k.heading]} set:html={brandify(post?.title)} />
+      <p class:list={['mt-6 text-sm', k.faint, k.font]}>
+        {formatDate(post?.publishedAt)} · {readingTime(post?.body)} min read{author ? ` · ${author}` : ''}
+      </p>
+    </header>
+    {post?.coverImage?.url && (
+      <figure class="mx-auto mt-12 max-w-5xl px-5 md:px-8">
+        <Img image={post.coverImage} width={1400} height={760} sizes="(min-width: 1024px) 1000px, 100vw" eager class:list={['aspect-[16/8.7] w-full object-cover', k.radiusImg, t === 'c' ? 'ring-1 ring-dex/30' : '']} />
+      </figure>
+    )}
+    <div class:list={['rt mx-auto mt-14 max-w-3xl px-5 md:px-8', k.prose]} set:html={html} />
+  </article>
+  {post?.related?.length ? (
+    <section class:list={['py-20', t === 'b' ? 'bg-paper' : 'border-t', k.line]}>
+      <div class="mx-auto max-w-[1240px] px-5 md:px-8">
+        <h2 class:list={['mb-10 text-3xl', k.heading]}>{t === 'c' ? '## related' : 'Related posts'}</h2>
+        <div class="grid gap-8 md:grid-cols-3">{post.related.map((p: any) => <PostCard t={t} s={t === 'b' ? 'alt' : 'base'} p={p} />)}</div>
+      </div>
+    </section>
+  ) : null}
+</Site>

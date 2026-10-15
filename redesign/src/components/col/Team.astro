@@ -1,0 +1,78 @@
+---
+import Img from '../site/Img.astro'
+import H from '../site/H.astro'
+import {getPeople} from '../../lib/site/queries'
+import {brandify} from '../../lib/site/utils'
+import {look, type Theme, type Surface} from '../../lib/theme'
+
+const {t, s = 'base', groups} = Astro.props as {t: Theme; s?: Surface; groups: string[]}
+const k = look(t, s)
+const people = await getPeople(groups)
+const titles: Record<string, string> = {core: 'Our Core Team', intern: 'The Interns', associate: 'Affiliated Researchers', alumni: 'Alumni'}
+---
+
+{
+  groups.map((g) => {
+    const members = people.filter((p) => p.group === g)
+    if (!members.length) return null
+    if (g === 'alumni') {
+      const years = [...new Set(members.map((p) => p.period || 'Earlier'))].sort().reverse()
+      return (
+        <div class="mt-24">
+          <H t={t} s={s} text={titles[g]} class="reveal mb-12 text-center" />
+          {years.map((y) => (
+            <div class="mb-12">
+              <h3 class:list={['mb-6 text-center text-sm font-bold uppercase tracking-[0.18em]', t === 'c' ? 'font-mono normal-case tracking-normal text-dex' : 'text-lab']}>{t === 'c' ? `$ ls ./alumni/${y.replace('/', '-')}` : y}</h3>
+              <ul class="flex flex-wrap justify-center gap-x-6 gap-y-8">
+                {members
+                  .filter((p) => (p.period || 'Earlier') === y)
+                  .map((p) => (
+                    <li class="reveal w-32 text-center">
+                      <a href={p.introPost ? `/${t}/post/${p.introPost}` : undefined} class="group block">
+                        <span class:list={['mx-auto mb-3 block h-24 w-24 overflow-hidden ring-2 transition group-hover:ring-dex', t === 'c' ? 'rounded-md ring-dex/30' : 'rounded-full', k.dark ? 'bg-white/10 ring-white/10' : 'bg-paper ring-white']}>
+                          {p.photo?.url ? <Img image={p.photo} width={200} height={200} sizes="96px" alt={`Portrait of ${p.name}`} class:list={['h-full w-full object-cover', t === 'c' ? 'duotone' : '']} /> : <span class="grid h-full place-items-center font-bold">{p.name.split(' ').map((n) => n[0]).slice(0, 2).join('')}</span>}
+                        </span>
+                        <span class:list={['block text-sm leading-tight font-bold', k.font]}>{p.name}</span>
+                        <span class:list={['block text-xs', k.faint]}>{p.role}</span>
+                      </a>
+                    </li>
+                  ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      )
+    }
+    return (
+      <div class="mt-20 first:mt-0">
+        <H t={t} s={s} text={titles[g]} class="reveal mb-12 text-center" />
+        <ul class="flex flex-wrap justify-center gap-6">
+          {members.map((p) => (
+            <li class="reveal w-[calc(50%-12px)] sm:w-[13.25rem]">
+              <div class:list={['group relative overflow-hidden', k.radiusImg, t === 'c' ? 'ring-1 ring-dex/30' : '']} tabindex={p.bio ? 0 : undefined}>
+                {p.photo?.url ? (
+                  <Img image={p.photo} width={480} height={640} sizes="240px" alt={`Portrait of ${p.name}`} class:list={['aspect-[3/4] w-full object-cover transition duration-500 group-hover:scale-105', t === 'c' ? 'duotone' : '']} />
+                ) : (
+                  <span class:list={['grid aspect-[3/4] place-items-center text-4xl font-bold', k.dark ? 'bg-white/10' : 'bg-paper']}>{p.name.split(' ').map((n) => n[0]).slice(0, 2).join('')}</span>
+                )}
+                {t === 'c' && <span class="pointer-events-none absolute inset-0 bg-dex/20 mix-blend-color" />}
+                {p.bio && (
+                  <div class:list={['absolute inset-0 flex flex-col justify-end overflow-y-auto p-5 text-left text-[0.82rem] leading-6 text-white opacity-0 transition group-hover:opacity-100 group-focus-within:opacity-100', t === 'c' ? 'bg-[#070b14]/95 font-mono text-[0.75rem]' : 'bg-navy/92']}>
+                    {t === 'c' && <p class="mb-2 text-dex">$ cat bio.txt</p>}
+                    <p>{p.bio}</p>
+                    {p.linkedin && <a href={p.linkedin} target="_blank" rel="noopener" class="mt-3 font-bold text-dex">LinkedIn ↗</a>}
+                  </div>
+                )}
+                {p.bio && <span class:list={['absolute right-3 bottom-3 rounded-full px-3 py-1 text-[0.7rem] font-bold transition group-hover:opacity-0', t === 'c' ? 'rounded bg-[#070b14] font-mono text-dex' : 'bg-white text-navy']}>Bio</span>}
+              </div>
+              <h3 class:list={['mt-4 text-lg font-bold', k.font]}>
+                {p.linkedin ? <a href={p.linkedin} target="_blank" rel="noopener" class="hover:text-dex">{p.name}</a> : p.name}
+              </h3>
+              {p.role && <p class:list={['text-sm leading-6', k.muted]} set:html={brandify(p.role)} />}
+            </li>
+          ))}
+        </ul>
+      </div>
+    )
+  })
+}

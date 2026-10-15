@@ -1,0 +1,50 @@
+---
+// Contact form. In the preview it posts to the working form endpoint of the current site.
+import Wrap from './Wrap.astro'
+import H from '../site/H.astro'
+import {look, surfaceFor, type Theme} from '../../lib/theme'
+
+const {t, data} = Astro.props as {t: Theme; data: any}
+const s = surfaceFor(data.tone)
+const k = look(t, s)
+const field = t === 'c'
+  ? 'w-full rounded bg-[#070b14] px-4 py-3 font-mono text-sm text-white ring-1 ring-dex/30 focus:outline-none focus:ring-2 focus:ring-lab'
+  : k.dark
+    ? 'w-full rounded-2xl bg-white/5 px-4 py-3.5 text-white ring-1 ring-white/15 focus:outline-none focus:ring-2 focus:ring-dex'
+    : 'w-full rounded-2xl bg-white px-4 py-3.5 ring-1 ring-line focus:outline-none focus:ring-2 focus:ring-dex'
+const label = ['mb-2 block text-sm font-bold', k.font].join(' ')
+const topics = ['General question', 'Booking the lab or equipment', 'Workshop for my team or company', 'Research collaboration', 'Thesis or internship', 'Media or press']
+---
+
+<Wrap t={t} tone={data.tone} anchor={data.anchor}>
+  <div class="mx-auto max-w-3xl">
+    <div class="reveal mb-10 text-center">
+      <H t={t} s={s} text={data.heading} />
+      {data.intro && <p class:list={['mt-5 text-lg leading-8', k.muted]}>{data.intro}</p>}
+    </div>
+    <form class:list={['reveal space-y-5 p-6 md:p-10', k.card]} name="contact" method="POST" action="https://sbe-dexlab.pages.dev/api/form">
+      <input type="hidden" name="form-name" value="contact" />
+      <p class="hidden"><label>Leave this empty <input name="company" tabindex="-1" autocomplete="off" /></label></p>
+      <div class="grid gap-5 md:grid-cols-2">
+        <div><label class={label} for="c-first">First name</label><input class={field} id="c-first" name="first-name" autocomplete="given-name" /></div>
+        <div><label class={label} for="c-last">Last name</label><input class={field} id="c-last" name="last-name" autocomplete="family-name" /></div>
+        <div><label class={label} for="c-email">Email *</label><input class={field} id="c-email" name="email" type="email" required autocomplete="email" /></div>
+        <div><label class={label} for="c-phone">Phone</label><input class={field} id="c-phone" name="phone" type="tel" autocomplete="tel" /></div>
+        {data.showDepartment !== false && (
+          <>
+            <div><label class={label} for="c-position">Position</label><input class={field} id="c-position" name="position" autocomplete="organization-title" /></div>
+            <div><label class={label} for="c-dept">SBE department or organisation</label><input class={field} id="c-dept" name="department" autocomplete="organization" /></div>
+          </>
+        )}
+      </div>
+      <div><label class={label} for="c-topic">What is it about?</label><select class={field} id="c-topic" name="topic">{topics.map((o) => <option>{o}</option>)}</select></div>
+      <div><label class={label} for="c-subject">Subject</label><input class={field} id="c-subject" name="subject" /></div>
+      <div><label class={label} for="c-msg">Message *</label><textarea class={field} id="c-msg" name="message" rows="6" required /></div>
+      <label class:list={['flex items-start gap-3 text-sm leading-6', k.muted]}>
+        <input type="checkbox" name="consent" value="yes" required class="mt-1 h-4 w-4 accent-[#e84e10]" />
+        <span>I agree that DEXLab uses my details to answer my message, as described in the <a class="underline" href={`/${t}/privacy`}>privacy statement</a>.</span>
+      </label>
+      <button type="submit" class:list={[k.btnBase, k.font, k.btn]}>{t === 'c' ? '$ ' : ''}Submit <span aria-hidden="true">→</span></button>
+    </form>
+  </div>
+</Wrap>

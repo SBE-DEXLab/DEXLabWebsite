@@ -1,0 +1,38 @@
+---
+import Wrap from './Wrap.astro'
+import H from '../site/H.astro'
+import PostCard from '../col/PostCard.astro'
+import Team from '../col/Team.astro'
+import Lists from '../col/Lists.astro'
+import Projects from '../col/Projects.astro'
+import {getPosts} from '../../lib/site/queries'
+import {look, surfaceFor, L, type Theme} from '../../lib/theme'
+
+const {t, data} = Astro.props as {t: Theme; data: any}
+const s = surfaceFor(data.tone)
+const k = look(t, s)
+const src = data.source
+const posts = src === 'posts' ? await getPosts(data.limit || 3, data.categorySlug) : []
+---
+
+<Wrap t={t} tone={data.tone} anchor={data.anchor}>
+  {
+    (data.heading || data.intro) && (
+      <div class="reveal mb-14 max-w-3xl">
+        <H t={t} s={s} text={data.heading} />
+        {data.intro && <p class:list={['mt-6 text-lg leading-8', k.muted]}>{data.intro}</p>}
+      </div>
+    )
+  }
+  {src === 'posts' && <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">{posts.map((p: any) => <PostCard t={t} s={s} p={p} />)}</div>}
+  {src === 'team' && <Team t={t} s={s} groups={data.groups?.length ? data.groups : ['core', 'intern', 'associate']} />}
+  {src === 'projects' && <Projects t={t} s={s} />}
+  {['workshops', 'publications', 'equipment', 'faq'].includes(src) && <Lists t={t} s={s} source={src} limit={data.limit} />}
+  {
+    data.link?.href && (
+      <p class="mt-12 text-center">
+        <a href={L(t, data.link.href)} class:list={[k.btnBase, k.font, data.link.style === 'secondary' ? k.btn2 : k.btn]}>{t === 'c' ? '$ ' : ''}{data.link.label} <span aria-hidden="true">→</span></a>
+      </p>
+    )
+  }
+</Wrap>

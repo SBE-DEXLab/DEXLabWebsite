@@ -1,0 +1,20 @@
+---
+import Site from '../../layouts/Site.astro'
+import Sections from '../../components/Sections.astro'
+import {getPage, getPageSlugs} from '../../lib/site/queries'
+import {THEMES, type Theme} from '../../lib/theme'
+
+export async function getStaticPaths() {
+  const slugs = await getPageSlugs()
+  return THEMES.flatMap((t) => slugs.map((slug) => ({params: {t, slug}})))
+}
+const t = Astro.params.t as Theme
+const slug = Astro.params.slug!
+const page = await getPage(slug)
+const heroFirst = page?.sections?.[0]?._type === 'sectionHero'
+---
+
+<Site t={t} title={page?.seo?.title || page?.title} description={page?.seo?.description} path={`/${slug}`} solid={!heroFirst}>
+  {!heroFirst && <div class="h-24" />}
+  <Sections t={t} sections={page?.sections} slug={slug} />
+</Site>

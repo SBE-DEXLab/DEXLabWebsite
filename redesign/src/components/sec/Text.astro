@@ -1,0 +1,58 @@
+---
+import Wrap from './Wrap.astro'
+import H from '../site/H.astro'
+import Img from '../site/Img.astro'
+import Buttons from '../site/Buttons.astro'
+import {renderRichText} from '../../lib/site/portableText'
+import {youtubeId} from '../../lib/site/utils'
+import {look, surfaceFor, rewriteLinks, type Theme} from '../../lib/theme'
+
+const {t, data} = Astro.props as {t: Theme; data: any}
+const s = surfaceFor(data.tone)
+const k = look(t, s)
+const html = rewriteLinks(t, renderRichText(data.body))
+const yt = youtubeId(data.video)
+const media = Boolean(data.image?.url || yt)
+const left = data.imagePosition === 'left'
+// Text without heading and media reads as a statement: the first paragraph large.
+const statement = !data.heading && !media && data.body?.length > 1
+const firstPara = statement ? (data.body[0]?.children || []).map((c: any) => c.text).join('') : ''
+const restHtml = statement ? rewriteLinks(t, renderRichText(data.body.slice(1))) : ''
+---
+
+<Wrap t={t} tone={data.tone} anchor={data.anchor}>
+  {
+    statement ? (
+      <div class="grid gap-12 lg:grid-cols-[1.4fr_1fr]">
+        <p class:list={['reveal leading-[1.1]', k.heading, t === 'c' ? 'text-[clamp(1.4rem,2.6vw,2.2rem)]' : 'text-[clamp(1.9rem,3.6vw,3.1rem)]']}>
+          {t === 'c' && <span class="text-dex">/* </span>}
+          {firstPara}
+          {t === 'c' && <span class="text-dex"> */</span>}
+        </p>
+        <div class="reveal">
+          <div class:list={['rt', k.prose]} set:html={restHtml} />
+          <Buttons t={t} s={s} buttons={data.buttons} class="mt-8" />
+        </div>
+      </div>
+    ) : (
+      <div class:list={['grid items-center gap-12', media ? 'lg:grid-cols-2' : '', data.centered && !media ? 'mx-auto max-w-3xl text-center' : !media ? 'max-w-3xl' : '']}>
+        <div class:list={['reveal', left && media ? 'lg:order-2' : '']}>
+          <H t={t} s={s} text={data.heading} class="mb-8" />
+          <div class:list={['rt', k.prose]} set:html={html} />
+          <Buttons t={t} s={s} buttons={data.buttons} center={data.centered && !media} class="mt-8" />
+        </div>
+        {media && (
+          <div class="reveal">
+            {yt ? (
+              <div class:list={['relative aspect-video overflow-hidden', k.radiusImg]}>
+                <iframe class="absolute inset-0 h-full w-full" src={`https://www.youtube-nocookie.com/embed/${yt}`} title={data.heading || 'Video'} loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture; fullscreen" allowfullscreen />
+              </div>
+            ) : (
+              <Img image={data.image} width={1000} sizes="(min-width: 1024px) 600px, 100vw" fit="max" class:list={['w-full', k.radiusImg, t === 'c' ? 'duotone ring-1 ring-dex/30' : '']} />
+            )}
+          </div>
+        )}
+      </div>
+    )
+  }
+</Wrap>
