@@ -1,0 +1,142 @@
+---
+import Base from '../../layouts/Base.astro'
+import Shader from '../../components/Shader.astro'
+import Scribble from '../../components/Scribble.astro'
+import {getHome, getPosts, getProjects, img, live} from '../../lib/content'
+import {brandify} from '../../lib/brand'
+
+const [home, posts, projects] = await Promise.all([getHome(), getPosts(3), getProjects()])
+const hero = home.hero
+const cats: Record<string, string> = {research: 'Research', phd: 'PhD project', education: 'Education', network: 'Network'}
+const palettes = [
+  ['#001c3d', '#00a2db', '#e84e10', '#0a1426'],
+  ['#0a1426', '#2d85c6', '#fce8e0', '#001c3d'],
+  ['#001c3d', '#e84e10', '#00a2db', '#111e36'],
+  ['#0a1426', '#00a2db', '#2d85c6', '#e84e10'],
+]
+const featured = projects.slice(0, 4)
+const chips = ['Immersive experiences', 'Service robots', 'Biometric tools', 'Artificial intelligence']
+const date = (d: string) => new Date(d).toLocaleDateString('en-GB', {day: 'numeric', month: 'short', year: 'numeric'})
+---
+
+<Base title="DEXLab | Direction A: Night Lab" theme="night">
+  <!-- Hero -->
+  <section class="relative overflow-hidden pt-32 pb-20 md:pt-40 md:pb-28">
+    <div class="pointer-events-none absolute -top-40 -right-40 h-[38rem] w-[38rem] rounded-full bg-dex/20 blur-3xl"></div>
+    <div class="pointer-events-none absolute -bottom-52 -left-40 h-[30rem] w-[30rem] rounded-full bg-lab/15 blur-3xl"></div>
+    <div class="relative mx-auto grid max-w-[1320px] items-center gap-14 px-5 md:px-8 lg:grid-cols-[1.05fr_1fr]">
+      <div class="reveal">
+        <div class="mb-8 flex items-center gap-2" aria-hidden="true">
+          <span class="h-3 w-3 rounded-full bg-dex"></span><span class="h-3 w-3 rounded-full bg-lab"></span><span class="h-3 w-3 rounded-full bg-peach"></span><span class="h-3 w-3 rounded-full bg-white"></span>
+        </div>
+        <h1 class="display text-[clamp(3.2rem,8vw,7.2rem)]">
+          <span set:html={brandify('DEXLab')} /><br />
+          <span class="text-white">the Digital</span><br />
+          <span class="relative inline-block text-white">Experience<Scribble kind="underline" class="absolute -bottom-[0.22em] left-0 h-[0.28em] w-full" /></span>
+          <span class="text-white"> Lab</span>
+        </h1>
+        <p class="mt-10 max-w-xl text-lg leading-8 text-white/75">{hero.subheading}</p>
+        <div class="mt-10 flex items-center gap-5">
+          {hero.buttons?.map((b: {label: string; href: string}) => (
+            <a href={live(b.href)} class="group inline-flex items-center gap-3 rounded-full bg-white px-7 py-4 font-display text-sm font-bold text-navy transition hover:bg-dex hover:text-white">
+              {b.label}<span class="transition group-hover:translate-x-1" aria-hidden="true">→</span>
+            </a>
+          ))}
+          <Scribble kind="arrow" class="hidden w-24 -rotate-12 md:block" color="#00a2db" />
+        </div>
+      </div>
+      <div class="reveal relative">
+        <Scribble kind="loop" class="absolute -top-10 -left-10 z-10 w-40 md:w-52" color="#e84e10" />
+        <Scribble kind="spark" class="absolute -right-4 -bottom-6 z-10 w-14" color="#00a2db" />
+        <figure class="relative rotate-[1.5deg] overflow-hidden rounded-[2rem] ring-1 ring-white/10 shadow-[0_40px_120px_-30px_rgb(0,162,219,0.45)]">
+          <img src={img(hero.image, 1200, 900)} alt={hero.image?.alt || 'The DEXLab team'} width="1200" height="900" class="aspect-[4/3] w-full object-cover" style="object-position:50% 60%" />
+        </figure>
+        <ul class="absolute -bottom-8 left-4 right-4 flex flex-wrap justify-center gap-2 md:-left-8 md:right-auto md:justify-start">
+          {chips.map((c, i) => (
+            <li class:list={['rounded-full px-4 py-2 text-xs font-bold shadow-lg', i % 2 ? 'bg-lab text-white' : 'bg-white text-navy']}>{c}</li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- What we do -->
+  <section class="relative py-24 md:py-32">
+    <div class="mx-auto max-w-[1320px] px-5 md:px-8">
+      <div class="reveal grid gap-8 md:grid-cols-[1fr_1.2fr] md:items-end">
+        <h2 class="display text-[clamp(2.4rem,5vw,4.4rem)]" set:html={brandify(home.cards.heading)} />
+        <p class="text-lg leading-8 text-white/70">{home.cards.intro}</p>
+      </div>
+      <div class="mt-16 grid gap-5 md:grid-cols-3">
+        {home.cards.items.map((c: {title: string; text: string; href: string}, i: number) => (
+          <a href={live(c.href)} class="reveal group relative flex min-h-[22rem] flex-col justify-between overflow-hidden rounded-[1.75rem] bg-night-2 p-8 ring-1 ring-white/10 transition hover:-translate-y-1 hover:ring-dex/60" style={`transition-delay:${i * 80}ms`}>
+            <span class="font-display text-sm font-bold text-white/40">0{i + 1}</span>
+            <div>
+              <h3 class="display mb-4 text-3xl">{c.title}</h3>
+              <p class="leading-7 text-white/70">{c.text}</p>
+              <span class="mt-8 inline-flex items-center gap-2 font-display text-sm font-bold text-dex">View More <span class="transition group-hover:translate-x-1" aria-hidden="true">→</span></span>
+            </div>
+            <span class:list={['absolute -top-10 -right-10 h-32 w-32 rounded-full opacity-30 blur-2xl transition group-hover:opacity-70', ['bg-dex', 'bg-lab', 'bg-azure'][i]]}></span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Goal -->
+  <section class="relative bg-paper py-24 text-navy md:py-32">
+    <div class="mx-auto grid max-w-[1320px] gap-12 px-5 md:px-8 lg:grid-cols-[1.4fr_1fr]">
+      <p class="reveal display text-[clamp(1.9rem,3.6vw,3.2rem)] leading-[1.08]">
+        {home.goal.paras[0]}
+      </p>
+      <div class="reveal space-y-6 text-lg leading-8 text-navy/80">
+        {home.goal.paras.slice(1).map((p: string) => <p>{p}</p>)}
+        {home.goal.buttons?.map((b: {label: string; href: string}) => (
+          <a href={live(b.href)} class="inline-flex items-center gap-3 rounded-full bg-navy px-7 py-4 font-display text-sm font-bold text-white transition hover:bg-lab">{b.label} <span aria-hidden="true">→</span></a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="py-24 md:py-32">
+    <div class="mx-auto max-w-[1320px] px-5 md:px-8">
+      <div class="reveal mb-14 flex flex-wrap items-end justify-between gap-6">
+        <h2 class="display text-[clamp(2.4rem,5vw,4.4rem)]">Our Projects</h2>
+        <a href="https://sbe-dexlab.pages.dev/projects/" class="inline-flex items-center gap-2 font-display text-sm font-bold text-dex hover:text-white">Our Projects <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="grid gap-5 md:grid-cols-2">
+        {featured.map((p: any, i: number) => (
+          <article class="reveal group relative isolate flex min-h-[20rem] flex-col justify-end overflow-hidden rounded-[1.75rem] p-8 ring-1 ring-white/10">
+            <div class="absolute inset-0 -z-10 transition duration-700 group-hover:scale-105"><Shader colors={palettes[i % 4]} seed={i + 1} /></div>
+            <div class="absolute inset-0 -z-10 bg-gradient-to-t from-night/90 via-night/30 to-transparent"></div>
+            <p class="mb-3 flex flex-wrap items-center gap-3 text-xs font-bold">
+              <span class="rounded-full bg-white/15 px-3 py-1 uppercase tracking-wider backdrop-blur">{cats[p.category]}</span>
+              <span class="text-white/80">{p.status === 'completed' ? 'Completed' : 'Current'}{p.period ? ` · ${p.period}` : ''}</span>
+            </p>
+            <h3 class="display max-w-lg text-[clamp(1.5rem,2.4vw,2.1rem)] leading-tight">{p.title}</h3>
+            {p.team?.length ? <p class="mt-3 text-sm text-white/70">{p.team.join(', ')}</p> : null}
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- News -->
+  <section class="border-t border-white/10 py-24 md:py-32">
+    <div class="mx-auto max-w-[1320px] px-5 md:px-8">
+      <h2 class="reveal display mb-14 text-[clamp(2.4rem,5vw,4.4rem)]">{home.news.heading}</h2>
+      <div class="grid gap-8 md:grid-cols-3">
+        {posts.map((p: any) => (
+          <a href={live(`/post/${p.slug}`)} class="reveal group block">
+            <div class="overflow-hidden rounded-[1.5rem] ring-1 ring-white/10">
+              <img src={img(p.coverImage, 800, 560)} alt="" width="800" height="560" loading="lazy" class="aspect-[10/7] w-full object-cover transition duration-700 group-hover:scale-105" />
+            </div>
+            <p class="mt-5 text-xs font-bold uppercase tracking-wider text-white/50">{date(p.publishedAt)}</p>
+            <h3 class="mt-2 font-display text-xl font-bold leading-snug group-hover:text-dex" set:html={brandify(p.title)} />
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</Base>
