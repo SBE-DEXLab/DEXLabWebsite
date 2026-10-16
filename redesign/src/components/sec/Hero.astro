@@ -144,8 +144,12 @@ const file = (image?.alt || slug).toLowerCase().replace(/[^a-z0-9]+/g, '_').slic
     <>
       {/* On the home page the hero stays pinned while the visitor scrolls, so the two forms meet on screen. */}
       <section class:list={['relative', home ? 'h-[190svh]' : '']} data-pin={home ? '' : undefined}>
-      <div class:list={['isolate flex flex-col overflow-hidden', home ? 'sticky top-0 h-[100svh] pt-28' : 'relative min-h-[78svh] pt-32']}>
-        <Synapse compact={!home} />
+      <div class:list={['isolate flex flex-col overflow-hidden', home ? 'sticky top-0 h-[100svh] pt-28' : 'relative pt-36 md:pt-44']}>
+        {home ? (
+          <Synapse />
+        ) : (
+          <div class="pointer-events-none absolute inset-0 -z-10" aria-hidden="true"><div class="halo-wrap halo-small"><div class="halo"></div></div></div>
+        )}
         <div class="reveal mx-auto flex w-full max-w-5xl flex-1 flex-col items-center justify-center px-5 text-center">
           {eyebrow && <p class="mb-6 text-xs font-medium tracking-[0.02em] text-d-fg/50">{eyebrow}</p>}
           <H class:list={['display-d', home ? 'fade-on-scroll' : '', home ? 'text-[clamp(3rem,8.4vw,7.6rem)]' : 'text-[clamp(2.6rem,6.6vw,5.8rem)]']}>
@@ -165,10 +169,10 @@ const file = (image?.alt || slug).toLowerCase().replace(/[^a-z0-9]+/g, '_').slic
               <p class="text-[0.95rem] leading-[1.6] whitespace-pre-line text-d-fg/80">{subheading}</p>
             </div>
           ) : <div />}
-          <span class="hidden h-12 w-px self-end bg-d-fg/25 md:block" aria-hidden="true" />
+          <span class:list={['hidden h-12 w-px self-end bg-d-fg/25', (home || buttons?.length) && 'md:block']} aria-hidden="true" />
           <div class="reveal flex flex-wrap items-center gap-3">
             <Buttons t={t} buttons={buttons} />
-            <span class="hidden items-center gap-2 rounded-full px-4 py-3 text-xs text-d-fg/55 ring-1 ring-d-fg/20 md:inline-flex" aria-hidden="true">Scroll <span class="animate-bounce">↓</span></span>
+            <span class:list={['hidden items-center gap-2 rounded-full px-4 py-3 text-xs text-d-fg/55 ring-1 ring-d-fg/20', home && 'md:inline-flex']} aria-hidden="true">Scroll <span class="animate-bounce">↓</span></span>
           </div>
         </div>
       </div>

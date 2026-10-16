@@ -241,3 +241,4 @@ html.dark .halo-core { background: radial-gradient(closest-side, rgb(0 162 219 /
 .theme-d .blog-filter { --tw-ring-color: color-mix(in oklab, var(--d-fg) 20%, transparent); }
 /* D home hero: the headline steps aside while the two forms meet. */
 .fade-on-scroll { opacity: calc(1 - max(0, (var(--p, 0) - 0.3) * 2.6)); transform: translateY(calc(var(--p, 0) * -48px)); }
+.halo-small { width: min(38vw, 300px); top: 46%; }
