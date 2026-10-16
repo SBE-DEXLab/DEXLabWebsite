@@ -10,11 +10,12 @@ interface Props {
 const {t, tone, anchor, class: className = '', tight = false} = Astro.props
 const s = surfaceFor(tone)
 const k = look(t, s)
-const inset = t === 'b' && s !== 'base'
+const inset = (t === 'b' || t === 'd') && s !== 'base'
 ---
 
 <section id={anchor} class:list={['relative', inset ? 'mx-3 overflow-hidden rounded-[2.5rem]' : '', k.bg, tight ? 'py-14 md:py-20' : 'py-20 md:py-28', className]}>
   {t === 'a' && s === 'deep' && <div class="pointer-events-none absolute -right-40 -top-40 h-96 w-96 rounded-full bg-dex/15 blur-3xl" />}
   {t === 'b' && s === 'deep' && <div class="pointer-events-none absolute -right-32 -top-32 h-96 w-96 rounded-full bg-dex/30 blur-3xl" />}
+  {t === 'd' && s === 'deep' && <div class="pointer-events-none absolute -right-40 -bottom-40 h-[28rem] w-[28rem] rounded-full halo-mini opacity-40 blur-3xl" />}
   <div class="relative mx-auto max-w-[1240px] px-5 md:px-8"><slot /></div>
 </section>

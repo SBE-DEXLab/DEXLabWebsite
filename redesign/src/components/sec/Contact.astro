@@ -2,12 +2,15 @@
 // Contact form. In the preview it posts to the working form endpoint of the current site.
 import Wrap from './Wrap.astro'
 import H from '../site/H.astro'
+import Dot from '../site/Dot.astro'
 import {look, surfaceFor, type Theme} from '../../lib/theme'
 
 const {t, data} = Astro.props as {t: Theme; data: any}
 const s = surfaceFor(data.tone)
 const k = look(t, s)
-const field = t === 'c'
+const field = t === 'd'
+  ? k.dark ? 'w-full rounded-2xl bg-white/5 px-4 py-3.5 text-white ring-1 ring-white/15 focus:outline-none focus:ring-2 focus:ring-dex' : 'w-full rounded-2xl bg-d-bg px-4 py-3.5 text-d-fg ring-1 ring-d-line focus:outline-none focus:ring-2 focus:ring-dex'
+  : t === 'c'
   ? 'w-full rounded bg-[#070b14] px-4 py-3 font-mono text-sm text-white ring-1 ring-dex/30 focus:outline-none focus:ring-2 focus:ring-lab'
   : k.dark
     ? 'w-full rounded-2xl bg-white/5 px-4 py-3.5 text-white ring-1 ring-white/15 focus:outline-none focus:ring-2 focus:ring-dex'
@@ -44,7 +47,7 @@ const topics = ['General question', 'Booking the lab or equipment', 'Workshop fo
         <input type="checkbox" name="consent" value="yes" required class="mt-1 h-4 w-4 accent-[#e84e10]" />
         <span>I agree that DEXLab uses my details to answer my message, as described in the <a class="underline" href={`/${t}/privacy`}>privacy statement</a>.</span>
       </label>
-      <button type="submit" class:list={[k.btnBase, k.font, k.btn]}>{t === 'c' ? '$ ' : ''}Submit <span aria-hidden="true">→</span></button>
+      <button type="submit" class:list={['group', k.btnBase, k.font, k.btn]}>{t === 'c' ? '$ ' : ''}{t === 'd' && <Dot />}Submit <span aria-hidden="true">→</span></button>
     </form>
   </div>
 </Wrap>

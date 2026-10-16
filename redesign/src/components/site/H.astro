@@ -1,7 +1,7 @@
 ---
 // A section heading in the chosen version's style. "DEXLab" always gets its brand colours.
 import {brandify} from '../../lib/site/utils'
-import {look, type Theme, type Surface} from '../../lib/theme'
+import {look, splitTwoTone, type Theme, type Surface} from '../../lib/theme'
 interface Props {
   t: Theme
   s?: Surface
@@ -18,13 +18,17 @@ const sizes = {
   md: t === 'c' ? 'text-[clamp(1.3rem,2.2vw,1.7rem)]' : 'text-[clamp(1.5rem,2.6vw,2.1rem)]',
 }
 const Tag = `h${level}` as 'h1'
+// Version D: grey lead-in, dark remainder.
+const [grey, rest] = t === 'd' ? splitTwoTone(text) : ['', text || '']
+const greyClass = k.dark ? 'text-white/40' : 'text-d-fg/30'
 ---
 
 {
   text && (
     <Tag class:list={[k.heading, sizes[size], className]}>
       {t === 'c' && <span class="mr-3 text-lab select-none" aria-hidden="true">{level === 1 ? '>' : '#'.repeat(level)}</span>}
-      <Fragment set:html={brandify(text)} />
+      {grey && <span class={greyClass} set:html={brandify(grey) + ' '} />}
+      <Fragment set:html={brandify(rest)} />
     </Tag>
   )
 }

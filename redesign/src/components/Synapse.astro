@@ -1,0 +1,167 @@
+---
+// Version D hero scene: a soft "human" form and a faceted "machine" form drift toward
+// each other as the visitor scrolls, and a halo ring lights up where they meet.
+interface Props {
+  compact?: boolean
+}
+const {compact = false} = Astro.props
+---
+
+<div class="synapse pointer-events-none absolute inset-0 -z-10" data-synapse data-compact={compact ? '' : undefined} aria-hidden="true">
+  <div class="halo-wrap"><div class="halo"></div><div class="halo-core"></div></div>
+  <canvas class="absolute inset-0 h-full w-full"></canvas>
+</div>
+
+<script>
+  import * as THREE from 'three'
+  import {RoomEnvironment} from 'three/examples/jsm/environments/RoomEnvironment.js'
+
+  document.querySelectorAll<HTMLElement>('[data-synapse]').forEach((root) => {
+    const canvas = root.querySelector('canvas')!
+    const section = root.parentElement as HTMLElement
+    const compact = root.hasAttribute('data-compact')
+    const still = matchMedia('(prefers-reduced-motion: reduce)').matches
+
+    let renderer: THREE.WebGLRenderer
+    try {
+      renderer = new THREE.WebGLRenderer({canvas, antialias: true, alpha: true, powerPreference: 'low-power'})
+    } catch {
+      canvas.remove()
+      return
+    }
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
+    renderer.toneMapping = THREE.ACESFilmicToneMapping
+    renderer.toneMappingExposure = 1.05
+
+    const scene = new THREE.Scene()
+    const pmrem = new THREE.PMREMGenerator(renderer)
+    scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture
+    const camera = new THREE.PerspectiveCamera(30, 1, 0.1, 100)
+    camera.position.z = 10
+    const key = new THREE.DirectionalLight('#ffffff', 1.4)
+    key.position.set(-3, 4, 6)
+    scene.add(key)
+    const rim = new THREE.DirectionalLight('#00a2db', 2.2)
+    rim.position.set(5, -2, -3)
+    scene.add(rim)
+
+    // Human: a soft, breathing organic form in skin and Lab-orange tones.
+    const humanGeo = new THREE.SphereGeometry(1, 120, 120)
+    const base = humanGeo.attributes.position.array.slice() as Float32Array
+    const human = new THREE.Mesh(
+      humanGeo,
+      new THREE.MeshPhysicalMaterial({color: '#f1c3ac', roughness: 0.38, sheen: 1, sheenColor: new THREE.Color('#e84e10'), sheenRoughness: 0.45, clearcoat: 0.5, clearcoatRoughness: 0.25}),
+    )
+
+    // Machine: a precise chrome polyhedron with glowing DEX-blue edges.
+    const machine = new THREE.Group()
+    const shell = new THREE.IcosahedronGeometry(0.98, 1)
+    machine.add(new THREE.Mesh(shell, new THREE.MeshStandardMaterial({color: '#3a4656', metalness: 1, roughness: 0.16, flatShading: true})))
+    const edges = new THREE.LineSegments(new THREE.EdgesGeometry(shell), new THREE.LineBasicMaterial({color: '#00a2db', transparent: true, opacity: 0.85}))
+    edges.scale.setScalar(1.004)
+    machine.add(edges)
+    const core = new THREE.Mesh(new THREE.IcosahedronGeometry(0.42, 0), new THREE.MeshBasicMaterial({color: '#00a2db', wireframe: true, transparent: true, opacity: 0.5}))
+    machine.add(core)
+
+    // The synapse: a spark that brightens as the two forms approach.
+    const spark = new THREE.Sprite(
+      new THREE.SpriteMaterial({
+        map: (() => {
+          const c = document.createElement('canvas')
+          c.width = c.height = 128
+          const g = c.getContext('2d')!
+          const r = g.createRadialGradient(64, 64, 0, 64, 64, 64)
+          r.addColorStop(0, 'rgba(255,255,255,1)')
+          r.addColorStop(0.25, 'rgba(255,214,190,0.8)')
+          r.addColorStop(0.6, 'rgba(0,162,219,0.25)')
+          r.addColorStop(1, 'rgba(0,162,219,0)')
+          g.fillStyle = r
+          g.fillRect(0, 0, 128, 128)
+          return new THREE.CanvasTexture(c)
+        })(),
+        transparent: true,
+        depthWrite: false,
+        blending: THREE.AdditiveBlending,
+      }),
+    )
+    scene.add(human, machine, spark)
+
+    let w = 1, h = 1, aspect = 1, pointerX = 0, pointerY = 0, progress = still ? 0.65 : 0
+    const resize = () => {
+      w = section.clientWidth
+      h = section.clientHeight
+      aspect = w / h
+      renderer.setSize(w, h, false)
+      camera.aspect = aspect
+      camera.updateProjectionMatrix()
+    }
+    resize()
+    new ResizeObserver(resize).observe(section)
+
+    // Pinned hero: progress runs over the pinned scroll distance. Otherwise over half the hero.
+    const pin = root.closest<HTMLElement>('[data-pin]')
+    const onScroll = () => {
+      const r = (pin || section).getBoundingClientRect()
+      const span = pin ? Math.max(1, r.height - window.innerHeight) : r.height * 0.55
+      progress = Math.min(1, Math.max(0, -r.top / span))
+      ;(pin || root).style.setProperty('--p', String(progress))
+    }
+    if (!still) {
+      window.addEventListener('scroll', onScroll, {passive: true})
+      window.addEventListener('pointermove', (e) => {
+        pointerX = e.clientX / window.innerWidth - 0.5
+        pointerY = e.clientY / window.innerHeight - 0.5
+      }, {passive: true})
+    }
+    onScroll()
+
+    const pos = humanGeo.attributes.position as THREE.BufferAttribute
+    const breathe = (t: number) => {
+      for (let i = 0; i < pos.count; i++) {
+        const x = base[i * 3], y = base[i * 3 + 1], z = base[i * 3 + 2]
+        const d = 1 + 0.09 * Math.sin(2.6 * x + t * 0.9) * Math.sin(2.2 * y + t * 0.7) * Math.sin(2.4 * z + t * 0.5) + 0.04 * Math.sin(5 * y - t * 1.1 + x * 3)
+        pos.setXYZ(i, x * d, y * d, z * d)
+      }
+      pos.needsUpdate = true
+      humanGeo.computeVertexNormals()
+    }
+
+    const ease = (x: number) => 1 - Math.pow(1 - x, 3)
+    let visible = true, raf = 0
+    const frame = (ms: number) => {
+      const t = ms / 1000
+      // Half the visible width at z = 0, so the forms start near the edges of any screen.
+      const halfW = Math.tan((camera.fov * Math.PI) / 360) * camera.position.z * aspect
+      const narrow = aspect < 1
+      const size = (compact ? 0.5 : 1) * (narrow ? Math.max(0.5, aspect * 0.9) : Math.min(1.15, aspect / 1.5))
+      const p = ease(progress)
+      const start = compact ? halfW * 0.86 : Math.min(halfW * 0.78, 3.6)
+      // They stop just short of touching: the spark lives in the gap.
+      const end = size * 1.2
+      const reach = (still ? 0 : Math.sin(t * 0.6) * 0.06) * (1 - p)
+      const x = start + (end - start) * p - reach
+      const y = narrow ? 1.25 * (1 - p) : 0.15
+      human.scale.setScalar(size)
+      machine.scale.setScalar(size * 0.92)
+      human.position.set(-x, y + (narrow ? 0.6 : 0), 0)
+      machine.position.set(x, -y - (narrow ? 0.6 : 0) + 0.05, 0)
+      human.rotation.set(pointerY * 0.3, t * 0.12 + pointerX * 0.4, 0)
+      machine.rotation.set(t * 0.18 + pointerY * 0.4, t * 0.26 + pointerX * 0.6, 0)
+      core.rotation.set(-t * 0.5, -t * 0.7, 0)
+      const gap = Math.max(0, x - size * 1.0)
+      const glow = Math.max(0, 1 - gap / 2.2)
+      spark.position.set((human.position.x + machine.position.x) / 2, (human.position.y + machine.position.y) / 2, 0.4)
+      spark.scale.setScalar(0.4 + glow * 2.6 * size)
+      spark.material.opacity = glow * (0.75 + (still ? 0 : 0.25 * Math.sin(t * 3)))
+      breathe(still ? 0.8 : t)
+      renderer.render(scene, camera)
+      if (!still && visible) raf = requestAnimationFrame(frame)
+    }
+    new IntersectionObserver(([e]) => {
+      visible = e.isIntersecting
+      cancelAnimationFrame(raf)
+      if (visible) raf = requestAnimationFrame(frame)
+    }).observe(pin || section)
+    requestAnimationFrame(frame)
+  })
+</script>

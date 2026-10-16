@@ -3,8 +3,9 @@ import Img from '../site/Img.astro'
 import Buttons from '../site/Buttons.astro'
 import Shader from '../Shader.astro'
 import Scribble from '../Scribble.astro'
+import Synapse from '../Synapse.astro'
 import {brandify} from '../../lib/site/utils'
-import {look, type Theme} from '../../lib/theme'
+import {look, splitTwoTone, type Theme} from '../../lib/theme'
 import type {Img as ImgT, Link} from '../../lib/site/types'
 
 interface Props {
@@ -24,6 +25,9 @@ const H = first ? 'h1' : 'h2'
 // Home heading "DEXLab the Digital Experience Lab" splits into brand line + rest.
 const [first1, ...rest] = heading.split(' ')
 const restText = rest.join(' ')
+// Version D: brand line on its own, then a grey lead-in and a dark remainder.
+const brandLine = home && first1 === 'DEXLab'
+const [grey, dark] = splitTwoTone(brandLine ? restText : heading)
 const file = (image?.alt || slug).toLowerCase().replace(/[^a-z0-9]+/g, '_').slice(0, 28)
 ---
 
@@ -132,5 +136,54 @@ const file = (image?.alt || slug).toLowerCase().replace(/[^a-z0-9]+/g, '_').slic
         )}
       </div>
     </section>
+  )
+}
+
+{
+  t === 'd' && (
+    <>
+      {/* On the home page the hero stays pinned while the visitor scrolls, so the two forms meet on screen. */}
+      <section class:list={['relative', home ? 'h-[190svh]' : '']} data-pin={home ? '' : undefined}>
+      <div class:list={['isolate flex flex-col overflow-hidden', home ? 'sticky top-0 h-[100svh] pt-28' : 'relative min-h-[78svh] pt-32']}>
+        <Synapse compact={!home} />
+        <div class="reveal mx-auto flex w-full max-w-5xl flex-1 flex-col items-center justify-center px-5 text-center">
+          {eyebrow && <p class="mb-6 text-xs font-medium tracking-[0.02em] text-d-fg/50">{eyebrow}</p>}
+          <H class:list={['display-d', home ? 'fade-on-scroll' : '', home ? 'text-[clamp(3rem,8.4vw,7.6rem)]' : 'text-[clamp(2.6rem,6.6vw,5.8rem)]']}>
+            {brandLine && (
+              <>
+                <span set:html={brandify(first1)} />
+                <br />
+              </>
+            )}
+            {grey && <span class="text-d-fg/30" set:html={brandify(grey) + ' '} />}
+            <span set:html={brandify(dark)} />
+          </H>
+        </div>
+        <div class:list={['relative mx-auto w-full max-w-[1320px] items-end gap-6 px-5 pt-10 pb-8 md:grid-cols-[1fr_auto_auto] md:gap-10 md:px-8 md:pb-10', home ? 'hidden md:grid' : 'grid']}>
+          {subheading ? (
+            <div class="reveal max-w-xl">
+              <p class="text-[0.95rem] leading-[1.6] whitespace-pre-line text-d-fg/80">{subheading}</p>
+            </div>
+          ) : <div />}
+          <span class="hidden h-12 w-px self-end bg-d-fg/25 md:block" aria-hidden="true" />
+          <div class="reveal flex flex-wrap items-center gap-3">
+            <Buttons t={t} buttons={buttons} />
+            <span class="hidden items-center gap-2 rounded-full px-4 py-3 text-xs text-d-fg/55 ring-1 ring-d-fg/20 md:inline-flex" aria-hidden="true">Scroll <span class="animate-bounce">↓</span></span>
+          </div>
+        </div>
+      </div>
+      </section>
+      {home && (subheading || buttons?.length) ? (
+        <div class="px-5 pb-10 md:hidden">
+          {subheading && <p class="text-[0.95rem] leading-[1.6] whitespace-pre-line text-d-fg/80">{subheading}</p>}
+          <Buttons t={t} buttons={buttons} class="mt-6" />
+        </div>
+      ) : null}
+      {image?.url && (
+        <figure class="mx-auto max-w-[1320px] px-3 pb-8 md:px-8">
+          <Img image={image} width={1800} fit="max" sizes="(min-width: 1320px) 1260px, 100vw" eager={!home} class="grow-in h-auto w-full rounded-[1.75rem]" />
+        </figure>
+      )}
+    </>
   )
 }

@@ -2,6 +2,7 @@
 @import '@fontsource-variable/open-sans';
 @import '@fontsource-variable/nunito-sans';
 @import '@fontsource-variable/jetbrains-mono';
+@import '@fontsource-variable/inter';
 
 /* DEXLab brand tokens: Deep Blue for text, Light Blue and Bright Orange as accents, Light Grey for lines. */
 @theme {
@@ -18,6 +19,33 @@
   --font-display: 'Open Sans Variable', 'Open Sans', system-ui, sans-serif;
   --font-mono: 'JetBrains Mono Variable', ui-monospace, monospace;
   --font-sans: 'Nunito Sans Variable', 'Avenir Next', Avenir, system-ui, sans-serif;
+  --font-d: 'Inter Variable', 'Inter', system-ui, sans-serif;
+}
+
+/* Version D (Synapse): colours are variables so dark mode is a swap, not a remap. */
+@theme inline {
+  --color-d-bg: var(--d-bg);
+  --color-d-fg: var(--d-fg);
+  --color-d-alt: var(--d-alt);
+  --color-d-card: var(--d-card);
+  --color-d-line: var(--d-line);
+  --color-d-deep: var(--d-deep);
+}
+:root {
+  --d-bg: #f6f6f3;
+  --d-fg: #0d0d0e;
+  --d-alt: #ebebe7;
+  --d-card: #ffffff;
+  --d-line: #dcdcd6;
+  --d-deep: #0d0d0e;
+}
+html.dark {
+  --d-bg: #0b0b0c;
+  --d-fg: #f2f2ef;
+  --d-alt: #141416;
+  --d-card: #18181b;
+  --d-line: #2b2b2f;
+  --d-deep: #1b1b1f;
 }
 
 html {
@@ -142,27 +170,74 @@ body.mono header summary {
 
 /* Dark mode for version B: remaps the light utilities when <html> has .dark */
 html.dark { color-scheme: dark; }
-html.dark body, html.dark .page-base { background-color: #0a1426; }
-html.dark .bg-white:not(.keep-light) { background-color: #111d33; }
-html.dark .bg-paper { background-color: #0d1830; }
-html.dark .bg-peach { background-color: #1d2338; }
-html.dark .text-navy:not(.keep-light) { color: #fff; }
-html.dark [class*='text-navy/'] { color: rgb(255 255 255 / 0.72); }
-html.dark .text-dex-dark { color: var(--color-dex); }
-html.dark .ring-line, html.dark [class*='ring-navy/'] { --tw-ring-color: rgb(255 255 255 / 0.12); }
-html.dark .border-line { border-color: rgb(255 255 255 / 0.12); }
-html.dark .divide-line > * + * { border-color: rgb(255 255 255 / 0.12); }
-html.dark [class*='bg-navy/5'] { background-color: rgb(255 255 255 / 0.08); }
-html.dark .btn-b { background-color: #fff; color: var(--color-navy); }
-html.dark .btn-b:hover { background-color: var(--color-dex); color: #fff; }
-html.dark .prose-light.rt { color: rgb(255 255 255 / 0.82); }
-html.dark .prose-light.rt h2, html.dark .prose-light.rt h3, html.dark .prose-light.rt h4 { color: #fff; }
-html.dark .prose-light.rt a { color: var(--color-dex); }
-html.dark input, html.dark select, html.dark textarea { color: #fff; }
-html.dark select option { background: #111d33; }
-html.dark .ring-white { --tw-ring-color: #111d33; }
-html.dark .header-light.scrolled { background: rgb(10 20 38 / 0.88); box-shadow: 0 1px 0 rgb(255 255 255 / 0.06); }
-html.dark .header-light.scrolled .logo-top { display: block; }
-html.dark .header-light.scrolled .logo-scrolled { display: none; }
-html.dark .header-light nav ul { background: rgb(255 255 255 / 0.06); }
-html.dark .header-light nav a { color: rgb(255 255 255 / 0.85) !important; }
+html.dark body.theme-b, html.dark .theme-b .page-base { background-color: #0a1426; color: #fff; }
+html.dark .theme-b .bg-white:not(.keep-light) { background-color: #111d33; }
+html.dark .theme-b .bg-paper { background-color: #0d1830; }
+html.dark .theme-b .bg-peach { background-color: #1d2338; }
+html.dark .theme-b .text-navy:not(.keep-light) { color: #fff; }
+html.dark .theme-b [class*='text-navy/'] { color: rgb(255 255 255 / 0.72); }
+html.dark .theme-b .text-dex-dark { color: var(--color-dex); }
+html.dark .theme-b .ring-line, html.dark .theme-b [class*='ring-navy/'] { --tw-ring-color: rgb(255 255 255 / 0.12); }
+html.dark .theme-b .border-line { border-color: rgb(255 255 255 / 0.12); }
+html.dark .theme-b .divide-line > * + * { border-color: rgb(255 255 255 / 0.12); }
+html.dark .theme-b [class*='bg-navy/5'] { background-color: rgb(255 255 255 / 0.08); }
+html.dark .theme-b .btn-b { background-color: #fff; color: var(--color-navy); }
+html.dark .theme-b .btn-b:hover { background-color: var(--color-dex); color: #fff; }
+html.dark .theme-b .prose-light.rt { color: rgb(255 255 255 / 0.82); }
+html.dark .theme-b .prose-light.rt h2, html.dark .theme-b .prose-light.rt h3, html.dark .theme-b .prose-light.rt h4 { color: #fff; }
+html.dark .theme-b .prose-light.rt a { color: var(--color-dex); }
+html.dark .theme-b input, html.dark .theme-b select, html.dark .theme-b textarea { color: #fff; }
+html.dark .theme-b select option { background: #111d33; }
+html.dark .theme-b .ring-white { --tw-ring-color: #111d33; }
+html.dark .theme-b .header-light.scrolled { background: rgb(10 20 38 / 0.88); box-shadow: 0 1px 0 rgb(255 255 255 / 0.06); }
+html.dark .theme-b .header-light.scrolled .logo-top { display: block; }
+html.dark .theme-b .header-light.scrolled .logo-scrolled { display: none; }
+html.dark .theme-b .header-light nav ul { background: rgb(255 255 255 / 0.06); }
+html.dark .theme-b .header-light nav a { color: rgb(255 255 255 / 0.85) !important; }
+
+
+/* Version D: Synapse */
+body.theme-d { font-family: var(--font-d); background-color: var(--d-bg); color: var(--d-fg); }
+.font-d { font-family: var(--font-d); }
+.display-d { font-family: var(--font-d); font-weight: 550; letter-spacing: -0.05em; line-height: 0.98; }
+.prose-d.rt { font-size: 1.02rem; }
+.prose-d.rt h2, .prose-d.rt h3, .prose-d.rt h4 { font-family: var(--font-d); font-weight: 600; letter-spacing: -0.035em; }
+.prose-d.prose-light.rt { color: color-mix(in oklab, var(--d-fg) 78%, transparent); }
+.prose-d.prose-light.rt h2, .prose-d.prose-light.rt h3, .prose-d.prose-light.rt h4 { color: var(--d-fg); }
+.prose-d.prose-light.rt a { color: var(--d-fg); text-decoration-color: var(--color-lab); }
+.prose-d.rt blockquote { border-left-color: var(--color-dex); font-style: normal; }
+html.dark .theme-d .d-icon { filter: brightness(0) invert(1); }
+.theme-d .logo-dark { display: none; }
+html.dark .theme-d .logo-light { display: none; }
+html.dark .theme-d .logo-dark { display: block; }
+.header-d.scrolled { background: color-mix(in oklab, var(--d-bg) 82%, transparent); backdrop-filter: blur(16px); box-shadow: 0 1px 0 var(--d-line); }
+
+/* The halo ring behind the hero headline */
+.halo-wrap { position: absolute; left: 50%; top: 50%; width: min(58vw, 640px); aspect-ratio: 1; transform: translate(-50%, -50%) scale(calc(0.82 + var(--p, 0) * 0.3)); pointer-events: none; }
+.halo {
+  position: absolute; inset: 0; border-radius: 50%;
+  background: conic-gradient(from 0deg, #00a2db, #2d85c6, #fce8e0, #e84e10, #fce8e0, #00a2db);
+  -webkit-mask: radial-gradient(closest-side, transparent 66%, #000 72%, #000 84%, transparent 96%);
+  mask: radial-gradient(closest-side, transparent 66%, #000 72%, #000 84%, transparent 96%);
+  filter: blur(18px); opacity: calc(0.45 + var(--p, 0) * 0.45);
+  animation: halo-spin 22s linear infinite;
+}
+.halo-core { position: absolute; inset: 30%; border-radius: 50%; background: radial-gradient(closest-side, rgb(255 255 255 / 0.9), rgb(252 232 224 / 0.5) 45%, transparent 75%); opacity: calc(var(--p, 0) * 0.9); filter: blur(8px); }
+html.dark .halo-core { background: radial-gradient(closest-side, rgb(0 162 219 / 0.55), rgb(232 78 16 / 0.25) 45%, transparent 75%); }
+@keyframes halo-spin { to { transform: rotate(1turn); } }
+.halo-mini { background: conic-gradient(from 120deg, #00a2db, #fce8e0, #e84e10, #2d85c6, #00a2db); }
+
+/* Scroll-linked grow for the big hero photo in D */
+@supports (animation-timeline: view()) {
+  .grow-in { animation: grow-in linear both; animation-timeline: view(); animation-range: entry 0% cover 40%; }
+  @keyframes grow-in { from { transform: scale(0.9); border-radius: 3rem; } to { transform: scale(1); } }
+}
+.dot-d { background: currentColor; }
+.dot-d > span { background: var(--d-fg); }
+.btn-d.bg-white .dot-d > span, .btn-d:hover .dot-d > span { background: #0d0d0e; }
+.btn-d .dot-d { background: var(--d-bg); }
+.btn-d.bg-white .dot-d, .btn-d:hover .dot-d { background: #fff; }
+.theme-d .blog-filter[aria-pressed='true'] { background: var(--d-fg); color: var(--d-bg); }
+.theme-d .blog-filter { --tw-ring-color: color-mix(in oklab, var(--d-fg) 20%, transparent); }
+/* D home hero: the headline steps aside while the two forms meet. */
+.fade-on-scroll { opacity: calc(1 - max(0, (var(--p, 0) - 0.3) * 2.6)); transform: translateY(calc(var(--p, 0) * -48px)); }

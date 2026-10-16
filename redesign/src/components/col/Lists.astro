@@ -45,8 +45,8 @@ const wHref = (w: any) => (w.externalOnly ? `mailto:${email}?subject=${encodeURI
     <div class="space-y-14">
       {years.map((y) => (
         <section class="reveal grid gap-6 md:grid-cols-[10rem_1fr]">
-          <h3 class:list={['text-4xl leading-none md:sticky md:top-28 md:self-start', k.heading, t === 'c' ? 'text-dex' : t === 'b' ? 'text-dex-dark' : 'text-dex']}>{t === 'c' ? `[${y}]` : y}</h3>
-          <ol class:list={['divide-y', k.dark ? 'divide-white/10' : 'divide-line']}>
+          <h3 class:list={['text-4xl leading-none md:sticky md:top-28 md:self-start', k.heading, t === 'c' ? 'text-dex' : t === 'b' ? 'text-dex-dark' : t === 'd' ? (k.dark ? 'text-white/35' : 'text-d-fg/25') : 'text-dex']}>{t === 'c' ? `[${y}]` : y}</h3>
+          <ol class:list={['divide-y', k.dark ? 'divide-white/10' : t === 'd' ? 'divide-d-line' : 'divide-line']}>
             {pubs
               .filter((p) => p.year === y)
               .map((p) => (
@@ -97,7 +97,7 @@ const wHref = (w: any) => (w.externalOnly ? `mailto:${email}?subject=${encodeURI
         <details class:list={['reveal group overflow-hidden', k.card]}>
           <summary class:list={['flex cursor-pointer list-none items-center justify-between gap-6 p-6 text-lg font-bold', k.font]}>
             <span>{t === 'c' ? '? ' : ''}{f.question}</span>
-            <span class:list={['grid h-8 w-8 shrink-0 place-items-center rounded-full text-xl transition group-open:rotate-45', k.dark ? 'bg-white/10' : 'bg-navy/5']} aria-hidden="true">+</span>
+            <span class:list={['grid h-8 w-8 shrink-0 place-items-center rounded-full text-xl transition group-open:rotate-45', k.dark ? 'bg-white/10' : t === 'd' ? 'bg-d-fg/[0.06]' : 'bg-navy/5']} aria-hidden="true">+</span>
           </summary>
           <div class:list={['rt px-6 pb-6', k.prose]} set:html={rewriteLinks(t, renderRichText(f.answer))} />
         </details>

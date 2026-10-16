@@ -1,6 +1,7 @@
 ---
 import Wrap from './Wrap.astro'
 import H from '../site/H.astro'
+import Dot from '../site/Dot.astro'
 import PostCard from '../col/PostCard.astro'
 import Team from '../col/Team.astro'
 import Lists from '../col/Lists.astro'
@@ -31,7 +32,7 @@ const posts = src === 'posts' ? await getPosts(data.limit || 3, data.categorySlu
   {
     data.link?.href && (
       <p class="mt-12 text-center">
-        <a href={L(t, data.link.href)} class:list={[k.btnBase, k.font, data.link.style === 'secondary' ? k.btn2 : k.btn]}>{t === 'c' ? '$ ' : ''}{data.link.label} <span aria-hidden="true">→</span></a>
+        <a href={L(t, data.link.href)} class:list={['group', k.btnBase, k.font, data.link.style === 'secondary' ? [k.btn2, t === 'd' && 'py-3.5 pl-6'] : k.btn]}>{t === 'c' ? '$ ' : ''}{t === 'd' && data.link.style !== 'secondary' && <Dot />}{data.link.label} <span aria-hidden="true">→</span></a>
       </p>
     )
   }
