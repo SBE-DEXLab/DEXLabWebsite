@@ -139,3 +139,30 @@ body.mono header summary {
 .prose-c.rt h2::before { content: '## '; color: var(--color-lab); } .prose-c.rt h3::before { content: '### '; color: var(--color-lab); }
 .prose-c.rt li::marker { color: var(--color-dex); }
 .prose-c.rt figure img { border-radius: 0.4rem; filter: grayscale(0.3); }
+
+/* Dark mode for version B: remaps the light utilities when <html> has .dark */
+html.dark { color-scheme: dark; }
+html.dark body, html.dark .page-base { background-color: #0a1426; }
+html.dark .bg-white:not(.keep-light) { background-color: #111d33; }
+html.dark .bg-paper { background-color: #0d1830; }
+html.dark .bg-peach { background-color: #1d2338; }
+html.dark .text-navy:not(.keep-light) { color: #fff; }
+html.dark [class*='text-navy/'] { color: rgb(255 255 255 / 0.72); }
+html.dark .text-dex-dark { color: var(--color-dex); }
+html.dark .ring-line, html.dark [class*='ring-navy/'] { --tw-ring-color: rgb(255 255 255 / 0.12); }
+html.dark .border-line { border-color: rgb(255 255 255 / 0.12); }
+html.dark .divide-line > * + * { border-color: rgb(255 255 255 / 0.12); }
+html.dark [class*='bg-navy/5'] { background-color: rgb(255 255 255 / 0.08); }
+html.dark .btn-b { background-color: #fff; color: var(--color-navy); }
+html.dark .btn-b:hover { background-color: var(--color-dex); color: #fff; }
+html.dark .prose-light.rt { color: rgb(255 255 255 / 0.82); }
+html.dark .prose-light.rt h2, html.dark .prose-light.rt h3, html.dark .prose-light.rt h4 { color: #fff; }
+html.dark .prose-light.rt a { color: var(--color-dex); }
+html.dark input, html.dark select, html.dark textarea { color: #fff; }
+html.dark select option { background: #111d33; }
+html.dark .ring-white { --tw-ring-color: #111d33; }
+html.dark .header-light.scrolled { background: rgb(10 20 38 / 0.88); box-shadow: 0 1px 0 rgb(255 255 255 / 0.06); }
+html.dark .header-light.scrolled .logo-top { display: block; }
+html.dark .header-light.scrolled .logo-scrolled { display: none; }
+html.dark .header-light nav ul { background: rgb(255 255 255 / 0.06); }
+html.dark .header-light nav a { color: rgb(255 255 255 / 0.85) !important; }

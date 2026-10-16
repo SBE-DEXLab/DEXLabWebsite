@@ -10,7 +10,8 @@ const s = surfaceFor(data.tone)
 const k = look(t, s)
 const items: any[] = data.items || []
 const style = data.style || 'icon'
-const cols = Math.min(data.columns || 3, items.length || 3)
+// Four items without a set column count sit in a 2x2 grid (e.g. Our Core Activities).
+const cols = items.length === 4 && !data.columns && style !== 'tiles' ? 2 : Math.min(data.columns || 3, items.length || 3)
 const grid = {2: 'md:grid-cols-2', 3: 'md:grid-cols-2 lg:grid-cols-3', 4: 'md:grid-cols-2 lg:grid-cols-4', 6: 'grid-cols-2 md:grid-cols-3 lg:grid-cols-6'}[cols as 2] || 'md:grid-cols-3'
 const bento = t === 'b' && (data.heading || data.intro) && style === 'icon' && items.length === 3
 const fileName = (title: string) => title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') + '.md'

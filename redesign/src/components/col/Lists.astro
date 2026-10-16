@@ -74,7 +74,7 @@ const wHref = (w: any) => (w.externalOnly ? `mailto:${email}?subject=${encodeURI
               .filter((e) => e.category === c)
               .map((e) => (
                 <li class:list={['reveal flex flex-col overflow-hidden', k.card]}>
-                  <div class:list={['grid aspect-square place-items-center p-6', t === 'b' ? 'bg-paper' : 'bg-white']}>
+                  <div class="keep-light grid aspect-square place-items-center bg-white p-6">
                     <Img image={e.image} width={400} height={400} fit="max" sizes="250px" class="max-h-full w-auto object-contain" />
                   </div>
                   <div class="p-5">

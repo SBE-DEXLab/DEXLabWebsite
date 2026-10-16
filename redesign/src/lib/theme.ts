@@ -19,7 +19,7 @@ export function look(t: Theme, s: Surface = 'base') {
   const faint = dark ? 'text-white/50' : 'text-navy/55'
   const bg = {
     a: {base: 'bg-night text-white', alt: 'bg-paper text-navy', deep: 'bg-night-2 text-white'},
-    b: {base: 'bg-white text-navy', alt: 'bg-paper text-navy', deep: 'bg-navy text-white'},
+    b: {base: 'bg-white page-base text-navy', alt: 'bg-paper text-navy', deep: 'bg-navy text-white'},
     c: {base: 'bg-[#070b14] text-white', alt: 'bg-[#0a1120] text-white term-grid', deep: 'bg-[#0c1528] text-white'},
   }[t][s]
   const heading = {
@@ -39,7 +39,7 @@ export function look(t: Theme, s: Surface = 'base') {
   }[t]
   const btn = {
     a: dark ? 'rounded-full bg-white text-navy hover:bg-dex hover:text-white' : 'rounded-full bg-navy text-white hover:bg-lab',
-    b: dark ? 'rounded-full bg-white text-navy hover:bg-dex hover:text-white' : 'rounded-full bg-navy text-white hover:bg-dex-dark',
+    b: dark ? 'rounded-full bg-white text-navy hover:bg-dex hover:text-white keep-light' : 'btn-b rounded-full bg-navy text-white hover:bg-dex-dark',
     c: 'rounded-md bg-lab text-white hover:bg-white hover:text-navy',
   }[t]
   const btn2 = {

@@ -48,7 +48,7 @@ const titles: Record<string, string> = {core: 'Our Core Team', intern: 'The Inte
         <H t={t} s={s} text={titles[g]} class="reveal mb-12 text-center" />
         <ul class="flex flex-wrap justify-center gap-6">
           {members.map((p) => (
-            <li class="reveal w-[calc(50%-12px)] sm:w-[13.25rem]">
+            <li class="reveal w-full max-w-[19rem] sm:w-[13.25rem]">
               <div class:list={['group relative overflow-hidden', k.radiusImg, t === 'c' ? 'ring-1 ring-dex/30' : '']} tabindex={p.bio ? 0 : undefined}>
                 {p.photo?.url ? (
                   <Img image={p.photo} width={480} height={640} sizes="240px" alt={`Portrait of ${p.name}`} class:list={['aspect-[3/4] w-full object-cover transition duration-500 group-hover:scale-105', t === 'c' ? 'duotone' : '']} />
@@ -57,10 +57,10 @@ const titles: Record<string, string> = {core: 'Our Core Team', intern: 'The Inte
                 )}
                 {t === 'c' && <span class="pointer-events-none absolute inset-0 bg-dex/20 mix-blend-color" />}
                 {p.bio && (
-                  <div class:list={['absolute inset-0 flex flex-col justify-end overflow-y-auto p-5 text-left text-[0.82rem] leading-6 text-white opacity-0 transition group-hover:opacity-100 group-focus-within:opacity-100', t === 'c' ? 'bg-[#070b14]/95 font-mono text-[0.75rem]' : 'bg-navy/92']}>
-                    {t === 'c' && <p class="mb-2 text-dex">$ cat bio.txt</p>}
+                  <div data-bio class:list={['absolute inset-0 flex flex-col justify-center overflow-hidden text-left text-white opacity-0 transition group-hover:opacity-100 group-focus-within:opacity-100', t === 'c' ? 'bg-[#070b14]/95 p-3 font-mono leading-[1.35] tracking-[-0.02em]' : 'bg-navy/92 p-4 leading-[1.45]']} style="font-size:13px">
+                    {t === 'c' && <p class="mb-1 text-dex">$ cat bio.txt</p>}
                     <p>{p.bio}</p>
-                    {p.linkedin && <a href={p.linkedin} target="_blank" rel="noopener" class="mt-3 font-bold text-dex">LinkedIn ↗</a>}
+                    {p.linkedin && <a href={p.linkedin} target="_blank" rel="noopener" class="mt-2 font-bold text-dex">LinkedIn ↗</a>}
                   </div>
                 )}
                 {p.bio && <span class:list={['absolute right-3 bottom-3 rounded-full px-3 py-1 text-[0.7rem] font-bold transition group-hover:opacity-0', t === 'c' ? 'rounded bg-[#070b14] font-mono text-dex' : 'bg-white text-navy']}>Bio</span>}
@@ -76,3 +76,19 @@ const titles: Record<string, string> = {core: 'Our Core Team', intern: 'The Inte
     )
   })
 }
+
+<script>
+  // Shrinks each bio until it fits completely inside the portrait (no cut-off text).
+  const fit = () =>
+    document.querySelectorAll<HTMLElement>('[data-bio]').forEach((el) => {
+      let size = 13
+      el.style.fontSize = size + 'px'
+      while (el.scrollHeight > el.clientHeight + 1 && size > 8.5) {
+        size -= 0.25
+        el.style.fontSize = size + 'px'
+      }
+    })
+  fit()
+  document.fonts?.ready.then(fit)
+  window.addEventListener('resize', fit)
+</script>

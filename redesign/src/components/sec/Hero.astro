@@ -21,7 +21,6 @@ interface Props {
 const {t, heading, eyebrow, subheading, image, buttons, home = false, slug = 'home', first = true} = Astro.props
 const k = look(t)
 const H = first ? 'h1' : 'h2'
-const focus = image?.hotspot ? `${image.hotspot.x * 100}% ${image.hotspot.y * 100}%` : '50% 40%'
 // Home heading "DEXLab the Digital Experience Lab" splits into brand line + rest.
 const [first1, ...rest] = heading.split(' ')
 const restText = rest.join(' ')
@@ -64,7 +63,7 @@ const file = (image?.alt || slug).toLowerCase().replace(/[^a-z0-9]+/g, '_').slic
             <Scribble kind="loop" class="absolute -top-10 -left-8 z-10 w-36 md:w-48" />
             <Scribble kind="spark" class="absolute -right-3 -bottom-5 z-10 w-12" color="#00a2db" />
             <figure class:list={['relative overflow-hidden rounded-[2rem] ring-1 ring-white/10 shadow-[0_40px_120px_-30px_rgb(0,162,219,0.45)]', home ? 'rotate-[1.5deg]' : '']}>
-              <Img image={image} width={home ? 1200 : 1600} height={home ? 900 : 700} sizes="(min-width: 1320px) 1240px, 100vw" eager class:list={['w-full object-cover', home ? 'aspect-[4/3]' : 'aspect-[16/7]']} style={`object-position:${focus}`} />
+              <Img image={image} width={home ? 1200 : 1600} fit="max" sizes="(min-width: 1320px) 1240px, 100vw" eager class="h-auto w-full" />
             </figure>
           </div>
         )}
@@ -82,7 +81,7 @@ const file = (image?.alt || slug).toLowerCase().replace(/[^a-z0-9]+/g, '_').slic
         <div class="reveal mx-auto max-w-5xl px-5 text-center">
           {eyebrow && <p class="mb-5 text-xs font-bold uppercase tracking-[0.2em] text-white/80">{eyebrow}</p>}
           <H class:list={['display', home ? 'text-[clamp(3rem,8.5vw,7.5rem)]' : 'text-[clamp(2.6rem,6.4vw,5.4rem)]']}>
-            <span set:html={brandify(heading).replace('brand-dex', 'brand-dex !text-white')} />
+            <span set:html={brandify(heading)} />
           </H>
           {subheading && <p class="mx-auto mt-8 max-w-3xl text-lg leading-8 whitespace-pre-line text-white/85">{subheading}</p>}
           <Buttons t={t} s="deep" buttons={buttons} center class="mt-10" />
@@ -90,7 +89,7 @@ const file = (image?.alt || slug).toLowerCase().replace(/[^a-z0-9]+/g, '_').slic
       </div>
       {image?.url && (
         <figure class:list={['reveal relative z-10 mx-auto max-w-[1100px] px-4', home ? '-mt-36 md:-mt-48' : '-mt-28 md:-mt-36']}>
-          <Img image={image} width={1600} height={home ? 900 : 640} sizes="(min-width: 1100px) 1100px, 100vw" eager class:list={['w-full rounded-[2rem] object-cover shadow-[0_50px_120px_-40px_rgb(0,28,61,0.55)] ring-8 ring-white', home ? 'aspect-[16/9]' : 'aspect-[5/2]']} style={`object-position:${focus}`} />
+          <Img image={image} width={1600} fit="max" sizes="(min-width: 1100px) 1100px, 100vw" eager class="h-auto w-full rounded-[2rem] shadow-[0_50px_120px_-40px_rgb(0,28,61,0.55)] ring-8 ring-white" />
         </figure>
       )}
     </section>
@@ -122,8 +121,8 @@ const file = (image?.alt || slug).toLowerCase().replace(/[^a-z0-9]+/g, '_').slic
           </div>
         </div>
         {image?.url && (
-          <figure class="reveal relative overflow-hidden rounded-lg ring-1 ring-dex/30">
-            <Img image={image} width={1100} height={900} sizes="(min-width: 1024px) 560px, 100vw" eager class="duotone h-full min-h-[18rem] w-full object-cover" style={`object-position:${focus}`} />
+          <figure class="reveal relative self-center overflow-hidden rounded-lg ring-1 ring-dex/30">
+            <Img image={image} width={1100} fit="max" sizes="(min-width: 1024px) 560px, 100vw" eager class="duotone h-auto w-full" />
             <div class="pointer-events-none absolute inset-0 bg-dex/25 mix-blend-color" />
             <figcaption class="absolute inset-x-0 bottom-0 flex justify-between bg-[#070b14]/85 px-4 py-2 font-mono text-[0.7rem] text-white/60">
               <span>{file}.jpg</span>
