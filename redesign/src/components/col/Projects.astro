@@ -19,7 +19,7 @@ const q = (v: string) => JSON.stringify(v)
   <div class="mb-10 flex flex-wrap justify-center gap-2" role="group" aria-label="Filter projects" hidden data-filters>
     {
       [{c: 'all', n: projects.length}, ...filters].map((f, i) => (
-        <button type="button" data-filter={f.c} aria-pressed={i === 0 ? 'true' : 'false'} class:list={['proj-filter px-4 py-2 text-sm font-bold transition', k.font, t === 'c' ? 'rounded ring-1 ring-dex/40' : 'rounded-full ring-1', k.dark ? 'ring-white/20' : t === 'd' ? 'ring-d-fg/20' : 'ring-line']}>
+        <button type="button" data-filter={f.c} aria-pressed={i === 0 ? 'true' : 'false'} class:list={['proj-filter px-4 py-2 text-sm font-bold transition', k.font, t === 'c' ? 'rounded ring-1 ring-dex/40' : 'rounded-full ring-1', k.dark ? 'ring-white/20' : t === 'd' ? 'ring-d-fg/20' : t === 'e' ? 'ring-2 ring-navy' : 'ring-line']}>
           {t === 'c' ? `--${f.c}` : f.c === 'all' ? 'All' : labels[f.c][1]} <span class="opacity-60">{f.n}</span>
         </button>
       ))
@@ -84,6 +84,28 @@ const q = (v: string) => JSON.stringify(v)
               </div>
             </article>
           )}
+          {t === 'e' && (
+            <article data-tilt class:list={['group flex h-full flex-col', k.card, k.cardHover]}>
+              <span class="e-brackets" />
+              <div class="relative aspect-[16/9] overflow-hidden border-b-2 border-navy bg-peach">
+                {p.cover?.url ? (
+                  <Img image={p.cover} width={720} height={405} sizes="400px" class="h-full w-full object-cover" />
+                ) : (
+                  <div class="e-grid grid h-full place-items-center"><span class="display-e text-[5rem] text-navy/15">{String(i + 1).padStart(2, '0')}</span></div>
+                )}
+                <span class="absolute top-0 left-0 bg-navy px-2 py-1 font-mono text-[0.66rem] tracking-[0.1em] text-white uppercase">{labels[p.category][0]}</span>
+              </div>
+              <div class="flex flex-1 flex-col p-5">
+                <p class="mb-3 flex items-center gap-2 font-mono text-[0.68rem] uppercase"><span class:list={['h-2 w-2', p.status === 'completed' ? 'bg-navy/30' : 'rec-dot bg-lab']} />{status(p)}</p>
+                <h3 class="display-e text-[1.9rem]">{p.title}</h3>
+                {p.partners && <p class="mt-2 font-mono text-[0.7rem] text-navy/60">{p.partners}</p>}
+                {p.description && <p class="mt-3 text-[0.95rem] leading-6 text-navy/80">{p.description}</p>}
+                {p.tags?.length ? <ul class="mt-4 flex flex-wrap gap-1.5">{p.tags.map((g: string) => <li class={k.chip}>{g}</li>)}</ul> : null}
+                {p.team?.length ? <p class="mt-auto border-t-2 border-navy pt-3 font-mono text-[0.7rem] uppercase">{p.team.join(' · ')}</p> : null}
+                {p.link && <a href={p.link} target="_blank" rel="noopener" class:list={['mt-3 self-start text-sm font-bold', k.link]}>Learn more ↗</a>}
+              </div>
+            </article>
+          )}
           {t === 'c' && (
             <article class="flex h-full flex-col overflow-hidden rounded-md bg-[#0b1324] font-mono text-[0.8rem] leading-6 ring-1 ring-dex/25 transition hover:ring-lab/70">
               <div class="flex items-center justify-between border-b border-dex/20 px-4 py-2 text-[0.7rem] text-white/50">
@@ -125,6 +147,10 @@ const q = (v: string) => JSON.stringify(v)
     background: var(--d-fg);
     color: var(--d-bg);
     --tw-ring-color: var(--d-fg);
+  }
+  :global(.theme-e) .proj-filter[aria-pressed='true'] {
+    background: var(--color-navy);
+    color: #fff;
   }
   :global(.theme-a) .proj-filter[aria-pressed='true'],
   :global(.theme-b) .proj-filter[aria-pressed='true'],

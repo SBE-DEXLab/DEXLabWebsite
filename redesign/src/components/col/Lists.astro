@@ -45,7 +45,7 @@ const wHref = (w: any) => (w.externalOnly ? `mailto:${email}?subject=${encodeURI
     <div class="space-y-14">
       {years.map((y) => (
         <section class="reveal grid gap-6 md:grid-cols-[10rem_1fr]">
-          <h3 class:list={['text-4xl leading-none md:sticky md:top-28 md:self-start', k.heading, t === 'c' ? 'text-dex' : t === 'b' ? 'text-dex-dark' : t === 'd' ? (k.dark ? 'text-white/35' : 'text-d-fg/25') : 'text-dex']}>{t === 'c' ? `[${y}]` : y}</h3>
+          <h3 class:list={['text-4xl leading-none md:sticky md:top-28 md:self-start', k.heading, t === 'c' ? 'text-dex' : t === 'b' ? 'text-dex-dark' : t === 'd' ? (k.dark ? 'text-white/35' : 'text-d-fg/25') : t === 'e' ? 'text-lab' : 'text-dex']}>{t === 'c' ? `[${y}]` : y}</h3>
           <ol class:list={['divide-y', k.dark ? 'divide-white/10' : t === 'd' ? 'divide-d-line' : 'divide-line']}>
             {pubs
               .filter((p) => p.year === y)

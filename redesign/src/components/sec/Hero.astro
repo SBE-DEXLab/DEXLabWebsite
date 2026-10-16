@@ -191,3 +191,86 @@ const file = (image?.alt || slug).toLowerCase().replace(/[^a-z0-9]+/g, '_').slic
     </>
   )
 }
+
+{
+  t === 'e' && (
+    <section class:list={['e-grid relative overflow-hidden border-b-2 border-navy bg-e-paper', home ? 'pt-24' : 'pt-24']} data-calib={home ? '' : undefined}>
+      {home && (
+        <div class="pointer-events-none fixed inset-0 z-50" aria-hidden="true" data-calib-layer>
+          {[[8, 22], [92, 22], [50, 52], [8, 88], [92, 88]].map(([x, y]) => <span class="calib" style={`left:${x}%;top:${y}%`} />)}
+          <p data-calib-label class="absolute top-[56%] left-1/2 hidden -translate-x-1/2 bg-navy px-3 py-1.5 font-mono text-[0.7rem] tracking-[0.14em] text-white uppercase">Calibrating</p>
+        </div>
+      )}
+      <div class="relative mx-auto max-w-[1400px] px-4 pt-6 md:px-6">
+        {eyebrow && <p class="mb-4 inline-block bg-navy px-2 py-1 font-mono text-[0.7rem] tracking-[0.12em] text-white uppercase">{eyebrow}</p>}
+        <H class="e-hero-type display-e">
+          {brandLine ? (
+            <>
+              <span class="block text-[clamp(5rem,23.5vw,22rem)] leading-[0.8]" set:html={brandify(first1)} />
+              <span class="block text-[clamp(2.4rem,8.3vw,8rem)]">{restText}</span>
+            </>
+          ) : (
+            <span class="block text-[clamp(3.2rem,10vw,9.5rem)]" set:html={brandify(heading)} />
+          )}
+        </H>
+      </div>
+      <div class:list={['relative mx-auto grid max-w-[1400px] gap-8 px-4 pt-10 pb-14 md:px-6', image?.url ? 'lg:grid-cols-[0.9fr_1.1fr] lg:items-start' : '']}>
+        {(subheading || buttons?.length) && (
+          <div class="reveal max-w-2xl border-2 border-navy bg-white shadow-[6px_6px_0_#001c3d]">
+            <p class="border-b-2 border-navy bg-peach px-4 py-2 font-mono text-[0.7rem] font-semibold tracking-[0.14em] uppercase">Abstract</p>
+            <div class="p-5 md:p-7">
+              {subheading && <p class="text-[1.05rem] leading-[1.65] whitespace-pre-line">{subheading}</p>}
+              <Buttons t={t} buttons={buttons} class="mt-6" />
+            </div>
+          </div>
+        )}
+        {image?.url && (
+          <figure class="reveal relative border-2 border-navy bg-white shadow-[8px_8px_0_#e84e10]">
+            <Img image={image} width={1600} fit="max" sizes="(min-width: 1024px) 720px, 100vw" eager class="h-auto w-full" />
+            {home && (
+              <div class="pointer-events-none absolute inset-0" aria-hidden="true">
+                <svg class="absolute inset-0 h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                  {[[19, 34, 33, 31], [33, 31, 47, 35], [47, 35, 60, 32], [60, 32, 73, 35], [73, 35, 55, 62]].map(([x1, y1, x2, y2], i) => (
+                    <line x1={x1} y1={y1} x2={x2} y2={y2} stroke="#001c3d" stroke-width="1.5" vector-effect="non-scaling-stroke" class="gaze-replay" style={`animation-delay:${(i + 1) * 0.7}s`} />
+                  ))}
+                </svg>
+                {[[19, 34, 30], [33, 31, 44], [47, 35, 26], [60, 32, 52], [73, 35, 34], [55, 62, 22]].map(([x, y, r], i) => (
+                  <span class="gaze-replay absolute grid -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full border-2 border-lab bg-lab/25 font-mono text-[0.7rem] font-bold text-navy" style={`left:${x}%;top:${y}%;width:${r}px;height:${r}px;animation-delay:${i * 0.7}s`}>{i + 1}</span>
+                ))}
+              </div>
+            )}
+          </figure>
+        )}
+      </div>
+    </section>
+  )
+}
+
+<script>
+  // Version E home: a short eye-tracker style calibration before the headline appears.
+  const calib = document.querySelector<HTMLElement>('[data-calib]')
+  if (calib) {
+    const skip = matchMedia('(prefers-reduced-motion: reduce)').matches || sessionStorage.getItem('dex-calib')
+    if (!skip) {
+      const dots = [...calib.querySelectorAll<HTMLElement>('.calib')]
+      const label = calib.querySelector<HTMLElement>('[data-calib-label]')!
+      calib.classList.add('calibrating')
+      label.classList.remove('hidden')
+      const timers: number[] = []
+      const finish = () => {
+        timers.forEach(clearTimeout)
+        dots.forEach((d) => d.classList.add('done'))
+        label.classList.add('hidden')
+        calib.classList.remove('calibrating')
+        try { sessionStorage.setItem('dex-calib', '1') } catch {}
+      }
+      dots.forEach((d, i) => timers.push(window.setTimeout(() => {
+        dots.forEach((x) => x.classList.remove('on'))
+        d.classList.add('on')
+      }, 200 + i * 430)))
+      timers.push(window.setTimeout(finish, 200 + dots.length * 430 + 150))
+      window.addEventListener('pointerdown', finish, {once: true})
+      window.addEventListener('keydown', finish, {once: true})
+    }
+  }
+</script>

@@ -16,6 +16,7 @@ const grid = {2: 'md:grid-cols-2', 3: 'md:grid-cols-2 lg:grid-cols-3', 4: 'md:gr
 const bento = t === 'b' && (data.heading || data.intro) && style === 'icon' && items.length === 3
 const fileName = (title: string) => title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') + '.md'
 const iconClass = k.dark ? 'brightness-0 invert' : t === 'd' ? 'd-icon' : ''
+const tilt = t === 'e' ? {'data-tilt': ''} : {}
 ---
 
 <Wrap t={t} tone={data.tone} anchor={data.anchor}>
@@ -61,7 +62,7 @@ const iconClass = k.dark ? 'brightness-0 invert' : t === 'd' ? 'd-icon' : ''
             {items.map((c, i) => {
               const Tag = c.link?.href ? 'a' : 'div'
               return (
-                <Tag href={c.link?.href ? L(t, c.link.href) : undefined} class:list={['reveal group relative flex flex-col overflow-hidden', k.card, c.link?.href && k.cardHover, style === 'tiles' ? 'items-center p-6 text-center' : '']} style={`transition-delay:${(i % 4) * 70}ms`}>
+                <Tag {...tilt} href={c.link?.href ? L(t, c.link.href) : undefined} class:list={['reveal group relative flex flex-col overflow-hidden', k.card, c.link?.href && k.cardHover, style === 'tiles' ? 'items-center p-6 text-center' : '']} style={`transition-delay:${(i % 4) * 70}ms`}>
                   {t === 'c' && style !== 'tiles' && (
                     <div class="flex items-center justify-between border-b border-dex/20 px-5 py-2.5 font-mono text-[0.7rem] text-white/50">
                       <span>{fileName(c.title)}</span>
@@ -74,8 +75,9 @@ const iconClass = k.dark ? 'brightness-0 invert' : t === 'd' ? 'd-icon' : ''
                   <div class:list={[style === 'tiles' ? '' : 'flex flex-1 flex-col p-8']}>
                     {t === 'a' && style === 'icon' && !c.image?.url && <span class="mb-10 font-display text-sm font-bold text-white/40">0{i + 1}</span>}
                     {t === 'd' && style !== 'tiles' && <span class:list={['absolute top-7 right-8 text-xs tabular-nums', k.faint]}>({String(i + 1).padStart(2, '0')})</span>}
+                    {t === 'e' && style !== 'tiles' && <span class="mb-8 inline-block self-start bg-navy px-2 py-1 font-mono text-[0.68rem] tracking-[0.1em] text-white">C{i + 1}</span>}
                     {style !== 'photo' && c.image?.url && (
-                      <span class:list={['mb-6 grid place-items-center', style === 'tiles' ? 'h-16 w-16' : 'h-14 w-14', t === 'b' ? 'rounded-2xl bg-dex/10' : t === 'a' ? 'rounded-2xl bg-white/5' : t === 'd' ? (k.dark ? 'rounded-full bg-white/10' : 'rounded-full bg-d-fg/[0.05]') : 'rounded bg-dex/10']}>
+                      <span class:list={['mb-6 grid place-items-center', style === 'tiles' ? 'h-16 w-16' : 'h-14 w-14', t === 'b' ? 'rounded-2xl bg-dex/10' : t === 'a' ? 'rounded-2xl bg-white/5' : t === 'd' ? (k.dark ? 'rounded-full bg-white/10' : 'rounded-full bg-d-fg/[0.05]') : t === 'e' ? 'border-2 border-navy bg-peach' : 'rounded bg-dex/10']}>
                         <Img image={c.image} width={96} fit="max" class:list={['h-8 w-8 object-contain', iconClass]} />
                       </span>
                     )}
@@ -87,6 +89,7 @@ const iconClass = k.dark ? 'brightness-0 invert' : t === 'd' ? 'd-icon' : ''
                       </span>
                     )}
                   </div>
+                  {t === 'e' && <span class="e-brackets" />}
                   {t === 'a' && <span class:list={['pointer-events-none absolute -top-10 -right-10 h-32 w-32 rounded-full opacity-25 blur-2xl transition group-hover:opacity-60', ['bg-dex', 'bg-lab', 'bg-azure'][i % 3]]} />}
                 </Tag>
               )

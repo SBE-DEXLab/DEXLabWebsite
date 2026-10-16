@@ -3,6 +3,7 @@
 @import '@fontsource-variable/nunito-sans';
 @import '@fontsource-variable/jetbrains-mono';
 @import '@fontsource-variable/inter';
+@import '@fontsource-variable/archivo/wdth.css';
 
 /* DEXLab brand tokens: Deep Blue for text, Light Blue and Bright Orange as accents, Light Grey for lines. */
 @theme {
@@ -20,6 +21,8 @@
   --font-mono: 'JetBrains Mono Variable', ui-monospace, monospace;
   --font-sans: 'Nunito Sans Variable', 'Avenir Next', Avenir, system-ui, sans-serif;
   --font-d: 'Inter Variable', 'Inter', system-ui, sans-serif;
+  --font-e: 'Archivo Variable', 'Archivo', system-ui, sans-serif;
+  --color-e-paper: #fbf7f1;
 }
 
 /* Version D (Synapse): colours are variables so dark mode is a swap, not a remap. */
@@ -242,3 +245,66 @@ html.dark .halo-core { background: radial-gradient(closest-side, rgb(0 162 219 /
 /* D home hero: the headline steps aside while the two forms meet. */
 .fade-on-scroll { opacity: calc(1 - max(0, (var(--p, 0) - 0.3) * 2.6)); transform: translateY(calc(var(--p, 0) * -48px)); }
 .halo-small { width: min(38vw, 300px); top: 46%; }
+
+
+/* Version E: Live Study. The site is run like a lab session: graph paper, trials, AOIs. */
+body.theme-e { font-family: var(--font-e); font-stretch: 100%; counter-reset: trial; }
+.font-e { font-family: var(--font-e); }
+.display-e { font-family: var(--font-e); font-stretch: 68%; font-weight: 850; text-transform: uppercase; letter-spacing: -0.01em; line-height: 0.86; }
+.e-grid {
+  background-image:
+    linear-gradient(rgb(0 28 61 / 0.09) 1px, transparent 1px), linear-gradient(90deg, rgb(0 28 61 / 0.09) 1px, transparent 1px),
+    linear-gradient(rgb(0 28 61 / 0.04) 1px, transparent 1px), linear-gradient(90deg, rgb(0 28 61 / 0.04) 1px, transparent 1px);
+  background-size: 80px 80px, 80px 80px, 16px 16px, 16px 16px;
+}
+.e-grid-dark {
+  background-image: linear-gradient(rgb(255 255 255 / 0.07) 1px, transparent 1px), linear-gradient(90deg, rgb(255 255 255 / 0.07) 1px, transparent 1px);
+  background-size: 80px 80px;
+}
+/* Each section is a numbered trial. */
+.e-trial { counter-increment: trial; border-top: 2px solid #001c3d; }
+.e-trial::before {
+  content: 'TRIAL ' counter(trial, decimal-leading-zero);
+  position: absolute; top: 0; left: 0; z-index: 1;
+  font: 600 0.68rem/1 var(--font-mono); letter-spacing: 0.12em;
+  background: #001c3d; color: #fff; padding: 0.45rem 0.7rem;
+}
+.e-trial.bg-navy { border-top-color: #e84e10; }
+.e-trial.bg-navy::before { background: #e84e10; }
+/* Areas of interest: corner brackets that light up on hover, with the measured dwell time. */
+.e-aoi { position: relative; }
+.e-aoi::after {
+  content: attr(data-dwell); position: absolute; top: 0.6rem; right: 0.6rem; z-index: 3;
+  font: 600 0.62rem/1 var(--font-mono); letter-spacing: 0.06em; text-transform: uppercase;
+  background: #e84e10; color: #fff; padding: 0.35rem 0.5rem; opacity: 0; transform: translateY(4px); transition: 0.2s;
+}
+.e-aoi[data-dwell]:hover::after, .e-aoi[data-dwell]:focus-within::after { opacity: 1; transform: none; }
+.e-brackets { position: absolute; inset: 14px; pointer-events: none; opacity: 0; transition: opacity 0.2s, inset 0.25s; z-index: 2;
+  background:
+    linear-gradient(#e84e10, #e84e10) top left / 18px 3px, linear-gradient(#e84e10, #e84e10) top left / 3px 18px,
+    linear-gradient(#e84e10, #e84e10) top right / 18px 3px, linear-gradient(#e84e10, #e84e10) top right / 3px 18px,
+    linear-gradient(#e84e10, #e84e10) bottom left / 18px 3px, linear-gradient(#e84e10, #e84e10) bottom left / 3px 18px,
+    linear-gradient(#e84e10, #e84e10) bottom right / 18px 3px, linear-gradient(#e84e10, #e84e10) bottom right / 3px 18px;
+  background-repeat: no-repeat; }
+.group:hover > .e-brackets, .group:focus-visible > .e-brackets, .group:focus-within > .e-brackets { opacity: 1; inset: 8px; }
+.prose-e.rt { font-size: 1.05rem; }
+.prose-e.rt h2, .prose-e.rt h3 { font-family: var(--font-e); font-stretch: 75%; font-weight: 850; text-transform: uppercase; letter-spacing: 0; }
+.prose-e.prose-light.rt a { color: #001c3d; text-decoration-color: #e84e10; }
+.prose-e.rt blockquote { border-left: 6px solid #e84e10; font-style: normal; }
+.prose-e.rt figure img { border-radius: 0; border: 2px solid #001c3d; }
+.theme-e .blog-filter, .theme-e .proj-filter { border-radius: 0; font-family: var(--font-mono); text-transform: uppercase; font-size: 0.72rem; --tw-ring-color: #001c3d; background: #fff; }
+.theme-e .blog-filter[aria-pressed='true'] { background: #001c3d; color: #fff; }
+/* Calibration dots on the home page */
+.calib { position: absolute; width: 22px; height: 22px; margin: -11px 0 0 -11px; border-radius: 50%; background: #e84e10; box-shadow: 0 0 0 6px rgb(232 78 16 / 0.2); opacity: 0; }
+.calib::after { content: ''; position: absolute; inset: 8px; border-radius: 50%; background: #fff; }
+.calib.on { animation: calib 0.42s ease-in forwards; }
+@keyframes calib { 0% { opacity: 0; transform: scale(2.4); } 30% { opacity: 1; transform: scale(1.4); } 100% { opacity: 1; transform: scale(0.5); } }
+.calib.done { opacity: 0 !important; transition: opacity 0.3s; animation: none; }
+.e-hero-type { transition: clip-path 0.9s cubic-bezier(0.7, 0, 0.2, 1); clip-path: inset(0 0 0 0); }
+.calibrating .e-hero-type { clip-path: inset(0 100% 0 0); }
+@keyframes rec { 50% { opacity: 0.25; } }
+.rec-dot { animation: rec 1.2s steps(1) infinite; }
+.gaze-replay { opacity: 0; animation: gaze-replay 6s ease-out infinite; }
+@keyframes gaze-replay { 0% { opacity: 0; transform: translate(-50%, -50%) scale(0.2); } 6% { opacity: 1; transform: translate(-50%, -50%) scale(1); } 80% { opacity: 1; } 100% { opacity: 0; transform: translate(-50%, -50%) scale(1); } }
+line.gaze-replay { animation-name: gaze-line; }
+@keyframes gaze-line { 0% { opacity: 0; } 6% { opacity: 0.8; } 80% { opacity: 0.8; } 100% { opacity: 0; } }

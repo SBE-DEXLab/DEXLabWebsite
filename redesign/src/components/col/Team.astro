@@ -22,7 +22,7 @@ const titles: Record<string, string> = {core: 'Our Core Team', intern: 'The Inte
           <H t={t} s={s} text={titles[g]} class="reveal mb-12 text-center" />
           {years.map((y) => (
             <div class="mb-12">
-              <h3 class:list={['mb-6 text-center text-sm font-bold uppercase tracking-[0.18em]', t === 'c' ? 'font-mono normal-case tracking-normal text-dex' : t === 'd' ? 'font-medium normal-case tracking-normal text-d-fg/45' : 'text-lab']}>{t === 'c' ? `$ ls ./alumni/${y.replace('/', '-')}` : y}</h3>
+              <h3 class:list={['mb-6 text-center text-sm font-bold uppercase tracking-[0.18em]', t === 'c' ? 'font-mono normal-case tracking-normal text-dex' : t === 'e' ? 'font-mono text-lab' : t === 'd' ? 'font-medium normal-case tracking-normal text-d-fg/45' : 'text-lab']}>{t === 'c' ? `$ ls ./alumni/${y.replace('/', '-')}` : y}</h3>
               <ul class="flex flex-wrap justify-center gap-x-6 gap-y-8">
                 {members
                   .filter((p) => (p.period || 'Earlier') === y)
@@ -49,7 +49,7 @@ const titles: Record<string, string> = {core: 'Our Core Team', intern: 'The Inte
         <ul class="flex flex-wrap justify-center gap-6">
           {members.map((p) => (
             <li class="reveal w-full max-w-[19rem] sm:w-[13.25rem]">
-              <div class:list={['group relative overflow-hidden', k.radiusImg, t === 'c' ? 'ring-1 ring-dex/30' : '']} tabindex={p.bio ? 0 : undefined}>
+              <div class:list={['group relative overflow-hidden', k.radiusImg, t === 'c' ? 'ring-1 ring-dex/30' : '', t === 'e' && 'e-aoi shadow-[6px_6px_0_#001c3d]']} tabindex={p.bio ? 0 : undefined}>
                 {p.photo?.url ? (
                   <Img image={p.photo} width={480} height={640} sizes="240px" alt={`Portrait of ${p.name}`} class:list={['aspect-[3/4] w-full object-cover transition duration-500 group-hover:scale-105', t === 'c' ? 'duotone' : '']} />
                 ) : (
@@ -57,15 +57,15 @@ const titles: Record<string, string> = {core: 'Our Core Team', intern: 'The Inte
                 )}
                 {t === 'c' && <span class="pointer-events-none absolute inset-0 bg-dex/20 mix-blend-color" />}
                 {p.bio && (
-                  <div data-bio class:list={['absolute inset-0 flex flex-col justify-center overflow-hidden text-left text-white opacity-0 transition group-hover:opacity-100 group-focus-within:opacity-100', t === 'c' ? 'bg-[#070b14]/95 p-3 font-mono leading-[1.35] tracking-[-0.02em]' : t === 'd' ? 'bg-[#0d0d0e]/88 p-4 leading-[1.45] backdrop-blur-sm' : 'bg-navy/92 p-4 leading-[1.45]']} style="font-size:13px">
+                  <div data-bio class:list={['absolute inset-0 flex flex-col justify-center overflow-hidden text-left text-white opacity-0 transition group-hover:opacity-100 group-focus-within:opacity-100', t === 'c' ? 'bg-[#070b14]/95 p-3 font-mono leading-[1.35] tracking-[-0.02em]' : t === 'e' ? 'bg-navy/95 p-4 font-e leading-[1.45]' : t === 'd' ? 'bg-[#0d0d0e]/88 p-4 leading-[1.45] backdrop-blur-sm' : 'bg-navy/92 p-4 leading-[1.45]']} style="font-size:13px">
                     {t === 'c' && <p class="mb-1 text-dex">$ cat bio.txt</p>}
                     <p>{p.bio}</p>
                     {p.linkedin && <a href={p.linkedin} target="_blank" rel="noopener" class="mt-2 font-bold text-dex">LinkedIn ↗</a>}
                   </div>
                 )}
-                {p.bio && <span class:list={['absolute right-3 bottom-3 rounded-full px-3 py-1 text-[0.7rem] font-bold transition group-hover:opacity-0', t === 'c' ? 'rounded bg-[#070b14] font-mono text-dex' : t === 'd' ? 'bg-d-bg/90 font-medium text-d-fg backdrop-blur' : 'bg-white text-navy']}>Bio</span>}
+                {p.bio && <span class:list={['absolute right-3 bottom-3 rounded-full px-3 py-1 text-[0.7rem] font-bold transition group-hover:opacity-0', t === 'c' ? 'rounded bg-[#070b14] font-mono text-dex' : t === 'e' ? 'rounded-none bg-lab font-mono text-white uppercase' : t === 'd' ? 'bg-d-bg/90 font-medium text-d-fg backdrop-blur' : 'bg-white text-navy']}>Bio</span>}
               </div>
-              <h3 class:list={['mt-4 text-lg', t === 'd' ? 'font-semibold tracking-[-0.02em]' : 'font-bold', k.font]}>
+              <h3 class:list={['mt-4', t === 'e' ? 'display-e text-2xl' : 'text-lg', t === 'd' ? 'font-semibold tracking-[-0.02em]' : 'font-bold', k.font]}>
                 {p.linkedin ? <a href={p.linkedin} target="_blank" rel="noopener" class="hover:text-dex">{p.name}</a> : p.name}
               </h3>
               {p.role && <p class:list={['text-sm leading-6', k.muted]} set:html={brandify(p.role)} />}

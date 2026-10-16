@@ -1,17 +1,17 @@
 /**
- * Four looks for one site. Every component asks `look(theme, surface)` for its class
- * strings, so the same content renders as A (Night Lab), B (Light Shader), C (Terminal) or D (Synapse).
+ * Five looks for one site. Every component asks `look(theme, surface)` for its class
+ * strings, so the same content renders as A (Night Lab), B (Light Shader), C (Terminal), D (Synapse) or E (Live Study).
  */
-export type Theme = 'a' | 'b' | 'c' | 'd'
+export type Theme = 'a' | 'b' | 'c' | 'd' | 'e'
 export type Surface = 'base' | 'alt' | 'deep'
-export const THEMES: Theme[] = ['a', 'b', 'c', 'd']
-export const THEME_NAMES: Record<Theme, string> = {a: 'Night Lab', b: 'Light Shader', c: 'Terminal', d: 'Synapse'}
+export const THEMES: Theme[] = ['a', 'b', 'c', 'd', 'e']
+export const THEME_NAMES: Record<Theme, string> = {a: 'Night Lab', b: 'Light Shader', c: 'Terminal', d: 'Synapse', e: 'Live Study'}
 
 /** Maps the section `tone` field from the CMS to a surface. */
 export const surfaceFor = (tone?: string): Surface =>
   tone === 'muted' || tone === 'peach' ? 'alt' : tone === 'navy' || tone === 'blue' ? 'deep' : 'base'
 
-export const isDark = (t: Theme, s: Surface) => t === 'c' || (t === 'a' && s !== 'alt') || ((t === 'b' || t === 'd') && s === 'deep')
+export const isDark = (t: Theme, s: Surface) => t === 'c' || (t === 'a' && s !== 'alt') || ((t === 'b' || t === 'd' || t === 'e') && s === 'deep')
 
 export function look(t: Theme, s: Surface = 'base') {
   const dark = isDark(t, s)
@@ -22,36 +22,42 @@ export function look(t: Theme, s: Surface = 'base') {
     b: {base: 'bg-white page-base text-navy', alt: 'bg-paper text-navy', deep: 'bg-navy text-white'},
     c: {base: 'bg-[#070b14] text-white', alt: 'bg-[#0a1120] text-white term-grid', deep: 'bg-[#0c1528] text-white'},
     d: {base: 'bg-d-bg text-d-fg', alt: 'bg-d-alt text-d-fg', deep: 'bg-d-deep text-white'},
+    e: {base: 'bg-e-paper text-navy e-grid', alt: 'bg-peach text-navy e-grid', deep: 'bg-navy text-white e-grid-dark'},
   }[t][s]
   const heading = {
     a: 'display',
     b: 'display tracking-[-0.03em]',
     c: 'font-mono font-bold tracking-[-0.04em] leading-[1.05]',
     d: 'display-d',
+    e: 'display-e',
   }[t]
   const card = {
     a: dark ? 'rounded-[1.75rem] bg-night-2 ring-1 ring-white/10' : 'rounded-[1.75rem] bg-white ring-1 ring-navy/10',
     b: dark ? 'rounded-[2rem] bg-white/5 ring-1 ring-white/15' : 'rounded-[2rem] bg-white ring-1 ring-line shadow-[0_20px_50px_-30px_rgb(0,28,61,0.25)]',
     c: 'rounded-md bg-[#0b1324] ring-1 ring-dex/25',
     d: dark ? 'rounded-[1.75rem] bg-white/[0.04] ring-1 ring-white/10' : 'rounded-[1.75rem] bg-d-card ring-1 ring-d-line',
+    e: dark ? 'e-aoi bg-navy border-2 border-white shadow-[6px_6px_0_#e84e10]' : 'e-aoi bg-white border-2 border-navy shadow-[6px_6px_0_#001c3d]',
   }[t]
   const cardHover = {
     a: 'transition hover:-translate-y-1 hover:ring-dex/60',
     b: 'transition hover:-translate-y-1 hover:shadow-[0_30px_60px_-30px_rgb(0,28,61,0.4)]',
     c: 'transition hover:ring-lab/70 hover:bg-[#0e1830]',
     d: 'transition duration-500 hover:-translate-y-1 hover:ring-d-fg/40',
+    e: 'transition hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[10px_10px_0_#e84e10]',
   }[t]
   const btn = {
     a: dark ? 'rounded-full bg-white text-navy hover:bg-dex hover:text-white' : 'rounded-full bg-navy text-white hover:bg-lab',
     b: dark ? 'rounded-full bg-white text-navy hover:bg-dex hover:text-white keep-light' : 'btn-b rounded-full bg-navy text-white hover:bg-dex-dark',
     c: 'rounded-md bg-lab text-white hover:bg-white hover:text-navy',
     d: dark ? 'btn-d rounded-full bg-white text-[#0d0d0e] hover:bg-dex hover:text-white' : 'btn-d rounded-full bg-d-fg text-d-bg hover:bg-lab hover:text-white',
+    e: dark ? 'bg-lab text-white border-2 border-white shadow-[4px_4px_0_#fff] hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[7px_7px_0_#fff]' : 'bg-lab text-white border-2 border-navy shadow-[4px_4px_0_#001c3d] hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[7px_7px_0_#001c3d]',
   }[t]
   const btn2 = {
     a: dark ? 'rounded-full ring-1 ring-white/30 text-white hover:bg-white/10' : 'rounded-full ring-1 ring-navy/30 text-navy hover:bg-navy/5',
     b: dark ? 'rounded-full ring-1 ring-white/40 text-white hover:bg-white/10' : 'rounded-full ring-1 ring-navy/20 text-navy hover:bg-navy/5',
     c: 'rounded-md ring-1 ring-dex/50 text-dex hover:bg-dex/10',
     d: dark ? 'rounded-full ring-1 ring-white/30 text-white hover:bg-white/10' : 'rounded-full bg-d-fg/[0.06] text-d-fg hover:bg-d-fg/10',
+    e: dark ? 'border-2 border-white text-white hover:bg-white hover:text-navy' : 'bg-white text-navy border-2 border-navy shadow-[4px_4px_0_#001c3d] hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[7px_7px_0_#001c3d]',
   }[t]
   return {
     t,
@@ -62,20 +68,21 @@ export function look(t: Theme, s: Surface = 'base') {
     faint,
     card,
     cardHover,
-    btnBase: t === 'd' ? 'inline-flex items-center gap-3 py-2 pr-6 pl-2 text-sm font-medium transition' : 'inline-flex items-center gap-3 px-7 py-4 text-sm font-bold transition',
+    btnBase: t === 'e' ? 'inline-flex items-center gap-3 px-6 py-3.5 text-[0.95rem] font-extrabold uppercase tracking-wide transition' : t === 'd' ? 'inline-flex items-center gap-3 py-2 pr-6 pl-2 text-sm font-medium transition' : 'inline-flex items-center gap-3 px-7 py-4 text-sm font-bold transition',
     btn,
     btn2,
-    link: dark ? 'text-dex hover:text-white' : t === 'd' ? 'text-d-fg underline decoration-d-fg/25 underline-offset-4 hover:decoration-lab' : 'text-dex-dark hover:text-navy',
+    link: dark ? 'text-dex hover:text-white' : t === 'e' ? 'text-navy underline decoration-lab decoration-2 underline-offset-4 hover:bg-lab hover:text-white' : t === 'd' ? 'text-d-fg underline decoration-d-fg/25 underline-offset-4 hover:decoration-lab' : 'text-dex-dark hover:text-navy',
     chip: {
       a: dark ? 'rounded-full bg-white/10 px-3 py-1 text-xs font-bold' : 'rounded-full bg-navy/5 px-3 py-1 text-xs font-bold',
       b: dark ? 'rounded-full bg-white/10 px-3 py-1 text-xs font-bold' : 'rounded-full bg-dex/10 px-3 py-1 text-xs font-bold text-navy',
       c: 'rounded bg-dex/10 px-2 py-0.5 font-mono text-xs text-dex ring-1 ring-dex/30',
       d: dark ? 'rounded-full px-3 py-1 text-xs font-medium ring-1 ring-white/25' : 'rounded-full px-3 py-1 text-xs font-medium ring-1 ring-d-fg/20',
+      e: 'border border-current px-2 py-0.5 font-mono text-[0.68rem] uppercase',
     }[t],
-    line: dark ? 'border-white/10' : t === 'd' ? 'border-d-line' : 'border-line',
+    line: dark ? 'border-white/10' : t === 'd' ? 'border-d-line' : t === 'e' ? 'border-navy/25' : 'border-line',
     prose: `prose-${t} ${dark ? 'prose-dark' : 'prose-light'}`,
-    radiusImg: {a: 'rounded-[1.75rem]', b: 'rounded-[2rem]', c: 'rounded-md', d: 'rounded-[1.75rem]'}[t],
-    font: t === 'c' ? 'font-mono' : t === 'd' ? 'font-d' : 'font-display',
+    radiusImg: {a: 'rounded-[1.75rem]', b: 'rounded-[2rem]', c: 'rounded-md', d: 'rounded-[1.75rem]', e: 'rounded-none border-2 border-navy'}[t],
+    font: t === 'c' ? 'font-mono' : t === 'd' ? 'font-d' : t === 'e' ? 'font-e' : 'font-display',
   }
 }
 

@@ -13,9 +13,9 @@ interface Props {
 const {t, s = 'base', text, level = 2, size = 'lg', class: className = ''} = Astro.props
 const k = look(t, s)
 const sizes = {
-  xl: t === 'c' ? 'text-[clamp(2.4rem,6.4vw,5.4rem)]' : 'text-[clamp(2.8rem,7.4vw,6.6rem)]',
-  lg: t === 'c' ? 'text-[clamp(1.8rem,3.8vw,3.1rem)]' : 'text-[clamp(2.2rem,4.6vw,4rem)]',
-  md: t === 'c' ? 'text-[clamp(1.3rem,2.2vw,1.7rem)]' : 'text-[clamp(1.5rem,2.6vw,2.1rem)]',
+  xl: t === 'e' ? 'text-[clamp(3.2rem,9vw,8.5rem)]' : t === 'c' ? 'text-[clamp(2.4rem,6.4vw,5.4rem)]' : 'text-[clamp(2.8rem,7.4vw,6.6rem)]',
+  lg: t === 'e' ? 'text-[clamp(2.6rem,6.6vw,6rem)]' : t === 'c' ? 'text-[clamp(1.8rem,3.8vw,3.1rem)]' : 'text-[clamp(2.2rem,4.6vw,4rem)]',
+  md: t === 'e' ? 'text-[clamp(1.8rem,3.4vw,2.8rem)]' : t === 'c' ? 'text-[clamp(1.3rem,2.2vw,1.7rem)]' : 'text-[clamp(1.5rem,2.6vw,2.1rem)]',
 }
 const Tag = `h${level}` as 'h1'
 // Version D: grey lead-in, dark remainder.
