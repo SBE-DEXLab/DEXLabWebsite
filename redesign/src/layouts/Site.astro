@@ -69,7 +69,7 @@ const panel = t === 'c' ? 'rounded-md bg-[#0b1324] ring-1 ring-dex/30' : night ?
           <ul class:list={['flex items-center gap-0.5 px-2 py-1.5 text-[0.82rem] font-semibold backdrop-blur', t === 'c' ? 'rounded-md bg-[#0b1324]/80 font-mono ring-1 ring-dex/25' : night ? 'rounded-full bg-white/5 ring-1 ring-white/10' : 'rounded-full bg-white/70 ring-1 ring-navy/10']}>
             {nav.map((n) => (
               <li class="group relative">
-                <a href={L(t, n.href)} class:list={['block px-3 py-2 transition-colors', t === 'c' ? 'rounded' : t === 'e' ? 'rounded-none' : 'rounded-full', navLink, path === n.href ? (night ? 'bg-white/10 text-white' : 'bg-navy/5') : '']}>{n.label}</a>
+                <a href={L(t, n.href)} class:list={['block px-3 py-2 transition-colors', t === 'c' ? 'rounded' : 'rounded-full', navLink, path === n.href ? (night ? 'bg-white/10 text-white' : 'bg-navy/5') : '']}>{n.label}</a>
                 {n.children?.length ? (
                   <ul class:list={['invisible absolute left-0 top-full min-w-56 translate-y-2 p-2 opacity-0 transition group-focus-within:visible group-focus-within:translate-y-1 group-focus-within:opacity-100 group-hover:visible group-hover:translate-y-1 group-hover:opacity-100', panel]}>
                     {n.children.map((c: any) => (

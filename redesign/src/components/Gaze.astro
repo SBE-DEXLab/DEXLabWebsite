@@ -73,7 +73,7 @@
     toggle.setAttribute('aria-expanded', String(open))
   }
   setOpen(window.innerWidth >= 768)
-  toggle.addEventListener('click', () => setOpen(body.hidden))
+  toggle.addEventListener('click', () => setOpen(Boolean(body.hidden)))
 
   // Fixation detection (dispersion threshold): the pointer resting within 36px for 140ms+.
   type Fix = {x: number; y: number; start: number; end: number; n: number}
