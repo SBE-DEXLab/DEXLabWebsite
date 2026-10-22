@@ -1,0 +1,296 @@
+---
+import '../styles/global.css'
+import {getSettings} from '../lib/site/queries'
+import Dot from '../components/site/Dot.astro'
+import Gaze from '../components/Gaze.astro'
+import Robot from '../components/Robot.astro'
+import {look, L, THEMES, THEME_NAMES, type Theme} from '../lib/theme'
+
+interface Props {
+  t: Theme
+  title?: string
+  description?: string
+  path?: string
+  solid?: boolean
+}
+const {t, title, description, path = '/', solid = false} = Astro.props
+const settings: any = await getSettings()
+const k = look(t)
+const night = t === 'a' || t === 'c'
+const nav: any[] = settings?.navigation || []
+const fullTitle = title ? `${title} | DEXLab` : 'DEXLab | Digital Experience Lab, Maastricht University'
+const icons: Record<string, string> = {
+  linkedin: 'M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C20.6 8.65 21 11.3 21 14.7V21h-4v-5.6c0-1.34-.03-3.06-1.86-3.06-1.87 0-2.15 1.46-2.15 2.96V21H9z',
+  instagram: 'M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zM17.3 5.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4zM12 2c-2.7 0-3 0-4.1.06C4.2 2.23 2.23 4.2 2.06 7.9 2 9 2 9.3 2 12s0 3 .06 4.1c.17 3.7 2.14 5.67 5.84 5.84C9 22 9.3 22 12 22s3 0 4.1-.06c3.7-.17 5.67-2.14 5.84-5.84C22 15 22 14.7 22 12s0-3-.06-4.1C21.77 4.2 19.8 2.23 16.1 2.06 15 2 14.7 2 12 2z',
+  youtube: 'M21.6 7.2a2.5 2.5 0 0 0-1.76-1.77C18.3 5 12 5 12 5s-6.3 0-7.84.43A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.76 1.77C5.7 19 12 19 12 19s6.3 0 7.84-.43a2.5 2.5 0 0 0 1.76-1.77A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10 15V9l5.2 3z',
+}
+const navLink = night ? 'text-white/80 hover:bg-white/10 hover:text-white' : 'text-navy/80 hover:bg-navy/5 hover:text-navy'
+// Version D shows three quick links next to the menu button and a contact pill on the right.
+const quick = nav.slice(1, 4)
+const contact = nav.find((n) => /contact/i.test(n.href || '')) || {label: 'Contact', href: '/contact'}
+const panel = t === 'c' ? 'rounded-md bg-[#0b1324] ring-1 ring-dex/30' : night ? 'rounded-2xl bg-night-2 ring-1 ring-white/10' : 'rounded-2xl bg-white ring-1 ring-navy/10 shadow-xl'
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>{fullTitle}</title>
+    {description && <meta name="description" content={description} />}
+    <link rel="icon" href="/brand/icon-32.png" />
+    {(t === 'b' || t === 'd') && <script is:inline>try{var d=localStorage.getItem('dexlab-dark');if(d==='1'||(d===null&&matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.classList.add('dark')}catch(e){}</script>}
+  </head>
+  <body class:list={[k.bg, `theme-${t}`, {mono: t === 'c'}]}>
+    <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-white focus:px-4 focus:py-2 focus:text-navy">Skip to content</a>
+
+    <!-- Version switcher for the preview -->
+    <div class="fixed bottom-4 left-1/2 z-50 flex -translate-x-1/2 whitespace-nowrap rounded-full bg-black/80 p-1 text-xs font-bold text-white shadow-2xl ring-1 ring-white/20 backdrop-blur">
+      {THEMES.map((v) => (
+        <a href={`/${v}${path === '/' ? '/' : path}`} class:list={['inline-block rounded-full px-3 py-1.5', v === t ? 'bg-white text-navy' : 'hover:bg-white/15']}><span class="sm:hidden">{v.toUpperCase()}</span><span class="hidden sm:inline">{v.toUpperCase()} · {THEME_NAMES[v]}</span></a>
+      ))}
+    </div>
+
+    {t !== 'd' && t !== 'e' && (
+    <header class:list={['fixed inset-x-0 top-0 z-40 transition-colors duration-300', night ? 'header-night' : 'header-light', {scrolled: solid}]} data-header data-solid={solid ? '' : undefined}>
+      <div class="mx-auto flex max-w-[1320px] items-center justify-between gap-6 px-5 py-4 md:px-8">
+        <a href={`/${t}/`} class="shrink-0" aria-label="DEXLab home">
+          {night ? (
+            <img src="/brand/dexlab-logo-header-light.png" alt="DEXLab" width="96" height="56" class="h-12 w-auto" />
+          ) : (
+            <>
+              <img src="/brand/dexlab-logo-header-light.png" alt="DEXLab" width="96" height="56" class="logo-top h-12 w-auto" />
+              <img src="/brand/dexlab-logo-header.png" alt="" width="96" height="56" class="logo-scrolled hidden h-12 w-auto" />
+            </>
+          )}
+        </a>
+        <nav aria-label="Main" class="hidden xl:block">
+          <ul class:list={['flex items-center gap-0.5 px-2 py-1.5 text-[0.82rem] font-semibold backdrop-blur', t === 'c' ? 'rounded-md bg-[#0b1324]/80 font-mono ring-1 ring-dex/25' : night ? 'rounded-full bg-white/5 ring-1 ring-white/10' : 'rounded-full bg-white/70 ring-1 ring-navy/10']}>
+            {nav.map((n) => (
+              <li class="group relative">
+                <a href={L(t, n.href)} class:list={['block px-3 py-2 transition-colors', t === 'c' ? 'rounded' : 'rounded-full', navLink, path === n.href ? (night ? 'bg-white/10 text-white' : 'bg-navy/5') : '']}>{n.label}</a>
+                {n.children?.length ? (
+                  <ul class:list={['invisible absolute left-0 top-full min-w-56 translate-y-2 p-2 opacity-0 transition group-focus-within:visible group-focus-within:translate-y-1 group-focus-within:opacity-100 group-hover:visible group-hover:translate-y-1 group-hover:opacity-100', panel]}>
+                    {n.children.map((c: any) => (
+                      <li><a href={L(t, c.href)} class:list={['block rounded-xl px-4 py-2.5', navLink]}>{c.label}</a></li>
+                    ))}
+                  </ul>
+                ) : null}
+              </li>
+            ))}
+          </ul>
+        </nav>
+        <div class="flex items-center gap-3">
+        {t === 'b' && (
+          <button type="button" data-dark-toggle aria-pressed="false" aria-label="Dark mode" class="keep-light grid h-10 w-10 place-items-center rounded-full bg-white/80 text-navy ring-1 ring-navy/10 backdrop-blur transition hover:bg-white">
+            <svg viewBox="0 0 24 24" class="dark-off h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" /></svg>
+            <svg viewBox="0 0 24 24" class="dark-on hidden h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" /></svg>
+          </button>
+        )}
+        <details class="relative xl:hidden">
+          <summary class:list={['flex cursor-pointer list-none items-center gap-2 px-4 py-2 text-sm font-bold', t === 'c' ? 'rounded-md bg-[#0b1324] font-mono ring-1 ring-dex/30' : night ? 'rounded-full bg-white/10' : 'rounded-full bg-navy text-white']}>{t === 'c' ? '$ menu' : 'Menu'}</summary>
+          <ul class:list={['absolute right-0 mt-3 max-h-[75vh] w-64 overflow-y-auto p-2 shadow-2xl', panel]}>
+            {nav.map((n) => (
+              <li>
+                <a href={L(t, n.href)} class:list={['block rounded-xl px-4 py-2.5 text-sm font-bold', navLink]}>{n.label}</a>
+                {n.children?.map((c: any) => <a href={L(t, c.href)} class:list={['block rounded-xl py-2 pr-4 pl-8 text-sm', navLink]}>{c.label}</a>)}
+              </li>
+            ))}
+          </ul>
+        </details>
+        </div>
+      </div>
+    </header>
+    )}
+
+    {t === 'e' && (
+      <header class="fixed inset-x-0 top-0 z-40 border-b-2 border-navy bg-e-paper/95 backdrop-blur" data-header data-solid="">
+        <div class="mx-auto flex max-w-[1400px] items-stretch justify-between gap-4 px-4 md:px-6">
+          <a href={`/${t}/`} class="flex shrink-0 items-center py-2.5 pr-5 md:border-r-2 md:border-navy" aria-label="DEXLab home">
+            <img src="/brand/dexlab-logo-header.png" alt="DEXLab" width="96" height="56" class="h-11 w-auto" />
+          </a>
+          <nav aria-label="Main" class="hidden flex-1 xl:block">
+            <ul class="flex h-full items-stretch font-mono text-[0.72rem] uppercase tracking-[0.08em]">
+              {nav.map((n, i) => (
+                <li class="group relative flex">
+                  <a href={L(t, n.href)} class:list={['flex items-center gap-1.5 border-r-2 border-navy/15 px-3.5 transition hover:bg-navy hover:text-white', path === n.href ? 'bg-lab text-white' : 'text-navy']}>
+                    <span class="opacity-50">{String(i + 1).padStart(2, '0')}</span>{n.label}
+                  </a>
+                  {n.children?.length ? (
+                    <ul class="invisible absolute top-full left-0 min-w-60 border-2 border-navy bg-white opacity-0 shadow-[6px_6px_0_#001c3d] transition group-focus-within:visible group-focus-within:opacity-100 group-hover:visible group-hover:opacity-100">
+                      {n.children.map((c: any) => <li><a href={L(t, c.href)} class="block border-b border-navy/15 px-4 py-2.5 hover:bg-lab hover:text-white">{c.label}</a></li>)}
+                    </ul>
+                  ) : null}
+                </li>
+              ))}
+            </ul>
+          </nav>
+          <details class="relative self-center xl:hidden">
+            <summary class="flex cursor-pointer list-none items-center gap-2 border-2 border-navy bg-lab px-4 py-2 font-mono text-xs font-bold uppercase text-white shadow-[3px_3px_0_#001c3d]">Menu</summary>
+            <ul class="absolute right-0 mt-3 max-h-[75vh] w-72 overflow-y-auto border-2 border-navy bg-white font-mono text-xs uppercase shadow-[6px_6px_0_#001c3d]">
+              {nav.map((n, i) => (
+                <li>
+                  <a href={L(t, n.href)} class="block border-b border-navy/15 px-4 py-3 font-bold hover:bg-navy hover:text-white"><span class="mr-2 opacity-50">{String(i + 1).padStart(2, '0')}</span>{n.label}</a>
+                  {n.children?.map((c: any) => <a href={L(t, c.href)} class="block border-b border-navy/10 py-2.5 pr-4 pl-10 hover:bg-lab hover:text-white">{c.label}</a>)}
+                </li>
+              ))}
+            </ul>
+          </details>
+        </div>
+      </header>
+    )}
+    {t === 'e' && <Gaze />}
+
+    {t === 'd' && (
+      <>
+        <header class:list={['header-d fixed inset-x-0 top-0 z-40 transition-colors duration-300', {scrolled: solid}]} data-header data-solid={solid ? '' : undefined}>
+          <div class="mx-auto flex max-w-[1320px] items-center justify-between gap-4 px-4 py-3.5 md:px-8">
+            <div class="flex items-center gap-2 md:gap-3">
+              <a href={`/${t}/`} class="mr-1 shrink-0 md:mr-3" aria-label="DEXLab home">
+                <img src="/brand/dexlab-logo-header.png" alt="DEXLab" width="96" height="56" class="logo-light h-10 w-auto md:h-11" />
+                <img src="/brand/dexlab-logo-header-light.png" alt="" width="96" height="56" class="logo-dark h-10 w-auto md:h-11" />
+              </a>
+              <button type="button" data-menu-open aria-expanded="false" aria-controls="d-menu" class="group inline-flex items-center gap-2.5 rounded-full bg-d-fg py-1.5 pr-5 pl-1.5 text-sm font-medium text-d-bg transition hover:bg-lab hover:text-white">
+                <span class="grid h-8 w-8 place-items-center rounded-full bg-d-bg transition group-hover:scale-90" aria-hidden="true"><span class="h-1.5 w-1.5 rounded-full bg-d-fg"></span></span>Menu
+              </button>
+              <nav aria-label="Quick links" class="hidden lg:block">
+                <ul class="flex rounded-full bg-d-fg/[0.06] p-1 text-sm">
+                  {quick.map((n) => (
+                    <li><a href={L(t, n.href)} class:list={['block rounded-full px-4 py-2 transition hover:bg-d-bg hover:text-d-fg', path === n.href ? 'bg-d-bg text-d-fg' : 'text-d-fg/70']}>{n.label}</a></li>
+                  ))}
+                </ul>
+              </nav>
+            </div>
+            <div class="flex items-center gap-2">
+              <button type="button" data-dark-toggle aria-pressed="false" aria-label="Dark mode" class="grid h-11 w-11 place-items-center rounded-full bg-d-fg/[0.06] text-d-fg transition hover:bg-d-fg/10">
+                <svg viewBox="0 0 24 24" class="dark-off h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" /></svg>
+            <svg viewBox="0 0 24 24" class="dark-on hidden h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" /></svg>
+              </button>
+              <a href={L(t, contact.href)} class="group hidden items-center gap-2.5 rounded-full bg-d-fg/[0.06] py-1.5 pr-5 pl-1.5 text-sm font-medium transition hover:bg-d-fg/10 sm:inline-flex">
+                <span class="grid h-8 w-8 place-items-center rounded-full bg-d-fg text-d-bg transition group-hover:rotate-45" aria-hidden="true"><svg viewBox="0 0 24 24" class="h-3.5 w-3.5" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 3l9 9-9 9-9-9z" /></svg></span>{contact.label}
+              </a>
+            </div>
+          </div>
+        </header>
+        <div id="d-menu" data-menu hidden class="fixed inset-0 z-[60] overflow-y-auto bg-d-bg text-d-fg">
+          <div class="pointer-events-none absolute -right-40 -bottom-40 h-[34rem] w-[34rem] rounded-full halo-mini opacity-50 blur-3xl" aria-hidden="true"></div>
+          <div class="relative mx-auto max-w-[1320px] px-4 py-3.5 md:px-8">
+            <div class="flex items-center justify-between">
+              <img src="/brand/dexlab-logo-header.png" alt="" width="96" height="56" class="logo-light h-10 w-auto md:h-11" />
+              <img src="/brand/dexlab-logo-header-light.png" alt="" width="96" height="56" class="logo-dark h-10 w-auto md:h-11" />
+              <button type="button" data-menu-close class="group inline-flex items-center gap-2.5 rounded-full bg-d-fg py-1.5 pr-5 pl-1.5 text-sm font-medium text-d-bg">
+                <span class="grid h-8 w-8 place-items-center rounded-full bg-d-bg text-d-fg transition group-hover:rotate-90" aria-hidden="true">×</span>Close
+              </button>
+            </div>
+            <nav aria-label="Main" class="pt-10 pb-24">
+              <ol class="grid gap-x-16 md:grid-cols-2">
+                {nav.map((n, i) => (
+                  <li class="border-t border-d-line py-5">
+                    <a href={L(t, n.href)} class="group flex items-baseline gap-5">
+                      <span class="w-10 shrink-0 text-xs tabular-nums text-d-fg/40">({String(i + 1).padStart(2, '0')})</span>
+                      <span class="display-d text-[clamp(2rem,4.4vw,3.6rem)] transition group-hover:translate-x-2 group-hover:text-lab">{n.label}</span>
+                    </a>
+                    {n.children?.length ? (
+                      <ul class="mt-4 ml-15 flex flex-wrap gap-2">
+                        {n.children.map((c: any) => <li><a href={L(t, c.href)} class="block rounded-full px-4 py-2 text-sm ring-1 ring-d-fg/20 transition hover:bg-d-fg hover:text-d-bg">{c.label}</a></li>)}
+                      </ul>
+                    ) : null}
+                  </li>
+                ))}
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </>
+    )}
+
+    <main id="main"><slot /></main>
+
+    <footer class:list={['relative mt-0', t === 'c' ? 'border-t border-dex/20 bg-[#05080f] font-mono' : t === 'd' ? 'mx-3 mb-3 overflow-hidden rounded-[2.5rem] bg-d-deep font-d' : t === 'e' ? 'e-grid-dark border-t-2 border-navy bg-navy font-e' : night ? 'bg-black/30' : 'bg-navy', 'text-white']}>
+      {t === 'e' && <div class="pt-20"><Robot /></div>}
+      <div class="mx-auto grid max-w-[1320px] gap-12 px-5 py-16 md:grid-cols-[1fr_1fr_1.2fr] md:px-8">
+        <div>
+          <img src="/brand/dexlab-logo-header-light.png" alt="DEXLab" width="110" height="64" class="h-14 w-auto" />
+          <img src="/brand/um-sbe-logo-light.png" alt="Maastricht University School of Business and Economics" width="200" height="50" class="mt-6 h-10 w-auto opacity-90" />
+        </div>
+        <div class="text-sm leading-7 text-white/80">
+          <p class="mb-2 text-base font-bold text-white"><span class="brand-dex">DEX</span><span class="brand-lab">Lab</span></p>
+          <p class="whitespace-pre-line">{settings?.address}</p>
+          <a class="mt-2 inline-block text-white underline decoration-dex decoration-2 underline-offset-4" href={`mailto:${settings?.email}`}>{settings?.email}</a>
+          <ul class="mt-6 flex gap-3">
+            {settings?.socials?.map((s: any) => (
+              <li>
+                <a href={s.url} target="_blank" rel="noopener" aria-label={s.platform} class="grid h-10 w-10 place-items-center rounded-full bg-white/10 transition hover:bg-dex">
+                  <svg viewBox="0 0 24 24" class="h-5 w-5 fill-white" aria-hidden="true"><path d={icons[s.platform]} /></svg>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <form method="POST" action="https://sbe-dexlab.pages.dev/api/form" class="text-sm">
+          <p class="mb-4 text-xl font-bold">Join <span class="brand-dex">DEX</span><span class="brand-lab">Lab</span> mailing list</p>
+          <input type="hidden" name="form-name" value="newsletter" />
+          <p class="hidden"><label>Leave this empty <input name="company" tabindex="-1" autocomplete="off" /></label></p>
+          <label for="nl-email" class="mb-2 block text-white/80">Email *</label>
+          <div class="flex gap-2">
+            <input id="nl-email" name="email" type="email" required class:list={['min-w-0 flex-1 bg-white/10 px-4 py-3 text-white ring-1 ring-white/20 focus:outline-none focus:ring-2 focus:ring-dex', t === 'c' ? 'rounded' : t === 'e' ? 'rounded-none' : 'rounded-full']} />
+            <button class:list={['bg-lab px-5 font-bold text-white transition hover:bg-white hover:text-navy', t === 'c' ? 'rounded' : t === 'e' ? 'rounded-none' : 'rounded-full']}>Subscribe</button>
+          </div>
+          <label class="mt-3 flex items-start gap-2 text-white/70"><input type="checkbox" name="consent" value="yes" required class="mt-1 accent-[#e84e10]" /><span>I agree that DEXLab stores my email address to send me news (see the <a class="underline" href={`/${t}/privacy`}>privacy statement</a>).</span></label>
+        </form>
+      </div>
+      {t === 'd' && <p class="display-d select-none px-4 pb-6 text-center text-[clamp(5rem,23vw,22rem)] leading-[0.8]" aria-hidden="true"><span class="brand-dex">DEX</span><span class="brand-lab">Lab</span></p>}
+      <p class="border-t border-white/10 px-5 py-6 pb-20 text-center text-xs text-white/60">© 2026 DEXLab | Photos by Nils Backes | <a class="underline" href={`/${t}/privacy`}>Privacy</a></p>
+    </footer>
+
+    <script>
+      const header = document.querySelector<HTMLElement>('[data-header]')!
+      const onScroll = () => header.classList.toggle('scrolled', header.hasAttribute('data-solid') || window.scrollY > 24)
+      onScroll()
+      window.addEventListener('scroll', onScroll, {passive: true})
+      const dt = document.querySelector<HTMLButtonElement>('[data-dark-toggle]')
+      const syncDark = () => {
+        const on = document.documentElement.classList.contains('dark')
+        dt?.setAttribute('aria-pressed', String(on))
+        dt?.querySelector('.dark-off')?.classList.toggle('hidden', on)
+        dt?.querySelector('.dark-on')?.classList.toggle('hidden', !on)
+      }
+      syncDark()
+      dt?.addEventListener('click', () => {
+        const on = document.documentElement.classList.toggle('dark')
+        try { localStorage.setItem('dexlab-dark', on ? '1' : '0') } catch {}
+        syncDark()
+      })
+      const menu = document.querySelector<HTMLElement>('[data-menu]')
+      const opener = document.querySelector<HTMLButtonElement>('[data-menu-open]')
+      const closeMenu = () => {
+        if (!menu || menu.hidden) return
+        menu.hidden = true
+        document.body.style.overflow = ''
+        opener?.setAttribute('aria-expanded', 'false')
+        opener?.focus()
+      }
+      opener?.addEventListener('click', () => {
+        menu!.hidden = false
+        document.body.style.overflow = 'hidden'
+        opener.setAttribute('aria-expanded', 'true')
+        menu!.querySelector<HTMLButtonElement>('[data-menu-close]')?.focus()
+      })
+      menu?.querySelector('[data-menu-close]')?.addEventListener('click', closeMenu)
+      document.addEventListener('keydown', (e) => e.key === 'Escape' && closeMenu())
+      const io = new IntersectionObserver((entries) => entries.forEach((e) => e.isIntersecting && (e.target.classList.add('in'), io.unobserve(e.target))), {rootMargin: '0px 0px -6% 0px'})
+      document.querySelectorAll('.reveal').forEach((el) => io.observe(el))
+    </script>
+    <style is:global>
+      .header-night.scrolled { background: rgb(10 20 38 / 0.85); backdrop-filter: blur(14px); box-shadow: 0 1px 0 rgb(255 255 255 / 0.06); }
+      body.mono .header-night.scrolled { background: rgb(7 11 20 / 0.9); }
+      .header-light.scrolled { background: rgb(255 255 255 / 0.88); backdrop-filter: blur(14px); box-shadow: 0 1px 0 rgb(0 28 61 / 0.08); }
+      .header-light.scrolled .logo-top { display: none; }
+      .header-light.scrolled .logo-scrolled { display: block; }
+      .header-light:not(.scrolled) nav ul a { color: rgb(255 255 255 / 0.9); }
+      .header-light:not(.scrolled) nav ul { background: rgb(255 255 255 / 0.1); --tw-ring-color: rgb(255 255 255 / 0.2); }
+      .header-light:not(.scrolled) nav ul ul a { color: var(--color-navy); }
+    </style>
+  </body>
+</html>

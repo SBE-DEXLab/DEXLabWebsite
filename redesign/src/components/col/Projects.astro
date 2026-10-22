@@ -1,0 +1,165 @@
+---
+import Img from '../site/Img.astro'
+import Shader from '../Shader.astro'
+import {getProjects} from '../../lib/site/queries'
+import {look, type Theme, type Surface} from '../../lib/theme'
+
+const {t, s = 'base'} = Astro.props as {t: Theme; s?: Surface}
+const k = look(t, s)
+const projects = (await getProjects()).sort((a, b) => Number(a.status === 'completed') - Number(b.status === 'completed'))
+const labels: Record<string, [string, string]> = {research: ['Research', 'Research'], phd: ['PhD project', 'PhD projects'], education: ['Education', 'Education'], network: ['Network', 'Networks']}
+const filters = Object.keys(labels).map((c) => ({c, n: projects.filter((p) => p.category === c).length})).filter((f) => f.n)
+const darkP = [['#001c3d', '#00a2db', '#e84e10', '#0a1426'], ['#0a1426', '#2d85c6', '#fce8e0', '#001c3d'], ['#001c3d', '#e84e10', '#00a2db', '#111e36'], ['#0a1426', '#00a2db', '#2d85c6', '#e84e10']]
+const lightP = [['#fce8e0', '#00a2db', '#ffffff', '#2d85c6'], ['#e8f5fb', '#e84e10', '#fce8e0', '#ffffff'], ['#ffffff', '#2d85c6', '#fce8e0', '#00a2db'], ['#fce8e0', '#001c3d', '#00a2db', '#ffffff']]
+const status = (p: any) => [p.status === 'completed' ? 'Completed' : 'Current', p.period].filter(Boolean).join(' · ')
+const q = (v: string) => JSON.stringify(v)
+---
+
+<div data-projects>
+  <div class="mb-10 flex flex-wrap justify-center gap-2" role="group" aria-label="Filter projects" hidden data-filters>
+    {
+      [{c: 'all', n: projects.length}, ...filters].map((f, i) => (
+        <button type="button" data-filter={f.c} aria-pressed={i === 0 ? 'true' : 'false'} class:list={['proj-filter px-4 py-2 text-sm font-bold transition', k.font, t === 'c' ? 'rounded ring-1 ring-dex/40' : 'rounded-full ring-1', k.dark ? 'ring-white/20' : t === 'd' ? 'ring-d-fg/20' : t === 'e' ? 'ring-2 ring-navy' : 'ring-line']}>
+          {t === 'c' ? `--${f.c}` : f.c === 'all' ? 'All' : labels[f.c][1]} <span class="opacity-60">{f.n}</span>
+        </button>
+      ))
+    }
+  </div>
+  <ul class:list={['grid gap-5', t === 'a' ? 'md:grid-cols-2' : 'md:grid-cols-2 lg:grid-cols-3']}>
+    {
+      projects.map((p, i) => (
+        <li class="reveal" data-category={p.category}>
+          {t === 'a' && (
+            <article class="group relative isolate flex h-full min-h-[22rem] flex-col justify-end overflow-hidden rounded-[1.75rem] p-8 ring-1 ring-white/10">
+              <div class="absolute inset-0 -z-10 transition duration-700 group-hover:scale-105">
+                {p.cover?.url ? <Img image={p.cover} width={900} height={600} sizes="(min-width: 768px) 600px, 100vw" class="h-full w-full object-cover opacity-55" /> : <Shader colors={darkP[i % 4]} seed={i + 1} />}
+              </div>
+              <div class="absolute inset-0 -z-10 bg-gradient-to-t from-night via-night/60 to-night/10" />
+              <p class="mb-3 flex flex-wrap items-center gap-3 text-xs font-bold">
+                <span class="rounded-full bg-white/15 px-3 py-1 uppercase tracking-wider backdrop-blur">{labels[p.category][0]}</span>
+                <span class="flex items-center gap-2 text-white/80"><span class:list={['h-2 w-2 rounded-full', p.status === 'completed' ? 'bg-white/40' : 'bg-lab']} />{status(p)}</span>
+              </p>
+              {p.partners && <p class="mb-2 text-xs text-white/60">{p.partners}</p>}
+              <h3 class="display text-[clamp(1.5rem,2.4vw,2rem)] leading-tight">{p.title}</h3>
+              {p.description && <p class="mt-3 text-sm leading-6 text-white/75">{p.description}</p>}
+              {p.team?.length ? <p class="mt-4 text-xs text-white/60"><span class="font-bold uppercase tracking-wider">Team</span> {p.team.join(', ')}</p> : null}
+              {p.link && <a href={p.link} target="_blank" rel="noopener" class="mt-4 inline-flex text-sm font-bold text-dex hover:text-white">Learn more →</a>}
+            </article>
+          )}
+          {t === 'b' && (
+            <article class="group flex h-full flex-col overflow-hidden rounded-[1.75rem] bg-white ring-1 ring-line transition hover:-translate-y-1 hover:shadow-[0_30px_60px_-30px_rgb(0,28,61,0.35)]">
+              <div class="relative h-48 overflow-hidden">{p.cover?.url ? <Img image={p.cover} width={720} height={400} sizes="400px" class="h-full w-full object-cover" /> : <Shader colors={lightP[i % 4]} seed={i + 7} speed={0.7} />}</div>
+              <div class="flex flex-1 flex-col p-6">
+                <p class="mb-3 flex flex-wrap items-center gap-2 text-[0.7rem] font-bold uppercase tracking-wider">
+                  <span class="rounded-md border-l-[3px] border-dex bg-dex/10 px-2 py-1">{labels[p.category][0]}</span>
+                  <span class="flex items-center gap-1.5 text-navy/60"><span class:list={['h-2 w-2 rounded-full', p.status === 'completed' ? 'bg-line' : 'bg-lab']} />{status(p)}</span>
+                </p>
+                {p.partners && <p class="mb-1 text-xs text-navy/55">{p.partners}</p>}
+                <h3 class="display text-xl leading-snug">{p.title}</h3>
+                {p.description && <p class="mt-3 text-sm leading-6 text-navy/75">{p.description}</p>}
+                {p.tags?.length ? <ul class="mt-4 flex flex-wrap gap-1.5">{p.tags.map((g: string) => <li class="rounded-full px-2.5 py-1 text-[0.7rem] ring-1 ring-line">{g}</li>)}</ul> : null}
+                {p.team?.length ? <p class="mt-auto border-t border-line pt-4 text-xs text-navy/60"><span class="font-bold uppercase tracking-wider">Team</span> {p.team.join(', ')}</p> : null}
+                {p.link && <a href={p.link} target="_blank" rel="noopener" class="mt-3 text-sm font-bold text-dex-dark">Learn more →</a>}
+              </div>
+            </article>
+          )}
+          {t === 'd' && (
+            <article class:list={['group flex h-full flex-col overflow-hidden', k.card, k.cardHover]}>
+              <div class="relative m-2 h-52 overflow-hidden rounded-[1.35rem] bg-d-alt">
+                {p.cover?.url ? (
+                  <Img image={p.cover} width={720} height={420} sizes="400px" class="h-full w-full object-cover transition duration-700 group-hover:scale-105" />
+                ) : (
+                  <div class="absolute inset-0 grid place-items-center"><span class="halo-mini h-40 w-40 rounded-full opacity-70 blur-2xl transition duration-700 group-hover:scale-125" /></div>
+                )}
+                <span class="absolute top-3 left-3 rounded-full bg-d-bg/85 px-3 py-1 text-[0.7rem] font-medium text-d-fg backdrop-blur">{labels[p.category][0]}</span>
+              </div>
+              <div class="flex flex-1 flex-col px-6 pt-4 pb-6">
+                <p class:list={['mb-3 flex items-center gap-2 text-xs', k.faint]}><span class:list={['h-1.5 w-1.5 rounded-full', p.status === 'completed' ? 'bg-d-fg/30' : 'bg-lab']} />{status(p)}</p>
+                <h3 class="text-xl leading-snug font-semibold tracking-[-0.03em]">{p.title}</h3>
+                {p.partners && <p class:list={['mt-1 text-xs', k.faint]}>{p.partners}</p>}
+                {p.description && <p class:list={['mt-3 text-sm leading-6', k.muted]}>{p.description}</p>}
+                {p.tags?.length ? <ul class="mt-4 flex flex-wrap gap-1.5">{p.tags.map((g: string) => <li class={k.chip}>{g}</li>)}</ul> : null}
+                {p.team?.length ? <p class:list={['mt-auto border-t pt-4 text-xs', k.line, k.faint]}>{p.team.join(', ')}</p> : null}
+                {p.link && <a href={p.link} target="_blank" rel="noopener" class:list={['mt-3 text-sm font-medium', k.link]}>Learn more ↗</a>}
+              </div>
+            </article>
+          )}
+          {t === 'e' && (
+            <article data-tilt class:list={['group flex h-full flex-col', k.card, k.cardHover]}>
+              <span class="e-brackets" />
+              <div class="relative aspect-[16/9] overflow-hidden border-b-2 border-navy bg-peach">
+                {p.cover?.url ? (
+                  <Img image={p.cover} width={720} height={405} sizes="400px" class="h-full w-full object-cover" />
+                ) : (
+                  <div class="e-grid grid h-full place-items-center"><span class="display-e text-[5rem] text-navy/15">{String(i + 1).padStart(2, '0')}</span></div>
+                )}
+                <span class="absolute top-0 left-0 bg-navy px-2 py-1 font-mono text-[0.66rem] tracking-[0.1em] text-white uppercase">{labels[p.category][0]}</span>
+              </div>
+              <div class="flex flex-1 flex-col p-5">
+                <p class="mb-3 flex items-center gap-2 font-mono text-[0.68rem] uppercase"><span class:list={['h-2 w-2', p.status === 'completed' ? 'bg-navy/30' : 'rec-dot bg-lab']} />{status(p)}</p>
+                <h3 class="display-e text-[1.9rem]">{p.title}</h3>
+                {p.partners && <p class="mt-2 font-mono text-[0.7rem] text-navy/60">{p.partners}</p>}
+                {p.description && <p class="mt-3 text-[0.95rem] leading-6 text-navy/80">{p.description}</p>}
+                {p.tags?.length ? <ul class="mt-4 flex flex-wrap gap-1.5">{p.tags.map((g: string) => <li class={k.chip}>{g}</li>)}</ul> : null}
+                {p.team?.length ? <p class="mt-auto border-t-2 border-navy pt-3 font-mono text-[0.7rem] uppercase">{p.team.join(' · ')}</p> : null}
+                {p.link && <a href={p.link} target="_blank" rel="noopener" class:list={['mt-3 self-start text-sm font-bold', k.link]}>Learn more ↗</a>}
+              </div>
+            </article>
+          )}
+          {t === 'c' && (
+            <article class="flex h-full flex-col overflow-hidden rounded-md bg-[#0b1324] font-mono text-[0.8rem] leading-6 ring-1 ring-dex/25 transition hover:ring-lab/70">
+              <div class="flex items-center justify-between border-b border-dex/20 px-4 py-2 text-[0.7rem] text-white/50">
+                <span>projects/{p.title.toLowerCase().split(':')[0].replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 30)}.json</span>
+                <span class:list={[p.status === 'completed' ? 'text-white/40' : 'text-lab']}>● {p.status}</span>
+              </div>
+              <pre class="flex-1 overflow-hidden p-4 whitespace-pre-wrap text-white/80">
+<span class="text-white/40">{'{'}</span>
+  <span class="text-dex">"title"</span>: <span class="font-bold text-white">{q(p.title)}</span>,
+  <span class="text-dex">"category"</span>: <span class="text-peach">{q(labels[p.category][0])}</span>,
+  <span class="text-dex">"status"</span>: <span class="text-peach">{q(status(p))}</span>,{p.partners && <Fragment>{'\n  '}<span class="text-dex">"partners"</span>: <span class="text-peach">{q(p.partners)}</span>,</Fragment>}{p.description && <Fragment>{'\n  '}<span class="text-dex">"about"</span>: <span class="text-white/70">{q(p.description)}</span>,</Fragment>}{p.team?.length ? <Fragment>{'\n  '}<span class="text-dex">"team"</span>: [<span class="text-lab">{p.team.map((m: string) => q(m)).join(', ')}</span>]</Fragment> : null}
+<span class="text-white/40">{'}'}</span></pre>
+              {p.link && <a href={p.link} target="_blank" rel="noopener" class="border-t border-dex/20 px-4 py-2 text-dex hover:text-lab">$ open {p.link.replace(/^https?:\/\//, '').replace(/\/$/, '')} →</a>}
+            </article>
+          )}
+        </li>
+      ))
+    }
+  </ul>
+</div>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-projects]').forEach((root) => {
+    const bar = root.querySelector<HTMLElement>('[data-filters]')!
+    const btns = [...bar.querySelectorAll<HTMLButtonElement>('button')]
+    const items = [...root.querySelectorAll<HTMLElement>('li[data-category]')]
+    bar.hidden = false
+    btns.forEach((b) =>
+      b.addEventListener('click', () => {
+        btns.forEach((x) => x.setAttribute('aria-pressed', String(x === b)))
+        items.forEach((it) => (it.hidden = b.dataset.filter !== 'all' && it.dataset.category !== b.dataset.filter))
+      }),
+    )
+  })
+</script>
+
+<style>
+  :global(.theme-d) .proj-filter[aria-pressed='true'] {
+    background: var(--d-fg);
+    color: var(--d-bg);
+    --tw-ring-color: var(--d-fg);
+  }
+  :global(.theme-e) .proj-filter[aria-pressed='true'] {
+    background: var(--color-navy);
+    color: #fff;
+  }
+  :global(.theme-a) .proj-filter[aria-pressed='true'],
+  :global(.theme-b) .proj-filter[aria-pressed='true'],
+  :global(.theme-c) .proj-filter[aria-pressed='true'] {
+    background: var(--color-lab);
+    color: #fff;
+    --tw-ring-color: var(--color-lab);
+  }
+  li[hidden] {
+    display: none;
+  }
+</style>

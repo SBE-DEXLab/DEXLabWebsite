@@ -1,0 +1,35 @@
+---
+import Dot from './Dot.astro'
+import {look, L, type Theme, type Surface} from '../../lib/theme'
+import type {Link} from '../../lib/site/types'
+interface Props {
+  t: Theme
+  s?: Surface
+  buttons?: Link[]
+  center?: boolean
+  class?: string
+}
+const {t, s = 'base', buttons, center, class: className = ''} = Astro.props
+const k = look(t, s)
+const ext = (h = '') => /^https?:/.test(h) && !h.includes('sbe-dexlab.com')
+---
+
+{
+  buttons?.length ? (
+    <div class:list={['flex flex-wrap gap-3', {'justify-center': center}, className]}>
+      {buttons.map((b, i) => (
+        <a
+          href={L(t, b.href)}
+          target={ext(b.href) ? '_blank' : undefined}
+          rel={ext(b.href) ? 'noopener' : undefined}
+          class:list={['group', k.btnBase, k.font, i === 0 && b.style !== 'secondary' ? k.btn : [k.btn2, t === 'd' && 'py-3.5 pl-6']]}
+        >
+          {t === 'c' && <span aria-hidden="true">$</span>}
+          {t === 'd' && i === 0 && b.style !== 'secondary' && <Dot />}
+          {b.label}
+          <span class="transition group-hover:translate-x-1" aria-hidden="true">→</span>
+        </a>
+      ))}
+    </div>
+  ) : null
+}

@@ -1,0 +1,14 @@
+---
+import Site from '../../layouts/Site.astro'
+import Sections from '../../components/Sections.astro'
+import {getPage} from '../../lib/site/queries'
+import {THEMES, type Theme} from '../../lib/theme'
+
+export const getStaticPaths = () => THEMES.map((t) => ({params: {t}}))
+const t = Astro.params.t as Theme
+const page = await getPage('home')
+---
+
+<Site t={t} description={page?.seo?.description}>
+  <Sections t={t} sections={page?.sections} slug="home" />
+</Site>

@@ -1,0 +1,107 @@
+---
+// Workshops, publications, equipment and FAQ lists.
+import Img from '../site/Img.astro'
+import {getWorkshops, getPublications, getEquipment, getFaqs, getSettings} from '../../lib/site/queries'
+import {renderRichText} from '../../lib/site/portableText'
+import {look, rewriteLinks, type Theme, type Surface} from '../../lib/theme'
+
+const {t, s = 'base', source, limit} = Astro.props as {t: Theme; s?: Surface; source: string; limit?: number}
+const k = look(t, s)
+const eqCats: Record<string, string> = {immersive: 'Immersive technology', robotics: 'Robotics', mobile: 'Mobile & computing', biometric: 'Biometrics', other: 'Other'}
+
+let workshops: any[] = [], pubs: any[] = [], equipment: any[] = [], faqs: any[] = [], email = 'sbe-dexlab@maastrichtuniversity.nl'
+if (source === 'workshops') {
+  const [w, st] = await Promise.all([getWorkshops(), getSettings()])
+  workshops = limit ? w.slice(0, limit) : w
+  email = st?.email || email
+}
+if (source === 'publications') pubs = await getPublications()
+if (source === 'equipment') equipment = await getEquipment()
+if (source === 'faq') faqs = (await getFaqs()).slice(0, limit || 999)
+const years = [...new Set(pubs.map((p) => p.year))]
+const eqGroups = Object.keys(eqCats).filter((c) => equipment.some((e) => e.category === c))
+const wHref = (w: any) => (w.externalOnly ? `mailto:${email}?subject=${encodeURIComponent(w.contactSubject || w.title)}` : `/${t}/workshops/${w.slug}`)
+---
+
+{
+  source === 'workshops' && (
+    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      {workshops.map((w) => (
+        <a href={wHref(w)} class:list={['reveal group flex flex-col overflow-hidden', k.card, k.cardHover]}>
+          <Img image={w.cardImage} width={720} height={540} sizes="(min-width: 1024px) 400px, 100vw" class:list={['aspect-[4/3] w-full object-cover transition duration-700 group-hover:scale-105', t === 'c' ? 'duotone' : '']} />
+          <div class="flex flex-1 flex-col p-7">
+            <h3 class:list={['mb-3 text-2xl', k.heading]}>{w.title}</h3>
+            {w.summary && <p class:list={['leading-7', k.muted]}>{w.summary}</p>}
+            <span class:list={['mt-auto pt-6 text-sm font-bold', k.font, k.link]}>{t === 'c' ? '> ' : ''}{w.externalOnly ? 'Contact us' : 'Read more'} →</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  )
+}
+
+{
+  source === 'publications' && (
+    <div class="space-y-14">
+      {years.map((y) => (
+        <section class="reveal grid gap-6 md:grid-cols-[10rem_1fr]">
+          <h3 class:list={['text-4xl leading-none md:sticky md:top-28 md:self-start', k.heading, t === 'c' ? 'text-dex' : t === 'b' ? 'text-dex-dark' : t === 'd' ? (k.dark ? 'text-white/35' : 'text-d-fg/25') : t === 'e' ? 'text-lab' : 'text-dex']}>{t === 'c' ? `[${y}]` : y}</h3>
+          <ol class:list={['divide-y', k.dark ? 'divide-white/10' : t === 'd' ? 'divide-d-line' : 'divide-line']}>
+            {pubs
+              .filter((p) => p.year === y)
+              .map((p) => (
+                <li class:list={['py-5 leading-7', t === 'c' ? 'font-mono text-[0.88rem]' : '']}>
+                  <span class={k.muted}>{p.authors} ({p.year}). </span>
+                  {p.url ? <a href={p.url} target="_blank" rel="noopener" class:list={['font-bold underline decoration-2 underline-offset-4', k.dark ? 'decoration-dex/60 hover:text-dex' : 'decoration-dex/50 hover:text-dex-dark']}>{p.title}</a> : <span class="font-bold">{p.title}</span>}
+                  {p.venue && <span class:list={['italic', k.muted]}>. {p.venue}</span>}
+                </li>
+              ))}
+          </ol>
+        </section>
+      ))}
+    </div>
+  )
+}
+
+{
+  source === 'equipment' && (
+    <div class="space-y-16">
+      {eqGroups.map((c) => (
+        <section>
+          <h3 class:list={['reveal mb-8 text-2xl', k.heading]}>{t === 'c' ? `./${c}/` : eqCats[c]}</h3>
+          <ul class="grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-4">
+            {equipment
+              .filter((e) => e.category === c)
+              .map((e) => (
+                <li class:list={['reveal flex flex-col overflow-hidden', k.card]}>
+                  <div class="keep-light grid aspect-square place-items-center bg-white p-6">
+                    <Img image={e.image} width={400} height={400} fit="max" sizes="250px" class="max-h-full w-auto object-contain" />
+                  </div>
+                  <div class="p-5">
+                    <h4 class:list={['font-bold', k.font]}>{e.name}{e.quantity ? <span class:list={['ml-2 text-sm', k.faint]}>×{e.quantity}</span> : null}</h4>
+                    {e.description && <p class:list={['mt-2 text-sm leading-6', k.muted]}>{e.description}</p>}
+                  </div>
+                </li>
+              ))}
+          </ul>
+        </section>
+      ))}
+    </div>
+  )
+}
+
+{
+  source === 'faq' && (
+    <div class="mx-auto max-w-3xl space-y-3">
+      {faqs.map((f) => (
+        <details class:list={['reveal group overflow-hidden', k.card]}>
+          <summary class:list={['flex cursor-pointer list-none items-center justify-between gap-6 p-6 text-lg font-bold', k.font]}>
+            <span>{t === 'c' ? '? ' : ''}{f.question}</span>
+            <span class:list={['grid h-8 w-8 shrink-0 place-items-center rounded-full text-xl transition group-open:rotate-45', k.dark ? 'bg-white/10' : t === 'd' ? 'bg-d-fg/[0.06]' : 'bg-navy/5']} aria-hidden="true">+</span>
+          </summary>
+          <div class:list={['rt px-6 pb-6', k.prose]} set:html={rewriteLinks(t, renderRichText(f.answer))} />
+        </details>
+      ))}
+    </div>
+  )
+}

@@ -1,0 +1,50 @@
+---
+import Wrap from './Wrap.astro'
+import H from '../site/H.astro'
+import Img from '../site/Img.astro'
+import {renderRichText} from '../../lib/site/portableText'
+import {look, surfaceFor, rewriteLinks, type Theme} from '../../lib/theme'
+
+const {t, data} = Astro.props as {t: Theme; data: any}
+const s = surfaceFor(data.tone)
+const k = look(t, s)
+const mapQuery = data.mapQuery || 'Tapijnkazerne 11, 6211 ME Maastricht'
+const [lat, lon] = [50.8425, 5.68669]
+const bbox = [lon - 0.004, lat - 0.002, lon + 0.004, lat + 0.002].join(',')
+const mapSrc = `https://www.openstreetmap.org/export/embed.html?bbox=${bbox}&layer=mapnik&marker=${lat},${lon}`
+const place = encodeURIComponent(`DEXLab, ${mapQuery}`)
+const frame = [k.radiusImg, 'overflow-hidden', t === 'c' ? 'ring-1 ring-dex/30' : k.dark ? 'ring-1 ring-white/10' : 'ring-1 ring-line'].join(' ')
+---
+
+<Wrap t={t} tone={data.tone}>
+  {
+    (data.heading || data.intro) && (
+      <div class="reveal mb-12 max-w-3xl">
+        <H t={t} s={s} text={data.heading} />
+        {data.intro && <p class:list={['mt-5 text-lg leading-8', k.muted]}>{data.intro}</p>}
+      </div>
+    )
+  }
+  <div class="grid gap-8 lg:grid-cols-2">
+    {
+      data.videoUrl && (
+        <figure class="reveal">
+          <video src={data.videoUrl} controls preload="metadata" playsinline class:list={['w-full', frame]} />
+          <figcaption class:list={['mt-3 text-sm', k.faint, k.font]}>The route from the main entrance to the DEXLab</figcaption>
+        </figure>
+      )
+    }
+    <div class="reveal">
+      <div class={frame}><iframe src={mapSrc} title={`Map: ${mapQuery}`} loading="lazy" class:list={['aspect-[4/3] w-full', t === 'c' ? 'invert-[.9] hue-rotate-180' : '']} /></div>
+      <p class:list={['mt-4 flex flex-wrap gap-x-6 gap-y-2 text-sm font-bold', k.font]}>
+        <span>{mapQuery}</span>
+        <a class={k.link} href={`https://www.google.com/maps/search/?api=1&query=${place}`} target="_blank" rel="noopener">Open in Google Maps ↗</a>
+        <a class={k.link} href={`https://www.google.com/maps/dir/?api=1&destination=${place}`} target="_blank" rel="noopener">Plan a route ↗</a>
+      </p>
+    </div>
+  </div>
+  <div class="mt-16 grid items-center gap-10 lg:grid-cols-2">
+    <div class:list={['reveal rt', k.prose]} set:html={rewriteLinks(t, renderRichText(data.directions))} />
+    {data.directionsImage?.url && <Img image={data.directionsImage} width={900} fit="max" class:list={['reveal w-full', k.radiusImg]} />}
+  </div>
+</Wrap>

@@ -1,0 +1,117 @@
+---
+// Stats, pills, quotes, gallery, videos and call-to-action sections.
+import Wrap from './Wrap.astro'
+import H from '../site/H.astro'
+import Img from '../site/Img.astro'
+import Buttons from '../site/Buttons.astro'
+import {youtubeId} from '../../lib/site/utils'
+import {look, surfaceFor, type Theme} from '../../lib/theme'
+
+const {t, data} = Astro.props as {t: Theme; data: any}
+const type = data._type
+const s = surfaceFor(data.tone ?? (type === 'sectionCta' ? 'peach' : undefined))
+const k = look(t, s)
+const intro = data.intro && data.intro.replace(/[&<>]/g, (c: string) => ({'&': '&amp;', '<': '&lt;', '>': '&gt;'})[c]!).replace(/([\w.+-]+@[\w-]+\.[\w.]+)/g, '<a class="underline" href="mailto:$1">$1</a>')
+---
+
+{
+  type === 'sectionStats' && (
+    <Wrap t={t} tone={data.tone}>
+      <H t={t} s={s} text={data.heading} class="reveal mb-4 text-center" />
+      {data.caption && <p class:list={['mb-12 text-center', k.faint, k.font]}>{data.caption}</p>}
+      <dl class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        {data.items?.map((it: any) => (
+          <div class:list={['reveal p-8', k.card]}>
+            <dt class:list={['text-sm leading-6', k.muted]}>{it.label}</dt>
+            <dd class:list={['mt-2 text-[clamp(2.4rem,4vw,3.4rem)] leading-none', k.heading, t === 'c' ? 'text-dex' : t === 'a' ? 'text-dex' : t === 'd' ? '' : t === 'e' ? 'text-lab' : 'text-navy']}>{it.value}</dd>
+            {it.text && <p class:list={['mt-3 text-sm', k.faint]}>{it.text}</p>}
+          </div>
+        ))}
+      </dl>
+    </Wrap>
+  )
+}
+
+{
+  type === 'sectionPills' && (
+    <Wrap t={t} tone={data.tone} tight>
+      <div class="reveal text-center">
+        <H t={t} s={s} text={data.heading} size="md" class="mb-4" />
+        {data.intro && <p class:list={['mx-auto mb-8 max-w-2xl', k.muted]}>{data.intro}</p>}
+        <ul class="flex flex-wrap justify-center gap-3">
+          {data.items?.map((p: string) => (
+            <li class:list={[t === 'e' ? 'border-2 border-navy bg-white px-4 py-2 font-mono text-xs font-semibold uppercase shadow-[3px_3px_0_#001c3d]' : t === 'd' ? (k.dark ? 'rounded-full px-5 py-2.5 text-sm font-medium ring-1 ring-white/25' : 'rounded-full px-5 py-2.5 text-sm font-medium ring-1 ring-d-fg/20') : t === 'c' ? 'rounded bg-dex/10 px-3 py-1.5 font-mono text-sm text-dex ring-1 ring-dex/30' : k.dark ? 'rounded-full bg-white/10 px-5 py-2.5 text-sm font-bold ring-1 ring-white/15' : 'rounded-full bg-white px-5 py-2.5 text-sm font-bold ring-1 ring-line']}>{p}</li>
+          ))}
+        </ul>
+      </div>
+    </Wrap>
+  )
+}
+
+{
+  type === 'sectionQuotes' && (
+    <Wrap t={t} tone={data.tone}>
+      <H t={t} s={s} text={data.heading} class="reveal mb-12" />
+      <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+        {data.items?.map((q: any) => (
+          <figure class:list={['reveal flex flex-col p-8', k.card]}>
+            <span class:list={['mb-4 text-5xl leading-none', t === 'c' ? 'font-mono text-dex' : 'font-display text-lab']} aria-hidden="true">{t === 'c' ? '>' : '“'}</span>
+            <blockquote class:list={['flex-1 text-lg leading-8', t === 'c' ? 'font-mono text-base' : '']}>{q.quote}</blockquote>
+            {q.source && <figcaption class:list={['mt-6 text-sm font-bold', k.faint, k.font]}>{t === 'c' ? '-- ' : ''}{q.source}</figcaption>}
+          </figure>
+        ))}
+      </div>
+    </Wrap>
+  )
+}
+
+{
+  type === 'sectionGallery' && (
+    <Wrap t={t} tone={data.tone}>
+      <H t={t} s={s} text={data.heading} class="reveal mb-12" />
+      <div class="columns-1 gap-4 sm:columns-2 lg:columns-3">
+        {data.images?.map((im: any) => (
+          <figure class="reveal mb-4 break-inside-avoid">
+            <Img image={im} width={800} fit="max" sizes="(min-width: 1024px) 400px, 100vw" class:list={['w-full', k.radiusImg, t === 'c' ? 'duotone ring-1 ring-dex/30' : '']} />
+            {im.caption && <figcaption class:list={['mt-2 text-sm', k.faint]}>{im.caption}</figcaption>}
+          </figure>
+        ))}
+      </div>
+    </Wrap>
+  )
+}
+
+{
+  type === 'sectionVideos' && (
+    <Wrap t={t} tone={data.tone}>
+      <H t={t} s={s} text={data.heading} class="reveal mb-4" />
+      {data.intro && <p class:list={['mb-12 max-w-2xl text-lg', k.muted]}>{data.intro}</p>}
+      <div class="grid gap-6 md:grid-cols-2">
+        {data.items?.map((v: any) => {
+          const id = youtubeId(v.url)
+          return (
+            <figure class="reveal">
+              <div class:list={['relative aspect-video overflow-hidden', k.radiusImg, t === 'c' ? 'ring-1 ring-dex/30' : '']}>
+                {id && <iframe class="absolute inset-0 h-full w-full" src={`https://www.youtube-nocookie.com/embed/${id}`} title={v.title} loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture; fullscreen" allowfullscreen />}
+              </div>
+              <figcaption class:list={['mt-4 font-bold', k.font]}>{v.title}</figcaption>
+            </figure>
+          )
+        })}
+      </div>
+    </Wrap>
+  )
+}
+
+{
+  type === 'sectionCta' && (
+    <Wrap t={t} tone={data.tone ?? 'peach'} tight>
+      <div class="reveal mx-auto max-w-3xl text-center">
+        {data.icon?.url && <Img image={data.icon} width={170} fit="max" class:list={['mx-auto mb-6 h-auto w-32', k.dark ? 'brightness-0 invert' : t === 'd' ? 'd-icon' : '']} />}
+        <H t={t} s={s} text={data.heading} size="md" class="mb-4" />
+        {intro && <p class:list={['text-lg leading-8', k.muted]} set:html={intro} />}
+        <Buttons t={t} s={s} buttons={data.buttons} center class="mt-8" />
+      </div>
+    </Wrap>
+  )
+}

@@ -1,0 +1,38 @@
+---
+import '../styles/global.css'
+import {THEMES, THEME_NAMES} from '../lib/theme'
+const blurbs = {
+  a: 'Dark, big type, hand-drawn accents, shader cards. Inspired by the Justuno research site.',
+  b: 'Light, animated gradient hero, bento grid, soft cards. Startup-template style.',
+  c: 'Nerdy computer-science look: terminal windows, monospace, code-style cards.',
+  e: 'You are the participant: eye-tracking scanpaths, a live heart-rate readout, AOI dwell times and a service robot that watches back.',
+  d: 'Calm, editorial and 3D: a human form and a machine form meet as you scroll. Light and dark mode.',
+}
+const styles = {a: 'bg-night text-white', b: 'bg-white text-navy ring-1 ring-line', c: 'bg-[#070b14] text-white font-mono ring-1 ring-dex/30', d: 'bg-[#f6f6f3] text-[#0d0d0e] ring-1 ring-[#dcdcd6] font-d', e: 'bg-[#fbf7f1] text-navy border-2 border-navy shadow-[6px_6px_0_#e84e10] rounded-none font-e'}
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>DEXLab redesign preview</title>
+  </head>
+  <body class="grid min-h-screen place-items-center bg-paper p-6 text-navy">
+    <main class="w-full max-w-6xl">
+      <img src="/brand/dexlab-logo-header.png" alt="DEXLab" width="110" height="64" class="mb-10 h-14 w-auto" />
+      <h1 class="display text-5xl">Website redesign preview</h1>
+      <p class="mt-4 max-w-2xl text-lg text-navy/75">Five complete versions of the whole site, with the same copy and content as today. Switch between them on any page with the bar at the bottom.</p>
+      <div class="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+        {THEMES.map((t) => (
+          <a href={`/${t}/`} class:list={['rounded-3xl p-8 transition hover:-translate-y-1', styles[t]]}>
+            <p class="text-sm font-bold text-lab">Version {t.toUpperCase()}</p>
+            <p class="display mt-2 text-3xl">{THEME_NAMES[t]}</p>
+            <p class="mt-3 opacity-75">{blurbs[t]}</p>
+          </a>
+        ))}
+      </div>
+    </main>
+  </body>
+</html>

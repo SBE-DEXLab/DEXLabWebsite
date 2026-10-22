@@ -1,0 +1,89 @@
+---
+// Animated mesh gradient drawn with WebGL: four brand colours drifting and blending, with
+// a little grain. Pauses off screen; a still frame when the visitor prefers reduced motion.
+interface Props {
+  colors?: string[]
+  seed?: number
+  speed?: number
+  class?: string
+}
+const {colors = ['#001c3d', '#00a2db', '#e84e10', '#0a1426'], seed = 1, speed = 1, class: className = ''} = Astro.props
+---
+
+<canvas class:list={['dex-shader block h-full w-full', className]} data-colors={colors.join(',')} data-seed={seed} data-speed={speed} aria-hidden="true"></canvas>
+
+<script>
+  const FRAG = `
+precision highp float;
+uniform vec2 r; uniform float t; uniform vec3 c0; uniform vec3 c1; uniform vec3 c2; uniform vec3 c3; uniform float s;
+float h(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}
+float n(vec2 p){vec2 i=floor(p),f=fract(p);vec2 u=f*f*(3.-2.*f);
+  return mix(mix(h(i),h(i+vec2(1,0)),u.x),mix(h(i+vec2(0,1)),h(i+vec2(1,1)),u.x),u.y);}
+void main(){
+  vec2 uv=gl_FragCoord.xy/r; vec2 p=uv; p.x*=r.x/r.y;
+  float tt=t*.06+s*10.;
+  vec2 w=vec2(n(p*1.6+tt),n(p*1.6-tt+3.1))-.5; p+=w*.55;
+  vec2 a=vec2(.25+.2*sin(tt*1.3),.3+.2*cos(tt*1.1)), b=vec2(.8+.15*cos(tt*.9),.25+.2*sin(tt*1.7)),
+       c=vec2(.55+.25*sin(tt*.7+2.),.85+.1*cos(tt*1.2)), d=vec2(.1+.1*cos(tt),.9+.1*sin(tt*.8));
+  a.x*=r.x/r.y;b.x*=r.x/r.y;c.x*=r.x/r.y;d.x*=r.x/r.y;
+  float wa=1./pow(distance(p,a)+.05,2.), wb=1./pow(distance(p,b)+.05,2.), wc=1./pow(distance(p,c)+.05,2.), wd=1./pow(distance(p,d)+.05,2.);
+  vec3 col=(c0*wa+c1*wb+c2*wc+c3*wd)/(wa+wb+wc+wd);
+  col+= (h(gl_FragCoord.xy+t)-.5)*.035;
+  gl_FragColor=vec4(col,1.);
+}`
+  const VERT = 'attribute vec2 p;void main(){gl_Position=vec4(p,0.,1.);}'
+  const hex = (c: string) => [1, 3, 5].map((i) => parseInt(c.slice(i, i + 2), 16) / 255)
+  const still = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+
+  document.querySelectorAll<HTMLCanvasElement>('canvas.dex-shader').forEach((cv) => {
+    const gl = cv.getContext('webgl', {antialias: false, premultipliedAlpha: false})
+    if (!gl) return
+    const sh = (type: number, src: string) => {
+      const o = gl.createShader(type)!
+      gl.shaderSource(o, src)
+      gl.compileShader(o)
+      return o
+    }
+    const prog = gl.createProgram()!
+    gl.attachShader(prog, sh(gl.VERTEX_SHADER, VERT))
+    gl.attachShader(prog, sh(gl.FRAGMENT_SHADER, FRAG))
+    gl.linkProgram(prog)
+    gl.useProgram(prog)
+    gl.bindBuffer(gl.ARRAY_BUFFER, gl.createBuffer())
+    gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 3, -1, -1, 3]), gl.STATIC_DRAW)
+    const loc = gl.getAttribLocation(prog, 'p')
+    gl.enableVertexAttribArray(loc)
+    gl.vertexAttribPointer(loc, 2, gl.FLOAT, false, 0, 0)
+    const cols = (cv.dataset.colors || '').split(',')
+    cols.forEach((c, i) => gl.uniform3fv(gl.getUniformLocation(prog, 'c' + i), hex(c)))
+    gl.uniform1f(gl.getUniformLocation(prog, 's'), Number(cv.dataset.seed || 1))
+    const uT = gl.getUniformLocation(prog, 't')
+    const uR = gl.getUniformLocation(prog, 'r')
+    const speed = Number(cv.dataset.speed || 1)
+    let visible = false
+    let raf = 0
+    const size = () => {
+      const k = Math.min(window.devicePixelRatio || 1, 1.5) * 0.6
+      cv.width = Math.max(2, cv.clientWidth * k)
+      cv.height = Math.max(2, cv.clientHeight * k)
+      gl.viewport(0, 0, cv.width, cv.height)
+      gl.uniform2f(uR, cv.width, cv.height)
+    }
+    const draw = (ms: number) => {
+      gl.uniform1f(uT, (ms / 1000) * speed)
+      gl.drawArrays(gl.TRIANGLES, 0, 3)
+      if (visible && !still) raf = requestAnimationFrame(draw)
+    }
+    size()
+    draw(8000)
+    new ResizeObserver(() => {
+      size()
+      draw(performance.now())
+    }).observe(cv)
+    new IntersectionObserver(([e]) => {
+      visible = e.isIntersecting
+      cancelAnimationFrame(raf)
+      if (visible && !still) raf = requestAnimationFrame(draw)
+    }).observe(cv)
+  })
+</script>

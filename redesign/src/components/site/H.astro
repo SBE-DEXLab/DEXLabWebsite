@@ -1,0 +1,34 @@
+---
+// A section heading in the chosen version's style. "DEXLab" always gets its brand colours.
+import {brandify} from '../../lib/site/utils'
+import {look, splitTwoTone, type Theme, type Surface} from '../../lib/theme'
+interface Props {
+  t: Theme
+  s?: Surface
+  text?: string
+  level?: 1 | 2 | 3
+  size?: 'xl' | 'lg' | 'md'
+  class?: string
+}
+const {t, s = 'base', text, level = 2, size = 'lg', class: className = ''} = Astro.props
+const k = look(t, s)
+const sizes = {
+  xl: t === 'e' ? 'text-[clamp(3.2rem,9vw,8.5rem)]' : t === 'c' ? 'text-[clamp(2.4rem,6.4vw,5.4rem)]' : 'text-[clamp(2.8rem,7.4vw,6.6rem)]',
+  lg: t === 'e' ? 'text-[clamp(2.6rem,6.6vw,6rem)]' : t === 'c' ? 'text-[clamp(1.8rem,3.8vw,3.1rem)]' : 'text-[clamp(2.2rem,4.6vw,4rem)]',
+  md: t === 'e' ? 'text-[clamp(1.8rem,3.4vw,2.8rem)]' : t === 'c' ? 'text-[clamp(1.3rem,2.2vw,1.7rem)]' : 'text-[clamp(1.5rem,2.6vw,2.1rem)]',
+}
+const Tag = `h${level}` as 'h1'
+// Version D: grey lead-in, dark remainder.
+const [grey, rest] = t === 'd' ? splitTwoTone(text) : ['', text || '']
+const greyClass = k.dark ? 'text-white/40' : 'text-d-fg/30'
+---
+
+{
+  text && (
+    <Tag class:list={[k.heading, sizes[size], className]}>
+      {t === 'c' && <span class="mr-3 text-lab select-none" aria-hidden="true">{level === 1 ? '>' : '#'.repeat(level)}</span>}
+      {grey && <span class={greyClass} set:html={brandify(grey) + ' '} />}
+      <Fragment set:html={brandify(rest)} />
+    </Tag>
+  )
+}

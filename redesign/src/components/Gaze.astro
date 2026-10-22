@@ -1,0 +1,276 @@
+---
+// Version E: the visitor is the participant. The pointer stands in for gaze: fixations and
+// saccades draw as a scanpath (or an attention heatmap), and a small readout shows simulated
+// biometrics. Everything stays in the browser; nothing is recorded or sent anywhere.
+---
+
+<canvas data-gaze class="pointer-events-none fixed inset-0 z-30 h-full w-full mix-blend-multiply" aria-hidden="true"></canvas>
+
+<aside data-hud class="fixed right-3 bottom-16 z-40 w-[15.5rem] border-2 border-navy bg-white font-mono text-[0.68rem] text-navy shadow-[5px_5px_0_#001c3d] sm:bottom-4" aria-label="Session readout">
+  <button type="button" data-hud-toggle aria-expanded="true" class="flex w-full items-center justify-between gap-2 bg-navy px-3 py-2 text-white">
+    <span class="flex items-center gap-2"><span class="rec-dot h-2 w-2 rounded-full bg-lab"></span>REC <span data-pid>P-0000</span></span>
+    <span data-clock>00:00</span>
+  </button>
+  <div data-hud-body class="space-y-2 p-3">
+    <div class="flex items-center justify-between"><span>HR <b data-hr class="text-[0.85rem]">72</b> bpm</span><canvas data-ecg width="240" height="56" class="h-7 w-[7.5rem]"></canvas></div>
+    <div class="flex items-center justify-between"><span>EDA <b data-eda class="text-[0.85rem]">2.1</b> µS</span><canvas data-eda-line width="240" height="56" class="h-7 w-[7.5rem]"></canvas></div>
+    <div class="flex items-center justify-between border-t border-navy/20 pt-2"><span>Fixations <b data-fix>0</b></span><span>Dwell <b data-dwell-total>0.0</b>s</span></div>
+    <div class="grid grid-cols-3 border-2 border-navy" role="group" aria-label="Gaze layer">
+      <button type="button" data-mode="scanpath" aria-pressed="true" class="py-1.5 uppercase">Path</button>
+      <button type="button" data-mode="heatmap" aria-pressed="false" class="border-x-2 border-navy py-1.5 uppercase">Heat</button>
+      <button type="button" data-mode="off" aria-pressed="false" class="py-1.5 uppercase">Off</button>
+    </div>
+    <p class="leading-snug text-navy/60">Simulated from your pointer and scrolling. Nothing is recorded or sent.</p>
+  </div>
+</aside>
+
+<style is:global>
+  [data-hud] [aria-pressed='true'] { background: #e84e10; color: #fff; }
+</style>
+
+<script>
+  const canvas = document.querySelector<HTMLCanvasElement>('[data-gaze]')!
+  const hud = document.querySelector<HTMLElement>('[data-hud]')!
+  const ctx = canvas.getContext('2d')!
+  const still = matchMedia('(prefers-reduced-motion: reduce)').matches
+  const dpr = Math.min(window.devicePixelRatio, 2)
+  let W = 0, H = 0
+  const resize = () => {
+    W = window.innerWidth
+    H = window.innerHeight
+    canvas.width = W * dpr
+    canvas.height = H * dpr
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0)
+  }
+  resize()
+  window.addEventListener('resize', resize)
+
+  // Participant number and session clock (per tab, never stored server-side).
+  let pid = sessionStorage.getItem('dex-pid')
+  if (!pid) {
+    pid = 'P-' + String(Math.floor(1000 + Math.random() * 9000))
+    try { sessionStorage.setItem('dex-pid', pid) } catch {}
+  }
+  hud.querySelector('[data-pid]')!.textContent = pid
+  const t0 = Number(sessionStorage.getItem('dex-t0')) || Date.now()
+  try { sessionStorage.setItem('dex-t0', String(t0)) } catch {}
+
+  // Mode: scanpath, heatmap or off. Small screens start collapsed.
+  let mode = (localStorage.getItem('dex-gaze') as string) || (still ? 'off' : 'scanpath')
+  const modeBtns = [...hud.querySelectorAll<HTMLButtonElement>('[data-mode]')]
+  const setMode = (m: string) => {
+    mode = m
+    modeBtns.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.mode === m)))
+    try { localStorage.setItem('dex-gaze', m) } catch {}
+    ctx.clearRect(0, 0, W, H)
+  }
+  modeBtns.forEach((b) => b.addEventListener('click', () => setMode(b.dataset.mode!)))
+  setMode(mode)
+  const toggle = hud.querySelector<HTMLButtonElement>('[data-hud-toggle]')!
+  const body = hud.querySelector<HTMLElement>('[data-hud-body]')!
+  const setOpen = (open: boolean) => {
+    body.hidden = !open
+    toggle.setAttribute('aria-expanded', String(open))
+  }
+  setOpen(window.innerWidth >= 768)
+  toggle.addEventListener('click', () => setOpen(Boolean(body.hidden)))
+
+  // Fixation detection (dispersion threshold): the pointer resting within 36px for 140ms+.
+  type Fix = {x: number; y: number; start: number; end: number; n: number}
+  const fixes: Fix[] = []
+  let cur: {x: number; y: number; sx: number; sy: number; k: number; start: number} | null = null
+  let count = 0, px = -1, py = -1, lastMove = 0, activity = 0
+  const close = (now: number) => {
+    if (cur && now - cur.start > 140) {
+      fixes.push({x: cur.sx / cur.k, y: cur.sy / cur.k, start: cur.start, end: now, n: ++count})
+      if (fixes.length > 14) fixes.shift()
+      hud.querySelector('[data-fix]')!.textContent = String(count)
+    }
+    cur = null
+  }
+  window.addEventListener('pointermove', (e) => {
+    const now = performance.now()
+    const dx = e.clientX - px, dy = e.clientY - py
+    activity += Math.min(60, Math.hypot(dx, dy)) / 60
+    px = e.clientX
+    py = e.clientY
+    lastMove = now
+    if (cur && Math.hypot(px - cur.x, py - cur.y) < 36) {
+      cur.sx += px
+      cur.sy += py
+      cur.k++
+    } else {
+      close(now)
+      cur = {x: px, y: py, sx: px, sy: py, k: 1, start: now}
+    }
+  }, {passive: true})
+  let lastY = window.scrollY
+  window.addEventListener('scroll', () => {
+    activity += Math.min(400, Math.abs(window.scrollY - lastY)) / 120
+    lastY = window.scrollY
+    close(performance.now())
+    // Fixations are in viewport space; scrolling moves the eyes, so the old ones fade fast.
+    fixes.forEach((f) => (f.end -= 400))
+  }, {passive: true})
+
+  // Heatmap on a coarse grid, decaying over time.
+  const S = 10
+  let gw = 0, gh = 0, grid = new Float32Array(0)
+  const sizeGrid = () => {
+    gw = Math.ceil(W / S)
+    gh = Math.ceil(H / S)
+    grid = new Float32Array(gw * gh)
+  }
+  sizeGrid()
+  window.addEventListener('resize', sizeGrid)
+  const heat = document.createElement('canvas')
+  const hctx = heat.getContext('2d')!
+  const ramp = (v: number) => {
+    // blue -> cyan -> yellow -> orange -> red, the classic eye-tracking palette
+    const stops = [[0, 162, 219], [80, 220, 200], [255, 220, 60], [232, 78, 16], [200, 20, 20]]
+    const x = Math.min(0.999, v) * (stops.length - 1), i = Math.floor(x), f = x - i
+    return stops[i].map((c, j) => c + (stops[i + 1][j] - c) * f)
+  }
+
+  // Simulated biometrics: heart rate and skin conductance follow how busy the visitor is.
+  let hr = 70, eda = 2.1, phase = 0
+  const ecg: number[] = [], edaHist: number[] = []
+  const ecgCanvas = hud.querySelector<HTMLCanvasElement>('[data-ecg]')!
+  const edaCanvas = hud.querySelector<HTMLCanvasElement>('[data-eda-line]')!
+  const beat = (p: number) => {
+    // A stylised PQRST complex over one cycle (p in 0..1).
+    if (p < 0.1) return Math.sin((p / 0.1) * Math.PI) * 0.12
+    if (p < 0.16) return 0
+    if (p < 0.19) return -0.15
+    if (p < 0.22) return 1
+    if (p < 0.25) return -0.3
+    if (p < 0.45) return 0
+    if (p < 0.6) return Math.sin(((p - 0.45) / 0.15) * Math.PI) * 0.25
+    return 0
+  }
+  const line = (c: HTMLCanvasElement, data: number[], color: string, lo: number, hi: number) => {
+    const g = c.getContext('2d')!
+    g.clearRect(0, 0, c.width, c.height)
+    g.strokeStyle = color
+    g.lineWidth = 3
+    g.beginPath()
+    data.forEach((v, i) => {
+      const x = (i / 119) * c.width, y = c.height - 6 - ((v - lo) / (hi - lo)) * (c.height - 12)
+      i ? g.lineTo(x, y) : g.moveTo(x, y)
+    })
+    g.stroke()
+  }
+
+  let last = performance.now(), dwellTotal = 0
+  const frame = (now: number) => {
+    const dt = Math.min(0.05, (now - last) / 1000)
+    last = now
+    activity *= 0.94
+    hr += (Math.min(118, 68 + activity * 9) - hr) * dt * 0.8
+    eda += (2 + Math.min(6, activity * 0.9) - eda) * dt * 0.25
+    phase += dt * (hr / 60)
+    ecg.push(beat(phase % 1))
+    edaHist.push(eda)
+    if (ecg.length > 120) ecg.shift()
+    if (edaHist.length > 120) edaHist.shift()
+    line(ecgCanvas, ecg, '#e84e10', -0.4, 1.05)
+    line(edaCanvas, edaHist, '#00a2db', 1.5, 8.5)
+    hud.querySelector('[data-hr]')!.textContent = String(Math.round(hr))
+    hud.querySelector('[data-eda]')!.textContent = eda.toFixed(1)
+    const secs = Math.floor((Date.now() - t0) / 1000)
+    hud.querySelector('[data-clock]')!.textContent = `${String(Math.floor(secs / 60)).padStart(2, '0')}:${String(secs % 60).padStart(2, '0')}`
+    hud.querySelector('[data-dwell-total]')!.textContent = (dwellTotal / 1000).toFixed(1)
+
+    ctx.clearRect(0, 0, W, H)
+    if (mode === 'scanpath') {
+      const pts = [...fixes]
+      if (cur && now - cur.start > 140) pts.push({x: cur.sx / cur.k, y: cur.sy / cur.k, start: cur.start, end: now, n: count + 1})
+      const alive = pts.filter((f) => now - f.end < 7000)
+      ctx.lineWidth = 1.5
+      for (let i = 1; i < alive.length; i++) {
+        const a = alive[i - 1], b = alive[i], fade = 1 - (now - b.end) / 7000
+        ctx.strokeStyle = `rgba(0,28,61,${0.55 * fade})`
+        ctx.beginPath()
+        ctx.moveTo(a.x, a.y)
+        ctx.lineTo(b.x, b.y)
+        ctx.stroke()
+      }
+      alive.forEach((f) => {
+        const fade = 1 - (now - f.end) / 7000
+        const r = 10 + Math.min(46, Math.sqrt(f.end - f.start) * 0.9)
+        ctx.fillStyle = `rgba(232,78,16,${0.22 * fade})`
+        ctx.strokeStyle = `rgba(232,78,16,${0.9 * fade})`
+        ctx.lineWidth = 2
+        ctx.beginPath()
+        ctx.arc(f.x, f.y, r, 0, Math.PI * 2)
+        ctx.fill()
+        ctx.stroke()
+        ctx.fillStyle = `rgba(0,28,61,${fade})`
+        ctx.font = '600 11px "JetBrains Mono Variable", monospace'
+        ctx.textAlign = 'center'
+        ctx.textBaseline = 'middle'
+        ctx.fillText(String(f.n), f.x, f.y)
+      })
+    } else if (mode === 'heatmap') {
+      if (px >= 0 && now - lastMove < 1200) {
+        const cx = px / S, cy = py / S, R = 7
+        for (let y = Math.max(0, Math.floor(cy - R)); y < Math.min(gh, cy + R); y++)
+          for (let x = Math.max(0, Math.floor(cx - R)); x < Math.min(gw, cx + R); x++) {
+            const d = ((x - cx) ** 2 + (y - cy) ** 2) / (R * R)
+            if (d < 1) grid[y * gw + x] = Math.min(1.2, grid[y * gw + x] + (1 - d) * 0.06)
+          }
+      }
+      heat.width = gw
+      heat.height = gh
+      const img = hctx.createImageData(gw, gh)
+      for (let i = 0; i < grid.length; i++) {
+        grid[i] *= 0.997
+        const v = grid[i]
+        if (v < 0.04) continue
+        const [r, g, b] = ramp(v)
+        img.data[i * 4] = r
+        img.data[i * 4 + 1] = g
+        img.data[i * 4 + 2] = b
+        img.data[i * 4 + 3] = Math.min(235, 60 + v * 300)
+      }
+      hctx.putImageData(img, 0, 0)
+      ctx.imageSmoothingEnabled = true
+      ctx.filter = 'blur(9px)'
+      ctx.drawImage(heat, 0, 0, W, H)
+      ctx.filter = 'none'
+    }
+    requestAnimationFrame(frame)
+  }
+  requestAnimationFrame(frame)
+
+  // Areas of interest: every card measures how long it has been looked at (hovered).
+  document.querySelectorAll<HTMLElement>('.e-aoi').forEach((el, i) => {
+    let since = 0, total = 0
+    const label = () => el.setAttribute('data-dwell', `AOI ${String(i + 1).padStart(2, '0')} · dwell ${(total / 1000).toFixed(1)}s`)
+    label()
+    let timer = 0
+    el.addEventListener('pointerenter', () => {
+      since = performance.now()
+      timer = window.setInterval(() => {
+        const now = performance.now()
+        total += now - since
+        dwellTotal += now - since
+        since = now
+        label()
+      }, 100)
+    })
+    el.addEventListener('pointerleave', () => clearInterval(timer))
+  })
+
+  // Immersive touch: cards tilt toward the pointer, as if seen through a headset.
+  if (!still)
+    document.querySelectorAll<HTMLElement>('[data-tilt]').forEach((el) => {
+      el.style.transformStyle = 'preserve-3d'
+      el.addEventListener('pointermove', (e) => {
+        const r = el.getBoundingClientRect()
+        const x = (e.clientX - r.left) / r.width - 0.5, y = (e.clientY - r.top) / r.height - 0.5
+        el.style.transform = `perspective(900px) rotateX(${-y * 7}deg) rotateY(${x * 9}deg) translate(-4px, -4px)`
+      })
+      el.addEventListener('pointerleave', () => (el.style.transform = ''))
+    })
+</script>

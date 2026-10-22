@@ -1,0 +1,102 @@
+---
+import Wrap from './Wrap.astro'
+import H from '../site/H.astro'
+import Img from '../site/Img.astro'
+import {look, surfaceFor, L, type Theme} from '../../lib/theme'
+import {brandify} from '../../lib/site/utils'
+
+const {t, data} = Astro.props as {t: Theme; data: any}
+const s = surfaceFor(data.tone)
+const k = look(t, s)
+const items: any[] = data.items || []
+const style = data.style || 'icon'
+// Four items without a set column count sit in a 2x2 grid (e.g. Our Core Activities).
+const cols = items.length === 4 && !data.columns && style !== 'tiles' ? 2 : Math.min(data.columns || 3, items.length || 3)
+const grid = {2: 'md:grid-cols-2', 3: 'md:grid-cols-2 lg:grid-cols-3', 4: 'md:grid-cols-2 lg:grid-cols-4', 6: 'grid-cols-2 md:grid-cols-3 lg:grid-cols-6'}[cols as 2] || 'md:grid-cols-3'
+const bento = t === 'b' && (data.heading || data.intro) && style === 'icon' && items.length === 3
+const fileName = (title: string) => title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') + '.md'
+const iconClass = k.dark ? 'brightness-0 invert' : t === 'd' ? 'd-icon' : ''
+const tilt = t === 'e' ? {'data-tilt': ''} : {}
+---
+
+<Wrap t={t} tone={data.tone} anchor={data.anchor}>
+  {
+    bento ? (
+      <div class="grid gap-5 md:grid-cols-3">
+        <div class="reveal flex flex-col justify-between rounded-[2rem] bg-peach p-10 text-navy md:col-span-2">
+          <H t={t} s="alt" text={data.heading} />
+          {data.intro && <p class="mt-8 max-w-2xl text-lg leading-8 text-navy/80">{data.intro}</p>}
+        </div>
+        {items.map((c, i) => (
+          <a href={L(t, c.link?.href)} class:list={['reveal group flex flex-col rounded-[2rem] p-9 ring-1 transition hover:-translate-y-1 hover:shadow-[0_30px_60px_-30px_rgb(0,28,61,0.35)]', i === 0 ? 'bg-navy text-white ring-navy' : 'bg-white text-navy ring-line']}>
+            {c.image?.url && <span class:list={['mb-10 grid h-16 w-16 place-items-center rounded-2xl', i === 0 ? 'bg-white/10' : 'bg-dex/10']}><Img image={c.image} width={96} fit="max" class:list={['h-9 w-9 object-contain', i === 0 ? 'brightness-0 invert' : '']} /></span>}
+            <h3 class="display mb-4 text-3xl" set:html={brandify(c.title)} />
+            {c.text && <p class:list={['leading-7', i === 0 ? 'text-white/75' : 'text-navy/75']}>{c.text}</p>}
+            {c.link?.label && <span class:list={['mt-auto pt-8 font-display text-sm font-bold', i === 0 ? 'text-dex' : 'text-dex-dark']}>{c.link.label} <span class="inline-block transition group-hover:translate-x-1" aria-hidden="true">→</span></span>}
+          </a>
+        ))}
+      </div>
+    ) : (
+      <>
+        {(data.heading || data.intro) && (
+          <div class="reveal mb-14 grid gap-8 md:grid-cols-[1fr_1.2fr] md:items-end">
+            <H t={t} s={s} text={data.heading} />
+            {data.intro && <p class:list={['text-lg leading-8', k.muted]}>{data.intro}</p>}
+          </div>
+        )}
+        {style === 'rows' ? (
+          <div class="space-y-6">
+            {items.map((c, i) => (
+              <div class:list={['reveal grid items-center gap-8 overflow-hidden md:grid-cols-2', k.card]}>
+                {c.image?.url && <Img image={c.image} width={900} height={600} sizes="(min-width: 768px) 600px, 100vw" class:list={['h-full w-full object-cover', i % 2 ? 'md:order-2' : '', t === 'c' ? 'duotone' : '']} />}
+                <div class="p-8 md:p-12">
+                  <h3 class:list={[k.heading, 'mb-4 text-2xl md:text-3xl']} set:html={brandify(c.title)} />
+                  {c.text && <p class:list={['leading-7 whitespace-pre-line', k.muted]}>{c.text}</p>}
+                  {c.link?.href && <a href={L(t, c.link.href)} class:list={['mt-6 inline-flex font-bold', k.font, k.link]}>{c.link.label || 'Read more'} →</a>}
+                </div>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div class:list={['grid gap-5', grid]}>
+            {items.map((c, i) => {
+              const Tag = c.link?.href ? 'a' : 'div'
+              return (
+                <Tag {...tilt} href={c.link?.href ? L(t, c.link.href) : undefined} class:list={['reveal group relative flex flex-col overflow-hidden', k.card, c.link?.href && k.cardHover, style === 'tiles' ? 'items-center p-6 text-center' : '']} style={`transition-delay:${(i % 4) * 70}ms`}>
+                  {t === 'c' && style !== 'tiles' && (
+                    <div class="flex items-center justify-between border-b border-dex/20 px-5 py-2.5 font-mono text-[0.7rem] text-white/50">
+                      <span>{fileName(c.title)}</span>
+                      <span>0{i + 1}</span>
+                    </div>
+                  )}
+                  {style === 'photo' && c.image?.url ? (
+                    <Img image={c.image} width={720} height={480} sizes="(min-width: 1024px) 400px, 100vw" class:list={['aspect-[3/2] w-full object-cover', t === 'c' ? 'duotone' : '']} />
+                  ) : null}
+                  <div class:list={[style === 'tiles' ? '' : 'flex flex-1 flex-col p-8']}>
+                    {t === 'a' && style === 'icon' && !c.image?.url && <span class="mb-10 font-display text-sm font-bold text-white/40">0{i + 1}</span>}
+                    {t === 'd' && style !== 'tiles' && <span class:list={['absolute top-7 right-8 text-xs tabular-nums', k.faint]}>({String(i + 1).padStart(2, '0')})</span>}
+                    {t === 'e' && style !== 'tiles' && <span class="mb-8 inline-block self-start bg-navy px-2 py-1 font-mono text-[0.68rem] tracking-[0.1em] text-white">C{i + 1}</span>}
+                    {style !== 'photo' && c.image?.url && (
+                      <span class:list={['mb-6 grid place-items-center', style === 'tiles' ? 'h-16 w-16' : 'h-14 w-14', t === 'b' ? 'rounded-2xl bg-dex/10' : t === 'a' ? 'rounded-2xl bg-white/5' : t === 'd' ? (k.dark ? 'rounded-full bg-white/10' : 'rounded-full bg-d-fg/[0.05]') : t === 'e' ? 'border-2 border-navy bg-peach' : 'rounded bg-dex/10']}>
+                        <Img image={c.image} width={96} fit="max" class:list={['h-8 w-8 object-contain', iconClass]} />
+                      </span>
+                    )}
+                    <h3 class:list={[k.heading, style === 'tiles' ? 'text-base' : 'mb-3 text-2xl']} set:html={brandify(c.title)} />
+                    {c.text && <p class:list={['leading-7 whitespace-pre-line', k.muted, style === 'tiles' ? 'mt-2 text-sm' : '']}>{c.text}</p>}
+                    {c.link?.href && c.link.label && (
+                      <span class:list={['mt-auto pt-6 text-sm font-bold', k.font, k.link]}>
+                        {t === 'c' ? '> ' : ''}{c.link.label} <span class="inline-block transition group-hover:translate-x-1" aria-hidden="true">→</span>
+                      </span>
+                    )}
+                  </div>
+                  {t === 'e' && <span class="e-brackets" />}
+                  {t === 'a' && <span class:list={['pointer-events-none absolute -top-10 -right-10 h-32 w-32 rounded-full opacity-25 blur-2xl transition group-hover:opacity-60', ['bg-dex', 'bg-lab', 'bg-azure'][i % 3]]} />}
+                </Tag>
+              )
+            })}
+          </div>
+        )}
+      </>
+    )
+  }
+</Wrap>
